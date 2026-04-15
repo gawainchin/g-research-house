@@ -12,39 +12,6 @@ interface Brief {
   sections: Section[]
 }
 
-function parseBrief(html: string): Brief | null {
-  // Simple parser: look for <h2> or <strong> section titles
-  const sectionRegex = /<(?:h2|strong)[^>]*>(.*?)<\/(?:h2|strong)>/gi
-  const matches = [...html.matchAll(sectionRegex)]
-  if (matches.length === 0) return null
-
-  const titles = matches.map(m => m[1].replace(/[*#]/g, '').trim())
-
-  // Split content by section headers
-  const parts = html.split(/<(?:h2|strong)[^>]*>.*?<\/(?:h2|strong)>/gi)
-
-  const sections: Section[] = []
-  for (let i = 1; i < parts.length; i++) {
-    // Strip tags but preserve line breaks
-    const content = parts[i]
-      .replace(/<[^>]+>/g, '')
-      .replace(/&amp;/g, '&')
-      .replace(/&lt;/g, '<')
-      .replace(/&gt;/g, '>')
-      .replace(/&nbsp;/g, ' ')
-      .trim()
-    if (titles[i - 1] && content) {
-      sections.push({ title: titles[i - 1], content })
-    }
-  }
-
-  // Extract date from first h1 or strong
-  const dateMatch = html.match(/<(?:h1|strong)[^>]*>([^<]*?,?\s*\w+\s*\d+,?\s*\d{4})/i)
-  const date = dateMatch ? dateMatch[1].trim() : ''
-
-  return { date, sections }
-}
-
 function Section({ title, content }: Section) {
   return (
     <section style={{ marginBottom: '2rem' }}>
@@ -111,18 +78,15 @@ function ErrorState() {
 export default function Home() {
   const [brief, setBrief] = useState<Brief | null>(null)
   const [loading, setLoading] = useState(true)
-  const [lastUpdated, setLastUpdated] = useState<string>('')
 
   useEffect(() => {
-    fetch('/brief.html')
+    fetch('/brief.json')
       .then(r => {
         if (!r.ok) throw new Error('not found')
-        setLastUpdated(r.headers.get('Last-Modified') || '')
-        return r.text()
+        return r.json()
       })
-      .then(html => {
-        const parsed = parseBrief(html)
-        setBrief(parsed)
+      .then(data => {
+        setBrief(data)
         setLoading(false)
       })
       .catch(() => {
