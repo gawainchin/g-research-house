@@ -109,44 +109,38 @@ def parse_plain_brief(text: str) -> tuple[str, list]:
     """
     Parse the plain-text brief into (date_str, [(title, content), ...]).
 
-    Section headers: lines that start with **Title** (bold markdown).
-    Sub-labels like *Strongest:* and *Weakest:* are part of section content,
-    not treated as section headers.
+    Section headers: lines matching the known canonical section titles.
+    Content is everything between this header and the next.
     """
+    known_sections = [
+        "OVERNIGHT MAP",
+        "US CLOSE MOVERS",
+        "HK LIVE MOVERS",
+        "MARKET NEWS",
+        "ACTION BOARD",
+    ]
+
     lines = text.strip().split('\n')
     date_str = datetime.now().strftime("%B %d, %Y")
 
-    # If first line looks like a header with a date, extract the date
+    # Extract date from first line if present
     if lines:
         header_match = re.search(r'\w+\s+\d{1,2},\s+\d{4}', lines[0])
         if header_match:
             date_str = header_match.group()
-        # Skip the header line itself
-        lines = lines[1:]
 
+    # Find all header positions
+    header_positions = []
+    for i, line in enumerate(lines):
+        if line.strip() in known_sections:
+            header_positions.append((i, line.strip()))
+
+    # Extract content between headers
     sections = []
-    current_title = None
-    current_lines = []
-
-    for line in lines:
-        stripped = line.strip()
-        # A section header: **Title** where title doesn't start with *
-        # (lines starting with * are italic sub-labels like *Strongest:*)
-        if stripped.startswith('**') and not stripped.startswith('***'):
-            # Save previous section
-            if current_title is not None:
-                sections.append((current_title, '\n'.join(current_lines).strip()))
-            # Extract title (strip ** markers)
-            title_match = re.match(r'^\*\*(.+?)\*\*\s*$', stripped)
-            if title_match:
-                current_title = title_match.group(1).strip()
-                current_lines = []
-        else:
-            current_lines.append(line)
-
-    # Don't forget the last section
-    if current_title is not None:
-        sections.append((current_title, '\n'.join(current_lines).strip()))
+    for idx, (pos, title) in enumerate(header_positions):
+        next_pos = header_positions[idx + 1][0] if idx + 1 < len(header_positions) else len(lines)
+        content_lines = lines[pos + 1:next_pos]
+        sections.append((title, '\n'.join(content_lines).strip()))
 
     return date_str, sections
 
