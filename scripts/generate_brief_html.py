@@ -21,7 +21,7 @@ def wrap_html(date_str: str, sections: list) -> str:
         )
         sections_html += f"""
       <section>
-        <div class="label">{title}</div>
+        <h2>{title}</h2>
         <div class="body">{content_escaped}</div>
       </section>"""
 
