@@ -1,21 +1,42 @@
-Morning Briefing — April 15, 2026
+OVERNIGHT MAP
 
-**Overnight map**
-Risk-on drove equities overnight. AI momentum powered the tape — MU surged on memory demand, pulling NVDA and broad semis higher. Nasdaq outperformed Dow. Treasuries slightly bid, gold strong. Hang Seng under modest pressure in early HK trade.
+Semis led a broad risk-on session as US equities pushed higher with healthy breadth. The S&P 500 closed up over 1%, Nasdaq comps outperformed, and the Hang Seng added nearly 1% — holding above 26,000. Treasury yields were steady to slightly lower, removing some rate pressure from the tape. The dollar was softer, which tends to support EM and international names. AI and chip names dominated the action.
 
-**US close movers**
-*Strongest:* MU +9.2 | NVDA +3.8 | MSFT +2.3
-*Weakest:* NET -2.9 | INTC -2.1 | AAPL -0.1
+Key levels: SPY 694.46 (+1.2%) | HSI 26,116 (+0.9%) | 10-yr yield ~4.44%
 
-**HK live movers**
-*Strongest:* CGN +0.9 | 1816.HK modest
-*Weakest:* 02800 Tracker -0.8 | ^HSI -0.9
+US CLOSE MOVERS
 
-**Market news**
-- MU reports after hours today — tape positioning ahead of print
-- NET dropped on insider-selling headline
+Strong:
+- MU +9.17% — Samsung HBM shortage headwinds continuing to benefit Micron; AI DRAM demand narrative re-igniting
+- NVDA +3.80% — Semi's best-of-breed keeps running; options activity elevated
+- TSLA +3.34% — BofA upgrade citing robotaxi optionality sparked a short squeeze
 
-**Action board**
-- **Opportunity:** MU + NVDA continuing to pull semis higher
-- **Risk:** INTC at new lows
-- **Research:** NET insider selling needs deeper look
+Weak:
+- NET -2.92% — Insider selling headlines (CEO Matthew Prince sold ~52k shares via 10b5-1) weighed on sentiment
+- INTC -2.10% — Headwinds from AMD competition and uncertain foundry timeline persist
+- AAPL -0.14% — Flat, no real catalyst
+
+HK LIVE MOVERS
+
+Strong:
+- GDS +3.47% — China data center names continuing to rerate on stimulus hopes
+- BABA +2.61% — Supported by broader tech sentiment and selective buying
+- 2800.HK +1.77% — Broad HK/China beta following the HSI
+
+Weak:
+- 1816.HK (CGN) -1.46% — Nuclear utility lagging the risk-on move
+- HSI itself +0.94% — Up but lagging US peers
+
+MARKET NEWS
+
+1. Samsung HBM crisis deepening — Reports emerged that Samsung's HBM3e yields remain problematic versus SK Hynix/Micron, reinforcing Micron's competitive position in AI memory. This is the likely direct catalyst for MU's outsized move.
+
+2. BofA upgrades TSLA — Bank of America raised TSLA to Buy, lifting price target to $480, citing robotaxi and autonomy as underappreciated catalysts. The call triggered short covering.
+
+ACTION BOARD
+
+- Opportunity: MU is the cleanest near-term momentum name — Samsung's HBM problems aren't resolved overnight, and AI DRAM pricing remains constructive. Let it run.
+
+- Risk: NET is sitting on a weak sentiment foundation with insider distribution visible in the tape. Not a place to average into; treat it as a monitor until the business thesis is re-confirmed.
+
+- Research: GDS and BABA are moving together on China stimulus narrative. Need to distinguish whether this is a durable rerating or another fade. Track property sector data and regulatory signals before sizing up.
