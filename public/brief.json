@@ -1,25 +1,25 @@
 {
-  "date": "April 15, 2026",
+  "date": "April 16, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "Semis led a broad risk-on session as US equities pushed higher with healthy breadth. The S&P 500 closed up over 1%, Nasdaq comps outperformed, and the Hang Seng added nearly 1% \u2014 holding above 26,000. Treasury yields were steady to slightly lower, removing some rate pressure from the tape. The dollar was softer, which tends to support EM and international names. AI and chip names dominated the action.\n\nKey levels: SPY 694.46 (+1.2%) | HSI 26,116 (+0.9%) | 10-yr yield ~4.44%"
+      "content": "Risk appetite held through Thursday's US session as mega-cap tech continued to carry the tape. S&P 500 closed near session highs, with MSFT and TSLA the day's biggest drivers. Bond yields pulled back modestly, providing a tailwind for growth names. The AI narrative remains the dominant force \u2014 MSFT's continued strength reflects confidence in the Copilot monetization path. Tariff concerns haven't fully receded but are no longer the primary intraday catalyst, with markets bifurcating between AI winners and everything else.\n\n3 anchor numbers: SPY +0.79% | 10-yr yield -4bps to ~4.52% | HSI +0.82%"
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "Strong:\n- MU +9.17% \u2014 Samsung HBM shortage headwinds continuing to benefit Micron; AI DRAM demand narrative re-igniting\n- NVDA +3.80% \u2014 Semi's best-of-breed keeps running; options activity elevated\n- TSLA +3.34% \u2014 BofA upgrade citing robotaxi optionality sparked a short squeeze\n\nWeak:\n- NET -2.92% \u2014 Insider selling headlines (CEO Matthew Prince sold ~52k shares via 10b5-1) weighed on sentiment\n- INTC -2.10% \u2014 Headwinds from AMD competition and uncertain foundry timeline persist\n- AAPL -0.14% \u2014 Flat, no real catalyst"
+      "content": "Top 3:\n- TSLA +7.62% \u2014 largest single-name move; sentiment-driven rebound, no new fundamental catalyst\n- NET +6.43% \u2014 insider-selling headline triggered short-term covering; thesis still under review per portfolio note\n- MSFT +4.61% \u2014 strong AI integration momentum; Azure growth narrative intact\n\nBottom 3:\n- MU -2.03% \u2014 memory sector under pressure; HBM supply concerns creating headwinds\n- ETN -1.70% \u2014 industrial/electrical equipment soft; cyclical growth concerns persist\n- DXYZ -1.20% \u2014 speculative punt, no news; tape remains hostile to unprofitable risk"
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "Strong:\n- GDS +3.47% \u2014 China data center names continuing to rerate on stimulus hopes\n- BABA +2.61% \u2014 Supported by broader tech sentiment and selective buying\n- 2800.HK +1.77% \u2014 Broad HK/China beta following the HSI\n\nWeak:\n- 1816.HK (CGN) -1.46% \u2014 Nuclear utility lagging the risk-on move\n- HSI itself +0.94% \u2014 Up but lagging US peers"
+      "content": "Top 3:\n- 2800.HK +0.92% \u2014 broad HK/China ETF; modest stimulus expectations lifting sentiment\n- BABA +1.47% \u2014 Alibaba continues grinding higher on policy/antispeculation thesis\n- INTC +1.77% \u2014 value name catching a bid; not a thesis change, just relative cheapness\n\nBottom 3:\n- 1816.HK -2.63% \u2014 CGN pulled back; China utility sector soft on rate sensitivity concerns\n- GDS -0.74% \u2014 data center name soft; MU weakness likely weighing on semis sentiment\n- XLU -0.97% \u2014 utilities soft as bond yields stabilize; defensive bid not functioning today"
     },
     {
       "title": "MARKET NEWS",
-      "content": "1. Samsung HBM crisis deepening \u2014 Reports emerged that Samsung's HBM3e yields remain problematic versus SK Hynix/Micron, reinforcing Micron's competitive position in AI memory. This is the likely direct catalyst for MU's outsized move.\n\n2. BofA upgrades TSLA \u2014 Bank of America raised TSLA to Buy, lifting price target to $480, citing robotaxi and autonomy as underappreciated catalysts. The call triggered short covering."
+      "content": "1. Trump administration signals tariff escalation \u2014 fresh threats against additional Chinese goodskeep the trade war overhang alive. Markets are pricing a 60-70% probability of further tariff announcements before mid-year. Semis and China-adjacent names remain the most exposed.\n\n2. Fed minutes released \u2014 policymakers remain data-dependent and cautious on rate cuts, citing sticky services inflation and labor market resilience. Markets pushed back rate-cut expectations slightly; no new easing signal. The \"higher for longer\" message is intact."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: MU is the cleanest near-term momentum name \u2014 Samsung's HBM problems aren't resolved overnight, and AI DRAM pricing remains constructive. Let it run.\n\n- Risk: NET is sitting on a weak sentiment foundation with insider distribution visible in the tape. Not a place to average into; treat it as a monitor until the business thesis is re-confirmed.\n\n- Research: GDS and BABA are moving together on China stimulus narrative. Need to distinguish whether this is a durable rerating or another fade. Track property sector data and regulatory signals before sizing up."
+      "content": "\u2022 Opportunity: MSFT at +4.61% with AI momentum \u2014 hold and let run rather than trim. Copilot monetization is the clearest near-term growth driver among mega-caps.\n\n\u2022 Risk: MU continuing to lag \u2014 -2.03% today compounds the weak trend. HBM supply headwinds may persist; do not average into weakness without a clear catalyst resolution.\n\n\u2022 Research: TSLA +7.62% rebound \u2014 per portfolio rules, predefine the trim level. A legacy bag can become dominant risk fast. Review the scenario matrix rule on TSLA-specific squeezes before getting emotionally attached to the move."
     }
   ]
 }
