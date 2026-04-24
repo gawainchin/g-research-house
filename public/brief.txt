@@ -1,29 +1,51 @@
 OVERNIGHT MAP
 
-The Hang Seng closed up +0.48% to 26,487 — solid but contained, still below the 27k resistance zone. The 180-day average has been tested and held as support. PBOC officials flagged potential rate corridor adjustments, and the Politburo is expected to meet on the 25th with a focus on local government debt refinancing. US futures are slightly positive ahead of the cash open. The setup is constructive but not euphoric — a tape that rewards stock-picking over beta.
+A quiet but telling session. US equities slightly soft — SPY down 0.4% — as Treasury yields held firm and earnings season waits in the wings. No major macro catalysts, just position-squaring ahead of data. Microsoft led tech lower after comments linked to AI capex spending discipline, pressuring the whole AI complex. Hong Kong fell 1.2% alongside mainland China weakness, with BABA a notable casualty on continued China policy anxiety. Defensives and cyclicals with pricing power held up better.
+
+Key levels: SPY 708.45 | ^HSI 26,163 | 10yr yield holding near recent highs
+
+---
 
 US CLOSE MOVERS
 
-Micron (MU) led all names, surging +8.48% to $487.48. AI memory demand remains the dominant narrative and MU is at the center of it — the move reflects bandwidth hunger, not just general optimism. Microsoft added +2.07% to $432.92 and Apple +2.63% to $273.17, both punching through recent ranges on strong product and services sentiment. DXYZ rounded out the top with +2.95% to $29.98 — speculative appetite alive and well.
+Strongest:
+• ETN +2.57% — Eaton continues to outperform on industrial/electrical demand
+• XLU +2.72% — utilities benefiting from stable yield environment
+• INTC +2.31% — Intel bouncing on 상대 value appeal
 
-On the weak side, Intel (INTC) dropped -1.49% to $65.27. The semiconductor name continues to trade as a structural bear, not a cyclical bounce. Cloudflare (NET) was essentially flat at -0.05%, holding the $207 level despite insider-selling headlines still circulating in the background.
+Weakest:
+• MSFT -3.97% — most significant mover; AI capex discipline commentary rattled sentiment
+• TSLA -3.56% — legacy bag pressure continues, no specific catalyst but tape is hostile
+• BABA -3.46% — China policy overhang and risk-off into HK session
+
+---
 
 HK LIVE MOVERS
 
-China Gas (1816.HK) led HK names at +1.48% to HK$3.43, a modest but steady move in a stock that tends to track policy sentiment closely. BABA eked out +0.77% to HK$136.42 — still grinding within its recent range. The 02800 Tracker added +0.38%, reflecting broad HK beta without direction.
+From the 02800/HSI session:
 
-GDS (GDS.HK) was the notable laggard at -0.69% to HK$43.16, pulling back from recent strength. The stock remains a China-adjacent AI play but needs continued confidence in the policy trajectory to hold its ground.
+Strongest:
+• GDS +0.21% — modest GDS upside, data center tailwinds intact
+• 1816.HK flat — CGN unchanged at HK$3.43
+
+Weakest:
+• 02800 -1.12% — broad HK beta drag from China tech sentiment
+• BABA -3.46% — same China policy anxiety weighing on ADR/HK
+
+---
 
 MARKET NEWS
 
-1. China's Politburo meeting is penciled in for April 25, with local government debt refinancing expected to be the centerpiece fiscal item. Markets are treating this as a credible forward indicator of broader stimulus intent — if the meeting delivers, HK and China names get a catalyst.
+1. Microsoft AI capex discipline — Comments around controlling AI infrastructure spending spooked the AI trade broadly. MSFT guided sentiment on hyperscaler discipline rather than acceleration, weighing on NVDA, MU and the broader AI complex. Not a thesis break but a reminder that AI capex narratives are sensitive to wording.
 
-2. Micron's +8.48% day reinforces that AI infrastructure spending is not theoretical — memory bandwidth demand from hyperscalers is showing up in actual numbers. This is not a one-day pop; the fundamentals behind the trade are being validated repeatedly.
+2. China policy anxiety persists — BABA and broader China tech continue to trade on policy headline risk. No new concrete catalyst but positioning remains light. GDS holding up better given data center fundamentals but not immune to the sentiment tide.
+
+---
 
 ACTION BOARD
 
-• Opportunity: MU broke out above the $480 level on heavy volume — let it work. The AI memory thesis is earning its keep and the tape is confirming the story.
+• Opportunity: ETN and XLU showing internally driven strength — constructive relative performance. INTC bounce on value attribution worth watching for continuation if quality names get punished in the next wobble.
 
-• Risk: GDS pulled back -0.69% and INTC continues to stack lower. Both names carry geopolitical and structural discount that can widen fast on negative headlines. Do not average into either on red days.
+• Risk: MSFT's drop is the most telling signal — if AI capex discipline narrative spreads to other hyperscaler-adjacent names (NVDA, MU), the AI/growth bucket faces more pressure. TSLA continues to be a legacy drag without a clear thesis catalyst.
 
-• Research: ETN (Eaton, +1.02%) — industrial AI plays deserve a closer look. ETN is the quieter AI infrastructure beneficiary and deserves a fresh read on whether the thesis has caught up with the stock.
+• Research: BABA sitting at a critical support zone. Stimulus expectations are the known catalyst but timing is not. Need to assess whether current positioning and fund flows justify being early or if the policy discount makes sense at these levels. GDS and 02800 also need a China conviction refresh.
