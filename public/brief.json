@@ -1,25 +1,4 @@
 {
-  "date": "April 24, 2026",
-  "sections": [
-    {
-      "title": "OVERNIGHT MAP",
-      "content": "A quiet but telling session. US equities slightly soft \u2014 SPY down 0.4% \u2014 as Treasury yields held firm and earnings season waits in the wings. No major macro catalysts, just position-squaring ahead of data. Microsoft led tech lower after comments linked to AI capex spending discipline, pressuring the whole AI complex. Hong Kong fell 1.2% alongside mainland China weakness, with BABA a notable casualty on continued China policy anxiety. Defensives and cyclicals with pricing power held up better.\n\nKey levels: SPY 708.45 | ^HSI 26,163 | 10yr yield holding near recent highs\n\n---"
-    },
-    {
-      "title": "US CLOSE MOVERS",
-      "content": "Strongest:\n\u2022 ETN +2.57% \u2014 Eaton continues to outperform on industrial/electrical demand\n\u2022 XLU +2.72% \u2014 utilities benefiting from stable yield environment\n\u2022 INTC +2.31% \u2014 Intel bouncing on \uc0c1\ub300 value appeal\n\nWeakest:\n\u2022 MSFT -3.97% \u2014 most significant mover; AI capex discipline commentary rattled sentiment\n\u2022 TSLA -3.56% \u2014 legacy bag pressure continues, no specific catalyst but tape is hostile\n\u2022 BABA -3.46% \u2014 China policy overhang and risk-off into HK session\n\n---"
-    },
-    {
-      "title": "HK LIVE MOVERS",
-      "content": "From the 02800/HSI session:\n\nStrongest:\n\u2022 GDS +0.21% \u2014 modest GDS upside, data center tailwinds intact\n\u2022 1816.HK flat \u2014 CGN unchanged at HK$3.43\n\nWeakest:\n\u2022 02800 -1.12% \u2014 broad HK beta drag from China tech sentiment\n\u2022 BABA -3.46% \u2014 same China policy anxiety weighing on ADR/HK\n\n---"
-    },
-    {
-      "title": "MARKET NEWS",
-      "content": "1. Microsoft AI capex discipline \u2014 Comments around controlling AI infrastructure spending spooked the AI trade broadly. MSFT guided sentiment on hyperscaler discipline rather than acceleration, weighing on NVDA, MU and the broader AI complex. Not a thesis break but a reminder that AI capex narratives are sensitive to wording.\n\n2. China policy anxiety persists \u2014 BABA and broader China tech continue to trade on policy headline risk. No new concrete catalyst but positioning remains light. GDS holding up better given data center fundamentals but not immune to the sentiment tide.\n\n---"
-    },
-    {
-      "title": "ACTION BOARD",
-      "content": "\u2022 Opportunity: ETN and XLU showing internally driven strength \u2014 constructive relative performance. INTC bounce on value attribution worth watching for continuation if quality names get punished in the next wobble.\n\n\u2022 Risk: MSFT's drop is the most telling signal \u2014 if AI capex discipline narrative spreads to other hyperscaler-adjacent names (NVDA, MU), the AI/growth bucket faces more pressure. TSLA continues to be a legacy drag without a clear thesis catalyst.\n\n\u2022 Research: BABA sitting at a critical support zone. Stimulus expectations are the known catalyst but timing is not. Need to assess whether current positioning and fund flows justify being early or if the policy discount makes sense at these levels. GDS and 02800 also need a China conviction refresh."
-    }
-  ]
+  "date": "April 27, 2026",
+  "sections": []
 }

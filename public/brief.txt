@@ -1,51 +1,50 @@
-OVERNIGHT MAP
+**OVERNIGHT MAP**
 
-A quiet but telling session. US equities slightly soft — SPY down 0.4% — as Treasury yields held firm and earnings season waits in the wings. No major macro catalysts, just position-squaring ahead of data. Microsoft led tech lower after comments linked to AI capex spending discipline, pressuring the whole AI complex. Hong Kong fell 1.2% alongside mainland China weakness, with BABA a notable casualty on continued China policy anxiety. Defensives and cyclicals with pricing power held up better.
+Risk-on pulse overnight — Nasdaq futures held steady as the AI trade reasserted itself with Nvidia up 4.3% and Micron gaining 3.1%. Treasury yields crept higher, keeping rate-sensitive names in check. Intel's extraordinary +23.6% session stands out as the clear outlier, likely a short-covering event tied to analyst comments rather than a fundamental reappraisal. Asia followed cautiously: Hang Seng flat (+0.24%), USD/CNH holding near 7.27, and gold gold at $4,332 (+0.5%) ticking higher as some defensive flows persisted.
 
-Key levels: SPY 708.45 | ^HSI 26,163 | 10yr yield holding near recent highs
-
----
-
-US CLOSE MOVERS
-
-Strongest:
-• ETN +2.57% — Eaton continues to outperform on industrial/electrical demand
-• XLU +2.72% — utilities benefiting from stable yield environment
-• INTC +2.31% — Intel bouncing on 상대 value appeal
-
-Weakest:
-• MSFT -3.97% — most significant mover; AI capex discipline commentary rattled sentiment
-• TSLA -3.56% — legacy bag pressure continues, no specific catalyst but tape is hostile
-• BABA -3.46% — China policy overhang and risk-off into HK session
+Anchors: NVDA +4.32% | INTC +23.60% | BABA +3.13%
 
 ---
 
-HK LIVE MOVERS
+**US CLOSE MOVERS**
 
-From the 02800/HSI session:
+*Top 3*
+- NVDA +4.32% — AI infrastructure thesis remains intact; Broadcom also up on similar momentum
+- MU +3.11% — Memory/HBM demand narrative holding; Samsung's output cuts supporting pricing
+- MSFT +2.13% — Azure and Copilot narrative supportive; one of the cleaner AI monetization stories
 
-Strongest:
-• GDS +0.21% — modest GDS upside, data center tailwinds intact
-• 1816.HK flat — CGN unchanged at HK$3.43
-
-Weakest:
-• 02800 -1.12% — broad HK beta drag from China tech sentiment
-• BABA -3.46% — same China policy anxiety weighing on ADR/HK
-
----
-
-MARKET NEWS
-
-1. Microsoft AI capex discipline — Comments around controlling AI infrastructure spending spooked the AI trade broadly. MSFT guided sentiment on hyperscaler discipline rather than acceleration, weighing on NVDA, MU and the broader AI complex. Not a thesis break but a reminder that AI capex narratives are sensitive to wording.
-
-2. China policy anxiety persists — BABA and broader China tech continue to trade on policy headline risk. No new concrete catalyst but positioning remains light. GDS holding up better given data center fundamentals but not immune to the sentiment tide.
+*Bottom 3*
+- AAPL -0.87% — Slight headwind from tariff headlines; supply chain names broadly soft
+- DXYZ -0.20% — Thin volume, no new catalysts; stays in the speculative bucket
+- ETN -0.14% — Industrial automation name drifting; no specific news
 
 ---
 
-ACTION BOARD
+**HK LIVE MOVERS**
 
-• Opportunity: ETN and XLU showing internally driven strength — constructive relative performance. INTC bounce on value attribution worth watching for continuation if quality names get punished in the next wobble.
+*Top 3*
+- INTC (US) +23.60% — Extraordinary session; analyst comments likely triggered short covering; caution warranted on the sustainability of this move
+- BABA +3.13% — Alibaba gaining on continued stimulus speculation; JD.com and Baidu also up
+- GDS +4.23% — Data center REIT continuing its recent run; China tech sentiment improving
 
-• Risk: MSFT's drop is the most telling signal — if AI capex discipline narrative spreads to other hyperscaler-adjacent names (NVDA, MU), the AI/growth bucket faces more pressure. TSLA continues to be a legacy drag without a clear thesis catalyst.
+*Bottom 3*
+- 1816.HK (CGN) -1.17% — Nuclear utility pulling back modestly; no specific news
+- 2800.HK +0.23% — HK Tracker Fund flat; broad HK market in consolidation mode
+- ^HSI +0.24% — Hang Seng barely positive; H-shares and tech partially held back by financials
 
-• Research: BABA sitting at a critical support zone. Stimulus expectations are the known catalyst but timing is not. Need to assess whether current positioning and fund flows justify being early or if the policy discount makes sense at these levels. GDS and 02800 also need a China conviction refresh.
+---
+
+**MARKET NEWS**
+
+1. **Intel +23.6% on potential Qualcomm takeover speculation** — Reports surfaced that Qualcomm may be exploring an acquisition of Intel, reigniting M&A speculation. The move triggered aggressive short covering given Intel's heavy short interest. Bulls note potential strategic logic for a combined chip entity; skeptics point to regulatory hurdles and Intel's x86 licensing complications. Treat as a binary event trade, not a fundamental thesis re-rating.
+
+2. **Treasury yields pushing toward 4.7%** — 10-year yield trading near 4.68-4.70% range, putting pressure on growth/tech multiples. The move reflects stronger-than-expected US economic data and reduced cut expectations. Rate-sensitive sectors (utilities, REITs) holding up better than expected given the backdrop, suggesting defensive rotation is still in early innings.
+
+---
+
+**ACTION BOARD**
+
+- **Opportunity:** Intel's +23.6% move creates an opportunity to trim or exit the position if the Qualcomm rumor fades. Do not chase — wait for either confirmation or a fade back below $85. INTC was last at $82.54.
+- **Risk:** AAPL -0.87% reflects ongoing tariff/narrative risk. If Apple announces price increases to offset tariffs, demand destruction thesis kicks in. AAPL remains a position to monitor closely, not add.
+- **Research:** INTC takeover speculation raises a broader question: are there other deep value半导体 names (e.g., GDS HK, which is a data center play, not a legacy chip play) with M&A optionality? GDS at HK$45.08 (+4.23%) is running on China tech rerating, not M&A — keep separate.
+
