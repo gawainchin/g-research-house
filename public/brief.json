@@ -1,4 +1,25 @@
 {
-  "date": "April 29, 2026",
-  "sections": []
+  "date": "April 30, 2026",
+  "sections": [
+    {
+      "title": "OVERNIGHT MAP",
+      "content": "Risk-off carried through the overnight session as US tech softened ahead of Microsoft's earnings on April 29 and Nvidia's report due mid-week. The S&P 500 was essentially flat while Nasdaq names sold off moderately. The Hang Seng slipped ~1% with index support around 25,600 holding. Defensive assets \u2014 GLD, XLU \u2014 also gave back, consistent with a cautious-but-not-panic mood rather than broad liquidation.\n\n3 anchor numbers: S&P 500 flat, Nasdaq down ~0.8%, Hang Seng -0.95% at ~25,680."
+    },
+    {
+      "title": "US CLOSE MOVERS",
+      "content": "Strongest portfolio names:\n- INTC +12.10% \u2014 analyst upgrades (Evercore raised target 146%, Barclays upped to $65 from $45) and FPT AI factory partnership drove a rerating; positioning still early-stage after April's surge from $65 to $95\n- DXYZ +12.40% \u2014 SpaceX IPO rumors reignited interest in this closed-end private-tech proxy; 16.2% SpaceX exposure makes it the VCX trade du jour\n- MU +2.81% \u2014 HBM/AI memory demand narrative intact; outperforming the broader semis selloff\n\nWeakest portfolio names:\n- NVDA -1.84% \u2014 tariff anxiety + Nvidia earnings risk premium; report due Wednesday\n- MSFT -1.12% \u2014 tech selloff, ahead of earnings Thursday April 29\n- XLU -1.23% \u2014 defensives pulling back with modest risk-on undertone"
+    },
+    {
+      "title": "HK LIVE MOVERS",
+      "content": "Hong Kong session slightly softer across the board with no severe dislocations:\n- 2800.HK -0.99% \u2014 tracker fund in line with HSI at 25,680\n- CGN (1816.HK) -1.15% \u2014 small loss, in line with sector tone\n- GDS -0.65% \u2014 data center name holding relatively better than China internet peers"
+    },
+    {
+      "title": "MARKET NEWS",
+      "content": "1. Intel analyst upgrades cascade \u2014 Evercore ISI upgraded INTC to Buy with a 146% target hike to $95, citing AI momentum; Barclays lifted its price target to $65 from $45. The stock has now run from ~$65 to ~$95 in a month. Barclays note acknowledged \"lack of earnings power\" but sees path to improvement.\n\n2. SpaceX IPO rumor lifts DXYZ and related proxies \u2014 Reports that SpaceX confidentially filed for an IPO reignited interest in exchange-listed SpaceX proxies. DXYZ (16.2% SpaceX exposure) jumped 12.4% and Fundrise Innovation Fund (VCX) has surged on the same thesis."
+    },
+    {
+      "title": "ACTION BOARD",
+      "content": "Opportunity: Intel's analyst-driven rerating has momentum; if AI manufacturing partnerships continue to materialize, the stock's recent +50% run may have further to go before earnings normalize the conversation.\n\nRisk: MSFT and NVDA reporting this week \u2014 both are key portfolio weights and any miss or cautious guidance could rotate the broader AI trade. Tariff overhang adds uncertainty to both.\n\nResearch: Rebalance NET back to active watch \u2014 insider selling-driven weakness has left it at a more interesting entry, but the business thesis still needs refreshing before treating it as a fresh buy."
+    }
+  ]
 }
