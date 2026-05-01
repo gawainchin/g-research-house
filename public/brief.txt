@@ -1,38 +1,44 @@
 OVERNIGHT MAP
 
-Risk-off carried through the overnight session as US tech softened ahead of Microsoft's earnings on April 29 and Nvidia's report due mid-week. The S&P 500 was essentially flat while Nasdaq names sold off moderately. The Hang Seng slipped ~1% with index support around 25,600 holding. Defensive assets — GLD, XLU — also gave back, consistent with a cautious-but-not-panic mood rather than broad liquidation.
+US markets closed mixed to slightly positive on Friday, with SPY settling +0.99% at $718.66. The headline story was a sharp divergence within tech: AI-linked names MSFT and NVDA sold off hard — MSFT -3.93% and NVDA -4.63% — while Eaton (ETN) surged +5.41% to $433.01, a standout outperformer. Defensive and rate-sensitive names held in well: XLU +2.56%, GLD +1.50%, AAPL +0.44%. The spread between AI semiconductor losers and industrial electrification winners was the dominant intra-sector theme.
 
-3 anchor numbers: S&P 500 flat, Nasdaq down ~0.8%, Hang Seng -0.95% at ~25,680.
+Hong Kong equities extended their China stimulus rally, with the Hang Seng Index closing +1.68% at 26,111.84 — the highest since November. The advance was broad-based, led by BABA +1.11%, GDS +1.78%, CGN (1816.HK) +1.16%, and the 02800 tracker +1.00%. Market participants are repricing a Beijing policy pivot, with expectations for continued demand-side stimulus and housing market stabilization. Baidu's AI chip unit Kunlunxin filing for HK IPO added further tech-sector momentum.
+
+Two numbers anchor the overnight view: NVDA closing at $199.57 (down 4.6% in a single session) and the HSI closing at 26,111 (up 1.7%, extending a multi-week China stimulus uptrend).
 
 US CLOSE MOVERS
 
-Strongest portfolio names:
-- INTC +12.10% — analyst upgrades (Evercore raised target 146%, Barclays upped to $65 from $45) and FPT AI factory partnership drove a rerating; positioning still early-stage after April's surge from $65 to $95
-- DXYZ +12.40% — SpaceX IPO rumors reignited interest in this closed-end private-tech proxy; 16.2% SpaceX exposure makes it the VCX trade du jour
-- MU +2.81% — HBM/AI memory demand narrative intact; outperforming the broader semis selloff
+Strong:
+ETN +5.41% (433.01) — best performer in the portfolio. Data center and electrification demand narrative, recently cited 70% YoY data center order growth. Holding as industrial AI beneficiary.
+TSLA +2.37% (381.63) — continuing recent recovery, no new fundamental catalyst noted. Treat as sentiment squeeze, not thesis improvement.
+XLU +2.56% (46.85) — defensive utilities holding up well as rate sensitivity remains elevated.
 
-Weakest portfolio names:
-- NVDA -1.84% — tariff anxiety + Nvidia earnings risk premium; report due Wednesday
-- MSFT -1.12% — tech selloff, ahead of earnings Thursday April 29
-- XLU -1.23% — defensives pulling back with modest risk-on undertone
+Weak:
+NVDA -4.63% (199.57) — largest portfolio drag. AI capex concerns and sector rotation hitting semis. Do not confuse this with a thesis break, but do not add blindly here either.
+MSFT -3.93% (407.78) — significant drop. AI monetization skepticism and competitive pressures in Azure. Down ~30% from peak per recent coverage. Worth watching for whether this is sentiment or structural.
+NET -3.30% (204.97) — insider selling headline (CEO Matthew Prince sold ~51k shares per MarketBeat). Sentiment-driven, not a new fundamental negative, but NET stays in the monitor bucket per portfolio rules.
 
 HK LIVE MOVERS
 
-Hong Kong session slightly softer across the board with no severe dislocations:
-- 2800.HK -0.99% — tracker fund in line with HSI at 25,680
-- CGN (1816.HK) -1.15% — small loss, in line with sector tone
-- GDS -0.65% — data center name holding relatively better than China internet peers
+Strong:
+GDS +1.78% (42.28) — continuing the China tech rally. GDS as higher-beta expression of the BABA/China policy thesis. Keep sized appropriately.
+BABA +1.11% (131.88) — moderate gain in line with the broader HSI move. Stimulus narrative intact but not breaking out.
+1816.HK (CGN) +1.16% (3.48) — solid defensive contribution from the HK-listed utilities/energy position.
+2800.HK +1.00% (26.24) — tracking the Hang Seng at +1.68%. Broad HK/China beta, appropriate as a core tracker.
+
+Weak:
+No HK-listed names in the portfolio closed in negative territory. All positions held on the session.
 
 MARKET NEWS
 
-1. Intel analyst upgrades cascade — Evercore ISI upgraded INTC to Buy with a 146% target hike to $95, citing AI momentum; Barclays lifted its price target to $65 from $45. The stock has now run from ~$65 to ~$95 in a month. Barclays note acknowledged "lack of earnings power" but sees path to improvement.
+1. China stimulus expectations continue to anchor HK recovery. Investors are betting on a sustained Beijing policy pivot focused on demand-side stimulus and housing market stabilization. The HSI has gained significantly over recent weeks, with today's close marking the highest since November. China's official manufacturing PMI expanding for the first time in six months adds fundamental credibility to the rebound narrative.
 
-2. SpaceX IPO rumor lifts DXYZ and related proxies — Reports that SpaceX confidentially filed for an IPO reignited interest in exchange-listed SpaceX proxies. DXYZ (16.2% SpaceX exposure) jumped 12.4% and Fundrise Innovation Fund (VCX) has surged on the same thesis.
+2. MSFT and NVDA sold off hard amid AI sector rotation. MSFT is now approximately 30% off its all-time peak, with recent coverage framing the decline as the worst for the stock since the DeepSeek shock. NVDA's drop appears linked to broader AI capex concerns and rotation away from crowded semiconductor positions. These are sentiment-driven moves in quality names rather than new fundamental data, but the moves are real and the divergence from ETN's strength is notable.
 
 ACTION BOARD
 
-Opportunity: Intel's analyst-driven rerating has momentum; if AI manufacturing partnerships continue to materialize, the stock's recent +50% run may have further to go before earnings normalize the conversation.
+Opportunity: ETN broke out to new highs on data center electrification demand. Let it run — the $400+ level is no longer a target but a base. Do not add on a single-session surge, but keep it as a core AI infrastructure beneficiary. BABA and HK exposure has momentum but avoid overlayering given China structural risks remain.
 
-Risk: MSFT and NVDA reporting this week — both are key portfolio weights and any miss or cautious guidance could rotate the broader AI trade. Tariff overhang adds uncertainty to both.
+Risk: NVDA and MSFT dropping together signals a real rotation out of expensive AI names. If this deepens, MU and NET will also come under pressure. Do not average falling AI positions blindly — the portfolio has other cleaner opportunities. TSLA rebounding on no new news is a reminder that legacy speculative bag can accidentally become oversized on a bounce; trim if it reapproaches prior weight.
 
-Research: Rebalance NET back to active watch — insider selling-driven weakness has left it at a more interesting entry, but the business thesis still needs refreshing before treating it as a fresh buy.
+Research: MSFT at -3.93% and -30% from peak warrants a fresh thesis check. Recent Seeking Alpha analysis suggests the selloff may be overdone relative to the actual $625B backlog and AI monetization progress. Understand whether this is a sentiment-driven opportunity in a quality compounder or a structural slowdown signal before treating it as a buy. Also worth revisiting NET's insider selling in context — 10b5-1 plan execution, not conviction sale — which keeps it in monitor rather than upgrade territory.
