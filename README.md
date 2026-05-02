@@ -1,15 +1,14 @@
 # G Research House
 
-Private research site for curated **financial research** and **AI research**.
+Public research site for curated **financial research** and **AI research**.
 
-This is a static JSON-first Next.js app protected by a lightweight shared-password gate.
+This is a static JSON-first Next.js app.
 Obsidian is the research source, but published content is manually curated into JSON for quality control.
 
 ## Stack
 
 - Next.js App Router
 - Static JSON content model
-- Shared-password auth gate
 - Manual curation from Obsidian into publishable research pages
 
 ## Project structure
@@ -22,23 +21,6 @@ Obsidian is the research source, but published content is manually curated into 
 - `app/ai-research` — AI section
 - `app/research/[slug]` — article detail pages
 - `lib/research.ts` — typed data access helpers
-
-## Lightweight auth gate
-
-Set these environment variables locally or in Vercel:
-
-```bash
-BRIEF_GATE_PASSWORD=your-shared-password
-BRIEF_GATE_COOKIE_SECRET=a-long-random-secret
-```
-
-Protected routes:
-- `/`
-- `/financial-research`
-- `/ai-research`
-- `/research/:slug`
-
-Users sign in at `/login`. Successful login sets an HTTP-only cookie. `/logout` clears it.
 
 ## Local development
 
@@ -53,7 +35,7 @@ npm run dev
 ```bash
 npm test
 npm run validate:data
-BRIEF_GATE_PASSWORD=testpass BRIEF_GATE_COOKIE_SECRET=testsecret npm run build
+npm run build
 ```
 
 ## Deployment
