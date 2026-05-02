@@ -1,140 +1,61 @@
-'use client'
-
-import { useEffect, useState } from 'react'
-
-interface Section {
-  title: string
-  content: string
-}
-
-interface Brief {
-  date: string
-  sections: Section[]
-}
-
-function Section({ title, content }: Section) {
-  return (
-    <section style={{ marginBottom: '2rem' }}>
-      <div style={{
-        fontSize: '0.75rem',
-        fontWeight: 600,
-        letterSpacing: '0.08em',
-        textTransform: 'uppercase',
-        color: '#888',
-        marginBottom: '0.5rem',
-        fontFamily: 'Helvetica Neue, sans-serif'
-      }}>
-        {title}
-      </div>
-      <div style={{
-        fontSize: '1rem',
-        lineHeight: 1.7,
-        color: '#222',
-        whiteSpace: 'pre-wrap',
-        fontFamily: 'Georgia, serif'
-      }}>
-        {content}
-      </div>
-    </section>
-  )
-}
-
-function LoadingState() {
-  return (
-    <div style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      minHeight: '60vh',
-      color: '#888',
-      fontFamily: 'Helvetica Neue, sans-serif',
-      fontSize: '0.875rem'
-    }}>
-      Loading...
-    </div>
-  )
-}
-
-function ErrorState() {
-  return (
-    <div style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      minHeight: '60vh',
-      color: '#c00',
-      fontFamily: 'Georgia, serif'
-    }}>
-      <div style={{ textAlign: 'center' }}>
-        <div style={{ marginBottom: '0.5rem' }}>No brief available yet.</div>
-        <div style={{ fontSize: '0.875rem', color: '#888' }}>
-          Run the morning cron to generate one.
-        </div>
-      </div>
-    </div>
-  )
-}
+import Link from 'next/link'
+import NoteCard from '../components/note-card'
+import { getFeaturedNotes, getSchemaRules, getSiteData } from '../lib/research'
 
 export default function Home() {
-  const [brief, setBrief] = useState<Brief | null>(null)
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    fetch('/brief.json')
-      .then(r => {
-        if (!r.ok) throw new Error('not found')
-        return r.json()
-      })
-      .then(data => {
-        setBrief(data)
-        setLoading(false)
-      })
-      .catch(() => {
-        setLoading(false)
-      })
-  }, [])
-
-  if (loading) return <LoadingState />
-  if (!brief) return <ErrorState />
+  const site = getSiteData()
+  const featured = getFeaturedNotes()
+  const rules = getSchemaRules()
 
   return (
-    <main style={{ maxWidth: 680, margin: '0 auto', padding: '3rem 1.5rem' }}>
-      <header style={{ marginBottom: '2.5rem', borderBottom: '1px solid #e5e5e5', paddingBottom: '1.5rem' }}>
-        <div style={{
-          fontSize: '0.7rem',
-          letterSpacing: '0.1em',
-          textTransform: 'uppercase',
-          color: '#aaa',
-          marginBottom: '0.35rem',
-          fontFamily: 'Helvetica Neue, sans-serif'
-        }}>
-          Market Briefing
+    <main style={{ maxWidth: 920, margin: '0 auto', padding: '3.5rem 1.5rem 4rem' }}>
+      <header style={{ marginBottom: '3rem', borderBottom: '1px solid #e6e0d6', paddingBottom: '1.5rem' }}>
+        <div style={{ fontSize: '0.72rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8a8278', fontFamily: 'Helvetica Neue, sans-serif', marginBottom: '0.55rem' }}>
+          Private research surface
         </div>
-        <h1 style={{
-          fontSize: '1.5rem',
-          fontWeight: 400,
-          color: '#111',
-          margin: 0,
-          fontFamily: 'Georgia, serif'
-        }}>
-          {brief.date}
-        </h1>
+        <h1 style={{ margin: 0, fontSize: '2.5rem', fontWeight: 400, color: '#141414' }}>{site.title}</h1>
+        <p style={{ margin: '0.8rem 0 0 0', fontSize: '1.15rem', color: '#403a34', lineHeight: 1.7, maxWidth: 760 }}>{site.tagline}</p>
+        <p style={{ margin: '0.75rem 0 0 0', color: '#5a544d', lineHeight: 1.75, maxWidth: 760 }}>{site.intro}</p>
       </header>
 
-      {brief.sections.map((section, i) => (
-        <Section key={i} title={section.title} content={section.content} />
-      ))}
+      <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1rem', marginBottom: '3rem' }}>
+        {site.sections.map((section) => (
+          <Link
+            key={section.slug}
+            href={`/${section.slug}`}
+            style={{
+              border: '1px solid #dfd8cd',
+              borderRadius: 18,
+              padding: '1.25rem',
+              textDecoration: 'none',
+              color: 'inherit',
+              background: '#fffdfa',
+            }}
+          >
+            <div style={{ fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#8a8278', fontFamily: 'Helvetica Neue, sans-serif', marginBottom: '0.5rem' }}>
+              Section
+            </div>
+            <div style={{ fontSize: '1.35rem', marginBottom: '0.45rem', color: '#171717' }}>{section.title}</div>
+            <div style={{ color: '#544e47', lineHeight: 1.65 }}>{section.description}</div>
+          </Link>
+        ))}
+      </section>
 
-      <footer style={{
-        marginTop: '3rem',
-        paddingTop: '1rem',
-        borderTop: '1px solid #e5e5e5',
-        fontSize: '0.75rem',
-        color: '#bbb',
-        fontFamily: 'Helvetica Neue, sans-serif'
-      }}>
-        Auto-generated · Not financial advice
-      </footer>
+      <section style={{ marginBottom: '3rem' }}>
+        <div style={{ fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#8a8278', fontFamily: 'Helvetica Neue, sans-serif', marginBottom: '0.85rem' }}>
+          Editorial rules
+        </div>
+        <ul style={{ margin: 0, paddingLeft: '1.2rem', color: '#49433d', lineHeight: 1.8 }}>
+          {rules.map((rule) => <li key={rule}>{rule}</li>)}
+        </ul>
+      </section>
+
+      <section>
+        <div style={{ fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#8a8278', fontFamily: 'Helvetica Neue, sans-serif', marginBottom: '0.85rem' }}>
+          Featured notes
+        </div>
+        {featured.map((note) => <NoteCard key={note.slug} note={note} />)}
+      </section>
     </main>
   )
 }

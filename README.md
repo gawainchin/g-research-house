@@ -15,8 +15,26 @@ vercel --prod   # subsequent production deploys
 ## How it works
 
 1. The brief is generated daily by a cron job (8am HK Mon–Fri)
-2. The brief text is wrapped into `public/brief.html` using `scripts/generate_brief_html.py`
-3. The Next.js page reads `/brief.html` client-side and renders it
+2. The latest brief is written to `public/brief.txt` and `public/brief.json`
+3. The Next.js app reads `/brief.json` client-side and renders it
+4. A lightweight shared-password gate protects `/` and the raw brief assets via middleware
+
+## Lightweight auth gate
+
+Set these environment variables locally or in Vercel:
+
+```bash
+BRIEF_GATE_PASSWORD=your-shared-password
+BRIEF_GATE_COOKIE_SECRET=a-long-random-secret
+```
+
+Protected routes:
+- `/`
+- `/brief.json`
+- `/brief.txt`
+- `/brief.html`
+
+Users sign in at `/login`. Successful login sets an HTTP-only cookie. `/logout` clears it.
 
 ## Updating the brief
 

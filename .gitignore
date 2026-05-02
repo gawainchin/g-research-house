@@ -18,6 +18,13 @@ Thumbs.db
 *.log
 npm-debug.log*
 
+# Python cache
+__pycache__/
+*.pyc
+
+# Local planning / agent artifacts
+.hermes/
+
 # Editor
 .vscode/
 .idea/

@@ -1,0 +1,52 @@
+{
+  "notes": [
+    {
+      "slug": "ai-power-semis-wolfspeed-onsemi-infineon",
+      "title": "AI Power Semis — Wolfspeed vs onsemi vs Infineon",
+      "section": "financial-research",
+      "summary": "Three ways to express the AI power theme, but with very different quality, risk, and valuation profiles.",
+      "date": "2026-05-02",
+      "tags": ["investing", "semiconductors", "ai", "power", "valuation"],
+      "readingTime": 6,
+      "format": "company-compare",
+      "perspective": "investor",
+      "relatedSlugs": ["china-ai-infrastructure-hidden-power-play"]
+    },
+    {
+      "slug": "china-ai-infrastructure-hidden-power-play",
+      "title": "China AI Infrastructure — The Hidden Power Play",
+      "section": "financial-research",
+      "summary": "The better AI expression may sit in power, grid, and equipment layers rather than platform headlines.",
+      "date": "2026-04-09",
+      "tags": ["investing", "china", "ai", "infrastructure", "energy"],
+      "readingTime": 8,
+      "format": "thesis",
+      "perspective": "investor",
+      "relatedSlugs": ["ai-power-semis-wolfspeed-onsemi-infineon", "ai-power-delivery-bottleneck"]
+    },
+    {
+      "slug": "agentic-inference-memory-io-pressure-indicator",
+      "title": "Agentic Inference Memory / I-O Pressure Indicator",
+      "section": "ai-research",
+      "summary": "A technical indicator note tracking whether agentic and long-context systems are turning memory, cache, and I/O into first-class bottlenecks.",
+      "date": "2026-04-20",
+      "tags": ["ai", "inference", "memory", "io", "agents"],
+      "readingTime": 5,
+      "format": "indicator",
+      "perspective": "operator",
+      "relatedSlugs": ["ai-power-delivery-bottleneck"]
+    },
+    {
+      "slug": "ai-power-delivery-bottleneck",
+      "title": "AI Power Delivery Bottleneck",
+      "section": "ai-research",
+      "summary": "A systems note on why energized megawatts, electrical balance-of-plant, and commissioning can gate AI deployment before more GPUs do.",
+      "date": "2026-04-17",
+      "tags": ["ai", "power", "infrastructure", "deployment"],
+      "readingTime": 4,
+      "format": "stack-map",
+      "perspective": "operator",
+      "relatedSlugs": ["agentic-inference-memory-io-pressure-indicator", "china-ai-infrastructure-hidden-power-play"]
+    }
+  ]
+}

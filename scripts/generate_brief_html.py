@@ -2,6 +2,19 @@
 """
 Wraps morning brief text into self-contained HTML.
 Run after the brief is generated: generate_brief_html.py --input brief.txt --output public/brief.html
+
+INPUT FORMAT CONTRACT:
+  Section headers are plain uppercase lines (no markdown):
+    OVERNIGHT MAP, US CLOSE MOVERS, HK LIVE MOVERS, MARKET NEWS, ACTION BOARD
+  NOT **bold markdown** or any other format.
+
+OUTPUT FORMAT CONTRACT:
+  Section titles are <h2> tags (matching the React parser regex in page.tsx):
+    /<(?:h2|strong)[^>]*>(.*?)<\/(?:h2|strong)>/gi
+  If you change the output tag, update app/page.tsx parser to match.
+
+VERIFICATION:
+  After running, confirm: grep -c "<section>" output.html  # should be 5
 """
 import argparse
 import sys

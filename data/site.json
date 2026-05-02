@@ -1,0 +1,22 @@
+{
+  "title": "G Research House",
+  "tagline": "PM-style financial research and applied AI systems research.",
+  "intro": "A private research surface built for two distinct lenses: finance asks where the money, risk, and rerating sit; AI asks where the technical bottlenecks, workflows, and stack shifts are actually happening.",
+  "featuredSlugs": [
+    "ai-power-semis-wolfspeed-onsemi-infineon",
+    "agentic-inference-memory-io-pressure-indicator",
+    "china-ai-infrastructure-hidden-power-play"
+  ],
+  "sections": [
+    {
+      "slug": "financial-research",
+      "title": "Financial Research",
+      "description": "Investment theses, sector maps, company compares, valuation sanity checks, and positioning notes."
+    },
+    {
+      "slug": "ai-research",
+      "title": "AI Research",
+      "description": "System bottlenecks, model/tooling shifts, agent workflows, and applied infrastructure research without forcing every note into a trade."
+    }
+  ]
+}

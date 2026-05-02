@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "sections": [
+    {
+      "slug": "financial-research",
+      "title": "Financial Research",
+      "primaryQuestion": "What is mispriced, why, and what would change the view?",
+      "defaultFormats": ["thesis", "company-compare", "valuation-check", "macro-map"]
+    },
+    {
+      "slug": "ai-research",
+      "title": "AI Research",
+      "primaryQuestion": "What is changing in the AI stack, where is the bottleneck, and what is actually real?",
+      "defaultFormats": ["indicator", "workflow", "stack-map", "infrastructure-note"]
+    }
+  ],
+  "articleShape": {
+    "required": ["slug", "title", "section", "summary", "date", "tags", "readingTime", "format", "perspective", "content"],
+    "contentBlockTypes": ["paragraph", "heading", "bullets", "numbered-list", "quote"]
+  },
+  "rules": [
+    "Financial research should center on exposure, valuation, risk budget, rerating path, and disconfirming evidence.",
+    "AI research should center on technical reality, workflow changes, bottlenecks, and stack implications even when there is no direct trade attached.",
+    "The same note should not appear in both sections in v1. Pick the dominant lens and tag the overlap instead.",
+    "If a note is too unfinished to be manually converted into JSON, it is not ready for publication."
+  ]
+}

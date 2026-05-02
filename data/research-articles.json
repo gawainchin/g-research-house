@@ -1,0 +1,190 @@
+{
+  "articles": [
+    {
+      "slug": "ai-power-semis-wolfspeed-onsemi-infineon",
+      "title": "AI Power Semis — Wolfspeed vs onsemi vs Infineon",
+      "section": "financial-research",
+      "summary": "Three ways to express the AI power theme, but with very different quality, risk, and valuation profiles.",
+      "date": "2026-05-02",
+      "tags": ["investing", "semiconductors", "ai", "power", "valuation"],
+      "readingTime": 6,
+      "format": "company-compare",
+      "perspective": "investor",
+      "relatedSlugs": ["china-ai-infrastructure-hidden-power-play"],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "If the question is how to express the AI power theme through semiconductors, these three names are not interchangeable."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Infineon is the best quality-adjusted expression.",
+            "onsemi is the best U.S.-listed real-business expression.",
+            "Wolfspeed is the highest-torque and highest-risk expression."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "What matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "The key split is not just who has silicon carbide. It is who has real AI-power exposure, who can actually monetize it, and who still needs a balance-sheet miracle before the thesis deserves institutional size."
+        },
+        {
+          "type": "heading",
+          "text": "Portfolio view"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Infineon fits best as a durable core expression.",
+            "onsemi is the cleaner U.S. listed compromise between exposure and business quality.",
+            "Wolfspeed is a speculative turnaround trade, not a clean compounder."
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Cheap distressed optionality is not the same thing as cheap quality."
+        }
+      ]
+    },
+    {
+      "slug": "china-ai-infrastructure-hidden-power-play",
+      "title": "China AI Infrastructure — The Hidden Power Play",
+      "section": "financial-research",
+      "summary": "The better AI expression may sit in power, grid, and equipment layers rather than platform headlines.",
+      "date": "2026-04-09",
+      "tags": ["investing", "china", "ai", "infrastructure", "energy"],
+      "readingTime": 8,
+      "format": "thesis",
+      "perspective": "investor",
+      "relatedSlugs": ["ai-power-semis-wolfspeed-onsemi-infineon", "ai-power-delivery-bottleneck"],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "China's AI buildout is not only a software or GPU story. It is also a power-demand story, and the market still underprices the equipment and generation layers that make that buildout physically possible."
+        },
+        {
+          "type": "heading",
+          "text": "The chain"
+        },
+        {
+          "type": "paragraph",
+          "text": "LLM deployment growth drives data-center load, which drives electricity demand, which then pushes value toward generation assets, power equipment, and grid-enabling suppliers."
+        },
+        {
+          "type": "heading",
+          "text": "What the investor should care about"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Visible backlog beats vague AI narrative.",
+            "Dispatchable power and equipment order flow matter more than headline model launches.",
+            "The best setups are where AI demand upgrades an already investable business, not where AI is the only story holding up the multiple."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Practical read"
+        },
+        {
+          "type": "paragraph",
+          "text": "This lens naturally pushes attention toward names tied to energized power, nuclear buildout, backup generation, and electrical equipment — not just cloud or application winners."
+        }
+      ]
+    },
+    {
+      "slug": "agentic-inference-memory-io-pressure-indicator",
+      "title": "Agentic Inference Memory / I-O Pressure Indicator",
+      "section": "ai-research",
+      "summary": "A technical indicator note tracking whether agentic and long-context systems are turning memory, cache, and I/O into first-class bottlenecks.",
+      "date": "2026-04-20",
+      "tags": ["ai", "inference", "memory", "io", "agents"],
+      "readingTime": 5,
+      "format": "indicator",
+      "perspective": "operator",
+      "relatedSlugs": ["ai-power-delivery-bottleneck"],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This is not an investing note first. It is a stack-reality note. The question is whether production AI is evolving from a pure compute problem into a memory-, cache-, and I/O-constrained systems problem."
+        },
+        {
+          "type": "heading",
+          "text": "Chain tested"
+        },
+        {
+          "type": "paragraph",
+          "text": "Agentic workflows and long-context inference rise, persistent state and retrieval pressure rise, then the bottleneck shifts toward memory hierarchy and data movement rather than raw model compute alone."
+        },
+        {
+          "type": "heading",
+          "text": "Why this belongs in AI research"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "It asks what the system is doing, not what stock rerates.",
+            "It tracks technical evidence like KV-cache pressure, tiered memory, and DPU-attached context storage.",
+            "It helps distinguish real production pain from conference-slide storytelling."
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "When vendors stop describing architecture and start shipping products to solve a named bottleneck, the bottleneck is getting real."
+        }
+      ]
+    },
+    {
+      "slug": "ai-power-delivery-bottleneck",
+      "title": "AI Power Delivery Bottleneck",
+      "section": "ai-research",
+      "summary": "A systems note on why energized megawatts, electrical balance-of-plant, and commissioning can gate AI deployment before more GPUs do.",
+      "date": "2026-04-17",
+      "tags": ["ai", "power", "infrastructure", "deployment"],
+      "readingTime": 4,
+      "format": "stack-map",
+      "perspective": "operator",
+      "relatedSlugs": ["agentic-inference-memory-io-pressure-indicator", "china-ai-infrastructure-hidden-power-play"],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The market loves the phrase 'AI data centers' but often skips the ugly physical question: can the site actually be energized on time?"
+        },
+        {
+          "type": "heading",
+          "text": "Bottleneck layer"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "utility interconnection queues",
+            "substation buildouts",
+            "transformers and switchgear",
+            "electrical balance-of-plant",
+            "commissioning and energization"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Why this is AI research rather than finance first"
+        },
+        {
+          "type": "paragraph",
+          "text": "The core question is deployment reality: where does the physical stack jam when rack density and site load rise? The investment angle comes later. The note starts with system constraints."
+        },
+        {
+          "type": "heading",
+          "text": "Research use"
+        },
+        {
+          "type": "paragraph",
+          "text": "This note should inform later finance work, but it should not be reduced to a stock screen. First map the bottleneck. Then decide who monetizes it."
+        }
+      ]
+    }
+  ]
+}
