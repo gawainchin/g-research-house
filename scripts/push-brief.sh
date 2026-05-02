@@ -4,7 +4,7 @@
 
 set -e
 
-REPO_DIR="$HOME/Projects/g-morning-brief"
+REPO_DIR="$HOME/Projects/g-research-house"
 TODAY=$(date +"%B %d, %Y")
 BRANCH=$(git -C "$REPO_DIR" rev-parse --abbrev-ref HEAD)
 
