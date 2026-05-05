@@ -5,12 +5,40 @@ import articlesData from '../data/research-articles.json'
 
 export type ResearchSectionSlug = 'financial-research' | 'ai-research'
 export type ResearchPerspective = 'investor' | 'operator'
-export type ContentBlockType = 'paragraph' | 'heading' | 'bullets' | 'numbered-list' | 'quote'
+export type ContentBlockType =
+  | 'paragraph'
+  | 'heading'
+  | 'bullets'
+  | 'numbered-list'
+  | 'quote'
+  | 'thesis-card'
+  | 'key-takeaways'
+  | 'callout'
+  | 'comparison-table'
+  | 'flowchart'
+  | 'verdict'
+  | 'scenario-ladder'
+  | 'metric-strip'
 
 export interface ContentBlock {
   type: ContentBlockType
   text?: string
   items?: string[]
+  // thesis-card
+  title?: string
+  // comparison-table
+  columns?: string[]
+  rows?: string[][]
+  // flowchart
+  steps?: { label: string; note?: string }[]
+  // key-takeaways / verdict
+  label?: string
+  // metric-strip
+  metrics?: { label: string; value: string }[]
+  // scenario-ladder
+  scenarios?: { label: string; text: string }[]
+  // callout
+  variant?: 'info' | 'warning' | 'insight' | 'risk'
 }
 
 export interface ResearchNoteSummary {

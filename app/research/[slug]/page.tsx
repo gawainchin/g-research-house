@@ -2,54 +2,273 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import ArticleBlock from '../../../components/article-block'
 import { formatDisplayDate, getAllNotes, getArticleBySlug, getRelatedNotes } from '../../../lib/research'
+import type { ContentBlock } from '../../../lib/research'
 
-export function generateStaticParams() {
-  return getAllNotes().map((note) => ({ slug: note.slug }))
+// ── Section accent colors ────────────────────────────────────────────────────
+const SECTION_STYLE = {
+  'ai-research': {
+    accent: '#4a5568',
+    accentLight: '#f7f8fa',
+    accentBorder: '#e2e5ea',
+    chipBg: '#e8eaf0',
+    chipText: '#3d4560',
+  },
+  'financial-research': {
+    accent: '#3d6b5e',
+    accentLight: '#f4f9f7',
+    accentBorder: '#c8ded6',
+    chipBg: '#e4f0ec',
+    chipText: '#1e4d3a',
+  },
+} as const
+
+type SectionSlug = keyof typeof SECTION_STYLE
+
+function isSectionSlug(s: string): s is SectionSlug {
+  return s in SECTION_STYLE
 }
 
+// ── Format icon map ──────────────────────────────────────────────────────────
+const FORMAT_ICONS: Record<string, string> = {
+  'workflow': '⚙',
+  'thesis': '◎',
+  'company-compare': '◈',
+  'indicator': '◉',
+  'sector-map': '▣',
+  'default': '▤',
+}
+
+function getFormatIcon(format: string) {
+  return FORMAT_ICONS[format] ?? FORMAT_ICONS['default']
+}
+
+// ── Article header scaffolding ───────────────────────────────────────────────
+function ArticleHeader({ article }: {
+  article: ReturnType<typeof getArticleBySlug> & { content: ContentBlock[] }
+}) {
+  const sectionSlug = article.section
+  const style = isSectionSlug(sectionSlug) ? SECTION_STYLE[sectionSlug] : SECTION_STYLE['ai-research']
+
+  // Pull out leading special blocks for visual treatment
+  const thesisBlock = article.content.find(b => b.type === 'thesis-card')
+  const keyTakeawaysBlock = article.content.find(b => b.type === 'key-takeaways')
+
+  return (
+    <>
+      {/* ── Back nav + format badge strip ─────────────────────── */}
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginBottom: '1rem',
+      }}>
+        <Link
+          href={`/${article.section}`}
+          style={{
+            color: '#73695f',
+            textDecoration: 'none',
+            fontFamily: 'Helvetica Neue, sans-serif',
+            fontSize: '0.9rem',
+          }}
+        >
+          ← {article.section === 'financial-research' ? 'Financial Research' : 'AI Research'}
+        </Link>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.4rem',
+          padding: '0.3rem 0.65rem',
+          background: style.chipBg,
+          borderRadius: 20,
+          fontSize: '0.72rem',
+          color: style.chipText,
+          fontFamily: 'Helvetica Neue, sans-serif',
+          fontWeight: 500,
+          letterSpacing: '0.02em',
+        }}>
+          <span>{getFormatIcon(article.format)}</span>
+          <span style={{ textTransform: 'capitalize' }}>{article.format.replace('-', ' ')}</span>
+        </div>
+      </div>
+
+      {/* ── Section accent bar ─────────────────────────────────── */}
+      <div style={{
+        height: 3,
+        background: `linear-gradient(to right, ${style.accent}, ${style.accent}40)`,
+        borderRadius: 2,
+        marginBottom: '1.75rem',
+      }} />
+
+      {/* ── Title block ─────────────────────────────────────────── */}
+      <header style={{ margin: '0 0 2rem' }}>
+        <div style={{
+          display: 'flex',
+          gap: '0.5rem',
+          marginBottom: '0.85rem',
+          alignItems: 'center',
+        }}>
+          <span style={{
+            fontSize: '0.68rem',
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            color: '#8a8278',
+            fontFamily: 'Helvetica Neue, sans-serif',
+          }}>
+            {article.perspective}
+          </span>
+          <span style={{ color: '#d0c8bc', fontSize: '0.7rem' }}>·</span>
+          <span style={{
+            fontSize: '0.68rem',
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            color: '#8a8278',
+            fontFamily: 'Helvetica Neue, sans-serif',
+          }}>
+            {article.readingTime} min read
+          </span>
+          <span style={{ color: '#d0c8bc', fontSize: '0.7rem' }}>·</span>
+          <span style={{
+            fontSize: '0.68rem',
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            color: '#8a8278',
+            fontFamily: 'Helvetica Neue, sans-serif',
+          }}>
+            {formatDisplayDate(article.date)}
+          </span>
+        </div>
+
+        <h1 style={{
+          margin: '0 0 0.9rem',
+          fontSize: '2.3rem',
+          fontWeight: 400,
+          color: '#151515',
+          lineHeight: 1.25,
+          fontFamily: 'Georgia, serif',
+        }}>
+          {article.title}
+        </h1>
+
+        <p style={{
+          margin: 0,
+          color: '#48423b',
+          lineHeight: 1.75,
+          fontSize: '1.1rem',
+          fontFamily: 'Helvetica Neue, sans-serif',
+        }}>
+          {article.summary}
+        </p>
+      </header>
+
+      {/* ── Thesis card (pulled to top) ─────────────────────────── */}
+      {thesisBlock && (
+        <div style={{ marginBottom: '1.75rem' }}>
+          <ArticleBlock block={thesisBlock} section={sectionSlug} />
+        </div>
+      )}
+
+      {/* ── Key takeaways (pulled to top) ──────────────────────── */}
+      {keyTakeawaysBlock && (
+        <div style={{ marginBottom: '1.75rem' }}>
+          <ArticleBlock block={keyTakeawaysBlock} section={sectionSlug} />
+        </div>
+      )}
+    </>
+  )
+}
+
+// ── Article footer with verdict ─────────────────────────────────────────────
+function ArticleFooter({ article }: {
+  article: ReturnType<typeof getArticleBySlug> & { content: ContentBlock[] }
+}) {
+  const verdictBlock = article.content.find(b => b.type === 'verdict')
+  const related = getRelatedNotes(article.relatedSlugs)
+
+  return (
+    <>
+      {/* ── Verdict (pulled to bottom) ──────────────────────────── */}
+      {verdictBlock && (
+        <div style={{ marginTop: '2.5rem' }}>
+          <ArticleBlock block={verdictBlock} section={article.section} />
+        </div>
+      )}
+
+      {/* ── Related notes ───────────────────────────────────────── */}
+      <footer style={{ marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid #e6e0d6' }}>
+        <div style={{
+          fontSize: '0.68rem',
+          letterSpacing: '0.08em',
+          textTransform: 'uppercase',
+          color: '#8a8278',
+          fontFamily: 'Helvetica Neue, sans-serif',
+          marginBottom: '0.75rem',
+        }}>
+          Related notes
+        </div>
+        <div style={{ display: 'grid', gap: '0.85rem' }}>
+          {related.map((note) => (
+            <Link
+              key={note.slug}
+              href={`/research/${note.slug}`}
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              <div style={{
+                padding: '0.85rem 1rem',
+                background: '#faf8f5',
+                border: '1px solid #ede8df',
+                borderRadius: '2px',
+                transition: 'border-color 0.15s',
+              }}>
+                <div style={{
+                  fontSize: '1.05rem',
+                  color: '#181818',
+                  marginBottom: '0.2rem',
+                  fontFamily: 'Helvetica Neue, sans-serif',
+                }}>
+                  {note.title}
+                </div>
+                <div style={{
+                  color: '#5a544d',
+                  lineHeight: 1.6,
+                  fontSize: '0.88rem',
+                  fontFamily: 'Helvetica Neue, sans-serif',
+                }}>
+                  {note.summary}
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </footer>
+    </>
+  )
+}
+
+// ── Page ─────────────────────────────────────────────────────────────────────
 export default async function ResearchArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const article = getArticleBySlug(slug)
   if (!article) notFound()
 
-  const related = getRelatedNotes(article.relatedSlugs)
-  const sectionHref = `/${article.section}`
-  const sectionLabel = article.section === 'financial-research' ? 'Financial Research' : 'AI Research'
+  const sectionSlug = article.section
+  const sectionStyle = isSectionSlug(sectionSlug) ? SECTION_STYLE[sectionSlug] : SECTION_STYLE['ai-research']
+
+  // Content blocks with thesis/key-takeaways/verdict filtered out (rendered separately)
+  const renderedBlocks = article.content.filter(
+    b => !['thesis-card', 'key-takeaways', 'verdict'].includes(b.type)
+  )
 
   return (
     <main style={{ maxWidth: 780, margin: '0 auto', padding: '3.5rem 1.5rem 4rem' }}>
-      <Link href={sectionHref} style={{ color: '#73695f', textDecoration: 'none', fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.9rem' }}>
-        ← Back to {sectionLabel}
-      </Link>
-
-      <header style={{ margin: '1.5rem 0 2rem', borderBottom: '1px solid #e6e0d6', paddingBottom: '1.25rem' }}>
-        <div style={{ fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#8a8278', fontFamily: 'Helvetica Neue, sans-serif', marginBottom: '0.65rem' }}>
-          {sectionLabel} · {article.perspective} · {article.format}
-        </div>
-        <h1 style={{ margin: 0, fontSize: '2.3rem', fontWeight: 400, color: '#151515' }}>{article.title}</h1>
-        <p style={{ margin: '0.85rem 0 0 0', color: '#48423b', lineHeight: 1.75, fontSize: '1.08rem' }}>{article.summary}</p>
-        <div style={{ marginTop: '1rem', color: '#7a7166', fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.88rem' }}>
-          {formatDisplayDate(article.date)} · {article.readingTime} min read
-        </div>
-      </header>
+      <ArticleHeader article={{ ...article, content: article.content } as ReturnType<typeof getArticleBySlug> & { content: ContentBlock[] }} />
 
       <article>
-        {article.content.map((block, index) => <ArticleBlock key={`${block.type}-${index}`} block={block} />)}
+        {renderedBlocks.map((block, index) => (
+          <ArticleBlock key={`${block.type}-${index}`} block={block} section={sectionSlug} />
+        ))}
       </article>
 
-      <footer style={{ marginTop: '3rem', paddingTop: '1.25rem', borderTop: '1px solid #e6e0d6' }}>
-        <div style={{ fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#8a8278', fontFamily: 'Helvetica Neue, sans-serif', marginBottom: '0.65rem' }}>
-          Related notes
-        </div>
-        <div style={{ display: 'grid', gap: '0.85rem' }}>
-          {related.map((note) => (
-            <Link key={note.slug} href={`/research/${note.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div style={{ fontSize: '1.05rem', color: '#181818', marginBottom: '0.2rem' }}>{note.title}</div>
-              <div style={{ color: '#5a544d', lineHeight: 1.6 }}>{note.summary}</div>
-            </Link>
-          ))}
-        </div>
-      </footer>
+      <ArticleFooter article={{ ...article, content: article.content } as ReturnType<typeof getArticleBySlug> & { content: ContentBlock[] }} />
     </main>
   )
 }

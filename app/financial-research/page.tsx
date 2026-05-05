@@ -2,23 +2,107 @@ import Link from 'next/link'
 import NoteCard from '../../components/note-card'
 import { getNotesBySection, getSectionMeta } from '../../lib/research'
 
+const SECTION_ACCENT = '#3d6b5e' // financial green
+const ACCENT_LIGHT = '#f0f5f3'
+const ACCENT_MID = '#c8ded6'
+
 export default function FinancialResearchPage() {
   const section = getSectionMeta('financial-research')
   const notes = getNotesBySection('financial-research')
 
   return (
     <main style={{ maxWidth: 920, margin: '0 auto', padding: '3.5rem 1.5rem 4rem' }}>
-      <Link href="/" style={{ color: '#73695f', textDecoration: 'none', fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.9rem' }}>
-        ← Back to home
+      {/* Top accent bar */}
+      <div style={{
+        height: 3,
+        background: `linear-gradient(to right, ${SECTION_ACCENT}, ${SECTION_ACCENT}30)`,
+        borderRadius: 2,
+        marginBottom: '2.5rem',
+      }} />
+
+      <Link
+        href="/"
+        style={{
+          color: '#73695f',
+          textDecoration: 'none',
+          fontFamily: 'Helvetica Neue, sans-serif',
+          fontSize: '0.9rem',
+          display: 'inline-block',
+          marginBottom: '1.25rem',
+        }}
+      >
+        ← Home
       </Link>
-      <header style={{ margin: '1.5rem 0 2rem', borderBottom: '1px solid #e6e0d6', paddingBottom: '1rem' }}>
-        <div style={{ fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#8a8278', fontFamily: 'Helvetica Neue, sans-serif', marginBottom: '0.5rem' }}>
-          Section
+
+      <header style={{ margin: '0 0 2.5rem', borderBottom: `1px solid ${ACCENT_MID}`, paddingBottom: '1.25rem' }}>
+        {/* Section label chip */}
+        <div style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '0.4rem',
+          padding: '0.28rem 0.7rem',
+          background: ACCENT_LIGHT,
+          borderRadius: 20,
+          fontSize: '0.7rem',
+          color: SECTION_ACCENT,
+          fontFamily: 'Helvetica Neue, sans-serif',
+          fontWeight: 600,
+          letterSpacing: '0.06em',
+          textTransform: 'uppercase',
+          marginBottom: '0.75rem',
+        }}>
+          ◈ Financial Research
         </div>
-        <h1 style={{ margin: 0, fontWeight: 400, fontSize: '2.2rem', color: '#161616' }}>{section?.title}</h1>
-        <p style={{ margin: '0.75rem 0 0 0', maxWidth: 760, color: '#544e47', lineHeight: 1.75 }}>{section?.description}</p>
+
+        <h1 style={{
+          margin: '0 0 0.75rem',
+          fontWeight: 400,
+          fontSize: '2.2rem',
+          color: '#161616',
+          fontFamily: 'Georgia, serif',
+          lineHeight: 1.2,
+        }}>
+          {section?.title}
+        </h1>
+
+        <p style={{
+          margin: 0,
+          maxWidth: 680,
+          color: '#544e47',
+          lineHeight: 1.75,
+          fontSize: '1.05rem',
+          fontFamily: 'Helvetica Neue, sans-serif',
+        }}>
+          {section?.description}
+        </p>
       </header>
-      {notes.map((note) => <NoteCard key={note.slug} note={note} />)}
+
+      {/* Format legend */}
+      <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: '0.75rem',
+        marginBottom: '2rem',
+        padding: '0.85rem 1rem',
+        background: ACCENT_LIGHT,
+        borderRadius: 4,
+        fontSize: '0.78rem',
+        color: '#4a6660',
+        fontFamily: 'Helvetica Neue, sans-serif',
+      }}>
+        <span style={{ fontWeight: 600, color: SECTION_ACCENT }}>Formats:</span>
+        <span>◈ Company Compare</span>
+        <span style={{ color: ACCENT_MID }}>|</span>
+        <span>◎ Thesis</span>
+        <span style={{ color: ACCENT_MID }}>|</span>
+        <span>▣ Sector Map</span>
+      </div>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+        {notes.map((note) => (
+          <NoteCard key={note.slug} note={note} section="financial-research" />
+        ))}
+      </div>
     </main>
   )
 }

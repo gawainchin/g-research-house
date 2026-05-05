@@ -167,22 +167,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <div style={{ display: 'flex', alignItems: 'end', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', borderBottom: `1px solid ${ui.colors.pageBorder}`, paddingBottom: '0.75rem', marginBottom: '0.35rem' }}>
-          <div>
-            <div style={{ ...labelStyle, marginBottom: '0.3rem' }}>Featured database</div>
-            <h2 style={{ margin: 0, fontSize: '1.55rem', fontWeight: 400, color: ui.colors.text }}>Notes</h2>
-          </div>
-          <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.82rem', color: ui.colors.mutedText }}>
-            <span style={{ ...chipStyle, fontWeight: 600 }}>List</span>
-            <span style={chipStyle}>Board</span>
-            <span style={chipStyle}>Calendar</span>
-            <button type="button" className="utilityButton">New</button>
-            <button type="button" className="utilityButton">Open full DB</button>
-          </div>
+      <section style={{ marginBottom: '3rem' }}>
+        <div style={{ fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#8a8278', fontFamily: 'Helvetica Neue, sans-serif', marginBottom: '0.85rem' }}>
+          Featured notes
         </div>
-        <div style={{ borderBottom: `1px solid ${ui.colors.pageBorder}`, borderLeft: `1px solid ${ui.colors.pageBorder}`, paddingLeft: '0.8rem' }}>
-          {featured.map((note) => <NoteCard key={note.slug} note={note} />)}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          {featured.map((note) => <NoteCard key={note.slug} note={note} section={note.section} />)}
         </div>
       </section>
     </main>
