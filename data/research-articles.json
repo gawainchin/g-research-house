@@ -186,14 +186,14 @@
         {
           "type": "thesis-card",
           "label": "Core Thesis",
-          "title": "The bottleneck is not prompting — it is the absence of task infrastructure.",
+          "title": "The bottleneck is not prompting \u2014 it is the absence of task infrastructure.",
           "text": "Once AI work becomes multi-step, the winning system is not the cleverest prompt. It is workflow, state management, review gates, and orchestration. Better prompts improve individual outputs. Task systems improve reliable output at scale."
         },
         {
           "type": "key-takeaways",
           "items": [
-            "Chat interfaces are built for one-shot answers — they are not designed as production operating environments for AI systems.",
-            "Task systems add: durable state, structured handoffs, review gates, and observability — capabilities prompts alone cannot provide.",
+            "Chat interfaces are built for one-shot answers \u2014 they are not designed as production operating environments for AI systems.",
+            "Task systems add: durable state, structured handoffs, review gates, and observability \u2014 capabilities prompts alone cannot provide.",
             "The practical shift: from 'how do I prompt better?' to 'what task system do I need to run this reliably in production?'",
             "Kanban-style orchestration turns multi-agent pipelines into auditable, retryable, human-in-the-loop workflows."
           ]
@@ -204,7 +204,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The standard mental model for AI-assisted work is still a single-turn exchange: you prompt, it responds, you done. Even with sophisticated prompting — chain-of-thought, few-shot, system-level instructions — you're still operating inside a paradigm designed for one-shot answers."
+          "text": "The standard mental model for AI-assisted work is still a single-turn exchange: you prompt, it responds, you done. Even with sophisticated prompting \u2014 chain-of-thought, few-shot, system-level instructions \u2014 you're still operating inside a paradigm designed for one-shot answers."
         },
         {
           "type": "paragraph",
@@ -214,7 +214,7 @@
           "type": "callout",
           "variant": "warning",
           "label": "Key insight",
-          "text": "Better prompts don't solve any of these. They can't. The problem isn't the quality of the prompt — it's the absence of a task system underneath it."
+          "text": "Better prompts don't solve any of these. They can't. The problem isn't the quality of the prompt \u2014 it's the absence of a task system underneath it."
         },
         {
           "type": "heading",
@@ -227,22 +227,50 @@
         {
           "type": "comparison-table",
           "title": "Chatbot vs Workflow System",
-          "columns": ["Dimension", "Chatbot (prompt-only)", "Workflow System"],
+          "columns": [
+            "Dimension",
+            "Chatbot (prompt-only)",
+            "Workflow System"
+          ],
           "rows": [
-            ["Unit of work", "One reply", "Multi-step task"],
-            ["State", "Mostly transient", "Persistent task state"],
-            ["Quality control", "User manually checks", "Built-in review gates"],
-            ["Failure handling", "Human re-prompts", "Retry / reassign automatically"],
-            ["Multi-agent", "Not native", "First-class coordination"],
-            ["Observability", "Black box", "Full audit trail"]
+            [
+              "Unit of work",
+              "One reply",
+              "Multi-step task"
+            ],
+            [
+              "State",
+              "Mostly transient",
+              "Persistent task state"
+            ],
+            [
+              "Quality control",
+              "User manually checks",
+              "Built-in review gates"
+            ],
+            [
+              "Failure handling",
+              "Human re-prompts",
+              "Retry / reassign automatically"
+            ],
+            [
+              "Multi-agent",
+              "Not native",
+              "First-class coordination"
+            ],
+            [
+              "Observability",
+              "Black box",
+              "Full audit trail"
+            ]
           ]
         },
         {
           "type": "bullets",
           "items": [
             "Persistence: A task has durable identity and state that survives any single session or API call. An agent can pick up work it started yesterday without re-explaining context.",
-            "Structured Handoffs: When one agent finishes a piece of work and another needs to continue, a handoff is a state transition — not a prompt. The receiving agent reads what happened, why, and what the constraints are for the next step.",
-            "Review and Gatekeeping: A review step isn't a revision prompt — it's a mechanism that stops forward progress until a condition is met. This creates the difference between \"the AI suggested it\" and \"the system approved it.\"",
+            "Structured Handoffs: When one agent finishes a piece of work and another needs to continue, a handoff is a state transition \u2014 not a prompt. The receiving agent reads what happened, why, and what the constraints are for the next step.",
+            "Review and Gatekeeping: A review step isn't a revision prompt \u2014 it's a mechanism that stops forward progress until a condition is met. This creates the difference between \"the AI suggested it\" and \"the system approved it.\"",
             "Observability: Who did what, when, for how long, and with what result. Without this, agent runs are black boxes. With it, you can audit, debug, and improve."
           ]
         },
@@ -252,7 +280,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The dominant AI product interface — the chat window — is a reasonable default for exploration and one-off tasks. But it was never designed as an operating environment for production AI systems."
+          "text": "The dominant AI product interface \u2014 the chat window \u2014 is a reasonable default for exploration and one-off tasks. But it was never designed as an operating environment for production AI systems."
         },
         {
           "type": "paragraph",
@@ -270,22 +298,37 @@
         },
         {
           "type": "paragraph",
-          "text": "The pattern that exemplifies this shift is treating AI agent work like a Kanban board — not metaphorically, but architecturally. Each unit of work is a task with a defined state (todo, in-progress, review, done), a responsible agent, an output the next stage can consume, and an optional human review gate before promotion."
+          "text": "The pattern that exemplifies this shift is treating AI agent work like a Kanban board \u2014 not metaphorically, but architecturally. Each unit of work is a task with a defined state (todo, in-progress, review, done), a responsible agent, an output the next stage can consume, and an optional human review gate before promotion."
         },
         {
           "type": "flowchart",
           "title": "Research Pipeline: Kanban-Style Multi-Agent Flow",
           "steps": [
-            { "label": "Researcher Agent", "note": "Scans sources, drafts findings, writes intermediate output" },
-            { "label": "Analyst Agent", "note": "Reviews findings for gaps, flags what's missing or unclear" },
-            { "label": "Human Review Gate", "note": "DS lead approves before synthesis proceeds" },
-            { "label": "Writer Agent", "note": "Synthesises approved findings into final deliverable" },
-            { "label": "Done + Archived", "note": "Task closed, output durable, audit trail complete" }
+            {
+              "label": "Researcher Agent",
+              "note": "Scans sources, drafts findings, writes intermediate output"
+            },
+            {
+              "label": "Analyst Agent",
+              "note": "Reviews findings for gaps, flags what's missing or unclear"
+            },
+            {
+              "label": "Human Review Gate",
+              "note": "DS lead approves before synthesis proceeds"
+            },
+            {
+              "label": "Writer Agent",
+              "note": "Synthesises approved findings into final deliverable"
+            },
+            {
+              "label": "Done + Archived",
+              "note": "Task closed, output durable, audit trail complete"
+            }
           ]
         },
         {
           "type": "paragraph",
-          "text": "Each stage is auditable. Each output is durable. A human reviewer can intercede at any checkpoint. And if any stage fails or produces unsatisfactory output, the system handles retry and reassignment — not a human re-prompting from scratch."
+          "text": "Each stage is auditable. Each output is durable. A human reviewer can intercede at any checkpoint. And if any stage fails or produces unsatisfactory output, the system handles retry and reassignment \u2014 not a human re-prompting from scratch."
         },
         {
           "type": "heading",
@@ -307,7 +350,380 @@
         {
           "type": "verdict",
           "label": "Bottom line",
-          "text": "For teams deploying AI agents beyond one-off tasks, the investment that pays off is not more prompting talent — it's workflow infrastructure. Durable state, structured handoffs, review gates, and observability. The DS leads best positioned for the next wave of AI infrastructure are the ones already thinking in terms of workflows, not just prompts."
+          "text": "For teams deploying AI agents beyond one-off tasks, the investment that pays off is not more prompting talent \u2014 it's workflow infrastructure. Durable state, structured handoffs, review gates, and observability. The DS leads best positioned for the next wave of AI infrastructure are the ones already thinking in terms of workflows, not just prompts."
+        }
+      ]
+    },
+    {
+      "slug": "palantir-rule-of-40-deep-dive",
+      "title": "Palantir and the 127% Rule of 40 \u2014 When Growth Obscures Price",
+      "section": "financial-research",
+      "summary": "PLTR posts a 127% Rule of 40 score. The quality is real \u2014 but at 287x forward P/E, the bar for delivering the number is unforgiving.",
+      "date": "2026-05-05",
+      "tags": [
+        "investing",
+        "ai",
+        "saas",
+        "palantir",
+        "rule-of-40",
+        "valuation"
+      ],
+      "readingTime": 7,
+      "format": "thesis",
+      "perspective": "investor",
+      "relatedSlugs": [],
+      "content": [
+        {
+          "type": "thesis-card",
+          "label": "Core Thesis",
+          "title": "PLTR's 127% Rule of 40 score is legitimate \u2014 but it is already priced in.",
+          "text": "The business is exceptional by software quality metrics: 70% revenue growth, 57% EBITDA margin, 119% net revenue retention, and a government moat that commercial software can't replicate. At $94 and a forward P/E approaching 300x, the equity is priced for everything to go right \u2014 including the government segment decelerating at precisely the wrong moment."
+        },
+        {
+          "type": "metric-strip",
+          "title": "Q1 2025 Operational Scorecard",
+          "metrics": [
+            {
+              "label": "Revenue Growth (YoY)",
+              "value": "70%",
+              "note": "Total revenue $886M"
+            },
+            {
+              "label": "EBITDA Margin",
+              "value": "57%",
+              "note": "Rule of 40 score: 127%"
+            },
+            {
+              "label": "Net Revenue Retention",
+              "value": "119%",
+              "note": "Existing cohort expansion"
+            },
+            {
+              "label": "Forward P/E",
+              "value": "~287x",
+              "note": "On Q1 run-rate"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "The Numbers Behind the Score"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Rule of 40 framework \u2014 revenue growth rate plus EBITDA margin \u2014 is a quality-at-scale screen. A score above 40% is considered healthy for a mature software business. PLTR's 127% puts it in rare company: the kind of number that makes fundamental investors pay attention before they even check the multiple."
+        },
+        {
+          "type": "paragraph",
+          "text": "Drilling in: 70% total revenue growth was driven by 55% commercial revenue growth, with U.S. commercial specifically up 40%. The government segment \u2014 which PLTR has been trying to de-emphasize narratively \u2014 still anchors the base and provides the contract durability that makes the commercial expansion credible to enterprise buyers."
+        },
+        {
+          "type": "paragraph",
+          "text": "The 119% NRR tells the upsell story: existing customers are spending more year-over-year. That is exactly what a platform flywheel should produce. AIP, PLTR's AI-enabled data operating system, is the\u8f7d\u4f53 \u2014 the mechanism through which existing government contracts are expanding and new commercial logos are being added."
+        },
+        {
+          "type": "heading",
+          "text": "Where the Bull Case Lives"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Government moat is structural, not cyclical. Defense and intelligence budgets are entitlement programs with high switching costs \u2014 PLTR is embedded in operational workflows that take years to migrate.",
+            "AIP is expanding addressable market. Moving from data integration (the legacy Ontology platform) to AI-powered inference against that data stack opens enterprise buyers who previously found PLTR too complex.",
+            "57% EBITDA margin means the company is already highly profitable at scale \u2014 not burning cash to fund growth."
+          ]
+        },
+        {
+          "type": "comparison-table",
+          "title": "PLTR vs High-Growth SaaS Comp Benchmarks",
+          "columns": [
+            "Metric",
+            "PLTR Q1 2025",
+            "High-Growth SaaS Median"
+          ],
+          "rows": [
+            [
+              "Revenue Growth",
+              "70%",
+              "25-35%"
+            ],
+            [
+              "EBITDA Margin",
+              "57%",
+              "10-20%"
+            ],
+            [
+              "NRR",
+              "119%",
+              "110-115%"
+            ],
+            [
+              "Rule of 40 Score",
+              "127%",
+              "35-55%"
+            ],
+            [
+              "Forward P/E",
+              "~287x",
+              "40-80x (elevated)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "The Bear's Case \u2014 and Why It Matters"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "At $94 and ~$92B market cap, the stock requires PLTR to keep delivering 70%+ growth into a large base. The math gets harder: a 70% growth rate on $3.5B revenue is $6B in new ARR equivalent \u2014 against a comp set that grows 25-30%.",
+            "U.S. commercial deceleration is a live risk. 40% U.S. commercial growth sounds exceptional until you remember that PLTR's commercial segment started from a small base. The absolute dollar magnitude of incremental commercial revenue needs to keep accelerating for the multiple to hold.",
+            "Government concentration risk is underpriced. PLTR's most durable contracts also represent its most politically exposed segment. A defense budget renegotiation or a contract restructuring would hit the narrative faster than the fundamentals.",
+            "Valuation demands perfection. 287x forward P/E gives the stock essentially zero room for a growth scare, a government shutdown, or a commercial beat that isn't large enough."
+          ]
+        },
+        {
+          "type": "scenario-ladder",
+          "title": "PLTR Price Scenarios Over 12 Months",
+          "scenarios": [
+            {
+              "label": "Bull",
+              "probability": "20%",
+              "outcome": "+30-40%",
+              "description": "Commercial acceleration accelerates further, government stays stable, AIP drives material new logos. Stock tests $130+."
+            },
+            {
+              "label": "Base",
+              "probability": "50%",
+              "outcome": "Flat to +10%",
+              "description": "Numbers hit but guidance doesn't surprise. Growth rate normalizes toward 50%. Multiple compresses slightly as growth deceleration is priced. Stock drifts to $100-105."
+            },
+            {
+              "label": "Bear",
+              "probability": "30%",
+              "outcome": "-25-40%",
+              "description": "Commercial growth slows to 25-30%, government segment disappoints, or a large deal slips. Multiple derates. Stock returns to $60-70 range."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "label": "Valuation context",
+          "text": "The highest-quality SaaS businesses in history have rarely sustained 70% revenue growth at $90B+ market caps. The historical precedents \u2014 Salesforce, ServiceNow \u2014 took significant multiple compression before recovering. PLTR is not expensive by narrative. It is expensive by the math of what it needs to deliver."
+        },
+        {
+          "type": "quote",
+          "text": "A 127% Rule of 40 score is one of the best in software. The question is what multiple that score deserves when the market has already assigned it."
+        },
+        {
+          "type": "verdict",
+          "label": "Bottom line",
+          "text": "PLTR is an exceptional business executing well. The quality metrics \u2014 margin, retention, growth \u2014 are real. But at ~287x forward P/E, the equity is not priced for a good business; it is priced for a generational software franchise delivering at the high end of its range for years. The risk/reward at current prices favors keeping this on the watchlist rather than building a position. If the stock pulls back 25-30% on a growth scare, the calculus changes materially."
+        }
+      ]
+    },
+    {
+      "slug": "cerebras-ipo-wafer-scale-inference",
+      "title": "Cerebras IPO \u2014 Wafer-Scale Inference and the $4B Question",
+      "section": "financial-research",
+      "summary": "Cerebras comes to market at $4B valuation with $510M revenue and an unusual architectural bet: bigger is better. The numbers tell a compelling but concentrated story.",
+      "date": "2026-05-05",
+      "tags": [
+        "investing",
+        "ai",
+        "semiconductors",
+        "ipo",
+        "cerebras",
+        "inference",
+        "wse"
+      ],
+      "readingTime": 7,
+      "format": "thesis",
+      "perspective": "investor",
+      "relatedSlugs": [],
+      "content": [
+        {
+          "type": "thesis-card",
+          "label": "Core Thesis",
+          "title": "Cerebras has real revenue and real technology \u2014 but an 86% revenue concentration in a single geographic partnership is not a growth story, it is a concentration risk.",
+          "text": "The wafer-scale engine architecture is genuinely differentiated for a specific workload: large-context inference where memory bandwidth is the bottleneck. The OpenAI MRA alone justifies a baseline revenue stream. But at a $4B IPO valuation against $510M revenue and a 76% growth rate, the valuation requires the rest of the business to develop faster than any inference-first semiconductor has managed historically."
+        },
+        {
+          "type": "metric-strip",
+          "title": "Cerebras IPO Snapshot",
+          "metrics": [
+            {
+              "label": "Revenue (FY2024 est.)",
+              "value": "~$510M",
+              "note": "~76% YoY growth"
+            },
+            {
+              "label": "OpenAI MRA",
+              "value": "$20B+",
+              "note": "800k wafers/year"
+            },
+            {
+              "label": "UAE/G42 Revenue Share",
+              "value": "86%",
+              "note": "Geographic concentration"
+            },
+            {
+              "label": "IPO Valuation",
+              "value": "$4B",
+              "note": "vs GPU incumbents at 20x+ revenue"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "The Wafer-Scale Bet"
+        },
+        {
+          "type": "paragraph",
+          "text": "The WSE-3 (Wafer Scale Engine 3) is Cerebras's core differentiator: a single silicon wafer containing 900,000 AI cores and 82GB of on-chip SRAM. The architectural argument is that for large-model inference \u2014 particularly long-context tasks where the model exceeds GPU memory and requires multi-GPU partitioning \u2014 the communication overhead between chips becomes the bottleneck, not compute."
+        },
+        {
+          "type": "flowchart",
+          "title": "Wafer-Scale vs GPU: When Bigger Wins",
+          "steps": [
+            {
+              "label": "Short Context / Standard Inference",
+              "note": "GPU cluster preferred \u2014 cost/performance optimal"
+            },
+            {
+              "label": "Long Context (100K+ tokens)",
+              "note": "Memory bandwidth bottleneck \u2014 WSE advantage grows"
+            },
+            {
+              "label": "Multi-GPU Partitioning Overhead",
+              "note": "Communication fabric limits GPU scaling"
+            },
+            {
+              "label": "WSE Single-Wafer Solution",
+              "note": "On-chip SRAM eliminates partition overhead"
+            },
+            {
+              "label": "Inference Cost Curve",
+              "note": "WSE economics improve non-linearly at large context"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This is not a general-purpose argument. Cerebras is not trying to replace NVIDIA's GPU cluster for training or short-context inference. The pitch is specifically: if your workload is large-context AI \u2014 legal document analysis, whole-codebase reasoning, genomic sequence processing \u2014 wafer-scale inference delivers a step-change in performance per watt and per dollar at sufficient scale."
+        },
+        {
+          "type": "heading",
+          "text": "The Numbers"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "$510M revenue with 76% growth is a credible software-like growth rate for a semiconductor company \u2014 but the growth rate is from a small base, and the quality of that revenue matters.",
+            "$20B+ MRA (maximum revenue arrangement) from OpenAI is the anchor contract. 800,000 wafers per year at reported pricing implies a substantial long-term revenue floor, assuming OpenAI's inference demand continues to scale.",
+            "86% revenue concentration in the UAE/G42 partnership is the critical risk. G42 (Abu Dhabi's AI champion) is both Cerebras's largest customer and a geopolitical asset operating in a region where U.S.-China technology competition is acute. This is not a diversified enterprise SaaS revenue base \u2014 it is a single-region strategic relationship."
+          ]
+        },
+        {
+          "type": "comparison-table",
+          "title": "Cerebras vs GPU Incumbents \u2014 Valuation Comparison",
+          "columns": [
+            "Metric",
+            "Cerebras (IPO)",
+            "NVIDIA (GPU Incumbents)",
+            "Groq"
+          ],
+          "rows": [
+            [
+              "Revenue",
+              "$510M",
+              "$130B+",
+              "$100-200M est."
+            ],
+            [
+              "Growth",
+              "76%",
+              "~100% (trailing)",
+              "High (early stage)"
+            ],
+            [
+              "Valuation",
+              "$4B",
+              "$3T+",
+              "$2.5B (rumored)"
+            ],
+            [
+              "Revenue Multiple",
+              "~8x",
+              "~25x",
+              "~15-20x"
+            ],
+            [
+              "Key Customer",
+              "G42/OpenAI",
+              "Hyperscale (diversified)",
+              "Systran, others"
+            ],
+            [
+              "Architecture",
+              "Wafer-scale (WSE-3)",
+              "GPU cluster",
+              "LPU (deterministic)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "What the Investor Should Actually Focus On"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "The OpenAI MRA is the floor, not the ceiling. $20B+ in maximum revenue arrangements sounds large but is structured against OpenAI's inference scaling. Whether that inference volume materializes and at what ASPs determines actual revenue recognition.",
+            "Geographic diversification is the real story to watch post-IPO. G42 partnership is valuable but the question is whether Cerebras can replicate that model with U.S. hyperscalers, European sovereign AI, or Asian partners.",
+            "The inference economics story needs a public reference customer beyond G42. Right now the customer base is thin on disclosed enterprise or hyperscaler references.",
+            "WSE-4 development cadence matters. The semiconductor roadmap \u2014 process node, memory capacity, power efficiency \u2014 is the competitive moat. Competitors (especially Groq with its deterministic LPUs) are advancing quickly."
+          ]
+        },
+        {
+          "type": "scenario-ladder",
+          "title": "Cerebras IPO Scenarios",
+          "scenarios": [
+            {
+              "label": "Bull",
+              "probability": "25%",
+              "outcome": "+50-80%",
+              "description": "U.S. hyperscaler wins disclosed, G42 MRA converts to recognized revenue faster, WSE-4 tape-out successful. Stock rerates toward GPU-companion peers at 15-20x revenue."
+            },
+            {
+              "label": "Base",
+              "probability": "45%",
+              "outcome": "+10-25%",
+              "description": "G42 revenue holds, OpenAI MRA converts steadily, no dramatic U.S. expansion but no major customer loss. Stock debuts in a reasonable range and drifts up with execution."
+            },
+            {
+              "label": "Bear",
+              "probability": "30%",
+              "outcome": "-30-50%",
+              "description": "G42 relationship politically disrupted (UAE-China tech tensions), OpenAI inference demand slows, or Groq/ASIC competition erodes WSE value proposition. Stock falls toward cash/asset value."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "label": "Investor context",
+          "text": "Suntr\u51cc's reported $50M crossover investment (from T. Rowe Price heritage) signals that at least one institutional crossover fund sees Cerebras as a long-duration infrastructure bet, not a quick flip. That is meaningful signal for a semiconductor IPO."
+        },
+        {
+          "type": "quote",
+          "text": "Wafer-scale inference is a real architectural bet. The question is whether the workload shift toward large-context AI happens fast enough and at sufficient scale to justify owning the only company pursuing it commercially."
+        },
+        {
+          "type": "verdict",
+          "label": "Bottom line",
+          "text": "Cerebras IPO is worth watching \u2014 not because the $4B valuation is obviously cheap or expensive, but because wafer-scale inference is the clearest architectural differentiation in AI semiconductors since Groq's deterministic LPUs. The G42 revenue concentration is a real risk that deserves weight. The ideal entry point is post-lockup or on a growth scare related to inference capex cycles. At $510M revenue and 76% growth, this is a business in early innings \u2014 but the timing of the IPO reflects a window, not necessarily optimal conditions for public shareholders."
         }
       ]
     }
