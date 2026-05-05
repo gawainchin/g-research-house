@@ -1,25 +1,30 @@
 {
-  "date": "May 01, 2026",
+  "date": "May 05, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "US markets closed mixed to slightly positive on Friday, with SPY settling +0.99% at $718.66. The headline story was a sharp divergence within tech: AI-linked names MSFT and NVDA sold off hard \u2014 MSFT -3.93% and NVDA -4.63% \u2014 while Eaton (ETN) surged +5.41% to $433.01, a standout outperformer. Defensive and rate-sensitive names held in well: XLU +2.56%, GLD +1.50%, AAPL +0.44%. The spread between AI semiconductor losers and industrial electrification winners was the dominant intra-sector theme.\n\nHong Kong equities extended their China stimulus rally, with the Hang Seng Index closing +1.68% at 26,111.84 \u2014 the highest since November. The advance was broad-based, led by BABA +1.11%, GDS +1.78%, CGN (1816.HK) +1.16%, and the 02800 tracker +1.00%. Market participants are repricing a Beijing policy pivot, with expectations for continued demand-side stimulus and housing market stabilization. Baidu's AI chip unit Kunlunxin filing for HK IPO added further tech-sector momentum.\n\nTwo numbers anchor the overnight view: NVDA closing at $199.57 (down 4.6% in a single session) and the HSI closing at 26,111 (up 1.7%, extending a multi-week China stimulus uptrend)."
+      "content": "Risk-on tone faded into the close; Nasdaq held while Dow slipped. Treasury yields steady. Dollar soft.\n\nS&P 500 -0.37%, Nasdaq +tech held, Dow -0.56%",
+      "icon": "\ud83c\udf19"
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "Strong:\nETN +5.41% (433.01) \u2014 best performer in the portfolio. Data center and electrification demand narrative, recently cited 70% YoY data center order growth. Holding as industrial AI beneficiary.\nTSLA +2.37% (381.63) \u2014 continuing recent recovery, no new fundamental catalyst noted. Treat as sentiment squeeze, not thesis improvement.\nXLU +2.56% (46.85) \u2014 defensive utilities holding up well as rate sensitivity remains elevated.\n\nWeak:\nNVDA -4.63% (199.57) \u2014 largest portfolio drag. AI capex concerns and sector rotation hitting semis. Do not confuse this with a thesis break, but do not add blindly here either.\nMSFT -3.93% (407.78) \u2014 significant drop. AI monetization skepticism and competitive pressures in Azure. Down ~30% from peak per recent coverage. Worth watching for whether this is sentiment or structural.\nNET -3.30% (204.97) \u2014 insider selling headline (CEO Matthew Prince sold ~51k shares per MarketBeat). Sentiment-driven, not a new fundamental negative, but NET stays in the monitor bucket per portfolio rules."
+      "content": "DXYZ +11.01% \u2014 speculative squeeze, light volume\nMU +6.31% \u2014 AI capex/semi momentum intact\nNET +3.07% \u2014 recovering from insider-selling drop\nINTC -3.85% \u2014 weak; portfolio drag\nAAPL -1.18% \u2014 underperforming tech\nGLD -2.00% \u2014 risk-on shift hit gold",
+      "icon": "\ud83c\uddfa\ud83c\uddf8"
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "Strong:\nGDS +1.78% (42.28) \u2014 continuing the China tech rally. GDS as higher-beta expression of the BABA/China policy thesis. Keep sized appropriately.\nBABA +1.11% (131.88) \u2014 moderate gain in line with the broader HSI move. Stimulus narrative intact but not breaking out.\n1816.HK (CGN) +1.16% (3.48) \u2014 solid defensive contribution from the HK-listed utilities/energy position.\n2800.HK +1.00% (26.24) \u2014 tracking the Hang Seng at +1.68%. Broad HK/China beta, appropriate as a core tracker.\n\nWeak:\nNo HK-listed names in the portfolio closed in negative territory. All positions held on the session."
+      "content": "CGN (1816.HK) +2.87%\nGDS +1.56%\nBABA +1.35%\nHSI -1.28% \u2014 broad HK soft",
+      "icon": "\ud83c\udded\ud83c\uddf0"
     },
     {
       "title": "MARKET NEWS",
-      "content": "1. China stimulus expectations continue to anchor HK recovery. Investors are betting on a sustained Beijing policy pivot focused on demand-side stimulus and housing market stabilization. The HSI has gained significantly over recent weeks, with today's close marking the highest since November. China's official manufacturing PMI expanding for the first time in six months adds fundamental credibility to the rebound narrative.\n\n2. MSFT and NVDA sold off hard amid AI sector rotation. MSFT is now approximately 30% off its all-time peak, with recent coverage framing the decline as the worst for the stock since the DeepSeek shock. NVDA's drop appears linked to broader AI capex concerns and rotation away from crowded semiconductor positions. These are sentiment-driven moves in quality names rather than new fundamental data, but the moves are real and the divergence from ETN's strength is notable."
+      "content": "- MU earnings beat driven by AI HBM demand; raised guidance\n- China April PMI beat expectations at 51.4, third month of expansion",
+      "icon": "\ud83d\uddde\ufe0f"
     },
     {
       "title": "ACTION BOARD",
-      "content": "Opportunity: ETN broke out to new highs on data center electrification demand. Let it run \u2014 the $400+ level is no longer a target but a base. Do not add on a single-session surge, but keep it as a core AI infrastructure beneficiary. BABA and HK exposure has momentum but avoid overlayering given China structural risks remain.\n\nRisk: NVDA and MSFT dropping together signals a real rotation out of expensive AI names. If this deepens, MU and NET will also come under pressure. Do not average falling AI positions blindly \u2014 the portfolio has other cleaner opportunities. TSLA rebounding on no new news is a reminder that legacy speculative bag can accidentally become oversized on a bounce; trim if it reapproaches prior weight.\n\nResearch: MSFT at -3.93% and -30% from peak warrants a fresh thesis check. Recent Seeking Alpha analysis suggests the selloff may be overdone relative to the actual $625B backlog and AI monetization progress. Understand whether this is a sentiment-driven opportunity in a quality compounder or a structural slowdown signal before treating it as a buy. Also worth revisiting NET's insider selling in context \u2014 10b5-1 plan execution, not conviction sale \u2014 which keeps it in monitor rather than upgrade territory."
+      "content": "Opportunity: China expansion cycle still running \u2014 BABA/GDS/02800 remain live; CGN cheap on policy.\nRisk: INTC -3.85% signals semi weakness spreading; GLD selling in risk-on is a book-level warning.\nResearch: DXYZ +11% on no news \u2014 either Elon catalyst or short squeeze; size accordingly.",
+      "icon": "\u2192"
     }
   ]
 }
