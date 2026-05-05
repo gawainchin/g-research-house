@@ -145,10 +145,6 @@ export default function NoteCard({ note, section }: { note: ResearchNoteSummary;
           </span>
         ))}
       </div>
-      <div className="noteActions" aria-hidden="true">
-        <span>Open</span>
-        <span>Duplicate</span>
-      </div>
     </article>
   )
 }
