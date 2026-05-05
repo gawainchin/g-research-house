@@ -4,11 +4,14 @@ import { formatDisplayDate, type ResearchNoteSummary } from '../lib/research'
 export default function NoteCard({ note }: { note: ResearchNoteSummary }) {
   return (
     <article
+      className="noteCard"
       style={{
-        padding: '1.25rem 0',
+        padding: '1.25rem 0.25rem 1.25rem 0.65rem',
         borderBottom: '1px solid #e6e0d6',
+        position: 'relative',
       }}
     >
+      <div className="blockHandle" aria-hidden="true">+</div>
       <div
         style={{
           fontSize: '0.72rem',
@@ -22,7 +25,7 @@ export default function NoteCard({ note }: { note: ResearchNoteSummary }) {
         {note.perspective} · {note.format} · {formatDisplayDate(note.date)}
       </div>
       <h2 style={{ margin: '0 0 0.45rem 0', fontSize: '1.35rem', fontWeight: 400, color: '#171717' }}>
-        <Link href={`/research/${note.slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+        <Link href={`/research/${note.slug}`} className="titleLink" style={{ color: 'inherit', textDecoration: 'none' }}>
           {note.title}
         </Link>
       </h2>
@@ -53,6 +56,49 @@ export default function NoteCard({ note }: { note: ResearchNoteSummary }) {
           </span>
         ))}
       </div>
+      <div className="noteActions" aria-hidden="true">
+        <span>Open</span>
+        <span>Duplicate</span>
+      </div>
+      <style jsx>{`
+        .noteCard {
+          transition: background-color 160ms ease;
+        }
+        .noteCard:hover {
+          background: #f8f4ec;
+        }
+        .blockHandle {
+          position: absolute;
+          left: 0.15rem;
+          top: 1.24rem;
+          width: 20px;
+          color: #b0a79b;
+          opacity: 0;
+          transition: opacity 120ms ease;
+          font-family: 'Helvetica Neue', sans-serif;
+        }
+        .noteActions {
+          margin-top: 0.65rem;
+          display: flex;
+          gap: 0.45rem;
+          font-family: 'Helvetica Neue', sans-serif;
+          font-size: 0.78rem;
+          color: #8b8174;
+          opacity: 0;
+          transition: opacity 120ms ease;
+        }
+        .noteCard:hover .blockHandle,
+        .noteCard:hover .noteActions {
+          opacity: 1;
+        }
+        .titleLink {
+          border-radius: 4px;
+        }
+        .titleLink:focus-visible {
+          outline: 2px solid #8b7d6b;
+          outline-offset: 3px;
+        }
+      `}</style>
     </article>
   )
 }
