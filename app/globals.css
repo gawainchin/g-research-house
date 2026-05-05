@@ -1,0 +1,85 @@
+.sectionCard {
+  transition: background-color 160ms ease, transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.sectionCard:hover {
+  background: #f5f1e9 !important;
+  transform: translateY(-1px);
+  border-color: #d2c8ba !important;
+  box-shadow: 0 2px 8px rgba(57, 46, 34, 0.06);
+}
+
+.utilityButton {
+  font: inherit;
+  color: inherit;
+  background: #fffdfa;
+  border: 1px solid #ddd5ca;
+  border-radius: 6px;
+  padding: 0.24rem 0.5rem;
+  cursor: pointer;
+}
+
+.utilityButton:hover,
+.interactiveChip:hover {
+  background: #f5f1e9 !important;
+}
+
+.sectionCard:focus-visible,
+.utilityButton:focus-visible,
+.interactiveChip:focus-visible,
+.rulesSummary:focus-visible,
+.titleLink:focus-visible {
+  outline: 2px solid #8b7d6b;
+  outline-offset: 2px;
+}
+
+.rulesSummary {
+  cursor: pointer;
+  list-style: none;
+  font-family: Helvetica Neue, sans-serif;
+  color: #5d554d;
+  font-size: 0.88rem;
+}
+
+.rulesSummary::-webkit-details-marker {
+  display: none;
+}
+
+.noteCard {
+  transition: background-color 160ms ease;
+}
+
+.noteCard:hover {
+  background: #f8f4ec;
+}
+
+.blockHandle {
+  position: absolute;
+  left: 0.15rem;
+  top: 1.24rem;
+  width: 20px;
+  color: #b0a79b;
+  opacity: 0;
+  transition: opacity 120ms ease;
+  font-family: Helvetica Neue, sans-serif;
+}
+
+.noteActions {
+  margin-top: 0.65rem;
+  display: flex;
+  gap: 0.45rem;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 0.78rem;
+  color: #8b8174;
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+.noteCard:hover .blockHandle,
+.noteCard:hover .noteActions {
+  opacity: 1;
+}
+
+.titleLink {
+  border-radius: 4px;
+}

@@ -185,47 +185,6 @@ export default function Home() {
           {featured.map((note) => <NoteCard key={note.slug} note={note} />)}
         </div>
       </section>
-      <style jsx>{`
-        .sectionCard {
-          transition: background-color 160ms ease, transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
-        }
-        .sectionCard:hover {
-          background: ${ui.colors.hoverSurface};
-          transform: translateY(-1px);
-          border-color: #d2c8ba;
-          box-shadow: 0 2px 8px rgba(57, 46, 34, 0.06);
-        }
-        .utilityButton {
-          font: inherit;
-          color: inherit;
-          background: ${ui.colors.surface};
-          border: 1px solid ${ui.colors.chipBorder};
-          border-radius: ${ui.radius.sm}px;
-          padding: 0.24rem 0.5rem;
-          cursor: pointer;
-        }
-        .utilityButton:hover,
-        .interactiveChip:hover {
-          background: ${ui.colors.hoverSurface};
-        }
-        .sectionCard:focus-visible,
-        .utilityButton:focus-visible,
-        .interactiveChip:focus-visible,
-        .rulesSummary:focus-visible {
-          outline: 2px solid ${ui.colors.focus};
-          outline-offset: 2px;
-        }
-        .rulesSummary {
-          cursor: pointer;
-          list-style: none;
-          font-family: Helvetica Neue, sans-serif;
-          color: #5d554d;
-          font-size: 0.88rem;
-        }
-        .rulesSummary::-webkit-details-marker {
-          display: none;
-        }
-      `}</style>
     </main>
   )
 }

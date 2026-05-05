@@ -60,45 +60,6 @@ export default function NoteCard({ note }: { note: ResearchNoteSummary }) {
         <span>Open</span>
         <span>Duplicate</span>
       </div>
-      <style jsx>{`
-        .noteCard {
-          transition: background-color 160ms ease;
-        }
-        .noteCard:hover {
-          background: #f8f4ec;
-        }
-        .blockHandle {
-          position: absolute;
-          left: 0.15rem;
-          top: 1.24rem;
-          width: 20px;
-          color: #b0a79b;
-          opacity: 0;
-          transition: opacity 120ms ease;
-          font-family: 'Helvetica Neue', sans-serif;
-        }
-        .noteActions {
-          margin-top: 0.65rem;
-          display: flex;
-          gap: 0.45rem;
-          font-family: 'Helvetica Neue', sans-serif;
-          font-size: 0.78rem;
-          color: #8b8174;
-          opacity: 0;
-          transition: opacity 120ms ease;
-        }
-        .noteCard:hover .blockHandle,
-        .noteCard:hover .noteActions {
-          opacity: 1;
-        }
-        .titleLink {
-          border-radius: 4px;
-        }
-        .titleLink:focus-visible {
-          outline: 2px solid #8b7d6b;
-          outline-offset: 3px;
-        }
-      `}</style>
     </article>
   )
 }
