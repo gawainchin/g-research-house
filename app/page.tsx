@@ -53,6 +53,7 @@ export default function Home() {
   const featured = getFeaturedNotes()
   const rules = getSchemaRules()
   const noteCount = featured.length
+  const latestNote = featured[0]
 
   return (
     <main style={{ maxWidth: 1040, margin: '0 auto', padding: '1.25rem 1.5rem 4rem' }}>
@@ -101,11 +102,16 @@ export default function Home() {
             color: ui.colors.mutedText,
           }}
         >
-          <span style={chipStyle}>Last edited today</span>
-          <button type="button" className="utilityButton">View: List</button>
-          <button type="button" className="utilityButton">Filter</button>
-          <button type="button" className="utilityButton">Sort: Latest</button>
-          <button type="button" className="utilityButton">Search</button>
+          {latestNote && (
+            <Link href={`/research/${latestNote.slug}`} className="readerPill">
+              Start with latest
+            </Link>
+          )}
+          <span style={chipStyle}>Curated notes</span>
+          <span style={chipStyle}>Updated when research is ready</span>
+          <Link href={`/${site.sections[0]?.slug ?? ''}`} className="readerPill">
+            Browse by lens
+          </Link>
         </div>
 
         <div style={{ marginTop: '1.65rem', maxWidth: 760, fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.9rem' }}>
@@ -168,8 +174,21 @@ export default function Home() {
       </section>
 
       <section style={{ marginBottom: '3rem' }}>
-        <div style={{ fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#8a8278', fontFamily: 'Helvetica Neue, sans-serif', marginBottom: '0.85rem' }}>
-          Featured notes
+        <div style={{ display: 'flex', alignItems: 'end', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', borderBottom: `1px solid ${ui.colors.pageBorder}`, paddingBottom: '0.75rem', marginBottom: '0.35rem' }}>
+          <div>
+            <div style={{ ...labelStyle, marginBottom: '0.3rem' }}>Featured database</div>
+            <h2 style={{ margin: 0, fontSize: '1.55rem', fontWeight: 400, color: ui.colors.text }}>Notes</h2>
+          </div>
+          <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.82rem', color: ui.colors.mutedText }}>
+            <span style={{ ...chipStyle, fontWeight: 600 }}>Latest first</span>
+            <span style={chipStyle}>Grouped by topic</span>
+            <span style={chipStyle}>{noteCount} selected reads</span>
+            {latestNote && (
+              <Link href={`/research/${latestNote.slug}`} className="readerPill">
+                Read latest
+              </Link>
+            )}
+          </div>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           {featured.map((note) => <NoteCard key={note.slug} note={note} section={note.section} />)}
