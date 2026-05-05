@@ -2,15 +2,23 @@
   "articles": [
     {
       "slug": "ai-power-semis-wolfspeed-onsemi-infineon",
-      "title": "AI Power Semis — Wolfspeed vs onsemi vs Infineon",
+      "title": "AI Power Semis \u2014 Wolfspeed vs onsemi vs Infineon",
       "section": "financial-research",
       "summary": "Three ways to express the AI power theme, but with very different quality, risk, and valuation profiles.",
       "date": "2026-05-02",
-      "tags": ["investing", "semiconductors", "ai", "power", "valuation"],
+      "tags": [
+        "investing",
+        "semiconductors",
+        "ai",
+        "power",
+        "valuation"
+      ],
       "readingTime": 6,
       "format": "company-compare",
       "perspective": "investor",
-      "relatedSlugs": ["china-ai-infrastructure-hidden-power-play"],
+      "relatedSlugs": [
+        "china-ai-infrastructure-hidden-power-play"
+      ],
       "content": [
         {
           "type": "paragraph",
@@ -52,15 +60,23 @@
     },
     {
       "slug": "china-ai-infrastructure-hidden-power-play",
-      "title": "China AI Infrastructure — The Hidden Power Play",
+      "title": "China AI Infrastructure \u2014 The Hidden Power Play",
       "section": "financial-research",
       "summary": "The better AI expression may sit in power, grid, and equipment layers rather than platform headlines.",
       "date": "2026-04-09",
-      "tags": ["investing", "china", "ai", "infrastructure", "energy"],
+      "tags": [
+        "investing",
+        "china",
+        "ai",
+        "infrastructure",
+        "energy"
+      ],
       "readingTime": 8,
       "format": "thesis",
       "perspective": "investor",
-      "relatedSlugs": ["ai-power-semis-wolfspeed-onsemi-infineon", "ai-power-delivery-bottleneck"],
+      "relatedSlugs": [
+        "ai-power-semis-wolfspeed-onsemi-infineon"
+      ],
       "content": [
         {
           "type": "paragraph",
@@ -92,7 +108,7 @@
         },
         {
           "type": "paragraph",
-          "text": "This lens naturally pushes attention toward names tied to energized power, nuclear buildout, backup generation, and electrical equipment — not just cloud or application winners."
+          "text": "This lens naturally pushes attention toward names tied to energized power, nuclear buildout, backup generation, and electrical equipment \u2014 not just cloud or application winners."
         }
       ]
     },
@@ -102,11 +118,19 @@
       "section": "ai-research",
       "summary": "A technical indicator note tracking whether agentic and long-context systems are turning memory, cache, and I/O into first-class bottlenecks.",
       "date": "2026-04-20",
-      "tags": ["ai", "inference", "memory", "io", "agents"],
+      "tags": [
+        "ai",
+        "inference",
+        "memory",
+        "io",
+        "agents"
+      ],
       "readingTime": 5,
       "format": "indicator",
       "perspective": "operator",
-      "relatedSlugs": ["ai-power-delivery-bottleneck"],
+      "relatedSlugs": [
+        "from-chatbot-to-workflow"
+      ],
       "content": [
         {
           "type": "paragraph",
@@ -139,50 +163,103 @@
       ]
     },
     {
-      "slug": "ai-power-delivery-bottleneck",
-      "title": "AI Power Delivery Bottleneck",
+      "slug": "from-chatbot-to-workflow",
+      "title": "From Chatbot to Workflow",
       "section": "ai-research",
-      "summary": "A systems note on why energized megawatts, electrical balance-of-plant, and commissioning can gate AI deployment before more GPUs do.",
-      "date": "2026-04-17",
-      "tags": ["ai", "power", "infrastructure", "deployment"],
-      "readingTime": 4,
-      "format": "stack-map",
+      "summary": "Why AI agents need task systems, not just better prompts \u2014 and what workflow infrastructure actually provides that prompts cannot.",
+      "date": "2026-05-05",
+      "tags": [
+        "ai",
+        "agents",
+        "workflow",
+        "orchestration",
+        "infrastructure",
+        "data-science"
+      ],
+      "readingTime": 8,
+      "format": "workflow",
       "perspective": "operator",
-      "relatedSlugs": ["agentic-inference-memory-io-pressure-indicator", "china-ai-infrastructure-hidden-power-play"],
+      "relatedSlugs": [
+        "agentic-inference-memory-io-pressure-indicator"
+      ],
       "content": [
         {
           "type": "paragraph",
-          "text": "The market loves the phrase 'AI data centers' but often skips the ugly physical question: can the site actually be energized on time?"
+          "text": "The standard mental model for AI-assisted work is still a single-turn exchange: you prompt, it responds, you done. Even with sophisticated prompting \u2014 chain-of-thought, few-shot, system-level instructions \u2014 you're still operating inside a paradigm designed for one-shot answers."
+        },
+        {
+          "type": "paragraph",
+          "text": "This works for tasks that are genuinely one-shot: a translation, a code snippet, a quick summarisation. But a large class of real developer and DS workflows are not one-shot. They involve multi-step reasoning with mid-course corrections, tracking state across long horizons, handing off partial work between agents or between an agent and a human, review gates where output must meet a standard before proceeding, and observability: knowing what ran, when, why, and what changed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Better prompts don't solve any of these. They can't. The problem isn't the quality of the prompt \u2014 it's the absence of a task system underneath it."
         },
         {
           "type": "heading",
-          "text": "Bottleneck layer"
+          "text": "What a Task System Actually Does"
+        },
+        {
+          "type": "paragraph",
+          "text": "A task system is infrastructure for agentic work. It sits under the prompt layer and provides four capabilities that prompts alone cannot."
         },
         {
           "type": "bullets",
           "items": [
-            "utility interconnection queues",
-            "substation buildouts",
-            "transformers and switchgear",
-            "electrical balance-of-plant",
-            "commissioning and energization"
+            "Persistence: A task has durable identity and state that survives any single session or API call. An agent can pick up work it started yesterday without re-explaining context.",
+            "Structured Handoffs: When one agent finishes a piece of work and another needs to continue, a handoff is a state transition \u2014 not a prompt. The receiving agent reads what happened, why, and what the constraints are for the next step.",
+            "Review and Gatekeeping: A review step isn't a revision prompt \u2014 it's a mechanism that stops forward progress until a condition is met. This creates the difference between \"the AI suggested it\" and \"the system approved it.\"",
+            "Observability: Who did what, when, for how long, and with what result. Without this, agent runs are black boxes. With it, you can audit, debug, and improve."
           ]
         },
         {
           "type": "heading",
-          "text": "Why this is AI research rather than finance first"
+          "text": "The Shift: From Chat Interface to Workflow Runtime"
         },
         {
           "type": "paragraph",
-          "text": "The core question is deployment reality: where does the physical stack jam when rack density and site load rise? The investment angle comes later. The note starts with system constraints."
+          "text": "The dominant AI product interface \u2014 the chat window \u2014 is a reasonable default for exploration and one-off tasks. But it was never designed as an operating environment for production AI systems."
+        },
+        {
+          "type": "paragraph",
+          "text": "A workflow runtime is event-driven (actions trigger based on state changes, not user prompts), long-horizon (tasks can span hours or days), multi-agent (multiple agents can work in parallel or sequence with state coordination), and human-in-the-loop capable (review steps, approval gates, and manual override points are native concepts)."
+        },
+        {
+          "type": "paragraph",
+          "text": "The practical consequence for DS leads: the question is no longer \"how do I prompt this model better?\" The question is \"what task system do I need to run this model reliably in production?\""
         },
         {
           "type": "heading",
-          "text": "Research use"
+          "text": "Case Study: Kanban-Style Task Orchestration for AI Agents"
         },
         {
           "type": "paragraph",
-          "text": "This note should inform later finance work, but it should not be reduced to a stock screen. First map the bottleneck. Then decide who monetizes it."
+          "text": "The pattern that exemplifies this shift is treating AI agent work like a Kanban board \u2014 not metaphorically, but architecturally. Each unit of work is a task with a defined state (todo, in-progress, review, done), a responsible agent, an output the next stage can consume, and an optional human review gate before promotion."
+        },
+        {
+          "type": "paragraph",
+          "text": "A research pipeline might decompose a broad question into a flow where: a researcher agent scans sources and drafts findings, an analyst agent reviews findings for gaps and flags what's missing, and a writer agent synthesises into a final deliverable. Each stage is auditable. Each output is durable. A human reviewer can intercede at any checkpoint. And if any stage fails or produces unsatisfactory output, the system handles retry and reassignment \u2014 not a human re-prompting from scratch."
+        },
+        {
+          "type": "heading",
+          "text": "Why This Matters for Data Science Teams Specifically"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Evaluation becomes a workflow problem, not a prompt problem. With multi-step agent pipelines, \"is this good?\" is a question you ask at each transition. Per-task, per-stage evaluation frameworks become necessary.",
+            "Agent reliability requires state management. Agents lose context, hit limits, and produce inconsistent outputs across runs. Durable task state is what lets you operate AI infrastructure with confidence rather than hope.",
+            "Multi-agent coordination introduces failure modes that single-prompt setups don't have. Structured workflows with explicit checkpoints catch failures closer to the source.",
+            "The operational question changes. Instead of \"which model should we use?\", the questions become: \"what does our agent workflow look like?\", \"where do we need review gates?\", and \"how do we observe what our agents are actually doing?\""
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Better prompts improve individual outputs. Task systems improve reliable output at scale."
+        },
+        {
+          "type": "paragraph",
+          "text": "For teams deploying AI agents beyond one-off tasks, the investment that pays off is not more prompting talent \u2014 it's workflow infrastructure: durable state, structured handoffs, review gates, and observability. The DS leads best positioned for the next wave of AI infrastructure are the ones already thinking in terms of workflows, not just prompts."
         }
       ]
     }
