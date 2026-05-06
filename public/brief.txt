@@ -1,28 +1,34 @@
-Wednesday 2026-05-06 08:08 HKT
-
 OVERNIGHT MAP
-- Risk tone firmed again: strong earnings and a pullback in oil let tech retake leadership, even with Hormuz risk still hanging over the tape.
-- For the book, that kept AI/growth in charge while broad beta and China beta both avoided fresh stress.
-- Anchors: S&P 500 +0.8%, Nasdaq +1.0%, Dow +0.7%, US 10Y 4.42% (-3bp), VIX 17.4 (-5.0%).
+
+Risk-on broadens as semis lead. Equities pushing higher with Nasdaq +1.03%, S&P +0.81%, Dow +0.73%. No obvious macro catalyst — tape looks like positioning shift into cyclical tech and AI-linked semis after INTC's earnings beat. Bonds quiet, gold flat.
 
 US CLOSE MOVERS
-- INTC +12.9% — turnaround / AI-packaging bid is still extending.
-- MU +11.1% — AI-memory momentum stayed extremely strong.
-- NET +9.0% — software rebound continued as investors bought quality growth again.
-- ETN -2.7% — industrial/power exposure lagged a tech-led tape.
-- NVDA -1.0% — mild profit-taking, but notably weaker than the rest of AI beta.
-- TSLA -0.8% — legacy high-beta still underperformed in a green market.
+
+INTC +12.92% — Q1 earnings beat, 6th consecutive quarter above guidance. Bullish reaction signals the AI capex narrative is spilling over into legacy semis.
+MU +11.06% — AI-driven memory demand thesis in motion. Position working.
+AAPL +2.66% — iPhone cycle traction, relatively clean.
+NET +9.04% — position working, sentiment overreaction to insider selling overshadowed by broad tech strength.
+
+MSFT -0.54% — Azure momentum solid but valuation is a ceiling at this level.
+ETN -2.74% — industrial cyclicals under pressure, macro concern outweighs AI tailwinds.
+TSLA -0.80% — no new catalyst, remains a sizing problem.
 
 HK LIVE MOVERS
-- HK cash is not open yet at 08:08 HKT, so this is setup rather than live tape.
-- 02800 last cash +1.3% and HSI last cash +1.2% — broad HK beta was still holding in before today’s open.
-- GDS +1.0% last cash showed relative strength; BABA was softer at -0.4% last cash and -0.8% on the US ADR; CGN was the local weak spot at -2.0% last cash.
+
+2800.HK +1.31% — HK/China broad beta holding in with the risk-on tone.
+GDS +4.48% — China tech outperformer in the book, working well.
+1816.HK -1.96% — notable laggard, possible structural headwind specific to the name.
 
 MARKET NEWS
-- Reuters: global stocks pushed higher on upbeat earnings and softer oil, but Brent is still above $100 so the market has not really cleared the Gulf risk yet.
-- Reuters: S&P earnings growth expectations have moved above 18%, with AI spending still doing most of the heavy lifting for the tech tape.
+
+INTC Q1 earnings beat (Apr 23) continued to reverberate, with semis and AI infrastructure names getting a second-day boost as the AI capex trade reasserts itself. This is the most concrete overnight catalyst driving the tape.
+
+Hyperscaler combined AI spending running at ~$725B annually per recent Big Tech commentary — validates the capex intensity thesis for MU, NVDA, and related names.
 
 ACTION BOARD
-- Opportunity: AI/growth leadership is broadening beyond the obvious names into MU, INTC and software, which argues for respecting strength rather than fading it automatically.
-- Risk: if oil spikes again or Hormuz headlines worsen, China beta and cyclicals can roll over quickly even if US mega-cap tech still looks fine on the surface.
-- Research: refresh the NET and ETN thesis side by side, because one is starting to act like re-accelerating quality growth while the other is no longer trading like a clean AI-infrastructure winner.
+
+Opportunity: MU and INTC together represent significant portfolio concentration in AI semis — let winners run but stay conscious of correlated drawdown risk if the AI capex narrative wobbles.
+
+Risk: China exposure is splitting — 2800.HK holding but BABA and 1816.HK both weak. The China rerating thesis needs a concrete catalyst to avoid becoming a value trap.
+
+Research: ETN's relative weakness may be signaling something on industrial demand or rate sensitivity worth understanding before sizing into the position.
