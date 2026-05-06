@@ -1,30 +1,25 @@
 {
-  "date": "May 05, 2026",
+  "date": "May 06, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "Risk-on tone faded into the close; Nasdaq held while Dow slipped. Treasury yields steady. Dollar soft.\n\nS&P 500 -0.37%, Nasdaq +tech held, Dow -0.56%",
-      "icon": "\ud83c\udf19"
+      "content": "- Risk tone firmed again: strong earnings and a pullback in oil let tech retake leadership, even with Hormuz risk still hanging over the tape.\n- For the book, that kept AI/growth in charge while broad beta and China beta both avoided fresh stress.\n- Anchors: S&P 500 +0.8%, Nasdaq +1.0%, Dow +0.7%, US 10Y 4.42% (-3bp), VIX 17.4 (-5.0%)."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "DXYZ +11.01% \u2014 speculative squeeze, light volume\nMU +6.31% \u2014 AI capex/semi momentum intact\nNET +3.07% \u2014 recovering from insider-selling drop\nINTC -3.85% \u2014 weak; portfolio drag\nAAPL -1.18% \u2014 underperforming tech\nGLD -2.00% \u2014 risk-on shift hit gold",
-      "icon": "\ud83c\uddfa\ud83c\uddf8"
+      "content": "- INTC +12.9% \u2014 turnaround / AI-packaging bid is still extending.\n- MU +11.1% \u2014 AI-memory momentum stayed extremely strong.\n- NET +9.0% \u2014 software rebound continued as investors bought quality growth again.\n- ETN -2.7% \u2014 industrial/power exposure lagged a tech-led tape.\n- NVDA -1.0% \u2014 mild profit-taking, but notably weaker than the rest of AI beta.\n- TSLA -0.8% \u2014 legacy high-beta still underperformed in a green market."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "CGN (1816.HK) +2.87%\nGDS +1.56%\nBABA +1.35%\nHSI -1.28% \u2014 broad HK soft",
-      "icon": "\ud83c\udded\ud83c\uddf0"
+      "content": "- HK cash is not open yet at 08:08 HKT, so this is setup rather than live tape.\n- 02800 last cash +1.3% and HSI last cash +1.2% \u2014 broad HK beta was still holding in before today\u2019s open.\n- GDS +1.0% last cash showed relative strength; BABA was softer at -0.4% last cash and -0.8% on the US ADR; CGN was the local weak spot at -2.0% last cash."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- MU earnings beat driven by AI HBM demand; raised guidance\n- China April PMI beat expectations at 51.4, third month of expansion",
-      "icon": "\ud83d\uddde\ufe0f"
+      "content": "- Reuters: global stocks pushed higher on upbeat earnings and softer oil, but Brent is still above $100 so the market has not really cleared the Gulf risk yet.\n- Reuters: S&P earnings growth expectations have moved above 18%, with AI spending still doing most of the heavy lifting for the tech tape."
     },
     {
       "title": "ACTION BOARD",
-      "content": "Opportunity: China expansion cycle still running \u2014 BABA/GDS/02800 remain live; CGN cheap on policy.\nRisk: INTC -3.85% signals semi weakness spreading; GLD selling in risk-on is a book-level warning.\nResearch: DXYZ +11% on no news \u2014 either Elon catalyst or short squeeze; size accordingly.",
-      "icon": "\u2192"
+      "content": "- Opportunity: AI/growth leadership is broadening beyond the obvious names into MU, INTC and software, which argues for respecting strength rather than fading it automatically.\n- Risk: if oil spikes again or Hormuz headlines worsen, China beta and cyclicals can roll over quickly even if US mega-cap tech still looks fine on the surface.\n- Research: refresh the NET and ETN thesis side by side, because one is starting to act like re-accelerating quality growth while the other is no longer trading like a clean AI-infrastructure winner."
     }
   ]
 }
