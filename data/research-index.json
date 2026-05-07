@@ -80,6 +80,28 @@
       "relatedSlugs": [
         "agentic-inference-memory-io-pressure-indicator"
       ]
+    },
+    {
+      "slug": "slides-are-becoming-agent-native-software",
+      "title": "Slides Are Becoming Agent-Native Software",
+      "section": "ai-research",
+      "summary": "The constrained canvas is the interface contract \u2014 open-slide demonstrates why fixed substrates, bidirectional annotation, and source-owned artifacts make reliable human-agent visual collaboration possible.",
+      "date": "2026-05-07",
+      "tags": [
+        "ai",
+        "agents",
+        "workflow",
+        "infrastructure",
+        "slides",
+        "open-source"
+      ],
+      "readingTime": 7,
+      "format": "thesis",
+      "perspective": "operator",
+      "relatedSlugs": [
+        "from-chatbot-to-workflow",
+        "agentic-inference-memory-io-pressure-indicator"
+      ]
     }
   ]
 }
