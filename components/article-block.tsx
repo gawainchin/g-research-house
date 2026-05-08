@@ -399,7 +399,33 @@ function ScenarioLadder({ block }: { block: ContentBlock }) {
               lineHeight: 1.6,
               fontFamily: 'Helvetica Neue, sans-serif',
             }}>
-              {s.text}
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginBottom: s.description || s.text ? '0.4rem' : 0 }}>
+                {s.probability ? (
+                  <span style={{
+                    fontSize: '0.72rem',
+                    fontWeight: 600,
+                    letterSpacing: '0.05em',
+                    textTransform: 'uppercase',
+                    color: colors[i],
+                    fontFamily: 'Helvetica Neue, sans-serif',
+                  }}>
+                    Prob. {s.probability}
+                  </span>
+                ) : null}
+                {s.outcome ? (
+                  <span style={{
+                    fontSize: '0.72rem',
+                    fontWeight: 600,
+                    letterSpacing: '0.05em',
+                    textTransform: 'uppercase',
+                    color: '#5f564d',
+                    fontFamily: 'Helvetica Neue, sans-serif',
+                  }}>
+                    Outcome {s.outcome}
+                  </span>
+                ) : null}
+              </div>
+              {s.description ?? s.text}
             </div>
           </div>
         ))}

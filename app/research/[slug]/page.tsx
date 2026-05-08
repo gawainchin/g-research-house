@@ -48,6 +48,7 @@ function ArticleHeader({ article }: {
 }) {
   const sectionSlug = article.section
   const style = isSectionSlug(sectionSlug) ? SECTION_STYLE[sectionSlug] : SECTION_STYLE['ai-research']
+  const isFinancialResearch = article.section === 'financial-research'
 
   // Pull out leading special blocks for visual treatment
   const thesisBlock = article.content.find(b => b.type === 'thesis-card')
@@ -158,6 +159,23 @@ function ArticleHeader({ article }: {
         }}>
           {article.summary}
         </p>
+
+        {isFinancialResearch ? (
+          <div style={{
+            marginTop: '1rem',
+            padding: '0.85rem 1rem',
+            background: '#f7f5f0',
+            border: '1px solid #e6e0d6',
+            borderLeft: '3px solid #3d6b5e',
+            borderRadius: '0 4px 4px 0',
+            color: '#4f473f',
+            fontSize: '0.9rem',
+            lineHeight: 1.6,
+            fontFamily: 'Helvetica Neue, sans-serif',
+          }}>
+            <strong style={{ color: '#1e4d3a' }}>Educational purposes only.</strong> This research is general information, not personalized investment advice or a recommendation to buy or sell any security.
+          </div>
+        ) : null}
 
         {article.sourceLinks?.length ? (
           <div style={{

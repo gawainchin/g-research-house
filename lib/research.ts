@@ -36,7 +36,13 @@ export interface ContentBlock {
   // metric-strip
   metrics?: { label: string; value: string }[]
   // scenario-ladder
-  scenarios?: { label: string; text: string }[]
+  scenarios?: {
+    label: string
+    text?: string
+    probability?: string
+    outcome?: string
+    description?: string
+  }[]
   // callout
   variant?: 'info' | 'warning' | 'insight' | 'risk'
 }
