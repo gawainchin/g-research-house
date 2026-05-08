@@ -158,7 +158,69 @@ function ArticleHeader({ article }: {
         }}>
           {article.summary}
         </p>
+
+        {article.sourceLinks?.length ? (
+          <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '0.65rem',
+            marginTop: '1rem',
+          }}>
+            {article.sourceLinks.map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  padding: '0.45rem 0.75rem',
+                  background: '#faf8f5',
+                  border: '1px solid #e6e0d6',
+                  borderRadius: 999,
+                  color: '#2e2a26',
+                  textDecoration: 'none',
+                  fontFamily: 'Helvetica Neue, sans-serif',
+                  fontSize: '0.9rem',
+                }}
+              >
+                <span>↗</span>
+                <span>{link.label}</span>
+              </a>
+            ))}
+          </div>
+        ) : null}
       </header>
+
+      {article.heroImage ? (
+        <figure style={{ margin: '0 0 2rem' }}>
+          <img
+            src={article.heroImage.url}
+            alt={article.heroImage.alt}
+            style={{
+              width: '100%',
+              height: 'auto',
+              display: 'block',
+              borderRadius: '6px',
+              border: '1px solid #e6e0d6',
+              background: '#f7f5f0',
+            }}
+          />
+          {article.heroImage.caption ? (
+            <figcaption style={{
+              marginTop: '0.65rem',
+              color: '#73695f',
+              fontSize: '0.85rem',
+              lineHeight: 1.55,
+              fontFamily: 'Helvetica Neue, sans-serif',
+            }}>
+              {article.heroImage.caption}
+            </figcaption>
+          ) : null}
+        </figure>
+      ) : null}
 
       {/* ── Thesis card (pulled to top) ─────────────────────────── */}
       {thesisBlock && (

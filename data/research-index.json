@@ -64,7 +64,7 @@
       "slug": "from-chatbot-to-workflow",
       "title": "From Chatbot to Workflow",
       "section": "ai-research",
-      "summary": "Why AI agents need task systems, not just better prompts \u2014 and what workflow infrastructure actually provides that prompts cannot.",
+      "summary": "Why AI agents need task systems, not just better prompts — and what workflow infrastructure actually provides that prompts cannot.",
       "date": "2026-05-05",
       "tags": [
         "ai",
@@ -80,6 +80,45 @@
       "relatedSlugs": [
         "agentic-inference-memory-io-pressure-indicator"
       ]
+    },
+    {
+      "slug": "palantir-rule-of-40-deep-dive",
+      "title": "Palantir and the 127% Rule of 40 — When Growth Obscures Price",
+      "section": "financial-research",
+      "summary": "PLTR posts a 127% Rule of 40 score. The quality is real — but at 287x forward P/E, the bar for delivering the number is unforgiving.",
+      "date": "2026-05-05",
+      "tags": [
+        "investing",
+        "ai",
+        "saas",
+        "palantir",
+        "rule-of-40",
+        "valuation"
+      ],
+      "readingTime": 7,
+      "format": "thesis",
+      "perspective": "investor",
+      "relatedSlugs": []
+    },
+    {
+      "slug": "cerebras-ipo-wafer-scale-inference",
+      "title": "Cerebras IPO — Wafer-Scale Inference and the $4B Question",
+      "section": "financial-research",
+      "summary": "Cerebras comes to market at $4B valuation with $510M revenue and an unusual architectural bet: bigger is better. The numbers tell a compelling but concentrated story.",
+      "date": "2026-05-05",
+      "tags": [
+        "investing",
+        "ai",
+        "semiconductors",
+        "ipo",
+        "cerebras",
+        "inference",
+        "wse"
+      ],
+      "readingTime": 7,
+      "format": "thesis",
+      "perspective": "investor",
+      "relatedSlugs": []
     },
     {
       "slug": "slides-are-becoming-agent-native-software",

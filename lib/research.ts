@@ -54,7 +54,20 @@ export interface ResearchNoteSummary {
   relatedSlugs: string[]
 }
 
+export interface ExternalLink {
+  label: string
+  url: string
+}
+
+export interface HeroImage {
+  url: string
+  alt: string
+  caption?: string
+}
+
 export interface ResearchArticle extends ResearchNoteSummary {
+  sourceLinks?: ExternalLink[]
+  heroImage?: HeroImage
   content: ContentBlock[]
 }
 

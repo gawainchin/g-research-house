@@ -744,6 +744,17 @@
       "readingTime": 7,
       "format": "thesis",
       "perspective": "operator",
+      "sourceLinks": [
+        {
+          "label": "GitHub Repo",
+          "url": "https://github.com/1weiho/open-slide"
+        }
+      ],
+      "heroImage": {
+        "url": "https://github.com/user-attachments/assets/02f5e6d7-12a7-4a8e-88e7-ae8770a96584",
+        "alt": "open-slide GitHub cover image",
+        "caption": "open-slide repository cover image from the project's GitHub README."
+      },
       "relatedSlugs": [
         "from-chatbot-to-workflow",
         "agentic-inference-memory-io-pressure-indicator"
