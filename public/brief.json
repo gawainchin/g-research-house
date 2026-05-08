@@ -1,25 +1,25 @@
 {
-  "date": "May 07, 2026",
+  "date": "May 08, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "Risk-on surge: Nasdaq +2.02%, Dow +1.24%, S&P +1.46% as AI/semi names led. Copper +3%+ on Middle East supply fears \u2014 inflation/metals names rip.\nUS 10-y yield ~4.5%, USD firm."
+      "content": "Risk-off lean overnight as weak US data reinforced growth slowdown concerns. Dow down most, Nasdaq held relatively better. Treasury curve flatter. Dollar softer.\n\nS&P 500 -0.38% | Nasdaq -0.13% | Dow -0.63%"
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "Strong:\nBABA +6.94% \u2014 stimulus hopes, ADR re-rating\nDXYZ +6.41% \u2014 speculative appetite, space hype\nNVDA +5.77% \u2014 AI capex narrative alive\nINTC +4.49% \u2014 semi recovery thesis working\nMU +4.12% \u2014 same, HBM demand holding\n\nWeak:\nXLU -1.42% \u2014 defensives rotated out"
+      "content": "Strong:\n- DXYZ +10.3% \u2014 SpaceX/optionality bid resuming; speculative appetite back\n- NET +3.3% \u2014 recovering from insider-selling overshoot; sentiment bounce\n- NVDA +1.8% \u2014 AI capex narrative still running\n- MSFT +1.7% \u2014 quality hold in a mixed tape\n\nWeak:\n- ETN -5.3% \u2014 Q2 EPS guidance missed ($3.05 midpoint vs $3.12 est); record revenue not enough\n- GDS -5.2% \u2014 China data center operator sold on macro/regulation overhang\n- MU -3.0% \u2014 data center memory cycle concerns surfaced in semis\n- INTC -3.0% \u2014 cyclical growth fears hitting legacy semis"
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "2800.HK -0.84%, HSI -0.76% at ~25,899. BABA ADR momentum not enough to offset rate/utility drag. 1816.HK -1.14%."
+      "content": "Weak:\n- BABA -0.3% \u2014 rangebound, no new catalyst\n- GDS -5.2% \u2014 same China data center overhang as US listing\n- Up: 02800.HK +1.1% \u2014 broad HK/China beta holding"
     },
     {
       "title": "MARKET NEWS",
-      "content": "Fed's Powell: \"no risk-free path\" \u2014 no cuts in 2026 likely as tariff pass-through lifts inflation.\nCopper spikes on Middle East supply disruption \u2014 watch if inflation expectations re-price."
+      "content": "- ETN guided Q2 EPS $3.05 vs $3.12 est; revenue beat but guidance miss triggered the selloff \u2014 concern is whether industrial AI capex is plateauing.\n- US weekly Jobless Claims rose to 245K (above est), adding to growth slowdown narrative without signaling outright recession."
     },
     {
       "title": "ACTION BOARD",
-      "content": "Opportunity: AI/semi rotation still has legs \u2014 NVDA, INTC, MU in synch. Let winners run.\nRisk: XLU's drop signals defensive positions getting squeezed; if breadth narrows further, the book lacks hedge.\nResearch: GLD +3% \u2014\u7406\u89e3\u662f\u5426\u9ec4\u91d1\u907f\u9669\u529f\u80fd\u5728risk-on\u4e2d\u91cd\u65b0\u5b9a\u4ef7\uff0c\u8fd8\u662f\u5355\u7eaf\u7f8e\u5143\u8d70\u5f31\u3002"
+      "content": "- Opportunity: NET recovering from insider-selling washout; short-term sentiment overshoot if thesis intact.\n- Risk: ETN's guidance miss raises questions about breadth of AI capex beneficiaries \u2014 MU also weakening on similar concern.\n- Research: ETN guidance cut worth dissecting \u2014 was it company-specific or does it signal industrial AI spending pulse is peaking?"
     }
   ]
 }
