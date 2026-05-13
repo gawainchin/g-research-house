@@ -1,7 +1,8 @@
+import fs from 'node:fs'
+import path from 'node:path'
+import matter from 'gray-matter'
 import siteData from '../data/site.json'
 import schemaData from '../data/research-schema.json'
-import indexData from '../data/research-index.json'
-import articlesData from '../data/research-articles.json'
 
 export type ResearchSectionSlug = 'financial-research' | 'ai-research'
 export type ResearchPerspective = 'investor' | 'operator'
@@ -24,18 +25,12 @@ export interface ContentBlock {
   type: ContentBlockType
   text?: string
   items?: string[]
-  // thesis-card
   title?: string
-  // comparison-table
+  label?: string
   columns?: string[]
   rows?: string[][]
-  // flowchart
   steps?: { label: string; note?: string }[]
-  // key-takeaways / verdict
-  label?: string
-  // metric-strip
   metrics?: { label: string; value: string }[]
-  // scenario-ladder
   scenarios?: {
     label: string
     text?: string
@@ -43,7 +38,6 @@ export interface ContentBlock {
     outcome?: string
     description?: string
   }[]
-  // callout
   variant?: 'info' | 'warning' | 'insight' | 'risk'
 }
 
@@ -96,8 +90,84 @@ const schema = schemaData as {
   schemaVersion: number
   rules: string[]
 }
-const noteIndex = indexData as { notes: ResearchNoteSummary[] }
-const articleIndex = articlesData as { articles: ResearchArticle[] }
+
+const ARTICLES_DIR = path.join(process.cwd(), 'data', 'articles')
+
+// ── Block parser ─────────────────────────────────────────────────────────────────
+
+const BLOCK_RE = /:::([a-z-]+)\n([\s\S]*?)\n:::/gm
+
+function parseInlineBlocks(body: string): ContentBlock[] {
+  const blocks: ContentBlock[] = []
+  let match
+  BLOCK_RE.lastIndex = 0
+  while ((match = BLOCK_RE.exec(body)) !== null) {
+    const blockType = match[1].trim() as ContentBlockType
+    const raw = match[2].trimEnd()
+    if (!raw.trim()) {
+      blocks.push({ type: blockType })
+      continue
+    }
+    // Parse YAML body — strip leading spaces from each line (dedent)
+    const lines = raw.split('\n')
+    const dedented = lines.map(l => l.replace(/^  /, '')).join('\n')
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const yaml = require('js-yaml')
+      const fields = yaml.load(dedented) as Record<string, unknown>
+      if (fields && typeof fields === 'object' && !Array.isArray(fields)) {
+        blocks.push({ type: blockType, ...(fields as Record<string, unknown>) } as ContentBlock)
+      } else {
+        blocks.push({ type: blockType, text: String(fields) })
+      }
+    } catch {
+      // Fallback: treat raw body as plain text
+      blocks.push({ type: blockType, text: raw })
+    }
+  }
+  return blocks
+}
+
+// ── File-based article readers ───────────────────────────────────────────────────
+
+let _articleCache: Map<string, ResearchArticle> | null = null
+
+function getArticleCache(): Map<string, ResearchArticle> {
+  if (_articleCache) return _articleCache
+  _articleCache = new Map()
+  if (!fs.existsSync(ARTICLES_DIR)) return _articleCache
+  for (const file of fs.readdirSync(ARTICLES_DIR)) {
+    if (!file.endsWith('.md')) continue
+    const slug = file.replace(/\.md$/, '')
+    const raw = fs.readFileSync(path.join(ARTICLES_DIR, file), 'utf8')
+    const { data, content: bodyWithoutBlocks } = matter(raw)
+    const fm = data as Record<string, unknown>
+    const content = parseInlineBlocks(bodyWithoutBlocks)
+    const article: ResearchArticle = {
+      slug,
+      title: String(fm.title ?? ''),
+      section: (fm.section ?? 'ai-research') as ResearchSectionSlug,
+      summary: String(fm.summary ?? ''),
+      date: String(fm.date ?? ''),
+      tags: Array.isArray(fm.tags) ? fm.tags.map(String) : [],
+      readingTime: Number(fm.readingTime ?? 5),
+      format: String(fm.format ?? 'thesis'),
+      perspective: (fm.perspective ?? 'investor') as ResearchPerspective,
+      relatedSlugs: Array.isArray(fm.relatedSlugs) ? fm.relatedSlugs.map(String) : [],
+      sourceLinks: Array.isArray(fm.sourceLinks) ? (fm.sourceLinks as ExternalLink[]) : undefined,
+      heroImage: fm.heroImage as HeroImage | undefined,
+      content,
+    }
+    _articleCache.set(slug, article)
+  }
+  return _articleCache
+}
+
+function getNoteSummaries(): ResearchNoteSummary[] {
+  return Array.from(getArticleCache().values()).map(
+    ({ content: _c, sourceLinks: _sl, heroImage: _hi, ...summary }) => summary
+  )
+}
 
 export function getSiteData() {
   return site
@@ -108,7 +178,7 @@ export function getSchemaRules() {
 }
 
 export function getAllNotes() {
-  return [...noteIndex.notes].sort((a, b) => b.date.localeCompare(a.date))
+  return [...getNoteSummaries()].sort((a, b) => b.date.localeCompare(a.date))
 }
 
 export function getNotesBySection(section: ResearchSectionSlug) {
@@ -123,7 +193,7 @@ export function getFeaturedNotes() {
 }
 
 export function getArticleBySlug(slug: string) {
-  return articleIndex.articles.find((article) => article.slug === slug)
+  return getArticleCache().get(slug)
 }
 
 export function getRelatedNotes(slugs: string[]) {
