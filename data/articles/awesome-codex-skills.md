@@ -194,8 +194,8 @@ items:
 
 :::key-takeaways
 takeaways:
-  - {icon: "🔗", text: "`connect` is the single highest-leverage skill — it turns Codex from autocomplete into an agent."}
-  - {icon: "🔧", text: "`pr-review-ci-fix` and `gh-fix-ci` overlap but serve different roles: autonomous fix loop vs. approval-gated debugging."}
-  - {icon: "📦", text: "The install commands are identical across all skills: `composio add <skill_name>` after linking your tools once."}
-  - {icon: "📚", text: "Source: ComposioHQ/awesome-codex-skills GitHub (May 2026). Commands verified at time of publication."}
+  - {icon: 🔗, text: "`connect` is the single highest-leverage skill — it turns Codex from autocomplete into an agent."}
+  - {icon: 🔧, text: "`pr-review-ci-fix` and `gh-fix-ci` overlap but serve different roles: autonomous fix loop vs. approval-gated debugging."}
+  - {icon: 📦, text: "The install commands are identical across all skills: `composio add <skill_name>` after linking your tools once."}
+  - {icon: 📚, text: "Source: ComposioHQ/awesome-codex-skills GitHub (May 2026). Commands verified at time of publication."}
 :::

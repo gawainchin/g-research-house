@@ -11,17 +11,20 @@ import yaml, os, re, subprocess
 
 def _quote_val(val):
     """Return a properly quoted YAML string value."""
-    if not val:
+    if not val and val != 0:
         return '""'
+    if not isinstance(val, str):
+        return str(val)
+    # Strip leading/trailing whitespace and common artifact chars
+    stripped = val.strip().rstrip('\n')
     needs_quotes = (
-        '\n' in val or
-        any(c in val for c in ':{}[]&*#?|-<>=!%@`\'"') or
-        re.search(r'\w:', val) or  # word char + colon
-        (val[0] == ' ' or val[-1] == ' ')
+        any(c in stripped for c in ':{}[]&*#?|-<>=!%@`\'"') or
+        re.search(r'\w:', stripped) or  # word char + colon
+        ('`' in stripped)
     )
     if not needs_quotes:
-        return val
-    inner = val.replace('\\', '\\\\').replace('"', '\\"').replace('\n', '\\n')
+        return stripped
+    inner = stripped.replace('\\', '\\\\').replace('"', '\\"')
     return f'"{inner}"'
 
 
@@ -43,7 +46,8 @@ def format_block_lines(block):
             lines.append(f'{key}:')
             for item in val:
                 if isinstance(item, str):
-                    lines.append(f'  - {item}')
+                    quoted = _quote_val(item)
+                    lines.append(f'  - {quoted}')
                 elif isinstance(item, dict):
                     parts = [f'{dk}: {_quote_val(dv)}' for dk, dv in item.items()]
                     lines.append(f'  - {{{", ".join(part for part in parts)}}}')

@@ -34,48 +34,47 @@ title: The constrained canvas is the interface contract
 
 :::key-takeaways
 takeaways:
-  - {icon: "📁", text: "File ownership — the agent works on a typed source artifact it can read and revise. No blob of generated output to reason around."}
-  - {icon: "💬", text: "Bidirectional annotation without context switching — the human flags what needs changing on the visual surface; the agent receives it as source-level markers."}
-  - {icon: "🔌", text: "No lock-in — any coding agent (Claude Code, Codex, Cursor, Gemini CLI) drives the file layer. No proprietary platform required."}
+  - {icon: 📁, text: File ownership — the agent works on a typed source artifact it can read and revise. No blob of generated output to reason around.}
+  - {icon: 💬, text: "Bidirectional annotation without context switching — the human flags what needs changing on the visual surface; the agent receives it as source-level markers."}
+  - {icon: 🔌, text: "No lock-in — any coding agent (Claude Code, Codex, Cursor, Gemini CLI) drives the file layer. No proprietary platform required."}
 :::
 
 :::metric-strip
 metrics:
-  - {label: "Fixed Canvas", value: "1920×1080"}
-  - {label: "Surface Language", value: "TypeScript"}
-  - {label: "Contributors", value: "3"}
-  - {label: "License", value: "MIT"}
-title: open-slide Specs
+  - {label: Fixed Canvas, value: 1920×1080}
+  - {label: Surface Language, value: TypeScript}
+  - {label: Contributors, value: 3}
+  - {label: "{label: \"License\", value: \"MIT\"}", title: "open-slide Specs"}
 :::
 
 :::comparison-table
-columns: ["Dimension", "Gamma / Tome / Beautiful.ai", "open-slide"]
+columns:
+  - Dimension
+  - Gamma / Tome / Beautiful.ai
+  - "open-slide"
 rows:
-  - ["Output format", "Hosted, locked web view", "Source files — React, deployable anywhere"]
-  - ["Agent role", "One-shot: prompt → artifact", "Ongoing authoring partner"]
-  - ["Review mechanism", "Accept/reject finished deck", "In-source @slide-comment markers"]
-  - ["Iteration model", "Regenerate (loses edits on other slides)", "Targeted /apply-comments (additive)"]
-  - ["Canvas", "Abstracted away", "Explicit 1920×1080 React canvas"]
-  - ["Agent lock-in", "Proprietary prompt layer", "Any coding agent — file-level interface"]
-  - ["Audience", "Non-technical presenters", "Developers / agent-orchestrating leads"]
-title: "open-slide vs. Generic AI Slide Tools"
+  - ['Output format', 'Hosted, locked web view', 'Source files — React, deployable anywhere']
+  - ['Agent role', 'One-shot: prompt → artifact', 'Ongoing authoring partner']
+  - ['Review mechanism', 'Accept/reject finished deck', 'In-source @slide-comment markers']
+  - ['Iteration model', 'Regenerate (loses edits on other slides)', 'Targeted /apply-comments (additive)']
+  - ['Canvas', 'Abstracted away', 'Explicit 1920×1080 React canvas']
+  - ['Agent lock-in', 'Proprietary prompt layer', 'Any coding agent — file-level interface']
+  - {label: "[\"Audience\", \"Non-technical presenters\", \"Developers / agent-orchestrating leads\"]", title: "\"open-slide vs. Generic AI Slide Tools\""}
 :::
 
 :::flowchart
 steps:
-  - {label: "Agent drafts slide components", note: "Writes .tsx files into a typed React workspace. Canvas is fixed: 1920×1080."}
-  - {label: "Human inspects and annotates", note: "Toggles inspect mode, clicks any element, drops an @slide-comment marker in-place."}
-  - {label: "Agent applies comments", note: "Runs /apply-comments. Rewrites exactly what was flagged, clears markers."}
-  - {label: "Loop repeats", note: "Revision is targeted and additive — slides 1–3 are untouched while slide 4 is fixed."}
-title: The @slide-comment Authoring Loop
+  - {label: Agent drafts slide components, note: "Writes .tsx files into a typed React workspace. Canvas is fixed: 1920×1080."}
+  - {label: Human inspects and annotates, note: "Toggles inspect mode, clicks any element, drops an @slide-comment marker in-place."}
+  - {label: Agent applies comments, note: "Runs /apply-comments. Rewrites exactly what was flagged, clears markers."}
+  - {label: "{label: \"Loop repeats\", note: \"Revision is targeted and additive — slides 1–3 are untouched while slide 4 is fixed.\"}", title: "The @slide-comment Authoring Loop"}
 :::
 
 :::scenario-ladder
 scenarios:
-  - {label: "Scale risk", probability: "", outcome: "", description: "Single-maintainer repo with Claude-as-contributor. No evidence the pattern sustains across a larger contributor base or more complex feature work."}
-  - {label: "Adoption ceiling", probability: "", outcome: "", description: "CLI scaffold and TypeScript workspace assume developer context. Whether this reaches PMs, founders, or researchers — the broader deck-making market — is unresolved."}
-  - {label: "Multi-agent gaps", probability: "", outcome: "", description: "Current loop is one human + one agent. Whether collaborative agent teams (draft → edit → review) map cleanly onto this surface is unexplored."}
-title: Engineering Questions Worth Watching
+  - {label: Scale risk, probability: "", outcome: "", description: "Single-maintainer repo with Claude-as-contributor. No evidence the pattern sustains across a larger contributor base or more complex feature work."}
+  - {label: Adoption ceiling, probability: "", outcome: "", description: "CLI scaffold and TypeScript workspace assume developer context. Whether this reaches PMs, founders, or researchers — the broader deck-making market — is unresolved."}
+  - {label: "{label: \"Multi-agent gaps\", probability: \"\", outcome: \"\", description: \"Current loop is one human + one agent. Whether collaborative agent teams (draft → edit → review) map cleanly onto this surface is unexplored.\"}", title: Engineering Questions Worth Watching}
 :::
 
 :::callout
@@ -98,7 +97,7 @@ text: "A 395-star GitHub repo with three contributors isn't usually worth a hous
 :::
 
 :::paragraph
-text: open-slide scaffolds a workspace with `npx @open-slide/cli init my-deck`. What you get is a TypeScript monorepo (pnpm + Turbo) with Vite and React already wired up. The agent's job is to write .tsx slide components into that workspace.
+text: "open-slide scaffolds a workspace with `npx @open-slide/cli init my-deck`. What you get is a TypeScript monorepo (pnpm + Turbo) with Vite and React already wired up. The agent's job is to write .tsx slide components into that workspace."
 :::
 
 :::heading
@@ -161,8 +160,8 @@ items:
   - "Maintainer velocity at scale — single-maintainer repo with Claude-as-contributor, untested across larger contributor bases."
   - "Non-developer adoption — CLI scaffold and TypeScript workspace assume developer context, whether this reaches PMs and researchers is unresolved."
   - "Multi-agent workflows — current loop is one human plus one agent, collaborative agent teams are unexplored."
-  - "Quality benchmarks — no public evals for slide quality, accessibility, or brand consistency."
-  - "Enterprise requirements — SSO, audit logs, compliance archives remain unaddressed."
+  - Quality benchmarks — no public evals for slide quality, accessibility, or brand consistency.
+  - Enterprise requirements — SSO, audit logs, compliance archives remain unaddressed.
 :::
 
 :::verdict

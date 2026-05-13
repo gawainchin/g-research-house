@@ -19,9 +19,9 @@ relatedSlugs:
 
 :::bullets
 items:
-  - Infineon is the best quality-adjusted expression.
-  - onsemi is the best U.S.-listed real-business expression.
-  - Wolfspeed is the highest-torque and highest-risk expression.
+  - "Infineon is the best quality-adjusted expression."
+  - "onsemi is the best U.S.-listed real-business expression."
+  - "Wolfspeed is the highest-torque and highest-risk expression."
 :::
 
 :::bullets

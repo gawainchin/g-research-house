@@ -26,32 +26,33 @@ title: The bottleneck is not prompting — it is the absence of task infrastruct
 
 :::key-takeaways
 takeaways:
-  - {icon: "💬", text: "Chat interfaces are built for one-shot answers — they are not designed as production operating environments for AI systems."}
-  - {icon: "🧱", text: "Task systems add: durable state, structured handoffs, review gates, and observability — capabilities prompts alone cannot provide."}
-  - {icon: "🔄", text: "The practical shift: from 'how do I prompt better?' to 'what task system do I need to run this reliably in production?'"}
-  - {icon: "📋", text: "Kanban-style orchestration turns multi-agent pipelines into auditable, retryable, human-in-the-loop workflows."}
+  - {icon: 💬, text: "Chat interfaces are built for one-shot answers — they are not designed as production operating environments for AI systems."}
+  - {icon: 🧱, text: "Task systems add: durable state, structured handoffs, review gates, and observability — capabilities prompts alone cannot provide."}
+  - {icon: 🔄, text: "The practical shift: from 'how do I prompt better?' to 'what task system do I need to run this reliably in production?'"}
+  - {icon: 📋, text: "Kanban-style orchestration turns multi-agent pipelines into auditable, retryable, human-in-the-loop workflows."}
 :::
 
 :::comparison-table
-columns: ["Dimension", "Chatbot (prompt-only)", "Workflow System"]
+columns:
+  - Dimension
+  - "Chatbot (prompt-only)"
+  - Workflow System
 rows:
-  - ["Unit of work", "One reply", "Multi-step task"]
-  - ["State", "Mostly transient", "Persistent task state"]
-  - ["Quality control", "User manually checks", "Built-in review gates"]
-  - ["Failure handling", "Human re-prompts", "Retry / reassign automatically"]
-  - ["Multi-agent", "Not native", "First-class coordination"]
-  - ["Observability", "Black box", "Full audit trail"]
-title: Chatbot vs Workflow System
+  - ['Unit of work', 'One reply', 'Multi-step task']
+  - ['State', 'Mostly transient', 'Persistent task state']
+  - ['Quality control', 'User manually checks', 'Built-in review gates']
+  - ['Failure handling', 'Human re-prompts', 'Retry / reassign automatically']
+  - ['Multi-agent', 'Not native', 'First-class coordination']
+  - {label: "[\"Observability\", \"Black box\", \"Full audit trail\"]", title: Chatbot vs Workflow System}
 :::
 
 :::flowchart
 steps:
-  - {label: "Researcher Agent", note: "Scans sources, drafts findings, writes intermediate output"}
-  - {label: "Analyst Agent", note: "Reviews findings for gaps, flags what's missing or unclear"}
-  - {label: "Human Review Gate", note: "DS lead approves before synthesis proceeds"}
-  - {label: "Writer Agent", note: "Synthesises approved findings into final deliverable"}
-  - {label: "Done + Archived", note: "Task closed, output durable, audit trail complete"}
-title: "Research Pipeline: Kanban-Style Multi-Agent Flow"
+  - {label: Researcher Agent, note: Scans sources, drafts findings, writes intermediate output}
+  - {label: Analyst Agent, note: "Reviews findings for gaps, flags what's missing or unclear"}
+  - {label: Human Review Gate, note: DS lead approves before synthesis proceeds}
+  - {label: Writer Agent, note: Synthesises approved findings into final deliverable}
+  - {label: "{label: \"Done + Archived\", note: \"Task closed, output durable, audit trail complete\"}", title: "\"Research Pipeline: Kanban-Style Multi-Agent Flow\""}
 :::
 
 :::callout
@@ -77,13 +78,13 @@ items:
 :::bullets
 items:
   - "Evaluation becomes a workflow problem, not a prompt problem. With multi-step agent pipelines, 'is this good?' is a question you ask at each transition. Per-task, per-stage evaluation frameworks become necessary."
-  - "Agent reliability requires state management. Agents lose context, hit limits, and produce inconsistent outputs across runs. Durable task state is what lets you operate AI infrastructure with confidence rather than hope."
+  - Agent reliability requires state management. Agents lose context, hit limits, and produce inconsistent outputs across runs. Durable task state is what lets you operate AI infrastructure with confidence rather than hope.
   - "Multi-agent coordination introduces failure modes that single-prompt setups don't have. Structured workflows with explicit checkpoints catch failures closer to the source."
   - "The operational question changes. Instead of 'which model should we use?', the questions become: 'what does our agent workflow look like?', 'where do we need review gates?', and 'how do we observe what our agents are actually doing?'"
 :::
 
 :::heading
-text: The Problem With One-Shot Thinking
+text: "The Problem With One-Shot Thinking"
 :::
 
 :::paragraph

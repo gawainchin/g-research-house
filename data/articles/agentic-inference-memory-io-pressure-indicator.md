@@ -20,8 +20,8 @@ relatedSlugs:
 :::bullets
 items:
   - It asks what the system is doing, not what stock rerates.
-  - It tracks technical evidence like KV-cache pressure, tiered memory, and DPU-attached context storage.
-  - It helps distinguish real production pain from conference-slide storytelling.
+  - "It tracks technical evidence like KV-cache pressure, tiered memory, and DPU-attached context storage."
+  - "It helps distinguish real production pain from conference-slide storytelling."
 :::
 
 :::heading

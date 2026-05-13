@@ -38,37 +38,37 @@ title: The ceasefire is a volatility event, not a regime change.
 
 :::key-takeaways
 takeaways:
-  - {icon: "🛡️", text: "Defense stocks can sell off on peace headlines, but the order-book thesis survives because NATO spending has already structurally reset higher."}
-  - {icon: "⚡", text: "The market is over-ascribing oil and gas moves to Ukraine; the dominant live energy variable is Iran/Hormuz, not a near-term Russia-Ukraine pause."}
-  - {icon: "🔄", text: "The real trade is sector rotation — construction, Eastern European capex, and selected EM risk assets if peace proves durable — not a blanket global melt-up."}
-  - {icon: "⏱️", text: "A one-week ceasefire changes sentiment; a 90+ day ceasefire with a reconstruction framework changes earnings expectations."}
+  - {icon: 🛡️, text: "Defense stocks can sell off on peace headlines, but the order-book thesis survives because NATO spending has already structurally reset higher."}
+  - {icon: ⚡, text: "The market is over-ascribing oil and gas moves to Ukraine; the dominant live energy variable is Iran/Hormuz, not a near-term Russia-Ukraine pause."}
+  - {icon: 🔄, text: "The real trade is sector rotation — construction, Eastern European capex, and selected EM risk assets if peace proves durable — not a blanket global melt-up."}
+  - {icon: ⏱️, text: "A one-week ceasefire changes sentiment; a 90+ day ceasefire with a reconstruction framework changes earnings expectations."}
 :::
 
 :::metric-strip
 metrics:
-  - {label: "Urals crude since Dec.", value: "+$22/bbl"}
-  - {label: "NATO defense target", value: "3.5% GDP"}
-  - {label: "Total security target", value: "5% GDP"}
-  - {label: "Ceasefire durability needed", value: "90+ days"}
-title: Four numbers that frame the setup
+  - {label: Urals crude since Dec., value: +$22/bbl}
+  - {label: NATO defense target, value: "3.5% GDP"}
+  - {label: Total security target, value: "5% GDP"}
+  - {label: "{label: \"Ceasefire durability needed\", value: \"90+ days\"}", title: Four numbers that frame the setup}
 :::
 
 :::comparison-table
-columns: ["Bucket", "If ceasefire is brief / cosmetic", "If ceasefire is durable"]
+columns:
+  - Bucket
+  - If ceasefire is brief / cosmetic
+  - If ceasefire is durable
 rows:
-  - ["Defense", "Headline selloff, then stabilization", "Flat-to-down multiples, but structural backlog remains"]
-  - ["Energy", "Little fundamental relief if Iran risk persists", "Modest Europe relief, but not a full normalization trade"]
-  - ["Construction / infrastructure", "Short squeeze / tactical rotation only", "Real rerating if governance and reconstruction funding appear"]
-  - ["EM / FX", "Temporary sentiment bounce", "Broader dollar-down, EM-up rotation becomes more credible"]
-title: Likely market reactions by bucket
+  - ['Defense', 'Headline selloff, then stabilization', 'Flat-to-down multiples, but structural backlog remains']
+  - ['Energy', 'Little fundamental relief if Iran risk persists', 'Modest Europe relief, but not a full normalization trade']
+  - ['Construction / infrastructure', 'Short squeeze / tactical rotation only', 'Real rerating if governance and reconstruction funding appear']
+  - {label: "[\"EM / FX\", \"Temporary sentiment bounce\", \"Broader dollar-down, EM-up rotation becomes more credible\"]", title: Likely market reactions by bucket}
 :::
 
 :::scenario-ladder
 scenarios:
-  - {label: "Bull", probability: "25%", outcome: "Construction/outperformance", description: "Durable ceasefire by Q3 2026, reconstruction framework forms, and NATO spending commitments stay intact. Construction and infrastructure outperform, the euro strengthens, and EM risk assets rally."}
-  - {label: "Base", probability: "50%", outcome: "Range-bound grind", description: "Conflict freezes at current lines with intermittent local pauses, while energy inflation persists and Iran-related oil risk remains live. Defense stays range-bound, European equities grind sideways, and the peace dividend underwhelms."}
-  - {label: "Bear", probability: "25%", outcome: "Re-escalation selloff", description: "Fighting re-escalates after headline optimism. Defense re-rates higher, Europe sells off, oil spikes again, and the dollar / safe havens catch a fresh bid."}
-title: Bull / Base / Bear
+  - {label: Bull, probability: "25%", outcome: Construction/outperformance, description: Durable ceasefire by Q3 2026, reconstruction framework forms, and NATO spending commitments stay intact. Construction and infrastructure outperform, the euro strengthens, and EM risk assets rally.}
+  - {label: Base, probability: "50%", outcome: "Range-bound grind", description: "Conflict freezes at current lines with intermittent local pauses, while energy inflation persists and Iran-related oil risk remains live. Defense stays range-bound, European equities grind sideways, and the peace dividend underwhelms."}
+  - {label: "{label: \"Bear\", probability: \"25%\", outcome: \"Re-escalation selloff\", description: \"Fighting re-escalates after headline optimism. Defense re-rates higher, Europe sells off, oil spikes again, and the dollar / safe havens catch a fresh bid.\"}", title: Bull / Base / Bear}
 :::
 
 :::callout
@@ -80,15 +80,15 @@ variant: warning
 :::bullets
 items:
   - "Short-dated defense names can sell off sharply on ceasefire optimism, as April's moves in Rheinmetall, Hensoldt, BAE, and Saab showed."
-  - "Construction and materials can catch a relief bid if the market starts underwriting real reconstruction timelines."
-  - "The euro and EM risk assets can rally on falling geopolitical risk premium — but only if the ceasefire looks durable rather than theatrical."
+  - Construction and materials can catch a relief bid if the market starts underwriting real reconstruction timelines.
+  - The euro and EM risk assets can rally on falling geopolitical risk premium — but only if the ceasefire looks durable rather than theatrical.
 :::
 
 :::numbered-list
 items:
   - "The ceasefire has to hold for at least 90+ days. Diplomatic photo-op pauses are not enough."
-  - "A reconstruction governance framework has to materialize. Markets cannot capitalize slogans; they need disbursement pipes and legal structure."
-  - "NATO spending commitments have to survive political transition. That is likely, but it still matters."
+  - A reconstruction governance framework has to materialize. Markets cannot capitalize slogans; they need disbursement pipes and legal structure.
+  - NATO spending commitments have to survive political transition. That is likely, but it still matters.
   - "Middle East oil stress has to cool as well. A Ukraine ceasefire alone does not solve Europe's energy sensitivity if Hormuz remains unstable."
 :::
 

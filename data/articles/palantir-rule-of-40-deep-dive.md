@@ -20,35 +20,35 @@ relatedSlugs: []
 :::thesis-card
 label: Core Thesis
 text: "The business is exceptional by software quality metrics: 70% revenue growth, 57% EBITDA margin, 119% net revenue retention, and a government moat that commercial software can't replicate. At $94 and a forward P/E approaching 300x, the equity is priced for everything to go right — including the government segment decelerating at precisely the wrong moment."
-title: PLTR's 127% Rule of 40 score is legitimate — but it is already priced in.
+title: "PLTR's 127% Rule of 40 score is legitimate — but it is already priced in."
 :::
 
 :::metric-strip
 metrics:
-  - {label: "Revenue Growth (YoY)", note: "Total revenue $886M", value: "70%"}
-  - {label: "EBITDA Margin", note: "Rule of 40 score: 127%", value: "57%"}
-  - {label: "Net Revenue Retention", note: "Existing cohort expansion", value: "119%"}
-  - {label: "Forward P/E", note: "On Q1 run-rate", value: "~287x"}
-title: Q1 2025 Operational Scorecard
+  - {label: Revenue Growth (YoY), note: Total revenue $886M, value: "70%"}
+  - {label: EBITDA Margin, note: "Rule of 40 score: 127%", value: "57%"}
+  - {label: Net Revenue Retention, note: Existing cohort expansion, value: "119%"}
+  - {label: "{label: \"Forward P/E\", note: \"On Q1 run-rate\", value: \"~287x\"}", title: Q1 2025 Operational Scorecard}
 :::
 
 :::comparison-table
-columns: ["Metric", "PLTR Q1 2025", "High-Growth SaaS Median"]
+columns:
+  - Metric
+  - PLTR Q1 2025
+  - "High-Growth SaaS Median"
 rows:
-  - ["Revenue Growth", "70%", "25-35%"]
-  - ["EBITDA Margin", "57%", "10-20%"]
-  - ["NRR", "119%", "110-115%"]
-  - ["Rule of 40 Score", "127%", "35-55%"]
-  - ["Forward P/E", "~287x", "40-80x (elevated)"]
-title: "PLTR vs High-Growth SaaS Comp Benchmarks"
+  - ['Revenue Growth', '70%', '25-35%']
+  - ['EBITDA Margin', '57%', '10-20%']
+  - ['NRR', '119%', '110-115%']
+  - ['Rule of 40 Score', '127%', '35-55%']
+  - {label: "[\"Forward P/E\", \"~287x\", \"40-80x (elevated)\"]", title: "\"PLTR vs High-Growth SaaS Comp Benchmarks\""}
 :::
 
 :::scenario-ladder
 scenarios:
-  - {label: "Bull", probability: "20%", outcome: "+30-40%", description: "Commercial acceleration accelerates further, government stays stable, AIP drives material new logos. Stock tests $130+."}
-  - {label: "Base", probability: "50%", outcome: "Flat to +10%", description: "Numbers hit but guidance doesn't surprise. Growth rate normalizes toward 50%. Multiple compresses slightly as growth deceleration is priced. Stock drifts to $100-105."}
-  - {label: "Bear", probability: "30%", outcome: "-25-40%", description: "Commercial growth slows to 25-30%, government segment disappoints, or a large deal slips. Multiple derates. Stock returns to $60-70 range."}
-title: PLTR Price Scenarios Over 12 Months
+  - {label: Bull, probability: "20%", outcome: "+30-40%", description: Commercial acceleration accelerates further, government stays stable, AIP drives material new logos. Stock tests $130+.}
+  - {label: Base, probability: "50%", outcome: "Flat to +10%", description: "Numbers hit but guidance doesn't surprise. Growth rate normalizes toward 50%. Multiple compresses slightly as growth deceleration is priced. Stock drifts to $100-105."}
+  - {label: "{label: \"Bear\", probability: \"30%\", outcome: \"-25-40%\", description: \"Commercial growth slows to 25-30%, government segment disappoints, or a large deal slips. Multiple derates. Stock returns to $60-70 range.\"}", title: PLTR Price Scenarios Over 12 Months}
 :::
 
 :::callout
@@ -59,7 +59,7 @@ variant: warning
 
 :::bullets
 items:
-  - "Government moat is structural, not cyclical. Defense and intelligence budgets are entitlement programs with high switching costs — PLTR is embedded in operational workflows that take years to migrate."
+  - Government moat is structural, not cyclical. Defense and intelligence budgets are entitlement programs with high switching costs — PLTR is embedded in operational workflows that take years to migrate.
   - "AIP is expanding addressable market. Moving from data integration (the legacy Ontology platform) to AI-powered inference against that data stack opens enterprise buyers who previously found PLTR too complex."
   - "57% EBITDA margin means the company is already highly profitable at scale — not burning cash to fund growth."
 :::
