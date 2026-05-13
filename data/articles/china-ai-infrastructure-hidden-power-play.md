@@ -19,7 +19,9 @@ relatedSlugs:
 
 :::bullets
 items:
-  - Visible backlog beats vague AI narrative.- Dispatchable power and equipment order flow matter more than headline model launches.- The best setups are where AI demand upgrades an already investable business, not where AI is the only story holding up the multiple.
+  - Visible backlog beats vague AI narrative.
+  - Dispatchable power and equipment order flow matter more than headline model launches.
+  - The best setups are where AI demand upgrades an already investable business, not where AI is the only story holding up the multiple.
 :::
 
 :::heading
@@ -35,15 +37,11 @@ text: Practical read
 :::
 
 :::paragraph
-text: China's AI buildout is not only a software or GPU story. It is also a power-demand
-  story, and the market still underprices the equipment and generation layers that
-  make that buildout physically possible.
+text: "China's AI buildout is not only a software or GPU story. It is also a power-demand story, and the market still underprices the equipment and generation layers that make that buildout physically possible."
 :::
 
 :::paragraph
-text: LLM deployment growth drives data-center load, which drives electricity demand,
-  which then pushes value toward generation assets, power equipment, and grid-enabling
-  suppliers.
+text: "LLM deployment growth drives data-center load, which drives electricity demand,which then pushes value toward generation assets, power equipment, and grid-enabling suppliers."
 :::
 
 :::paragraph

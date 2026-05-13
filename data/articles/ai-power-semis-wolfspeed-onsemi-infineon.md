@@ -19,12 +19,16 @@ relatedSlugs:
 
 :::bullets
 items:
-  - Infineon is the best quality-adjusted expression.- onsemi is the best U.S.-listed real-business expression.- Wolfspeed is the highest-torque and highest-risk expression.
+  - Infineon is the best quality-adjusted expression.
+  - onsemi is the best U.S.-listed real-business expression.
+  - Wolfspeed is the highest-torque and highest-risk expression.
 :::
 
 :::bullets
 items:
-  - Infineon fits best as a durable core expression.- onsemi is the cleaner U.S. listed compromise between exposure and business quality.- Wolfspeed is a speculative turnaround trade, not a clean compounder.
+  - Infineon fits best as a durable core expression.
+  - onsemi is the cleaner U.S. listed compromise between exposure and business quality.
+  - Wolfspeed is a speculative turnaround trade, not a clean compounder.
 :::
 
 :::heading
@@ -36,14 +40,11 @@ text: Portfolio view
 :::
 
 :::paragraph
-text: If the question is how to express the AI power theme through semiconductors,
-  these three names are not interchangeable.
+text: If the question is how to express the AI power theme through semiconductors,these three names are not interchangeable.
 :::
 
 :::paragraph
-text: The key split is not just who has silicon carbide. It is who has real AI-power
-  exposure, who can actually monetize it, and who still needs a balance-sheet miracle
-  before the thesis deserves institutional size.
+text: "The key split is not just who has silicon carbide. It is who has real AI-power exposure, who can actually monetize it, and who still needs a balance-sheet miracle before the thesis deserves institutional size."
 :::
 
 :::quote

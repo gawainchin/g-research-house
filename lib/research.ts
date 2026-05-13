@@ -108,15 +108,11 @@ function parseInlineBlocks(body: string): ContentBlock[] {
       blocks.push({ type: blockType })
       continue
     }
-    // Parse YAML body — strip leading spaces from each line (dedent)
-    const lines = raw.split('\n')
-    const dedented = lines.map(l => l.replace(/^  /, '')).join('\n')
+    // Parse JSON body
     try {
-      // eslint-disable-next-line @typescript-eslint/no-require-imports
-      const yaml = require('js-yaml')
-      const fields = yaml.load(dedented) as Record<string, unknown>
+      const fields = JSON.parse(raw) as Record<string, unknown>
       if (fields && typeof fields === 'object' && !Array.isArray(fields)) {
-        blocks.push({ type: blockType, ...(fields as Record<string, unknown>) } as ContentBlock)
+        blocks.push({ type: blockType, ...fields } as ContentBlock)
       } else {
         blocks.push({ type: blockType, text: String(fields) })
       }

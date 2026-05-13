@@ -29,13 +29,8 @@ text: The awesome-codex-skills repo has 880 skills across 5 categories. Here's h
 text: Install all of these with:
 :::
 
-:::bullets
-items:
-  - |
-    composio add <skill_name>
-    # Or from the GitHub repo:
-    codex skills install composiohq/awesome-codex-skills/<skill_name>
-:::
+:::paragraph
+text: "Install all of these with:\n\n```bash\ncomposio add <skill_name>\n# Or from the GitHub repo:\ncodex skills install composiohq/awesome-codex-skills/<skill_name>\n```\n:::
 
 :::heading
 text: 1. connect — Your Starting Point
@@ -53,15 +48,11 @@ text: **Why it's worth it:** Without this, Codex is a sophisticated autocomplete
 text: "**What \"1,000+ integrations\" actually means in practice:** You're not limited to what Composio has pre-built. The `connect` skill documents how to use the Composio CLI toolchain (`composio add`, `composio get-actions`, `composio execute`) to add any new app integration in under a minute.
 :::
 
-:::bullets
-items:
-  - |
-    curl -fsSL https://composio.dev/install | bash
-    composio link github    # or gmail, slack, notion, etc.
-:::
+:::paragraph
+text: "```bash\ncurl -fsSL https://composio.dev/install | bash\ncomposio link github    # or gmail, slack, notion, etc.\n```\n:::
 
 :::heading
-text: 2. pr-review-ci-fix — Automate the Red CI Loop
+text: "2. pr-review-ci-fix — Automate the Red CI Loop"
 :::
 
 :::paragraph
@@ -76,15 +67,11 @@ text: "**Why it's worth it:** The CI-is-red → open browser → read logs → s
 text: "Works with both GitHub and GitLab CI. The key constraint: Codex executes the fix loop autonomously but posts review comments at each step, so you see what's happening.
 :::
 
-:::bullets
-items:
-  - |
-    composio add github
-    composio add pr-review-ci-fix
-:::
+:::paragraph
+text: "```bash\ncomposio add github\ncomposio add pr-review-ci-fix\n```\n:::
 
 :::heading
-text: 3. sentry-triage — Debug at 2am Without the Context Switch
+text: "3. sentry-triage — Debug at 2am Without the Context Switch"
 :::
 
 :::paragraph
@@ -96,18 +83,14 @@ text: "**Why it's worth it:** On-call debugging is high-pressure context switchi
 :::
 
 :::paragraph
-text: This is the skill that shows what "agent-native debugging" actually looks like when it's done right.
+text: "This is the skill that shows what \"agent-native debugging\" actually looks like when it's done right."
 :::
 
-:::bullets
-items:
-  - |
-    composio add sentry
-    composio add sentry-triage
-:::
+:::paragraph
+text: "```bash\ncomposio add sentry\ncomposio add sentry-triage\n```\n:::
 
 :::heading
-text: 4. codebase-migrate — Migrations at Scale, Not in Hell
+text: "4. codebase-migrate — Migrations at Scale, Not in Hell"
 :::
 
 :::paragraph
@@ -122,16 +105,11 @@ text: "**Why it's worth it:** Migrations are high-risk, tedious, and usually don
 text: The SKILL.md documents the migration workflow, safety rails, and the troubleshooting guide for common failure modes.
 :::
 
-:::bullets
-items:
-  - |
-    composio add github
-    composio add linear   # optional, for Linear-linked migration issues
-    composio add codebase-migrate
-:::
+:::paragraph
+text: "```bash\ncomposio add github\ncomposio add linear   # optional, for Linear-linked migration issues\ncomposio add codebase-migrate\n```\n:::
 
 :::heading
-text: 5. meeting-notes-and-actions — Zero Setup, Immediate Payoff
+text: "5. meeting-notes-and-actions — Zero Setup, Immediate Payoff"
 :::
 
 :::paragraph
@@ -146,15 +124,11 @@ text: "**Why it's worth it:** This is the simplest skill in the top tier — 27 
 text: The value is removing meeting admin overhead from every developer and product manager on your team.
 :::
 
-:::bullets
-items:
-  - |
-    # No Composio dependency — purely instruction-driven
-    composio add meeting-notes-and-actions
-:::
+:::paragraph
+text: "```bash\n# No Composio dependency — purely instruction-driven\ncomposio add meeting-notes-and-actions\n```\n:::
 
 :::heading
-text: 6. deploy-pipeline — Ship Full-Stack Without the Checklist
+text: "6. deploy-pipeline — Ship Full-Stack Without the Checklist"
 :::
 
 :::paragraph
@@ -166,21 +140,14 @@ text: "**Why it's worth it:** Full-stack releases are notoriously error-prone be
 :::
 
 :::paragraph
-text: The bundled `scripts/ship.ts` turns a multi-service deployment into a single `composio run deploy-pipeline` command.
+text: "The bundled `scripts/ship.ts` turns a multi-service deployment into a single `composio run deploy-pipeline` command."
 :::
 
-:::bullets
-items:
-  - |
-    composio add stripe
-    composio add supabase
-    composio add vercel
-    composio add slack
-    composio add deploy-pipeline
-:::
+:::paragraph
+text: "```bash\ncomposio add stripe\ncomposio add supabase\ncomposio add vercel\ncomposio add slack\ncomposio add deploy-pipeline\n```\n:::
 
 :::heading
-text: 7. gh-fix-ci — CI Debugger That Doesn't Give Up
+text: "7. gh-fix-ci — CI Debugger That Doesn't Give Up"
 :::
 
 :::paragraph
@@ -192,18 +159,14 @@ text: "**Why it's worth it:** Distinct from `pr-review-ci-fix` in focus — this
 :::
 
 :::paragraph
-text: If you have `gh` CLI authenticated, this works out of the box.
+text: "If you have `gh` CLI authenticated, this works out of the box."
 :::
 
-:::bullets
-items:
-  - |
-    # Requires gh CLI authenticated to your GitHub account
-    composio add gh-fix-ci
-:::
+:::paragraph
+text: "```bash\n# Requires gh CLI authenticated to your GitHub account\ncomposio add gh-fix-ci\n```\n:::
 
 :::heading
-text: 8. issue-triage — From Bug Flood to Linear in One Command
+text: "8. issue-triage — From Bug Flood to Linear in One Command"
 :::
 
 :::paragraph
@@ -214,13 +177,8 @@ text: "**What it does:** Bulk-fetches, deduplicates, relabels, and reassigns Lin
 text: "**Why it's worth it:** Issue triage is a recurring ritual that nobody enjoys but every team needs. This skill replaces UI clicking with shell commands for the most common patterns: bulk relabel by priority, reassign to correct owners, close duplicates. The Sentry→Linear chaining is particularly useful — after a release, run a top-5 unresolved Sentry issues sweep and auto-create Linear tickets.
 :::
 
-:::bullets
-items:
-  - |
-    composio add linear    # or composio add jira
-    composio add sentry    # optional, for Sentry→Linear routing
-    composio add issue-triage
-:::
+:::paragraph
+text: "```bash\ncomposio add linear    # or composio add jira\ncomposio add sentry    # optional, for Sentry→Linear routing\ncomposio add issue-triage\n```\n:::
 
 :::heading
 text: Honorable Mentions
@@ -235,9 +193,9 @@ items:
 :::
 
 :::key-takeaways
-items:
-  - "`connect` is the single highest-leverage skill — it turns Codex from autocomplete into an agent."
-  - "`pr-review-ci-fix` and `gh-fix-ci` overlap but serve different roles: autonomous fix loop vs. approval-gated debugging."
-  - "The install commands are identical across all skills: `composio add <skill_name>` after linking your tools once."
-  - "Source: ComposioHQ/awesome-codex-skills GitHub (May 2026). Commands verified at time of publication."
+takeaways:
+  - {icon: "🔗", text: "`connect` is the single highest-leverage skill — it turns Codex from autocomplete into an agent."}
+  - {icon: "🔧", text: "`pr-review-ci-fix` and `gh-fix-ci` overlap but serve different roles: autonomous fix loop vs. approval-gated debugging."}
+  - {icon: "📦", text: "The install commands are identical across all skills: `composio add <skill_name>` after linking your tools once."}
+  - {icon: "📚", text: "Source: ComposioHQ/awesome-codex-skills GitHub (May 2026). Commands verified at time of publication."}
 :::

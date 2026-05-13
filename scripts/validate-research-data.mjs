@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import fs from 'node:fs'
-import path from 'node:path'
+import path from 'path'
 import matter from 'gray-matter'
 import yaml from 'js-yaml'
 
@@ -30,10 +30,19 @@ function parseInlineBlocks(body) {
     const lines = raw.split('\n')
     const dedented = lines.map(l => l.replace(/^  /, '')).join('\n')
     let fields
+    // Try JSON first (handles pure JSON blocks), then YAML (handles inline-dict YAML blocks)
     try {
-      fields = yaml.load(dedented)
+      fields = JSON.parse(raw)
     } catch {
-      fields = { text: raw }
+      try {
+        fields = JSON.parse(dedented)
+      } catch {
+        try {
+          fields = yaml.load(dedented)
+        } catch {
+          fields = { text: raw }
+        }
+      }
     }
     if (fields && typeof fields === 'object' && !Array.isArray(fields)) {
       blocks.push({ type: blockType, ...fields })
@@ -78,9 +87,14 @@ for (const { slug, fm, content } of articles) {
     )
 
     switch (block.type) {
+      case 'key-takeaways':
+        assert.ok(
+          Array.isArray(block.takeaways) && block.takeaways.length > 0,
+          `${slug}: takeaways missing/empty in key-takeaways`
+        )
+        break
       case 'bullets':
       case 'numbered-list':
-      case 'key-takeaways':
         assert.ok(
           Array.isArray(block.items) && block.items.length > 0,
           `${slug}: items missing/empty in ${block.type}`
