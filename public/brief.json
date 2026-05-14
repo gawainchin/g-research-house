@@ -1,25 +1,25 @@
 {
-  "date": "May 13, 2026",
+  "date": "May 14, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "Risk-off carried through Tuesday with macro-driven selling hitting semis and rate-sensitive tech. Nasdaq -0.71%, S&P -0.16%, Dow +0.11% \u2014 divergence between mega-cap Dow strength and broader tech weakness. 10-year yield softer, supporting the divergence narrative. DXYZ flagged as non-standard price action (reverse split or corporate event \u2014 verify before treating as standard session move)."
+      "content": "Risk-on tone holds. Nasdaq +1.20%, S&P +0.58%, Dow -0.14%. VIX 17.87, down 0.67. Treasuries and gold soft.\nS&P 7,444 | Nasdaq 26,402 | Dow 49,693"
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "WEAKEST\n- INTC -6.82%: Tariff overhang on semis compounded by broad risk-off; the 25% Section 232 semiconductor tariff is the primary driver.\n- ETN -4.17%: Industrial name caught in rotation away from rate-sensitive growth.\n- NET -3.48%: Insider-selling headlines continue to weigh; sentiment-driven, thesis intact per last review.\n- MU -3.61%: Semi sector broadly sold on tariff news.\n- TSLA -2.60%: Sentiment-sensitive; holding relatively better than the macro mess suggests.\n\nSTRONGEST\n- DXYZ -25.04%: Non-standard price action (reverse split / corporate event \u2014 confirm before trading around it).\n- AAPL +0.72%: Defensive quality bid in a risk-off tape; relatively resilient.\n- NVDA +0.61%: GPU/capex narrative holding despite macro headwinds."
+      "content": "MU +4.83% \u2014 AI capex/semi momentum continuing\nNVDA +2.29% \u2014 broad AI run keeping it bid\nNET +3.12% \u2014 bounce from oversold insider-selling drop\nMSFT -0.63% \u2014 slight drag, no clear catalyst\nDXYZ -2.25% \u2014 speculative unwinding, punt thesis thin"
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- GDS -4.89%: China data center name dragged with broad HK tech weakness.\n- BABA -1.84%: Ongoing pressure from tariff/macro sensitivity; 02800 slightly positive at +0.15% providing some anchor.\n- 1816.HK (CGN) -0.57%: Defensive name holding relatively better than China tech."
+      "content": "BABA +8.18% \u2014 China stimulus re-pricing in full force\nGDS +6.90% \u2014 tech beta amplifying the move\n02800 -0.23% \u2014 HK broad beta lagging the rally\nCGN/1816.HK -0.58% \u2014 soft, ballast underperforming"
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Trump administration applying 25% Section 232 tariff on semiconductors, on top of existing MFN duties \u2014 a major escalation for MU, INTC, NVDA.\n- Core CPI came in hotter than expected (May 12), adding to the rate volatility narrative ahead of the Fed decision."
+      "content": "China stimulus expectations continue driving APAC tech; BABA up 8%+ on ongoing policy optimism.\nSemis remain the leadership trade \u2014 MU/NVDA both running despite stretched valuations."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: HK idle cash (HK$135k dry powder) sits uninvested \u2014 if China stimulus narrative reasserts, BABA and 02800 are the cleanest way to deploy it.\n- Risk: INTC and MU both caught under semiconductor tariff pressure with no clear near-term catalyst for relief; sizing matters.\n- Research: DXYZ move needs fundamental confirmation \u2014 reverse split mechanics mean the -25% is not a normal session. Verify position count and cost basis before treating it as a paper loss or adding."
+      "content": "Opportunity: China stimulus / tech rerating trade (BABA, GDS) has momentum; let it run rather than fade.\nRisk: DXYZ and speculative names weakening in a risk-on tape \u2014 the bid is narrowing to quality AI and China.\nResearch: NET insider-selling \u2014 is this sentiment-only or the start of something more fundamental? Worth clarifying before adding."
     }
   ]
 }
