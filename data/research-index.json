@@ -162,6 +162,25 @@
         "from-chatbot-to-workflow",
         "agentic-inference-memory-io-pressure-indicator"
       ]
+    },
+    {
+      "slug": "awesome-codex-skills",
+      "title": "8 Skills That Actually Make Codex Worth Using",
+      "section": "ai-research",
+      "summary": "The awesome-codex-skills repo has 880 skills across 5 categories — here's how to cut through the noise: 8 skills worth installing today, what each actually does, and why they'd disappear from your workflow if you removed them.",
+      "date": "2026-05-12",
+      "tags": [
+        "ai",
+        "tooling",
+        "codex",
+        "composio",
+        "developer-tools",
+        "productivity"
+      ],
+      "readingTime": 5,
+      "format": "thesis",
+      "perspective": "analyst",
+      "relatedSlugs": []
     }
   ]
 }

@@ -1,25 +1,25 @@
 {
-  "date": "May 12, 2026",
+  "date": "May 14, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "Risk-off creeping in quietly. VIX jumped 6.9% to 18.38 \u2014 elevated but not panic. USD/KRW +1% as Korea's won weakens, a mild macro stress signal. Equities essentially flat on the night despite the options market getting more expensive.\n\nS&P +0.19%. Nasdaq +0.10%. Dow +0.19%."
+      "content": "Risk-on tone holds. Nasdaq +1.20%, S&P +0.58%, Dow -0.14%. VIX 17.87, down 0.67. Treasuries and gold soft.\nS&P 7,444 | Nasdaq 26,402 | Dow 49,693"
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "DXYZ +30.5% \u2014 SpaceX IPO report ignited speculative repricing; thin volume, outsized move\nMU +6.5% \u2014 HBM capex narrative continuing to carry\nETN +4.4% \u2014 industrial strength, broad momentum\nNVDA +2.0% \u2014 grinding higher, no drama\nTSLA +3.9% \u2014 sentiment bounce, not a fundamental shift\n\nNET -1.3% \u2014 insider selling overhang still weighing\nMSFT -0.6% \u2014 quiet weakness, no catalyst\nAAPL -0.2% \u2014 flat-ish"
+      "content": "MU +4.83% \u2014 AI capex/semi momentum continuing\nNVDA +2.29% \u2014 broad AI run keeping it bid\nNET +3.12% \u2014 bounce from oversold insider-selling drop\nMSFT -0.63% \u2014 slight drag, no clear catalyst\nDXYZ -2.25% \u2014 speculative unwinding, punt thesis thin"
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "GDS +1.6% \u2014 data center names holding\nCGN +0.9% \u2014 small-ballast bid, mild risk-off lean\n02800 -1.0% \u2014 HK broad market underperforming\nBABA -2.0% \u2014 soft, China tech still tentative"
+      "content": "BABA +8.18% \u2014 China stimulus re-pricing in full force\nGDS +6.90% \u2014 tech beta amplifying the move\n02800 -0.23% \u2014 HK broad beta lagging the rally\nCGN/1816.HK -0.58% \u2014 soft, ballast underperforming"
     },
     {
       "title": "MARKET NEWS",
-      "content": "US jobs data came in mixed \u2014 initial claims rose slightly, continuing claims remain elevated. Nothing catastrophic but the trend is worth watching.\nChina Caixin services PMI missed expectations, adding to growth concern for the second consecutive month."
+      "content": "China stimulus expectations continue driving APAC tech; BABA up 8%+ on ongoing policy optimism.\nSemis remain the leadership trade \u2014 MU/NVDA both running despite stretched valuations."
     },
     {
       "title": "ACTION BOARD",
-      "content": "Opportunity: DXYZ is running on a single headline; if you want to trim into strength, this is the tape.\nRisk: VIX recharged to 18.38 \u2014 elevated vol means options costs are rising portfolio-wide; NET and expensive software names remain exposed to any macro wobble.\nResearch: How much of the MU/NVDA AI capex trade is still flowing vs. peaking? The positioning suggests room to run but the VIX move says the market is getting nervous about it."
+      "content": "Opportunity: China stimulus / tech rerating trade (BABA, GDS) has momentum; let it run rather than fade.\nRisk: DXYZ and speculative names weakening in a risk-on tape \u2014 the bid is narrowing to quality AI and China.\nResearch: NET insider-selling \u2014 is this sentiment-only or the start of something more fundamental? Worth clarifying before adding."
     }
   ]
 }

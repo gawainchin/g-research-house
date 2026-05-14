@@ -1,5 +1,78 @@
 import type { ContentBlock } from '../lib/research'
 
+// ── Inline markdown → HTML strip ─────────────────────────────────────────────────
+// Strips markdown syntax so raw text renders cleanly. Used for paragraph/heading/quote
+// bodies that may contain `code`, **bold**, *italic*, or ``` fenced blocks.
+function renderText(text: string): React.ReactNode {
+  const parts: React.ReactNode[] = []
+  const codeBlockRe = /```(\w*)\n?([\s\S]*?)```/g
+
+  let last = 0
+  let match: RegExpExecArray | null
+
+  while ((match = codeBlockRe.exec(text)) !== null) {
+    // Text before the code block
+    if (match.index > last) {
+      parts.push(dangerouslyRenderInline(text.slice(last, match.index)))
+    }
+    // The code block itself — rendered as <pre>
+    const code = match[2].replace(/\n$/, '')
+    parts.push(
+      <pre key={`cb-${match.index}`} style={{
+        margin: '1rem 0',
+        padding: '0.9rem 1.1rem',
+        background: '#1c1c1e',
+        borderRadius: '6px',
+        overflowX: 'auto',
+        fontFamily: '"SF Mono", "Fira Code", "Cascadia Code", Menlo, monospace',
+        fontSize: '0.85rem',
+        color: '#d4d4d4',
+        lineHeight: 1.65,
+        border: '1px solid #2e2e2e',
+      }}>
+        <code style={{ background: 'none', color: 'inherit', padding: 0 }}>{code}</code>
+      </pre>
+    )
+    last = codeBlockRe.lastIndex
+  }
+
+  if (last < text.length) {
+    parts.push(dangerouslyRenderInline(text.slice(last)))
+  }
+
+  return parts.length === 1 ? parts[0] : <>{parts}</>
+}
+
+// Handles **bold**, *italic*, and `inline code` inside plain text segments
+function dangerouslyRenderInline(segment: string): React.ReactNode {
+  // Split on inline code, bold, italic — preserve order
+  const parts: React.ReactNode[] = []
+  const re = /(\*\*[^*]+\*\*)|(\*[^*]+\*)|(`[^`]+`)/g
+  let last = 0
+  let m: RegExpExecArray | null
+
+  while ((m = re.exec(segment)) !== null) {
+    if (m.index > last) parts.push(segment.slice(last, m.index))
+    if (m[1]) parts.push(<strong key={m.index} style={{ fontWeight: 700 }}>{m[1].slice(2, -2)}</strong>)
+    else if (m[2]) parts.push(<em key={m.index} style={{ fontStyle: 'italic' }}>{m[2].slice(1, -1)}</em>)
+    else if (m[3]) parts.push(
+      <code key={m.index} style={{
+        fontFamily: '"SF Mono", "Fira Code", Menlo, monospace',
+        fontSize: '0.875em',
+        background: '#f0ebe3',
+        color: '#7c3aed',
+        padding: '0.1em 0.35em',
+        borderRadius: '3px',
+        border: '1px solid #e2d9cc',
+      }}>{m[3].slice(1, -1)}</code>
+    )
+    last = re.lastIndex
+  }
+
+  if (last < segment.length) parts.push(segment.slice(last))
+  return parts.length === 1 ? parts[0] : <>{parts}</>
+}
+
 // ── Shared design tokens ────────────────────────────────────────────────────
 const ACCENT = '#3d6b5e' // financial green
 const AI_ACCENT = '#4a5568' // AI slate
@@ -59,7 +132,7 @@ function ThesisCard({ block }: { block: ContentBlock }) {
         fontSize: '1.05rem',
         fontFamily: 'Helvetica Neue, sans-serif',
       }}>
-        {block.text}
+        {renderText(block.text ?? '')}
       </p>
     </div>
   )
@@ -93,7 +166,7 @@ function KeyTakeaways({ block }: { block: ContentBlock }) {
         lineHeight: 1.8,
       }}>
         {items.map((item, i) => (
-          <li key={i} style={{ marginBottom: '0.4rem', fontSize: '1rem' }}>{item}</li>
+          <li key={i} style={{ marginBottom: '0.4rem', fontSize: '1rem' }}>{renderText(item)}</li>
         ))}
       </ul>
     </div>
@@ -127,7 +200,7 @@ function Verdict({ block }: { block: ContentBlock }) {
         fontSize: '1.05rem',
         fontFamily: 'Helvetica Neue, sans-serif',
       }}>
-        {block.text}
+        {renderText(block.text ?? '')}
       </p>
     </div>
   )
@@ -163,7 +236,7 @@ function Callout({ block }: { block: ContentBlock }) {
         fontSize: '1rem',
         fontFamily: 'Helvetica Neue, sans-serif',
       }}>
-        {block.text}
+        {renderText(block.text ?? '')}
       </p>
     </div>
   )
@@ -483,14 +556,14 @@ function MetricStrip({ block }: { block: ContentBlock }) {
 export default function ArticleBlock({ block, section }: { block: ContentBlock; section?: string }) {
   switch (block.type) {
     case 'heading':
-      return <h2 style={{ margin: '2rem 0 0.75rem', fontSize: '1.3rem', fontWeight: 500, color: '#181818', fontFamily: 'Helvetica Neue, sans-serif' }}>{block.text}</h2>
+      return <h2 style={{ margin: '2rem 0 0.75rem', fontSize: '1.3rem', fontWeight: 500, color: '#181818', fontFamily: 'Helvetica Neue, sans-serif' }}>{renderText(block.text ?? '')}</h2>
 
     case 'bullets':
     case 'numbered-list': {
       const ListTag = block.type === 'numbered-list' ? 'ol' : 'ul'
       return (
         <ListTag style={{ margin: '0.5rem 0 1.25rem 1.25rem', color: '#2e2a26', lineHeight: 1.8, fontFamily: 'Helvetica Neue, sans-serif', fontSize: '1rem' }}>
-          {block.items?.map((item) => <li key={item} style={{ marginBottom: '0.35rem' }}>{item}</li>)}
+          {block.items?.map((item) => <li key={item} style={{ marginBottom: '0.35rem' }}>{renderText(item)}</li>)}
         </ListTag>
       )
     }
@@ -507,7 +580,7 @@ export default function ArticleBlock({ block, section }: { block: ContentBlock; 
           lineHeight: 1.75,
           fontFamily: 'Helvetica Neue, sans-serif',
         }}>
-          {block.text}
+          {renderText(block.text ?? '')}
         </blockquote>
       )
 
@@ -536,6 +609,6 @@ export default function ArticleBlock({ block, section }: { block: ContentBlock; 
       return <MetricStrip block={block} />
 
     default:
-      return <p style={{ margin: '0 0 1rem 0', color: '#2e2a26', lineHeight: 1.85, fontSize: '1.05rem', fontFamily: 'Helvetica Neue, sans-serif' }}>{block.text}</p>
+      return <p style={{ margin: '0 0 1rem 0', color: '#2e2a26', lineHeight: 1.85, fontSize: '1.05rem', fontFamily: 'Helvetica Neue, sans-serif' }}>{renderText(block.text ?? '')}</p>
   }
 }
