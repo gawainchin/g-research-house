@@ -22,7 +22,7 @@ metrics:
   - {label: Revenue (FY2024 est.), note: "~76% YoY growth", value: ~$510M}
   - {label: OpenAI MRA, note: 800k wafers/year, value: $20B+}
   - {label: UAE/G42 Revenue Share, note: Geographic concentration, value: "86%"}
-  - {label: "{label: \"IPO Valuation\", note: \"vs GPU incumbents at 20x+ revenue\", value: \"$4B\"}", title: Cerebras IPO Snapshot}
+  - {label: IPO Valuation, note: "vs GPU incumbents at 20x+ revenue", value: "$4B"}
 :::
 
 :::comparison-table
@@ -46,14 +46,14 @@ steps:
   - {label: Long Context (100K+ tokens), note: Memory bandwidth bottleneck — WSE advantage grows}
   - {label: "Multi-GPU Partitioning Overhead", note: Communication fabric limits GPU scaling}
   - {label: "WSE Single-Wafer Solution", note: "On-chip SRAM eliminates partition overhead"}
-  - {label: "{label: \"Inference Cost Curve\", note: \"WSE economics improve non-linearly at large context\"}", title: "\"Wafer-Scale vs GPU: When Bigger Wins\""}
+  - {label: "Inference Cost Curve", note: "WSE economics improve non-linearly at large context"}
 :::
 
 :::scenario-ladder
 scenarios:
   - {label: Bull, probability: "25%", outcome: "+50-80%", description: "U.S. hyperscaler wins disclosed, G42 MRA converts to recognized revenue faster, WSE-4 tape-out successful. Stock rerates toward GPU-companion peers at 15-20x revenue."}
-  - {label: Base, probability: "45%", outcome: "+10-25%", description: G42 revenue holds, OpenAI MRA converts steadily, no dramatic U.S. expansion but no major customer loss. Stock debuts in a reasonable range and drifts up with execution.}
-  - {label: "{label: \"Bear\", probability: \"30%\", outcome: \"-30-50%\", description: \"G42 relationship politically disrupted (UAE-China tech tensions), OpenAI inference demand slows, or Groq/ASIC competition erodes WSE value proposition. Stock falls toward cash/asset value.\"}", title: Cerebras IPO Scenarios}
+  - {label: Base, probability: "45%", outcome: "+10-25%", description: "G42 revenue holds, OpenAI MRA converts steadily, no dramatic U.S. expansion but no major customer loss. Stock debuts in a reasonable range and drifts up with execution."}
+  - {label: Bear, probability: "30%", outcome: "-30-50%", description: "G42 relationship politically disrupted (UAE-China tech tensions), OpenAI inference demand slows, or Groq/ASIC competition erodes WSE value proposition. Stock falls toward cash/asset value."}
 :::
 
 :::callout
