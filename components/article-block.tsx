@@ -78,6 +78,24 @@ const ACCENT = '#3d6b5e' // financial green
 const AI_ACCENT = '#4a5568' // AI slate
 const CALLOUT_BORDER_WIDTH = '3px'
 
+const sectionTheme = (section?: string) => {
+  const isAi = section === 'ai-research'
+  return {
+    accent: isAi ? AI_ACCENT : ACCENT,
+    accentLight: isAi ? '#f7f8fa' : '#f7faf8',
+    accentBorder: isAi ? '#d8dce5' : '#c8ded6',
+    muted: isAi ? '#5d6678' : '#3d6b5e',
+  }
+}
+
+const visualTitleStyle = {
+  fontSize: '0.8rem',
+  fontWeight: 600,
+  color: '#3a3530',
+  marginBottom: '0.75rem',
+  fontFamily: 'Helvetica Neue, sans-serif',
+}
+
 const calloutVariantStyle = (variant?: string) => {
   switch (variant) {
     case 'warning':
@@ -140,7 +158,9 @@ function ThesisCard({ block }: { block: ContentBlock }) {
 
 // ── Key Takeaways ──────────────────────────────────────────────────────────
 function KeyTakeaways({ block }: { block: ContentBlock }) {
-  const items = block.items ?? []
+  const items = block.items ?? block.takeaways?.map((takeaway) => (
+    takeaway.icon ? `${takeaway.icon} ${takeaway.text}` : takeaway.text
+  )) ?? []
   return (
     <div style={{
       margin: '1.5rem 0 2rem',
@@ -319,21 +339,15 @@ function ComparisonTable({ block }: { block: ContentBlock }) {
 // ── Flowchart ───────────────────────────────────────────────────────────────
 function Flowchart({ block, section }: { block: ContentBlock; section?: string }) {
   const steps = block.steps ?? []
-  const isAi = section === 'ai-research'
-  const accentColor = isAi ? '#4a5568' : '#3d6b5e'
-  const stepBg = isAi ? '#f7f8fa' : '#f7faf8'
-  const connectorColor = isAi ? '#c0c4d0' : '#b8d4cc'
+  const theme = sectionTheme(section)
+  const accentColor = theme.accent
+  const stepBg = theme.accentLight
+  const connectorColor = theme.accentBorder
 
   return (
-    <div style={{ margin: '1.5rem 0 2rem' }}>
+    <div style={{ margin: '1.5rem 0 2rem', padding: '1rem', background: '#faf8f5', border: '1px solid #e6e0d6', borderRadius: '4px' }}>
       {block.title && (
-        <div style={{
-          fontSize: '0.8rem',
-          fontWeight: 600,
-          color: '#3a3530',
-          marginBottom: '0.75rem',
-          fontFamily: 'Helvetica Neue, sans-serif',
-        }}>
+        <div style={visualTitleStyle}>
           {block.title}
         </div>
       )}
@@ -552,6 +566,119 @@ function MetricStrip({ block }: { block: ContentBlock }) {
   )
 }
 
+// ── Scorecard ────────────────────────────────────────────────────────────────
+function Scorecard({ block, section }: { block: ContentBlock; section?: string }) {
+  const criteria = block.criteria ?? []
+  const theme = sectionTheme(section)
+
+  return (
+    <div style={{ margin: '1.5rem 0 2rem', padding: '1rem', background: '#faf8f5', border: '1px solid #e6e0d6', borderRadius: '4px' }}>
+      {block.title && <div style={visualTitleStyle}>{block.title}</div>}
+      <div style={{ display: 'grid', gap: '0.6rem' }}>
+        {criteria.map((item) => {
+          const score = Math.max(0, Math.min(5, Number(item.score) || 0))
+          return (
+            <div key={item.label} style={{ display: 'grid', gridTemplateColumns: '110px 1fr', gap: '0.8rem', alignItems: 'center' }}>
+              <div style={{ color: '#3a3530', fontWeight: 600, fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.88rem' }}>{item.label}</div>
+              <div>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '3px', marginBottom: item.note ? '0.25rem' : 0 }}>
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <div
+                      key={i}
+                      style={{
+                        height: 9,
+                        borderRadius: 999,
+                        background: i < score ? theme.accent : '#e7e0d7',
+                        opacity: i < score ? 0.45 + (i + 1) * 0.1 : 1,
+                      }}
+                    />
+                  ))}
+                </div>
+                {item.note && <div style={{ color: '#6b635a', fontSize: '0.8rem', lineHeight: 1.45, fontFamily: 'Helvetica Neue, sans-serif' }}>{renderText(item.note)}</div>}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+// ── Bar Chart ────────────────────────────────────────────────────────────────
+function BarChart({ block, section }: { block: ContentBlock; section?: string }) {
+  const bars = block.bars ?? []
+  const theme = sectionTheme(section)
+  const max = Math.max(...bars.map((bar) => Number(bar.value) || 0), 1)
+
+  return (
+    <div style={{ margin: '1.5rem 0 2rem', padding: '1rem', background: '#faf8f5', border: '1px solid #e6e0d6', borderRadius: '4px' }}>
+      {block.title && <div style={visualTitleStyle}>{block.title}</div>}
+      <div style={{ display: 'grid', gap: '0.75rem' }}>
+        {bars.map((bar) => {
+          const value = Number(bar.value) || 0
+          const width = `${Math.max(2, Math.min(100, (value / max) * 100))}%`
+          return (
+            <div key={bar.label}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', marginBottom: '0.25rem', fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.85rem' }}>
+                <span style={{ color: '#3a3530', fontWeight: 600 }}>{bar.label}</span>
+                <span style={{ color: '#6b635a' }}>{value}{block.unit ?? ''}</span>
+              </div>
+              <div style={{ height: 11, background: '#ece6dd', borderRadius: 999, overflow: 'hidden' }}>
+                <div style={{ width, height: '100%', background: theme.accent, borderRadius: 999 }} />
+              </div>
+              {bar.note && <div style={{ marginTop: '0.25rem', color: '#6b635a', fontSize: '0.78rem', lineHeight: 1.45, fontFamily: 'Helvetica Neue, sans-serif' }}>{renderText(bar.note)}</div>}
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+// ── Timeline ─────────────────────────────────────────────────────────────────
+function Timeline({ block, section }: { block: ContentBlock; section?: string }) {
+  const events = block.events ?? []
+  const theme = sectionTheme(section)
+
+  return (
+    <div style={{ margin: '1.5rem 0 2rem', padding: '1rem', background: '#faf8f5', border: '1px solid #e6e0d6', borderRadius: '4px' }}>
+      {block.title && <div style={visualTitleStyle}>{block.title}</div>}
+      <div style={{ display: 'grid', gap: '0.85rem' }}>
+        {events.map((event, i) => (
+          <div key={`${event.label}-${i}`} style={{ display: 'grid', gridTemplateColumns: '100px 1fr', gap: '0.85rem', alignItems: 'start' }}>
+            <div style={{ color: theme.muted, fontWeight: 600, fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.78rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>{event.date ?? `Step ${i + 1}`}</div>
+            <div style={{ position: 'relative', paddingLeft: '1rem', borderLeft: `2px solid ${theme.accentBorder}` }}>
+              <div style={{ position: 'absolute', left: -5, top: 4, width: 8, height: 8, borderRadius: '50%', background: theme.accent }} />
+              <div style={{ color: '#2e2a26', fontWeight: 600, fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.92rem', marginBottom: '0.15rem' }}>{event.label}</div>
+              <div style={{ color: '#5f564d', lineHeight: 1.55, fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.88rem' }}>{renderText(event.text)}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+// ── Stack Diagram ────────────────────────────────────────────────────────────
+function StackDiagram({ block, section }: { block: ContentBlock; section?: string }) {
+  const layers = block.layers ?? []
+  const theme = sectionTheme(section)
+
+  return (
+    <div style={{ margin: '1.5rem 0 2rem', padding: '1rem', background: '#faf8f5', border: '1px solid #e6e0d6', borderRadius: '4px' }}>
+      {block.title && <div style={visualTitleStyle}>{block.title}</div>}
+      <div style={{ display: 'flex', flexDirection: 'column-reverse', gap: '1px', background: '#ddd5c5', border: '1px solid #ddd5c5', borderRadius: '4px', overflow: 'hidden' }}>
+        {layers.map((layer, i) => (
+          <div key={`${layer.label}-${i}`} style={{ display: 'grid', gridTemplateColumns: '150px 1fr', gap: '0.75rem', alignItems: 'center', padding: '0.75rem 0.9rem', background: i % 2 === 0 ? theme.accentLight : '#fffdfa' }}>
+            <div style={{ color: theme.accent, fontWeight: 700, fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.82rem' }}>{layer.label}</div>
+            <div style={{ color: '#4f473f', lineHeight: 1.55, fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.88rem' }}>{renderText(layer.text)}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 // ── Main renderer ────────────────────────────────────────────────────────────
 export default function ArticleBlock({ block, section }: { block: ContentBlock; section?: string }) {
   switch (block.type) {
@@ -607,6 +734,18 @@ export default function ArticleBlock({ block, section }: { block: ContentBlock; 
 
     case 'metric-strip':
       return <MetricStrip block={block} />
+
+    case 'scorecard':
+      return <Scorecard block={block} section={section} />
+
+    case 'bar-chart':
+      return <BarChart block={block} section={section} />
+
+    case 'timeline':
+      return <Timeline block={block} section={section} />
+
+    case 'stack-diagram':
+      return <StackDiagram block={block} section={section} />
 
     default:
       return <p style={{ margin: '0 0 1rem 0', color: '#2e2a26', lineHeight: 1.85, fontSize: '1.05rem', fontFamily: 'Helvetica Neue, sans-serif' }}>{renderText(block.text ?? '')}</p>

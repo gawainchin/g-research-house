@@ -37,7 +37,7 @@ rows:
   - ['Valuation', '$4B', '$3T+', '$2.5B (rumored)']
   - ['Revenue Multiple', '~8x', '~25x', '~15-20x']
   - ['Key Customer', 'G42/OpenAI', 'Hyperscale (diversified)', 'Systran, others']
-  - {label: "[\"Architecture\", \"Wafer-scale (WSE-3)\", \"GPU cluster\", \"LPU (deterministic)\"]", title: Cerebras vs GPU Incumbents — Valuation Comparison}
+  - ['Architecture', 'Wafer-scale (WSE-3)', 'GPU cluster', 'LPU (deterministic)']
 :::
 
 :::flowchart

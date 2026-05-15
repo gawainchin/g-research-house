@@ -59,7 +59,7 @@ rows:
   - ['Iteration model', 'Regenerate (loses edits on other slides)', 'Targeted /apply-comments (additive)']
   - ['Canvas', 'Abstracted away', 'Explicit 1920×1080 React canvas']
   - ['Agent lock-in', 'Proprietary prompt layer', 'Any coding agent — file-level interface']
-  - {label: "[\"Audience\", \"Non-technical presenters\", \"Developers / agent-orchestrating leads\"]", title: "\"open-slide vs. Generic AI Slide Tools\""}
+  - ['Audience', 'Non-technical presenters', 'Developers / agent-orchestrating leads']
 :::
 
 :::flowchart

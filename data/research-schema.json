@@ -29,7 +29,11 @@
       "flowchart",
       "verdict",
       "scenario-ladder",
-      "metric-strip"
+      "metric-strip",
+      "scorecard",
+      "bar-chart",
+      "timeline",
+      "stack-diagram"
     ]
   },
   "rules": [

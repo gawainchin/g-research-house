@@ -28,6 +28,12 @@ function isSectionSlug(s: string): s is SectionSlug {
   return s in SECTION_STYLE
 }
 
+export function generateStaticParams() {
+  return getAllNotes().map((note) => ({ slug: note.slug }))
+}
+
+export const dynamicParams = false
+
 // ── Format icon map ──────────────────────────────────────────────────────────
 const FORMAT_ICONS: Record<string, string> = {
   'workflow': '⚙',

@@ -41,7 +41,7 @@ rows:
   - ['EBITDA Margin', '57%', '10-20%']
   - ['NRR', '119%', '110-115%']
   - ['Rule of 40 Score', '127%', '35-55%']
-  - {label: "[\"Forward P/E\", \"~287x\", \"40-80x (elevated)\"]", title: "\"PLTR vs High-Growth SaaS Comp Benchmarks\""}
+  - ['Forward P/E', '~287x', '40-80x (elevated)']
 :::
 
 :::scenario-ladder

@@ -30,7 +30,8 @@ text: Install all of these with:
 :::
 
 :::paragraph
-text: "Install all of these with:\n\n```bash\ncomposio add <skill_name>\n# Or from the GitHub repo:\ncodex skills install composiohq/awesome-codex-skills/<skill_name>\n```\n:::
+text: "Install all of these with:\n\n```bash\ncomposio add <skill_name>\n# Or from the GitHub repo:\ncodex skills install composiohq/awesome-codex-skills/<skill_name>\n```"
+:::
 
 :::heading
 text: 1. connect — Your Starting Point
@@ -49,7 +50,8 @@ text: "**What \"1,000+ integrations\" actually means in practice:** You're not l
 :::
 
 :::paragraph
-text: "```bash\ncurl -fsSL https://composio.dev/install | bash\ncomposio link github    # or gmail, slack, notion, etc.\n```\n:::
+text: "```bash\ncurl -fsSL https://composio.dev/install | bash\ncomposio link github    # or gmail, slack, notion, etc.\n```"
+:::
 
 :::heading
 text: "2. pr-review-ci-fix — Automate the Red CI Loop"
@@ -68,7 +70,8 @@ text: "Works with both GitHub and GitLab CI. The key constraint: Codex executes 
 :::
 
 :::paragraph
-text: "```bash\ncomposio add github\ncomposio add pr-review-ci-fix\n```\n:::
+text: "```bash\ncomposio add github\ncomposio add pr-review-ci-fix\n```"
+:::
 
 :::heading
 text: "3. sentry-triage — Debug at 2am Without the Context Switch"
@@ -87,7 +90,8 @@ text: "This is the skill that shows what \"agent-native debugging\" actually loo
 :::
 
 :::paragraph
-text: "```bash\ncomposio add sentry\ncomposio add sentry-triage\n```\n:::
+text: "```bash\ncomposio add sentry\ncomposio add sentry-triage\n```"
+:::
 
 :::heading
 text: "4. codebase-migrate — Migrations at Scale, Not in Hell"
@@ -106,7 +110,8 @@ text: The SKILL.md documents the migration workflow, safety rails, and the troub
 :::
 
 :::paragraph
-text: "```bash\ncomposio add github\ncomposio add linear   # optional, for Linear-linked migration issues\ncomposio add codebase-migrate\n```\n:::
+text: "```bash\ncomposio add github\ncomposio add linear   # optional, for Linear-linked migration issues\ncomposio add codebase-migrate\n```"
+:::
 
 :::heading
 text: "5. meeting-notes-and-actions — Zero Setup, Immediate Payoff"
@@ -125,7 +130,8 @@ text: The value is removing meeting admin overhead from every developer and prod
 :::
 
 :::paragraph
-text: "```bash\n# No Composio dependency — purely instruction-driven\ncomposio add meeting-notes-and-actions\n```\n:::
+text: "```bash\n# No Composio dependency — purely instruction-driven\ncomposio add meeting-notes-and-actions\n```"
+:::
 
 :::heading
 text: "6. deploy-pipeline — Ship Full-Stack Without the Checklist"
@@ -144,7 +150,8 @@ text: "The bundled `scripts/ship.ts` turns a multi-service deployment into a sin
 :::
 
 :::paragraph
-text: "```bash\ncomposio add stripe\ncomposio add supabase\ncomposio add vercel\ncomposio add slack\ncomposio add deploy-pipeline\n```\n:::
+text: "```bash\ncomposio add stripe\ncomposio add supabase\ncomposio add vercel\ncomposio add slack\ncomposio add deploy-pipeline\n```"
+:::
 
 :::heading
 text: "7. gh-fix-ci — CI Debugger That Doesn't Give Up"
@@ -163,7 +170,8 @@ text: "If you have `gh` CLI authenticated, this works out of the box."
 :::
 
 :::paragraph
-text: "```bash\n# Requires gh CLI authenticated to your GitHub account\ncomposio add gh-fix-ci\n```\n:::
+text: "```bash\n# Requires gh CLI authenticated to your GitHub account\ncomposio add gh-fix-ci\n```"
+:::
 
 :::heading
 text: "8. issue-triage — From Bug Flood to Linear in One Command"
@@ -178,7 +186,8 @@ text: "**Why it's worth it:** Issue triage is a recurring ritual that nobody enj
 :::
 
 :::paragraph
-text: "```bash\ncomposio add linear    # or composio add jira\ncomposio add sentry    # optional, for Sentry→Linear routing\ncomposio add issue-triage\n```\n:::
+text: "```bash\ncomposio add linear    # or composio add jira\ncomposio add sentry    # optional, for Sentry→Linear routing\ncomposio add issue-triage\n```"
+:::
 
 :::heading
 text: Honorable Mentions

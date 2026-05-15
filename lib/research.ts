@@ -21,17 +21,27 @@ export type ContentBlockType =
   | 'verdict'
   | 'scenario-ladder'
   | 'metric-strip'
+  | 'scorecard'
+  | 'bar-chart'
+  | 'timeline'
+  | 'stack-diagram'
 
 export interface ContentBlock {
   type: ContentBlockType
   text?: string
   items?: string[]
+  takeaways?: { icon?: string; text: string }[]
   title?: string
   label?: string
   columns?: string[]
   rows?: string[][]
   steps?: { label: string; note?: string }[]
   metrics?: { label: string; value: string }[]
+  criteria?: { label: string; score: number; note?: string }[]
+  bars?: { label: string; value: number; note?: string }[]
+  events?: { label: string; date?: string; text: string }[]
+  layers?: { label: string; text: string }[]
+  unit?: string
   scenarios?: {
     label: string
     text?: string
@@ -256,7 +266,7 @@ function restoreBlockContentInFields(fields: Record<string, unknown>): Record<st
   return out
 }
 
-const BLOCK_RE = /:::([a-z-]+)\n([\s\S]*?)\n:::/gm
+const BLOCK_RE = /^(:{3,})([a-z-]+)[ \t]*\r?\n([\s\S]*?)^\1[ \t]*$/gm
 
 function parseInlineBlocks(body: string): ContentBlock[] {
   const blocks: ContentBlock[] = []
@@ -271,8 +281,8 @@ function parseInlineBlocks(body: string): ContentBlock[] {
       if (plain) blocks.push({ type: 'paragraph', text: plain })
     }
 
-    const blockType = match[1].trim() as ContentBlockType
-    const raw = match[2].trimEnd()
+    const blockType = match[2].trim() as ContentBlockType
+    const raw = match[3].trimEnd()
 
     if (!raw.trim()) {
       blocks.push({ type: blockType })

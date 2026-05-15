@@ -61,7 +61,7 @@ rows:
   - ['Defense', 'Headline selloff, then stabilization', 'Flat-to-down multiples, but structural backlog remains']
   - ['Energy', 'Little fundamental relief if Iran risk persists', 'Modest Europe relief, but not a full normalization trade']
   - ['Construction / infrastructure', 'Short squeeze / tactical rotation only', 'Real rerating if governance and reconstruction funding appear']
-  - {label: "[\"EM / FX\", \"Temporary sentiment bounce\", \"Broader dollar-down, EM-up rotation becomes more credible\"]", title: Likely market reactions by bucket}
+  - ['EM / FX', 'Temporary sentiment bounce', 'Broader dollar-down, EM-up rotation becomes more credible']
 :::
 
 :::scenario-ladder

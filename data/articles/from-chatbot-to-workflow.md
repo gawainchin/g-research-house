@@ -43,7 +43,7 @@ rows:
   - ['Quality control', 'User manually checks', 'Built-in review gates']
   - ['Failure handling', 'Human re-prompts', 'Retry / reassign automatically']
   - ['Multi-agent', 'Not native', 'First-class coordination']
-  - {label: "[\"Observability\", \"Black box\", \"Full audit trail\"]", title: Chatbot vs Workflow System}
+  - ['Observability', 'Black box', 'Full audit trail']
 :::
 
 :::flowchart
@@ -52,7 +52,8 @@ steps:
   - {label: Analyst Agent, note: "Reviews findings for gaps, flags what's missing or unclear"}
   - {label: Human Review Gate, note: DS lead approves before synthesis proceeds}
   - {label: Writer Agent, note: Synthesises approved findings into final deliverable}
-  - {label: "{label: \"Done + Archived\", note: \"Task closed, output durable, audit trail complete\"}", title: "\"Research Pipeline: Kanban-Style Multi-Agent Flow\""}
+  - {label: Done + Archived, note: "Task closed, output durable, audit trail complete"}
+title: "Research Pipeline: Kanban-Style Multi-Agent Flow"
 :::
 
 :::callout
