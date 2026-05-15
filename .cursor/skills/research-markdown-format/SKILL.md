@@ -39,6 +39,10 @@ date: 2026-05-14
 tags:
   - ai
   - infrastructure
+keywords:
+  - agent workflows
+  - inference infrastructure
+  - memory bottlenecks
 format: thesis
 perspective: analyst
 summary: "One clear sentence explaining the article."
@@ -113,6 +117,7 @@ Supported block types:
 - `metric-strip`
 - `scorecard`
 - `bar-chart`
+- `line-chart`
 - `timeline`
 - `stack-diagram`
 
@@ -193,6 +198,7 @@ Best use cases:
 
 - `scorecard`: Compare quality, valuation, moat, risk, timing, or technical maturity. Best for both finance and AI notes.
 - `bar-chart`: Show simple numeric comparisons such as growth, margin, multiple, market share, capex exposure, or capacity.
+- `line-chart`: Show trends over ordered periods, such as revenue, adoption, utilization, index performance, capacity, or cost curves.
 - `timeline`: Show catalysts, policy milestones, IPO path, earnings checkpoints, product rollouts, or stack evolution.
 - `stack-diagram`: Show AI stack layers, infrastructure dependencies, workflow architecture, or power/grid-to-model relationships.
 - `flowchart`: Show causal chains, decision paths, workflow stages, or "if X then Y" logic.
@@ -230,6 +236,26 @@ bars:
   - label: CRM
     value: 11
 :::
+```
+
+Line chart:
+
+```markdown
+::::line-chart
+title: Revenue Growth Trend
+unit: "$M"
+series:
+  - label: Cerebras
+    points:
+      - {label: 2022, value: 120}
+      - {label: 2023, value: 290}
+      - {label: 2024, value: 510}
+  - label: Peer Index
+    points:
+      - {label: 2022, value: 100}
+      - {label: 2023, value: 180}
+      - {label: 2024, value: 260}
+::::
 ```
 
 Timeline:
@@ -286,6 +312,9 @@ steps:
 - Quote strings when they contain `:`, backticks, markdown emphasis, apostrophes, or shell syntax.
 - Use `items:` for `bullets` and `numbered-list`.
 - Use `takeaways:` or `items:` for `key-takeaways`; each takeaway should have readable text.
+- Use `keywords:` for graph nodes. Keep them specific and article-level, not just broad category tags.
 - Use visual blocks only when they clarify comparison, sequence, stack structure, or causal flow.
+- For `line-chart`, keep series count small (1-3 series), use ordered labels, and keep `value` numeric.
+- Never nest serialized objects inside fields such as `label: "{label: ...}"`; each object must be real YAML fields.
 - Never leave raw `::::` or `:::` fence lines inside a block body unless using a longer matching fence.
 - If validation fails, fix the article format before changing renderer code.

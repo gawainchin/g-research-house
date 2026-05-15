@@ -15,7 +15,7 @@
     }
   ],
   "articleShape": {
-    "required": ["slug", "title", "section", "summary", "date", "tags", "readingTime", "format", "perspective", "content"],
+    "required": ["slug", "title", "section", "summary", "date", "tags", "keywords", "readingTime", "format", "perspective", "content"],
     "contentBlockTypes": [
       "paragraph",
       "heading",
@@ -32,6 +32,7 @@
       "metric-strip",
       "scorecard",
       "bar-chart",
+      "line-chart",
       "timeline",
       "stack-diagram"
     ]

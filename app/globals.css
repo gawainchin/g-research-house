@@ -81,3 +81,13 @@
 .noteActionLink:hover {
   color: #4f463d;
 }
+
+.visualDemoCard {
+  grid-template-columns: minmax(180px, 0.32fr) minmax(0, 1fr);
+}
+
+@media (max-width: 720px) {
+  .visualDemoCard {
+    grid-template-columns: 1fr;
+  }
+}

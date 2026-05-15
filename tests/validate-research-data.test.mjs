@@ -57,6 +57,16 @@ bars:
     value: 70
 :::
 
+:::line-chart
+title: Revenue Growth Trend
+unit: "$M"
+series:
+  - label: PLTR
+    points:
+      - {label: Q1, value: 70}
+      - {label: Q2, value: 90}
+:::
+
 :::timeline
 title: Catalyst Path
 events:
@@ -72,13 +82,15 @@ layers:
     text: "User-facing workflow surfaces."
 :::`)
 
-  assert.equal(blocks.length, 4)
+  assert.equal(blocks.length, 5)
   assert.equal(blocks[0].type, 'scorecard')
   assert.deepEqual(blocks[0].criteria, [{ label: 'Quality', score: 5, note: 'Best-in-class margin.' }])
   assert.equal(blocks[1].type, 'bar-chart')
   assert.deepEqual(blocks[1].bars, [{ label: 'PLTR', value: 70 }])
-  assert.equal(blocks[2].type, 'timeline')
-  assert.deepEqual(blocks[2].events, [{ label: 'Earnings', date: 'Q2 2026', text: 'Watch commercial durability.' }])
-  assert.equal(blocks[3].type, 'stack-diagram')
-  assert.deepEqual(blocks[3].layers, [{ label: 'App Layer', text: 'User-facing workflow surfaces.' }])
+  assert.equal(blocks[2].type, 'line-chart')
+  assert.deepEqual(blocks[2].series, [{ label: 'PLTR', points: [{ label: 'Q1', value: 70 }, { label: 'Q2', value: 90 }] }])
+  assert.equal(blocks[3].type, 'timeline')
+  assert.deepEqual(blocks[3].events, [{ label: 'Earnings', date: 'Q2 2026', text: 'Watch commercial durability.' }])
+  assert.equal(blocks[4].type, 'stack-diagram')
+  assert.deepEqual(blocks[4].layers, [{ label: 'App Layer', text: 'User-facing workflow surfaces.' }])
 })

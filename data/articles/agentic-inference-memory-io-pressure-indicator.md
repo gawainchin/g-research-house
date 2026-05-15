@@ -9,6 +9,12 @@ tags:
   - memory
   - io
   - agents
+keywords:
+  - agentic inference
+  - memory pressure
+  - io bottlenecks
+  - inference infrastructure
+  - context windows
 format: indicator
 perspective: operator
 summary: A technical indicator note tracking whether agentic and long-context systems are turning memory, cache, and I/O into first-class bottlenecks.

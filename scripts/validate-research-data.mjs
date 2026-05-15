@@ -212,6 +212,8 @@ export function validateResearchData(root = process.cwd()) {
     assert.ok(allowedSections.has(fm.section ?? ''), `invalid section for ${slug}: ${fm.section}`)
     assert.ok(fm.summary, `missing summary for ${slug}`)
     assert.ok(Array.isArray(fm.tags), `tags must be array for ${slug}`)
+    assert.ok(Array.isArray(fm.keywords) && fm.keywords.length > 0, `keywords must be non-empty array for ${slug}`)
+    assert.ok(fm.keywords.every((keyword) => typeof keyword === 'string' && keyword.trim()), `keywords must be non-empty strings for ${slug}`)
 
     assert.ok(
       Array.isArray(content) && content.length > 0,
@@ -285,6 +287,23 @@ export function validateResearchData(root = process.cwd()) {
           assert.ok(
             Array.isArray(block.bars) && block.bars.length > 0,
             `${slug}: bars missing/empty in bar-chart`
+          )
+          break
+        case 'line-chart':
+          assert.ok(
+            Array.isArray(block.series) && block.series.length > 0,
+            `${slug}: series missing/empty in line-chart`
+          )
+          assert.ok(
+            block.series.every((series) =>
+              series &&
+              typeof series === 'object' &&
+              typeof series.label === 'string' &&
+              Array.isArray(series.points) &&
+              series.points.length > 0 &&
+              series.points.every((point) => point && typeof point === 'object' && typeof point.label === 'string' && Number.isFinite(Number(point.value)))
+            ),
+            `${slug}: every line-chart series must define a label and numeric points`
           )
           break
         case 'timeline':

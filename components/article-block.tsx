@@ -635,6 +635,101 @@ function BarChart({ block, section }: { block: ContentBlock; section?: string })
   )
 }
 
+// ── Line Chart ────────────────────────────────────────────────────────────────
+function LineChart({ block, section }: { block: ContentBlock; section?: string }) {
+  const theme = sectionTheme(section)
+  const palette = [theme.accent, '#7c3aed', '#b45309', '#1d4ed8']
+  const series = (block.series ?? [])
+    .map((item) => ({
+      ...item,
+      points: item.points.filter((point) => Number.isFinite(Number(point.value))),
+    }))
+    .filter((item) => item.points.length > 0)
+  const labels = Array.from(new Set(series.flatMap((item) => item.points.map((point) => point.label))))
+  const values = series.flatMap((item) => item.points.map((point) => Number(point.value)))
+
+  if (series.length === 0 || labels.length === 0 || values.length === 0) {
+    return null
+  }
+
+  const chartWidth = 640
+  const chartHeight = 280
+  const padding = { top: 22, right: 20, bottom: 44, left: 52 }
+  const plotWidth = chartWidth - padding.left - padding.right
+  const plotHeight = chartHeight - padding.top - padding.bottom
+  const minValue = Math.min(...values)
+  const maxValue = Math.max(...values)
+  const lowerBound = minValue > 0 ? 0 : minValue
+  const upperBound = maxValue === lowerBound ? maxValue + 1 : maxValue
+  const valueRange = upperBound - lowerBound || 1
+  const xFor = (label: string) => {
+    const index = Math.max(0, labels.indexOf(label))
+    return padding.left + (labels.length === 1 ? plotWidth / 2 : (index / (labels.length - 1)) * plotWidth)
+  }
+  const yFor = (value: number) => padding.top + ((upperBound - value) / valueRange) * plotHeight
+  const formatValue = (value: number) => `${value}${block.unit ?? ''}`
+  const tickCount = 4
+  const ticks = Array.from({ length: tickCount + 1 }, (_, index) => lowerBound + (valueRange / tickCount) * index)
+
+  return (
+    <div style={{ margin: '1.5rem 0 2rem', padding: '1rem', background: '#faf8f5', border: '1px solid #e6e0d6', borderRadius: '4px' }}>
+      {block.title && <div style={visualTitleStyle}>{block.title}</div>}
+      <div style={{ overflowX: 'auto' }}>
+        <svg
+          role="img"
+          aria-label={block.title ?? 'Line chart'}
+          viewBox={`0 0 ${chartWidth} ${chartHeight}`}
+          style={{ width: '100%', minWidth: 420, height: 'auto', display: 'block', fontFamily: 'Helvetica Neue, sans-serif' }}
+        >
+          <rect x={padding.left} y={padding.top} width={plotWidth} height={plotHeight} fill="#fffdfa" stroke="#e6e0d6" />
+          {ticks.map((tick) => {
+            const y = yFor(tick)
+            return (
+              <g key={tick}>
+                <line x1={padding.left} y1={y} x2={padding.left + plotWidth} y2={y} stroke="#ede8df" strokeWidth="1" />
+                <text x={padding.left - 8} y={y + 4} textAnchor="end" fontSize="10" fill="#8a8278">
+                  {formatValue(Math.round(tick * 10) / 10)}
+                </text>
+              </g>
+            )
+          })}
+          {labels.map((label) => {
+            const x = xFor(label)
+            return (
+              <g key={label}>
+                <line x1={x} y1={padding.top} x2={x} y2={padding.top + plotHeight} stroke="#f1ece4" strokeWidth="1" />
+                <text x={x} y={chartHeight - 18} textAnchor="middle" fontSize="10" fill="#6b635a">
+                  {label}
+                </text>
+              </g>
+            )
+          })}
+          {series.map((item, seriesIndex) => {
+            const color = palette[seriesIndex % palette.length]
+            const points = item.points.map((point) => `${xFor(point.label)},${yFor(Number(point.value))}`).join(' ')
+            return (
+              <g key={item.label}>
+                <polyline points={points} fill="none" stroke={color} strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
+                {item.points.map((point) => (
+                  <circle key={`${item.label}-${point.label}`} cx={xFor(point.label)} cy={yFor(Number(point.value))} r="3.5" fill="#fffdfa" stroke={color} strokeWidth="2" />
+                ))}
+              </g>
+            )
+          })}
+        </svg>
+      </div>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem', marginTop: '0.75rem', fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.8rem', color: '#5f564d' }}>
+        {series.map((item, index) => (
+          <div key={item.label} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
+            <span style={{ width: 10, height: 10, borderRadius: 999, background: palette[index % palette.length], display: 'inline-block' }} />
+            <span>{item.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 // ── Timeline ─────────────────────────────────────────────────────────────────
 function Timeline({ block, section }: { block: ContentBlock; section?: string }) {
   const events = block.events ?? []
@@ -740,6 +835,9 @@ export default function ArticleBlock({ block, section }: { block: ContentBlock; 
 
     case 'bar-chart':
       return <BarChart block={block} section={section} />
+
+    case 'line-chart':
+      return <LineChart block={block} section={section} />
 
     case 'timeline':
       return <Timeline block={block} section={section} />

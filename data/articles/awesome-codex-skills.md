@@ -10,6 +10,12 @@ tags:
   - composio
   - developer-tools
   - productivity
+keywords:
+  - codex skills
+  - agent tooling
+  - composio
+  - developer productivity
+  - workflow automation
 format: thesis
 perspective: analyst
 summary: "The awesome-codex-skills repo has 880 skills across 5 categories — here's how to cut through the noise: 8 skills worth installing today, what each actually does, and why they'd disappear from your workflow if you removed them."

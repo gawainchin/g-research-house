@@ -10,6 +10,12 @@ tags:
   - palantir
   - rule-of-40
   - valuation
+keywords:
+  - palantir valuation
+  - rule of 40
+  - aip growth
+  - government contracts
+  - forward pe
 format: thesis
 perspective: investor
 summary: PLTR posts a 127% Rule of 40 score. The quality is real — but at 287x forward P/E, the bar for delivering the number is unforgiving.

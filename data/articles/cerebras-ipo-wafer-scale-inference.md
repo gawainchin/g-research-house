@@ -9,6 +9,12 @@ tags:
   - ipo
   - inference
   - valuation
+keywords:
+  - wafer-scale inference
+  - openai mra
+  - g42 concentration
+  - ai semiconductors
+  - long-context inference
 format: company-compare
 perspective: investor
 summary: Cerebras pitches wafer-scale AI inference as a physically superior alternative to GPU clusters. The IPO validates the thesis but leaves the valuation without margin of safety.

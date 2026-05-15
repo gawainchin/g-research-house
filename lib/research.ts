@@ -23,6 +23,7 @@ export type ContentBlockType =
   | 'metric-strip'
   | 'scorecard'
   | 'bar-chart'
+  | 'line-chart'
   | 'timeline'
   | 'stack-diagram'
 
@@ -39,6 +40,7 @@ export interface ContentBlock {
   metrics?: { label: string; value: string }[]
   criteria?: { label: string; score: number; note?: string }[]
   bars?: { label: string; value: number; note?: string }[]
+  series?: { label: string; points: { label: string; value: number }[] }[]
   events?: { label: string; date?: string; text: string }[]
   layers?: { label: string; text: string }[]
   unit?: string
@@ -59,6 +61,7 @@ export interface ResearchNoteSummary {
   summary: string
   date: string
   tags: string[]
+  keywords: string[]
   readingTime: number
   format: string
   perspective: ResearchPerspective
@@ -358,6 +361,7 @@ function getArticleCache(): Map<string, ResearchArticle> {
       summary: String(fm.summary ?? ''),
       date: String(fm.date ?? ''),
       tags: Array.isArray(fm.tags) ? fm.tags.map(String) : [],
+      keywords: Array.isArray(fm.keywords) ? fm.keywords.map(String) : [],
       readingTime: Number(fm.readingTime ?? 5),
       format: String(fm.format ?? 'thesis'),
       perspective: (fm.perspective ?? 'investor') as ResearchPerspective,

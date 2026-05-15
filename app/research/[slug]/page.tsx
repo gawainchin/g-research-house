@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import ArticleBlock from '../../../components/article-block'
+import { ArticleResearchGraph } from '../../../components/research-graph'
 import { formatDisplayDate, getAllNotes, getArticleBySlug, getRelatedNotes } from '../../../lib/research'
 import type { ContentBlock } from '../../../lib/research'
 
@@ -353,6 +354,8 @@ export default async function ResearchArticlePage({ params }: { params: Promise<
           <ArticleBlock key={`${block.type}-${index}`} block={block} section={sectionSlug} />
         ))}
       </article>
+
+      <ArticleResearchGraph article={article} related={getRelatedNotes(article.relatedSlugs)} />
 
       <ArticleFooter article={{ ...article, content: article.content } as ReturnType<typeof getArticleBySlug> & { content: ContentBlock[] }} />
     </main>

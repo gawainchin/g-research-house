@@ -9,6 +9,12 @@ tags:
   - ai
   - infrastructure
   - energy
+keywords:
+  - china ai infrastructure
+  - power grid
+  - data centers
+  - equipment layer
+  - energy bottlenecks
 format: thesis
 perspective: investor
 summary: The better AI expression may sit in power, grid, and equipment layers rather than platform headlines.

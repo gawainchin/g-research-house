@@ -10,6 +10,12 @@ tags:
   - infrastructure
   - slides
   - open-source
+keywords:
+  - agent-native slides
+  - open-slide
+  - structured presentations
+  - slide comments
+  - human agent loop
 format: thesis
 perspective: operator
 summary: The constrained canvas is the interface contract — open-slide demonstrates why fixed substrates, bidirectional annotation, and source-owned artifacts make reliable human-agent visual collaboration possible.

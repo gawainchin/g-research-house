@@ -10,6 +10,12 @@ tags:
   - orchestration
   - infrastructure
   - data-science
+keywords:
+  - agent workflows
+  - task orchestration
+  - durable state
+  - review gates
+  - multi-agent systems
 format: workflow
 perspective: operator
 summary: Why AI agents need task systems, not just better prompts — and what workflow infrastructure actually provides that prompts cannot.

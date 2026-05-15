@@ -9,6 +9,12 @@ tags:
   - ai
   - power
   - valuation
+keywords:
+  - ai power semiconductors
+  - silicon carbide
+  - wolfspeed
+  - onsemi
+  - infineon
 format: company-compare
 perspective: investor
 summary: Three ways to express the AI power theme, but with very different quality, risk, and valuation profiles.

@@ -12,6 +12,12 @@ tags:
   - europe
   - ukraine
   - russia
+keywords:
+  - ukraine ceasefire
+  - defense stocks
+  - energy risk
+  - europe rearmament
+  - sector rotation
 format: thesis
 perspective: investor
 summary: A ceasefire would be disinflationary for Europe at the margin, but the real market effect is sector rotation — not a universal risk-on melt-up.

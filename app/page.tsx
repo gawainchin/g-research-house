@@ -112,6 +112,12 @@ export default function Home() {
           <Link href={`/${site.sections[0]?.slug ?? ''}`} className="readerPill">
             Browse by lens
           </Link>
+          <Link href="/visual-demo" className="readerPill">
+            Visual demo
+          </Link>
+          <Link href="/graph" className="readerPill">
+            Research graph
+          </Link>
         </div>
 
         <div style={{ marginTop: '1.65rem', maxWidth: 760, fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.9rem' }}>
