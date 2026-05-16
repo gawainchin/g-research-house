@@ -2,7 +2,7 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import { execFileSync } from 'node:child_process'
 import path from 'node:path'
-import { parseInlineBlocks } from '../scripts/validate-research-data.mjs'
+import { parseInlineBlocks } from '../lib/inline-blocks.mjs'
 
 const workdir = path.resolve(import.meta.dirname, '..')
 
