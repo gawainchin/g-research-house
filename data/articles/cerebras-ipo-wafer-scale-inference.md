@@ -8,12 +8,13 @@ tags:
   - semiconductors
   - ipo
   - inference
+  - wafer-scale
   - valuation
 keywords:
-  - wafer-scale inference
-  - openai mra
+  - cerebras ipo
+  - wafer scale engine
+  - openai inference capacity
   - g42 concentration
-  - ai semiconductors
   - long-context inference
 format: company-compare
 perspective: investor
@@ -21,8 +22,14 @@ summary: Cerebras pitches wafer-scale AI inference as a physically superior alte
 readingTime: 8
 relatedSlugs:
   - ai-power-semis-wolfspeed-onsemi-infineon
+sourceLinks:
+  - label: "SEC — Cerebras S-1 (April 2026)"
+    url: "https://www.sec.gov/Archives/edgar/data/2021728/000162828026025762/cerebras-sx1april2026.htm"
+  - label: "Cerebras — AWS collaboration for disaggregated inference"
+    url: "https://www.cerebras.ai/press-release/awscollaboration"
+  - label: "Cerebras — WSE-3 chip overview"
+    url: "https://www.cerebras.ai/chip"
 ---
-
 :::metric-strip
 metrics:
   - {label: Revenue (FY2024 est.), note: "~76% YoY growth", value: ~$510M}
