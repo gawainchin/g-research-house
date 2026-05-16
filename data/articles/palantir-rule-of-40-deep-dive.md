@@ -8,21 +8,27 @@ tags:
   - ai
   - saas
   - palantir
-  - rule-of-40
+  - govtech
   - valuation
 keywords:
+  - palantir rule of 40
   - palantir valuation
-  - rule of 40
   - aip growth
-  - government contracts
+  - government revenue concentration
   - forward pe
 format: thesis
 perspective: investor
 summary: PLTR posts a 127% Rule of 40 score. The quality is real — but at 287x forward P/E, the bar for delivering the number is unforgiving.
 readingTime: 7
 relatedSlugs: []
+sourceLinks:
+  - label: "Palantir — Q4 2025 earnings release"
+    url: "https://investors.palantir.com/news-details/2026/Palantir-Reports-Q4-2025-U-S--Comm-Revenue-Growth-of-137-YY-and-Revenue-Growth-of-70-YY-Issues-FY-2026-Revenue-Guidance-of-61-YY-and-U-S--Comm-Revenue-Guidance-of-115-YY-Crushing-Consensus-Expectations/"
+  - label: "Palantir — Q4 2025 investor presentation"
+    url: "https://investors.palantir.com/files/Palantir%20-%20Q4%202025%20Investor%20Presentation.pdf"
+  - label: "Palantir IR — quarterly results archive"
+    url: "https://investors.palantir.com/financials/quarterly-results"
 ---
-
 :::thesis-card
 label: Core Thesis
 text: "The business is exceptional by software quality metrics: 70% revenue growth, 57% EBITDA margin, 119% net revenue retention, and a government moat that commercial software can't replicate. At $94 and a forward P/E approaching 300x, the equity is priced for everything to go right — including the government segment decelerating at precisely the wrong moment."

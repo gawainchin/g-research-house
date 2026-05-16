@@ -8,10 +8,11 @@ tags:
   - semiconductors
   - ai
   - power
+  - silicon-carbide
   - valuation
 keywords:
-  - ai power semiconductors
-  - silicon carbide
+  - ai data center power
+  - silicon carbide semiconductors
   - wolfspeed
   - onsemi
   - infineon
@@ -21,8 +22,14 @@ summary: Three ways to express the AI power theme, but with very different quali
 readingTime: 6
 relatedSlugs:
   - china-ai-infrastructure-hidden-power-play
+sourceLinks:
+  - label: "Wolfspeed — powering AI with silicon carbide"
+    url: "https://www.wolfspeed.com/applications/power/artificial-intelligence/"
+  - label: "onsemi — meeting the AI data center power challenge"
+    url: "https://www.onsemi.com/company/news-media/blog/industrial/en-us/meeting-the-ai-data-center-power-challenge"
+  - label: "Infineon — AI data center power solutions"
+    url: "https://www.infineon.com/applications/ai-data-center/data-center-power-solutions"
 ---
-
 :::bullets
 items:
   - "Infineon is the best quality-adjusted expression."

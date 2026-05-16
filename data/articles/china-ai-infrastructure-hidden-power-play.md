@@ -9,20 +9,27 @@ tags:
   - ai
   - infrastructure
   - energy
+  - data-centers
 keywords:
   - china ai infrastructure
-  - power grid
-  - data centers
+  - china ai data centers
+  - power grid capex
+  - data center power bottlenecks
   - equipment layer
-  - energy bottlenecks
 format: thesis
 perspective: investor
 summary: The better AI expression may sit in power, grid, and equipment layers rather than platform headlines.
 readingTime: 8
 relatedSlugs:
   - ai-power-semis-wolfspeed-onsemi-infineon
+sourceLinks:
+  - label: "Reuters Breakingviews — China's power edge and AI"
+    url: "https://www.reuters.com/commentary/breakingviews/chinas-power-edge-brings-mixed-ai-blessings-2026-01-06/"
+  - label: "IEA — energy and AI executive summary"
+    url: "https://www.iea.org/reports/energy-and-ai/executive-summary"
+  - label: "McKinsey — AI data centers and power demand"
+    url: "https://www.mckinsey.com/industries/private-capital/our-insights/how-data-centers-and-the-energy-sector-can-sate-ais-hunger-for-power"
 ---
-
 :::bullets
 items:
   - Visible backlog beats vague AI narrative.

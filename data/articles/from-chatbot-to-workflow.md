@@ -9,21 +9,27 @@ tags:
   - workflow
   - orchestration
   - infrastructure
-  - data-science
+  - durable-systems
 keywords:
   - agent workflows
-  - task orchestration
-  - durable state
+  - durable execution
+  - human-in-the-loop agents
   - review gates
-  - multi-agent systems
+  - stateful orchestration
 format: workflow
 perspective: operator
 summary: Why AI agents need task systems, not just better prompts — and what workflow infrastructure actually provides that prompts cannot.
 readingTime: 8
 relatedSlugs:
   - agentic-inference-memory-io-pressure-indicator
+sourceLinks:
+  - label: "LangGraph overview"
+    url: "https://docs.langchain.com/oss/python/langgraph/overview"
+  - label: "LangGraph durable execution docs"
+    url: "https://docs.langchain.com/oss/python/langgraph/durable-execution"
+  - label: "Temporal — human-in-the-loop AI agent"
+    url: "https://docs.temporal.io/ai-cookbook/human-in-the-loop-python"
 ---
-
 :::thesis-card
 label: Core Thesis
 text: "Once AI work becomes multi-step, the winning system is not the cleverest prompt. It is workflow, state management, review gates, and orchestration. Better prompts improve individual outputs. Task systems improve reliable output at scale."

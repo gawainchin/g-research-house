@@ -5,24 +5,31 @@ section: ai-research
 date: 2026-04-20
 tags:
   - ai
-  - inference
-  - memory
-  - io
   - agents
+  - inference
+  - kv-cache
+  - memory
+  - infrastructure
 keywords:
   - agentic inference
-  - memory pressure
-  - io bottlenecks
-  - inference infrastructure
-  - context windows
+  - kv cache
+  - context memory storage
+  - long-context inference
+  - memory bandwidth bottlenecks
 format: indicator
 perspective: operator
 summary: A technical indicator note tracking whether agentic and long-context systems are turning memory, cache, and I/O into first-class bottlenecks.
 readingTime: 5
 relatedSlugs:
   - from-chatbot-to-workflow
+sourceLinks:
+  - label: "arXiv — storage bandwidth bottleneck in agentic LLM inference"
+    url: "https://arxiv.org/html/2602.21548v2"
+  - label: "NVIDIA — context memory storage platform overview"
+    url: "https://developer.nvidia.com/blog/introducing-nvidia-bluefield-4-powered-inference-context-memory-storage-platform-for-the-next-frontier-of-ai/"
+  - label: "Solidigm — why inference is becoming a flash-storage problem"
+    url: "https://www.solidigm.com/products/technology/icmsp-ai-inference-is-flash-storage-problem.html"
 ---
-
 :::bullets
 items:
   - It asks what the system is doing, not what stock rerates.
