@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { formatDisplayDate, type ResearchNoteSummary } from '../lib/research'
+import { formatDisplayDate, type ResearchNoteSummary } from '../lib/research-types'
 
 const SECTION_STYLE = {
   'ai-research': {
