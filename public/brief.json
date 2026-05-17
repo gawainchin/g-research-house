@@ -1,25 +1,25 @@
 {
-  "date": "May 14, 2026",
+  "date": "MAY 17, 2026",
   "sections": [
     {
-      "title": "OVERNIGHT MAP",
-      "content": "Risk-on tone holds. Nasdaq +1.20%, S&P +0.58%, Dow -0.14%. VIX 17.87, down 0.67. Treasuries and gold soft.\nS&P 7,444 | Nasdaq 26,402 | Dow 49,693"
+      "title": "WEEKEND MAP",
+      "content": "The US session on Friday delivered a meaningful risk-off shift. Broad selling across equities and crypto, with a sharp VIX spike (+6.8%) signaling elevated uncertainty. The clearest damage was in semiconductors \u2014 MU -6.6%, INTC -6.2%, NVDA -4.4% \u2014 with reports that AI capex concerns are starting to challenge the hyperscaler spending narrative. MSFT was the notable exception, up +3% on earnings beat. Bond yields and gold also moved lower, suggesting a deleveraging rather than a flight-to-safety rotation.\n\nFutures are pricing a cautious open: ES -1.2%, NQ -1.5%. Bitcoin held $78k but is back near the lower end of its recent range. The weekend doesn't reset the tape \u2014 macro headlines and China developments will set the early tone.\n\nKey anchors: SPY -1.2%, Nasdaq -1.5%, VIX 18.4, Gold -2.3%."
     },
     {
-      "title": "US CLOSE MOVERS",
-      "content": "MU +4.83% \u2014 AI capex/semi momentum continuing\nNVDA +2.29% \u2014 broad AI run keeping it bid\nNET +3.12% \u2014 bounce from oversold insider-selling drop\nMSFT -0.63% \u2014 slight drag, no clear catalyst\nDXYZ -2.25% \u2014 speculative unwinding, punt thesis thin"
+      "title": "CRYPTO / 24-7 MARKETS",
+      "content": "BTC: $78,128 (-1.2%) \u2014 thin weekend volume but holding key level\nETH: $2,180 (-1.9%) \u2014 lagging BTC, more risk-off tone\nVIX: 18.4 (+6.8%) \u2014 elevated, not panic but elevated"
     },
     {
-      "title": "HK LIVE MOVERS",
-      "content": "BABA +8.18% \u2014 China stimulus re-pricing in full force\nGDS +6.90% \u2014 tech beta amplifying the move\n02800 -0.23% \u2014 HK broad beta lagging the rally\nCGN/1816.HK -0.58% \u2014 soft, ballast underperforming"
+      "title": "WHAT MATTERS THIS WEEK",
+      "content": "1. China stimulus watch: BABA and GDS both dropped sharply (-6% and -5.2%) on Friday with no fresh fundamental news \u2014 possibly a rotation unwind or accumulated skepticism toward the stimulus narrative. Worth watching whether this is a sentiment reset or a genuine thesis break.\n\n2. AI capex narrative under pressure: semis got hit hard after sector analysis flagged hyperscaler balance sheet risks and potential capex normalization. MU was the worst portfolio name. NVDA also fell. The key question is whether this is a healthy digestion of gains or the start of a broader derating.\n\n3. MSFT as the bright spot: +3% on earnings beat. A reminder that quality names with clean execution can decouple from sector weakness.\n\n4. Rate context: VIX elevated, bonds lower. The market is not in panic but is signaling that May's resilience may be tested if macro data doesn't cooperate."
     },
     {
-      "title": "MARKET NEWS",
-      "content": "China stimulus expectations continue driving APAC tech; BABA up 8%+ on ongoing policy optimism.\nSemis remain the leadership trade \u2014 MU/NVDA both running despite stretched valuations."
+      "title": "WATCHLIST SETUP",
+      "content": "- Semis on watch: MU, NVDA, INTC \u2014 if AI capex concerns deepen, these could reset further. But the sector's momentum makes them dangerous to chase on the long side right now.\n\n- China names (BABA, GDS): Both hit hard Friday. BABA especially \u2014 the -6% move with no catalyst deserves attention. If this is a sentiment overhang rather than fundamental deterioration, it's a potential setup.\n\n- MSFT: Strong earnings. Holding up while the rest of the sector sold off. Quality differentiation in a tough tape.\n\n- DXYZ: +4.6% Friday on SpaceX-related buzz. Still speculative, but the position size and the lack of a clear fundamental catalyst means it stays in the punt bucket.\n\n- Defensives (GLD, XLU): Both lower on Friday \u2014 unusual in a risk-off session. Normally they would be bid. Worth monitoring."
     },
     {
       "title": "ACTION BOARD",
-      "content": "Opportunity: China stimulus / tech rerating trade (BABA, GDS) has momentum; let it run rather than fade.\nRisk: DXYZ and speculative names weakening in a risk-on tape \u2014 the bid is narrowing to quality AI and China.\nResearch: NET insider-selling \u2014 is this sentiment-only or the start of something more fundamental? Worth clarifying before adding."
+      "content": "- Opportunity: China tech (BABA, GDS) may be offering a better entry after Friday's reset, if the stimulus thesis remains intact and the selling was sentiment-driven rather than fundamental.\n\n- Risk: Semis (MU, NVDA, INTC) are extended and vulnerable to further derating if the AI capex narrative shifts. The elevated VIX suggests the market is not complacent \u2014 downside could spread.\n\n- Research: Understand whether Friday's semi selling is about peak AI capex concerns or just a technical reset. The answer changes whether MU/NVDA are a buy on this dip or a sell-the-rip opportunity."
     }
   ]
 }
