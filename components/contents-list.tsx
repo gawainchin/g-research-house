@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
+import NoteIllustration from './note-illustration'
 import type { ResearchNoteSummary, ResearchSectionSlug } from '../lib/research-types'
 
 const RULE = '#ece6dd'
@@ -16,8 +17,8 @@ const eyebrow = {
 }
 
 const SECTION_LABEL: Record<ResearchSectionSlug, string> = {
-  'ai-research': 'AI',
-  'financial-research': 'Financial',
+  'ai-research': 'AI Research',
+  'financial-research': 'Financial Research',
 }
 
 type Filter = 'all' | ResearchSectionSlug
@@ -42,6 +43,8 @@ export default function ContentsList({ notes }: { notes: ResearchNoteSummary[] }
   }, [notes, filter, newestFirst])
 
   const total = visible.length
+  const lead = visible[0]
+  const rest = visible.slice(1)
 
   return (
     <section style={{ marginBottom: '3rem' }}>
@@ -55,6 +58,7 @@ export default function ContentsList({ notes }: { notes: ResearchNoteSummary[] }
           gap: '0.6rem',
           borderBottom: `1px solid ${RULE}`,
           paddingBottom: '0.7rem',
+          marginBottom: '1.25rem',
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
@@ -72,6 +76,10 @@ export default function ContentsList({ notes }: { notes: ResearchNoteSummary[] }
               </button>
             </span>
           ))}
+          <span style={{ color: '#bcb3a5', marginLeft: '0.4rem' }}>·</span>
+          <span style={{ color: '#a89c8c' }}>
+            {total} {total === 1 ? 'note' : 'notes'}
+          </span>
         </div>
         <button
           type="button"
@@ -86,81 +94,62 @@ export default function ContentsList({ notes }: { notes: ResearchNoteSummary[] }
       {total === 0 ? (
         <p style={{ ...eyebrow, padding: '2rem 0', color: '#8a8278' }}>No notes for this lens yet.</p>
       ) : (
-        <ol style={{ listStyle: 'none', margin: 0, padding: 0 }}>
-          {visible.map((note, idx) => {
-            const num = String(total - idx).padStart(2, '0')
-            return (
-              <li key={note.slug} style={{ borderBottom: `1px solid ${RULE}` }}>
-                <Link
-                  href={`/research/${note.slug}`}
-                  className="noteRow"
-                  style={{
-                    display: 'grid',
-                    gridTemplateColumns: '80px minmax(0, 1fr) auto',
-                    gap: '1.25rem',
-                    alignItems: 'baseline',
-                    padding: '1rem 0.6rem',
-                    margin: '0 -0.6rem',
-                    textDecoration: 'none',
-                    color: 'inherit',
-                  }}
-                >
-                  <span style={{ ...eyebrow }}>Note {num}</span>
-                  <span style={{ minWidth: 0 }}>
-                    <span
-                      style={{
-                        display: 'block',
-                        fontFamily: SERIF,
-                        fontSize: 'clamp(1.2rem, 2.4vw, 1.32rem)',
-                        fontWeight: 400,
-                        lineHeight: 1.25,
-                        color: '#171717',
-                      }}
-                    >
-                      {note.title}
-                    </span>
-                    <span
-                      style={{
-                        display: 'block',
-                        fontFamily: SERIF,
-                        fontSize: '0.95rem',
-                        color: '#6f675d',
-                        lineHeight: 1.55,
-                        marginTop: '0.35rem',
-                      }}
-                    >
-                      {note.summary}
-                    </span>
-                  </span>
-                  <span
-                    className="noteRowMeta"
-                    style={{
-                      textAlign: 'right',
-                      fontFamily: 'Helvetica Neue, sans-serif',
-                      fontSize: '0.78rem',
-                      color: '#6f675d',
-                      lineHeight: 1.55,
-                      whiteSpace: 'nowrap',
-                    }}
-                  >
-                    <span style={{ display: 'block', color: '#403a34' }}>
-                      {shortDate(note.date)} · {note.readingTime} min
-                    </span>
-                    <span style={{ display: 'block', color: '#8a8278', textTransform: 'capitalize' }}>
-                      {SECTION_LABEL[note.section]} · {note.perspective}
-                    </span>
-                  </span>
-                </Link>
-              </li>
-            )
-          })}
-        </ol>
-      )}
+        <>
+          <Link
+            key={lead.slug}
+            href={`/research/${lead.slug}`}
+            className="leadCard"
+            aria-label={`${lead.title} — lead note`}
+          >
+            <div className="cardArt cardArtHero">
+              <NoteIllustration slug={lead.slug} section={lead.section} variant="hero" />
+            </div>
+            <div className="leadCardBody">
+              <div className="cardEyebrow">{SECTION_LABEL[lead.section]}</div>
+              <h3 className="leadCardTitle" style={{ fontFamily: SERIF }}>
+                {lead.title}
+              </h3>
+              <p className="cardSummary" style={{ fontFamily: SERIF }}>
+                {lead.summary}
+              </p>
+              <div className="cardMeta">
+                {shortDate(lead.date)} · {lead.readingTime} min ·{' '}
+                <span style={{ textTransform: 'capitalize' }}>{lead.perspective}</span>
+              </div>
+            </div>
+          </Link>
 
-      <div style={{ ...eyebrow, marginTop: '1.1rem', color: '#a89c8c' }}>
-        {total} {total === 1 ? 'note' : 'notes'}
-        {filter !== 'all' ? ` · ${FILTERS.find((f) => f.value === filter)?.label}` : ''}
-      </div>
+          {rest.length > 0 && (
+            <div className="cardGrid">
+              {rest.map((note) => (
+                <Link
+                  key={note.slug}
+                  href={`/research/${note.slug}`}
+                  className="gridCard"
+                  aria-label={note.title}
+                >
+                  <div className="cardArt">
+                    <NoteIllustration slug={note.slug} section={note.section} variant="card" />
+                  </div>
+                  <div className="gridCardBody">
+                    <div className="cardEyebrow">{SECTION_LABEL[note.section]}</div>
+                    <h4 className="gridCardTitle" style={{ fontFamily: SERIF }}>
+                      {note.title}
+                    </h4>
+                    <p className="cardSummary" style={{ fontFamily: SERIF }}>
+                      {note.summary}
+                    </p>
+                    <div className="cardMeta">
+                      {shortDate(note.date)} · {note.readingTime} min ·{' '}
+                      <span style={{ textTransform: 'capitalize' }}>{note.perspective}</span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+        </>
+      )}
     </section>
   )
 }
