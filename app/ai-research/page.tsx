@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import NoteCard from '../../components/note-card'
+import NoteList from '../../components/note-list'
 import { getNotesBySection, getSectionMeta } from '../../lib/research'
 
 const SECTION_ACCENT = '#4a5568' // AI slate
@@ -100,11 +100,7 @@ export default function AiResearchPage() {
         <span>▣ Sector Map</span>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-        {notes.map((note) => (
-          <NoteCard key={note.slug} note={note} section="ai-research" />
-        ))}
-      </div>
+      <NoteList notes={notes} section="ai-research" />
     </main>
   )
 }

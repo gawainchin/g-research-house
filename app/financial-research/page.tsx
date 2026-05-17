@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import NoteCard from '../../components/note-card'
+import NoteList from '../../components/note-list'
 import { getNotesBySection, getSectionMeta } from '../../lib/research'
 
 const SECTION_ACCENT = '#3d6b5e' // financial green
@@ -98,11 +98,7 @@ export default function FinancialResearchPage() {
         <span>▣ Sector Map</span>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-        {notes.map((note) => (
-          <NoteCard key={note.slug} note={note} section="financial-research" />
-        ))}
-      </div>
+      <NoteList notes={notes} section="financial-research" />
     </main>
   )
 }

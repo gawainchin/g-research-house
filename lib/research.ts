@@ -4,100 +4,30 @@ import matter from 'gray-matter'
 import siteData from '../data/site.json'
 import schemaData from '../data/research-schema.json'
 import { parseInlineBlocks } from './inline-blocks.mjs'
+import type {
+  ContentBlock,
+  ExternalLink,
+  HeroImage,
+  ResearchArticle,
+  ResearchNoteSummary,
+  ResearchPerspective,
+  ResearchSectionSlug,
+  SiteData,
+} from './research-types'
 
-export type ResearchSectionSlug = 'financial-research' | 'ai-research'
-export type ResearchPerspective = 'investor' | 'operator'
-export type ContentBlockType =
-  | 'paragraph'
-  | 'heading'
-  | 'bullets'
-  | 'numbered-list'
-  | 'quote'
-  | 'thesis-card'
-  | 'key-takeaways'
-  | 'callout'
-  | 'comparison-table'
-  | 'flowchart'
-  | 'verdict'
-  | 'scenario-ladder'
-  | 'metric-strip'
-  | 'scorecard'
-  | 'bar-chart'
-  | 'line-chart'
-  | 'timeline'
-  | 'stack-diagram'
-
-export interface ContentBlock {
-  type: ContentBlockType
-  text?: string
-  items?: string[]
-  takeaways?: { icon?: string; text: string }[]
-  title?: string
-  label?: string
-  columns?: string[]
-  rows?: string[][]
-  steps?: { label: string; note?: string }[]
-  metrics?: { label: string; value: string }[]
-  criteria?: { label: string; score: number; note?: string }[]
-  bars?: { label: string; value: number; note?: string }[]
-  series?: { label: string; points: { label: string; value: number }[] }[]
-  events?: { label: string; date?: string; text: string }[]
-  layers?: { label: string; text: string }[]
-  unit?: string
-  scenarios?: {
-    label: string
-    text?: string
-    probability?: string
-    outcome?: string
-    description?: string
-  }[]
-  variant?: 'info' | 'warning' | 'insight' | 'risk'
-}
-
-export interface ResearchNoteSummary {
-  slug: string
-  title: string
-  section: ResearchSectionSlug
-  summary: string
-  date: string
-  tags: string[]
-  keywords: string[]
-  readingTime: number
-  format: string
-  perspective: ResearchPerspective
-  relatedSlugs: string[]
-}
-
-export interface ExternalLink {
-  label: string
-  url: string
-}
-
-export interface HeroImage {
-  url: string
-  alt: string
-  caption?: string
-}
-
-export interface ResearchArticle extends ResearchNoteSummary {
-  sourceLinks?: ExternalLink[]
-  heroImage?: HeroImage
-  content: ContentBlock[]
-}
-
-export interface SiteSection {
-  slug: ResearchSectionSlug
-  title: string
-  description: string
-}
-
-export interface SiteData {
-  title: string
-  tagline: string
-  intro: string
-  featuredSlugs: string[]
-  sections: SiteSection[]
-}
+export type {
+  ContentBlock,
+  ContentBlockType,
+  ExternalLink,
+  HeroImage,
+  ResearchArticle,
+  ResearchNoteSummary,
+  ResearchPerspective,
+  ResearchSectionSlug,
+  SiteData,
+  SiteSection,
+} from './research-types'
+export { formatDisplayDate } from './research-types'
 
 const site = siteData as SiteData
 const schema = schemaData as {
@@ -106,6 +36,19 @@ const schema = schemaData as {
 }
 
 const ARTICLES_DIR = path.join(process.cwd(), 'data', 'articles')
+
+// YAML parses unquoted ISO date literals (e.g. `2026-05-12`) as JS `Date`
+// objects. We want a stable `YYYY-MM-DD` string both for sorting and for the
+// shared `formatDisplayDate` helper.
+function toIsoDateString(value: unknown): string {
+  if (value instanceof Date && !Number.isNaN(value.getTime())) {
+    return value.toISOString().slice(0, 10)
+  }
+  if (typeof value === 'string') {
+    return value
+  }
+  return ''
+}
 
 // ── File-based article readers ───────────────────────────────────────────────────
 
@@ -127,7 +70,7 @@ function getArticleCache(): Map<string, ResearchArticle> {
       title: String(fm.title ?? ''),
       section: (fm.section ?? 'ai-research') as ResearchSectionSlug,
       summary: String(fm.summary ?? ''),
-      date: String(fm.date ?? ''),
+      date: toIsoDateString(fm.date),
       tags: Array.isArray(fm.tags) ? fm.tags.map(String) : [],
       keywords: Array.isArray(fm.keywords) ? fm.keywords.map(String) : [],
       readingTime: Number(fm.readingTime ?? 5),
@@ -185,13 +128,4 @@ export function getRelatedNotes(slugs: string[]) {
 
 export function getSectionMeta(section: ResearchSectionSlug) {
   return site.sections.find((item) => item.slug === section)
-}
-
-export function formatDisplayDate(date: string) {
-  return new Date(date).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-    timeZone: 'UTC',
-  })
 }
