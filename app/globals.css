@@ -91,3 +91,42 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* WiP-lightweight study (home prototype) */
+.noteRow {
+  transition: background-color 140ms ease;
+}
+
+.noteRow:hover {
+  background: #faf6ed;
+}
+
+.filterLink {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+}
+
+.filterLink:hover {
+  color: #7a3b2e;
+}
+
+.filterLink[aria-pressed='true'] {
+  color: #7a3b2e;
+}
+
+@media (max-width: 600px) {
+  .noteRow {
+    grid-template-columns: 64px 1fr !important;
+  }
+  .noteRowMeta {
+    grid-column: 2 / -1;
+    text-align: left !important;
+    margin-top: 0.4rem;
+  }
+}
