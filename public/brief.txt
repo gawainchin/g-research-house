@@ -1,45 +1,32 @@
-SUNDAY MORNING BRIEF — MAY 17, 2026
+MORNING BRIEF — May 18, 2026
 
-WEEKEND MAP
+OVERNIGHT MAP
+Risk-off persisted into the weekend. The semiconductor-led selloff that hit on Friday extended into Friday night futures, with no meaningful recovery. USD held firm, Treasuries unchanged, and gold gave back gains as equity sentiment soured.
 
-The US session on Friday delivered a meaningful risk-off shift. Broad selling across equities and crypto, with a sharp VIX spike (+6.8%) signaling elevated uncertainty. The clearest damage was in semiconductors — MU -6.6%, INTC -6.2%, NVDA -4.4% — with reports that AI capex concerns are starting to challenge the hyperscaler spending narrative. MSFT was the notable exception, up +3% on earnings beat. Bond yields and gold also moved lower, suggesting a deleveraging rather than a flight-to-safety rotation.
+S&P 500 down ~1.2%, Nasdaq off ~1.6%. Slight bid in bonds but nothing decisive.
 
-Futures are pricing a cautious open: ES -1.2%, NQ -1.5%. Bitcoin held $78k but is back near the lower end of its recent range. The weekend doesn't reset the tape — macro headlines and China developments will set the early tone.
+US CLOSE MOVERS
+Strong:
+- MSFT +3.05% — earnings beat provided rare blue-chip bid in a red tape
+- AAPL +0.68% — holding relatively; defensive quality interest
 
-Key anchors: SPY -1.2%, Nasdaq -1.5%, VIX 18.4, Gold -2.3%.
+Weak:
+- MU -6.62% — dragged by INTC guidance cut; AI capex fears hit memory hard
+- INTC -6.18% — guided lower; server CPU share loss and foundry concerns compounded sector anxiety
+- NVDA -4.42% — de-risking across AI complex; not thesis broken but momentum gone
+- TSLA -4.75% — continuing its recent weakness; speculative names not immune
+- DXYZ +4.61% — outperforming as speculative punt; off-menu but worth noting
 
-CRYPTO / 24-7 MARKETS
+HK LIVE MOVERS
+- BABA -6.04% — China tech getting hit harder than the index; sentiment fragile
+- GDS -5.16% — data center name not immune to AI capex concerns spreading
+- 2800.HK -1.66% / ^HSI -1.62% — broad HK/China beta down; CGN -0.59% relatively resilient
 
-BTC: $78,128 (-1.2%) — thin weekend volume but holding key level
-ETH: $2,180 (-1.9%) — lagging BTC, more risk-off tone
-VIX: 18.4 (+6.8%) — elevated, not panic but elevated
-
-WHAT MATTERS THIS WEEK
-
-1. China stimulus watch: BABA and GDS both dropped sharply (-6% and -5.2%) on Friday with no fresh fundamental news — possibly a rotation unwind or accumulated skepticism toward the stimulus narrative. Worth watching whether this is a sentiment reset or a genuine thesis break.
-
-2. AI capex narrative under pressure: semis got hit hard after sector analysis flagged hyperscaler balance sheet risks and potential capex normalization. MU was the worst portfolio name. NVDA also fell. The key question is whether this is a healthy digestion of gains or the start of a broader derating.
-
-3. MSFT as the bright spot: +3% on earnings beat. A reminder that quality names with clean execution can decouple from sector weakness.
-
-4. Rate context: VIX elevated, bonds lower. The market is not in panic but is signaling that May's resilience may be tested if macro data doesn't cooperate.
-
-WATCHLIST SETUP
-
-- Semis on watch: MU, NVDA, INTC — if AI capex concerns deepen, these could reset further. But the sector's momentum makes them dangerous to chase on the long side right now.
-
-- China names (BABA, GDS): Both hit hard Friday. BABA especially — the -6% move with no catalyst deserves attention. If this is a sentiment overhang rather than fundamental deterioration, it's a potential setup.
-
-- MSFT: Strong earnings. Holding up while the rest of the sector sold off. Quality differentiation in a tough tape.
-
-- DXYZ: +4.6% Friday on SpaceX-related buzz. Still speculative, but the position size and the lack of a clear fundamental catalyst means it stays in the punt bucket.
-
-- Defensives (GLD, XLU): Both lower on Friday — unusual in a risk-off session. Normally they would be bid. Worth monitoring.
+MARKET NEWS
+- Intel guided lower on server CPU share loss and a likely shrinking Apple foundry partnership; UBS warned AI server gold rush is entering hyper-competitive phase from Arm-based chips and custom silicon. The sector de-rating has real fundamentals teeth now, not just positioning.
+- Trump said he spoke with Xi on Russia/Ukraine and fentanyl, but notably said he did NOT discuss tariffs — markets read the silence as no imminent trade de-escalation.
 
 ACTION BOARD
-
-- Opportunity: China tech (BABA, GDS) may be offering a better entry after Friday's reset, if the stimulus thesis remains intact and the selling was sentiment-driven rather than fundamental.
-
-- Risk: Semis (MU, NVDA, INTC) are extended and vulnerable to further derating if the AI capex narrative shifts. The elevated VIX suggests the market is not complacent — downside could spread.
-
-- Research: Understand whether Friday's semi selling is about peak AI capex concerns or just a technical reset. The answer changes whether MU/NVDA are a buy on this dip or a sell-the-rip opportunity.
+- Opportunity: MSFT earnings show quality growth still gets bid — tilt toward clean earnings stories if the de-rating continues
+- Risk: MU and INTC are telling a consistent story about AI capex deceleration and competitive pressure — semis may not be done
+- Research: Understand whether Intel's guide is company-specific or reflects broader hyperscaler spending reallocation; the answer changes whether MU is a buy or a watch
