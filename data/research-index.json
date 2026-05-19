@@ -4,7 +4,7 @@
       "slug": "what-a-russia-ukraine-ceasefire-would-actually-change",
       "title": "What a Russia-Ukraine Ceasefire Would Actually Change",
       "section": "financial-research",
-      "summary": "A ceasefire would be disinflationary for Europe at the margin, but the real market effect is sector rotation — not a universal risk-on melt-up.",
+      "summary": "A ceasefire would be disinflationary for Europe at the margin, but the real market effect is sector rotation \u2014 not a universal risk-on melt-up.",
       "date": "2026-05-11",
       "tags": [
         "investing",
@@ -23,7 +23,7 @@
     },
     {
       "slug": "ai-power-semis-wolfspeed-onsemi-infineon",
-      "title": "AI Power Semis — Wolfspeed vs onsemi vs Infineon",
+      "title": "AI Power Semis \u2014 Wolfspeed vs onsemi vs Infineon",
       "section": "financial-research",
       "summary": "Three ways to express the AI power theme, but with very different quality, risk, and valuation profiles.",
       "date": "2026-05-02",
@@ -43,7 +43,7 @@
     },
     {
       "slug": "china-ai-infrastructure-hidden-power-play",
-      "title": "China AI Infrastructure — The Hidden Power Play",
+      "title": "China AI Infrastructure \u2014 The Hidden Power Play",
       "section": "financial-research",
       "summary": "The better AI expression may sit in power, grid, and equipment layers rather than platform headlines.",
       "date": "2026-04-09",
@@ -59,6 +59,28 @@
       "perspective": "investor",
       "relatedSlugs": [
         "ai-power-semis-wolfspeed-onsemi-infineon"
+      ]
+    },
+    {
+      "slug": "agentic-coding-real-bottleneck",
+      "title": "Agentic Coding's Real Bottleneck Is Operational Discipline",
+      "section": "ai-research",
+      "summary": "GitHub's 19\u201362% token savings from operational interventions, not model upgrades. The constraint has moved from capability to the operating layer.",
+      "date": "2026-05-13",
+      "tags": [
+        "ai",
+        "agents",
+        "tooling",
+        "developer-tools",
+        "workflow",
+        "infrastructure",
+        "token-efficiency"
+      ],
+      "readingTime": 6,
+      "format": "thesis",
+      "perspective": "operator",
+      "relatedSlugs": [
+        "from-chatbot-to-workflow"
       ]
     },
     {
@@ -85,7 +107,7 @@
       "slug": "from-chatbot-to-workflow",
       "title": "From Chatbot to Workflow",
       "section": "ai-research",
-      "summary": "Why AI agents need task systems, not just better prompts — and what workflow infrastructure actually provides that prompts cannot.",
+      "summary": "Why AI agents need task systems, not just better prompts \u2014 and what workflow infrastructure actually provides that prompts cannot.",
       "date": "2026-05-05",
       "tags": [
         "ai",
@@ -104,9 +126,9 @@
     },
     {
       "slug": "palantir-rule-of-40-deep-dive",
-      "title": "Palantir and the 127% Rule of 40 — When Growth Obscures Price",
+      "title": "Palantir and the 127% Rule of 40 \u2014 When Growth Obscures Price",
       "section": "financial-research",
-      "summary": "PLTR posts a 127% Rule of 40 score. The quality is real — but at 287x forward P/E, the bar for delivering the number is unforgiving.",
+      "summary": "PLTR posts a 127% Rule of 40 score. The quality is real \u2014 but at 287x forward P/E, the bar for delivering the number is unforgiving.",
       "date": "2026-05-05",
       "tags": [
         "investing",
@@ -123,7 +145,7 @@
     },
     {
       "slug": "cerebras-ipo-wafer-scale-inference",
-      "title": "Cerebras IPO — Wafer-Scale Inference and the $4B Question",
+      "title": "Cerebras IPO \u2014 Wafer-Scale Inference and the $4B Question",
       "section": "financial-research",
       "summary": "Cerebras comes to market at $4B valuation with $510M revenue and an unusual architectural bet: bigger is better. The numbers tell a compelling but concentrated story.",
       "date": "2026-05-05",
@@ -145,7 +167,7 @@
       "slug": "slides-are-becoming-agent-native-software",
       "title": "Slides Are Becoming Agent-Native Software",
       "section": "ai-research",
-      "summary": "The constrained canvas is the interface contract — open-slide demonstrates why fixed substrates, bidirectional annotation, and source-owned artifacts make reliable human-agent visual collaboration possible.",
+      "summary": "The constrained canvas is the interface contract \u2014 open-slide demonstrates why fixed substrates, bidirectional annotation, and source-owned artifacts make reliable human-agent visual collaboration possible.",
       "date": "2026-05-07",
       "tags": [
         "ai",
@@ -167,7 +189,7 @@
       "slug": "awesome-codex-skills",
       "title": "8 Skills That Actually Make Codex Worth Using",
       "section": "ai-research",
-      "summary": "The awesome-codex-skills repo has 880 skills across 5 categories — here's how to cut through the noise: 8 skills worth installing today, what each actually does, and why they'd disappear from your workflow if you removed them.",
+      "summary": "The awesome-codex-skills repo has 880 skills across 5 categories \u2014 here's how to cut through the noise: 8 skills worth installing today, what each actually does, and why they'd disappear from your workflow if you removed them.",
       "date": "2026-05-12",
       "tags": [
         "ai",
