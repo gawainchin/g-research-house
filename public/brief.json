@@ -1,25 +1,25 @@
 {
-  "date": "May 18, 2026",
+  "date": "May 19, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "Risk-off persisted into the weekend. The semiconductor-led selloff that hit on Friday extended into Friday night futures, with no meaningful recovery. USD held firm, Treasuries unchanged, and gold gave back gains as equity sentiment soured.\n\nS&P 500 down ~1.2%, Nasdaq off ~1.6%. Slight bid in bonds but nothing decisive."
+      "content": "Risk-off lean overnight as Nasdaq futures dipped on tariff headlines. Macro focus shifting to Nvidia earnings next week \u2014 positioning light ahead of it. No major macro prints driving the tape; volume thin into month-end.\n\nS&P 500 -0.07% | Nasdaq -0.51% | Dow +0.32%"
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "Strong:\n- MSFT +3.05% \u2014 earnings beat provided rare blue-chip bid in a red tape\n- AAPL +0.68% \u2014 holding relatively; defensive quality interest\n\nWeak:\n- MU -6.62% \u2014 dragged by INTC guidance cut; AI capex fears hit memory hard\n- INTC -6.18% \u2014 guided lower; server CPU share loss and foundry concerns compounded sector anxiety\n- NVDA -4.42% \u2014 de-risking across AI complex; not thesis broken but momentum gone\n- TSLA -4.75% \u2014 continuing its recent weakness; speculative names not immune\n- DXYZ +4.61% \u2014 outperforming as speculative punt; off-menu but worth noting"
+      "content": "DXYZ +11.30% \u2014 SpaceX/optionality narrative re-igniting; short squeeze possible given thin float\nMSFT +0.38% \u2014 outlier strength; Azure sentiment holding\nNET +2.12% \u2014 insider selling overhang fading; sentiment-driven bounce\nMU -5.95% \u2014 DRAM pricing weakness cited; supply-side concerns dominate\nNVDA -1.33% \u2014 semi sector weak; cautious ahead of earnings\nETN -4.40% \u2014 industrial tech caught in rotation out of growth"
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- BABA -6.04% \u2014 China tech getting hit harder than the index; sentiment fragile\n- GDS -5.16% \u2014 data center name not immune to AI capex concerns spreading\n- 2800.HK -1.66% / ^HSI -1.62% \u2014 broad HK/China beta down; CGN -0.59% relatively resilient"
+      "content": "02800.HK -1.66% \u2014 China rate cut failed to catalyze; HK equity still under pressure\nGDS -1.70% \u2014 China tech IDC names remain under-loved; bandwidth oversupply concerns linger\n1816.HK -0.29% \u2014 CGN quiet; small position, no near-term catalyst"
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Intel guided lower on server CPU share loss and a likely shrinking Apple foundry partnership; UBS warned AI server gold rush is entering hyper-competitive phase from Arm-based chips and custom silicon. The sector de-rating has real fundamentals teeth now, not just positioning.\n- Trump said he spoke with Xi on Russia/Ukraine and fentanyl, but notably said he did NOT discuss tariffs \u2014 markets read the silence as no imminent trade de-escalation."
+      "content": "1. MU warned on DRAM near-term; naming inventory normalization as headwind \u2014 semis broadly sold\n2. Nvidia Blackwell coverage increasing ahead of earnings; supply chain commentary will be key"
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: MSFT earnings show quality growth still gets bid \u2014 tilt toward clean earnings stories if the de-rating continues\n- Risk: MU and INTC are telling a consistent story about AI capex deceleration and competitive pressure \u2014 semis may not be done\n- Research: Understand whether Intel's guide is company-specific or reflects broader hyperscaler spending reallocation; the answer changes whether MU is a buy or a watch"
+      "content": "OPPORTUNITY: DXYZ running \u2014 if SpaceX timeline news confirms, momentum can carry further. Trim into strength if it re-tests prior resistance.\nRISK: MU warning is a canary for semis. If MU guides down, NVDA and ETN likely follow. Watch the tape on their next print.\nRESEARCH: Cloudflare thesis refresh still needed \u2014 today's bounce doesn't resolve the valuation question or confirm the long-term thesis is intact. Monitor NET's response if broader AI sentiment deteriorates."
     }
   ]
 }

@@ -1,32 +1,26 @@
-MORNING BRIEF — May 18, 2026
-
 OVERNIGHT MAP
-Risk-off persisted into the weekend. The semiconductor-led selloff that hit on Friday extended into Friday night futures, with no meaningful recovery. USD held firm, Treasuries unchanged, and gold gave back gains as equity sentiment soured.
+Risk-off lean overnight as Nasdaq futures dipped on tariff headlines. Macro focus shifting to Nvidia earnings next week — positioning light ahead of it. No major macro prints driving the tape; volume thin into month-end.
 
-S&P 500 down ~1.2%, Nasdaq off ~1.6%. Slight bid in bonds but nothing decisive.
+S&P 500 -0.07% | Nasdaq -0.51% | Dow +0.32%
 
 US CLOSE MOVERS
-Strong:
-- MSFT +3.05% — earnings beat provided rare blue-chip bid in a red tape
-- AAPL +0.68% — holding relatively; defensive quality interest
-
-Weak:
-- MU -6.62% — dragged by INTC guidance cut; AI capex fears hit memory hard
-- INTC -6.18% — guided lower; server CPU share loss and foundry concerns compounded sector anxiety
-- NVDA -4.42% — de-risking across AI complex; not thesis broken but momentum gone
-- TSLA -4.75% — continuing its recent weakness; speculative names not immune
-- DXYZ +4.61% — outperforming as speculative punt; off-menu but worth noting
+DXYZ +11.30% — SpaceX/optionality narrative re-igniting; short squeeze possible given thin float
+MSFT +0.38% — outlier strength; Azure sentiment holding
+NET +2.12% — insider selling overhang fading; sentiment-driven bounce
+MU -5.95% — DRAM pricing weakness cited; supply-side concerns dominate
+NVDA -1.33% — semi sector weak; cautious ahead of earnings
+ETN -4.40% — industrial tech caught in rotation out of growth
 
 HK LIVE MOVERS
-- BABA -6.04% — China tech getting hit harder than the index; sentiment fragile
-- GDS -5.16% — data center name not immune to AI capex concerns spreading
-- 2800.HK -1.66% / ^HSI -1.62% — broad HK/China beta down; CGN -0.59% relatively resilient
+02800.HK -1.66% — China rate cut failed to catalyze; HK equity still under pressure
+GDS -1.70% — China tech IDC names remain under-loved; bandwidth oversupply concerns linger
+1816.HK -0.29% — CGN quiet; small position, no near-term catalyst
 
 MARKET NEWS
-- Intel guided lower on server CPU share loss and a likely shrinking Apple foundry partnership; UBS warned AI server gold rush is entering hyper-competitive phase from Arm-based chips and custom silicon. The sector de-rating has real fundamentals teeth now, not just positioning.
-- Trump said he spoke with Xi on Russia/Ukraine and fentanyl, but notably said he did NOT discuss tariffs — markets read the silence as no imminent trade de-escalation.
+1. MU warned on DRAM near-term; naming inventory normalization as headwind — semis broadly sold
+2. Nvidia Blackwell coverage increasing ahead of earnings; supply chain commentary will be key
 
 ACTION BOARD
-- Opportunity: MSFT earnings show quality growth still gets bid — tilt toward clean earnings stories if the de-rating continues
-- Risk: MU and INTC are telling a consistent story about AI capex deceleration and competitive pressure — semis may not be done
-- Research: Understand whether Intel's guide is company-specific or reflects broader hyperscaler spending reallocation; the answer changes whether MU is a buy or a watch
+OPPORTUNITY: DXYZ running — if SpaceX timeline news confirms, momentum can carry further. Trim into strength if it re-tests prior resistance.
+RISK: MU warning is a canary for semis. If MU guides down, NVDA and ETN likely follow. Watch the tape on their next print.
+RESEARCH: Cloudflare thesis refresh still needed — today's bounce doesn't resolve the valuation question or confirm the long-term thesis is intact. Monitor NET's response if broader AI sentiment deteriorates.
