@@ -3,9 +3,9 @@
   "tagline": "PM-style financial research and applied AI systems research.",
   "intro": "A private research surface built for two distinct lenses: finance asks where the money, risk, and rerating sit; AI asks where the technical bottlenecks, workflows, and stack shifts are actually happening.",
   "featuredSlugs": [
+    "hooks-dont-replace-prompts",
     "ai-power-semis-wolfspeed-onsemi-infineon",
-    "agentic-inference-memory-io-pressure-indicator",
-    "china-ai-infrastructure-hidden-power-play"
+    "agentic-inference-memory-io-pressure-indicator"
   ],
   "sections": [
     {
