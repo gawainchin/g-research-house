@@ -13,11 +13,17 @@ from datetime import datetime
 
 def parse_brief(text: str) -> tuple[str, list]:
     known_sections = [
+        # Weekday headers
         "OVERNIGHT MAP",
         "US CLOSE MOVERS",
         "HK LIVE MOVERS",
         "MARKET NEWS",
         "ACTION BOARD",
+        # Sunday headers
+        "WEEKEND MAP",
+        "CRYPTO / 24-7 MARKETS",
+        "WHAT MATTERS THIS WEEK",
+        "WATCHLIST SETUP",
     ]
     lines = text.strip().split('\n')
     date_str = datetime.now().strftime("%B %d, %Y")

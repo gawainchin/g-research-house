@@ -126,11 +126,17 @@ def parse_plain_brief(text: str) -> tuple[str, list]:
     Content is everything between this header and the next.
     """
     known_sections = [
+        # Weekday headers
         "OVERNIGHT MAP",
         "US CLOSE MOVERS",
         "HK LIVE MOVERS",
         "MARKET NEWS",
         "ACTION BOARD",
+        # Sunday headers
+        "WEEKEND MAP",
+        "CRYPTO / 24-7 MARKETS",
+        "WHAT MATTERS THIS WEEK",
+        "WATCHLIST SETUP",
     ]
 
     lines = text.strip().split('\n')
