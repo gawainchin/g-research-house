@@ -1,25 +1,25 @@
 {
-  "date": "May 19, 2026",
+  "date": "May 20, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "Risk-off lean overnight as Nasdaq futures dipped on tariff headlines. Macro focus shifting to Nvidia earnings next week \u2014 positioning light ahead of it. No major macro prints driving the tape; volume thin into month-end.\n\nS&P 500 -0.07% | Nasdaq -0.51% | Dow +0.32%"
+      "content": "Risk-off tone dominant as tariff headlines resurfaced.\u6389 CPI hotter than expected \u2014 front-loaded cut pricing unwound.\u6389 Long duration assets under pressure as yields climbed. Nasdaq down 0.8%, Dow -0.6%, S&P -0.5%. VIX elevated near 24."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "DXYZ +11.30% \u2014 SpaceX/optionality narrative re-igniting; short squeeze possible given thin float\nMSFT +0.38% \u2014 outlier strength; Azure sentiment holding\nNET +2.12% \u2014 insider selling overhang fading; sentiment-driven bounce\nMU -5.95% \u2014 DRAM pricing weakness cited; supply-side concerns dominate\nNVDA -1.33% \u2014 semi sector weak; cautious ahead of earnings\nETN -4.40% \u2014 industrial tech caught in rotation out of growth"
+      "content": "DXYZ -8.5% \u2014 speculative compression, no clear single catalyst\nETN -2.6% \u2014 industrial names caught in broad rotation\nMSFT -1.4% \u2014 growth tech underperforming risk-off\nMU +2.5% \u2014 memory holding bid despite broad weakness\nNET +2.5% \u2014 back close to even; insider selling news already priced\nINTC +2.4% \u2014 bottom fishing; not a thesis change"
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "02800.HK -1.66% \u2014 China rate cut failed to catalyze; HK equity still under pressure\nGDS -1.70% \u2014 China tech IDC names remain under-loved; bandwidth oversupply concerns linger\n1816.HK -0.29% \u2014 CGN quiet; small position, no near-term catalyst"
+      "content": "2800.HK -1.2% \u2014 HK broad selloff\nGDS -3.1% \u2014 China AI/ad tech sentiment sour\nBABA +1.8% \u2014 trying to hold; needs catalyst to confirm\n1816.HK +1.2% \u2014 CGN modest outperformance; defensives working"
     },
     {
       "title": "MARKET NEWS",
-      "content": "1. MU warned on DRAM near-term; naming inventory normalization as headwind \u2014 semis broadly sold\n2. Nvidia Blackwell coverage increasing ahead of earnings; supply chain commentary will be key"
+      "content": "\u6389\u6389 US April CPI came in above expectations at +0.3% MoM core \u2014 rekindled inflation concerns and triggered repricing of Fed cut timeline.\u6389\u6389 Trump again raised tariff escalation risk on China, adding another layer of uncertainty heading into the weekend."
     },
     {
       "title": "ACTION BOARD",
-      "content": "OPPORTUNITY: DXYZ running \u2014 if SpaceX timeline news confirms, momentum can carry further. Trim into strength if it re-tests prior resistance.\nRISK: MU warning is a canary for semis. If MU guides down, NVDA and ETN likely follow. Watch the tape on their next print.\nRESEARCH: Cloudflare thesis refresh still needed \u2014 today's bounce doesn't resolve the valuation question or confirm the long-term thesis is intact. Monitor NET's response if broader AI sentiment deteriorates."
+      "content": "Opportunity: MU still constructive on memory supercycle thesis; any relief rally in semis worth watching for relative strength.\nRisk: DXYZ volume collapse \u2014 speculative names getting crushed without fundamental news; avoid bottom-catching.\nResearch: INTC near multi-year support \u2014 clarify whether the AI PC/edge narrative has any near-term catalyst or if it's just value trap."
     }
   ]
 }

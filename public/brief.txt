@@ -1,26 +1,24 @@
 OVERNIGHT MAP
-Risk-off lean overnight as Nasdaq futures dipped on tariff headlines. Macro focus shifting to Nvidia earnings next week — positioning light ahead of it. No major macro prints driving the tape; volume thin into month-end.
-
-S&P 500 -0.07% | Nasdaq -0.51% | Dow +0.32%
+Risk-off tone dominant as tariff headlines resurfaced.掉 CPI hotter than expected — front-loaded cut pricing unwound.掉 Long duration assets under pressure as yields climbed. Nasdaq down 0.8%, Dow -0.6%, S&P -0.5%. VIX elevated near 24.
 
 US CLOSE MOVERS
-DXYZ +11.30% — SpaceX/optionality narrative re-igniting; short squeeze possible given thin float
-MSFT +0.38% — outlier strength; Azure sentiment holding
-NET +2.12% — insider selling overhang fading; sentiment-driven bounce
-MU -5.95% — DRAM pricing weakness cited; supply-side concerns dominate
-NVDA -1.33% — semi sector weak; cautious ahead of earnings
-ETN -4.40% — industrial tech caught in rotation out of growth
+DXYZ -8.5% — speculative compression, no clear single catalyst
+ETN -2.6% — industrial names caught in broad rotation
+MSFT -1.4% — growth tech underperforming risk-off
+MU +2.5% — memory holding bid despite broad weakness
+NET +2.5% — back close to even; insider selling news already priced
+INTC +2.4% — bottom fishing; not a thesis change
 
 HK LIVE MOVERS
-02800.HK -1.66% — China rate cut failed to catalyze; HK equity still under pressure
-GDS -1.70% — China tech IDC names remain under-loved; bandwidth oversupply concerns linger
-1816.HK -0.29% — CGN quiet; small position, no near-term catalyst
+2800.HK -1.2% — HK broad selloff
+GDS -3.1% — China AI/ad tech sentiment sour
+BABA +1.8% — trying to hold; needs catalyst to confirm
+1816.HK +1.2% — CGN modest outperformance; defensives working
 
 MARKET NEWS
-1. MU warned on DRAM near-term; naming inventory normalization as headwind — semis broadly sold
-2. Nvidia Blackwell coverage increasing ahead of earnings; supply chain commentary will be key
+掉掉 US April CPI came in above expectations at +0.3% MoM core — rekindled inflation concerns and triggered repricing of Fed cut timeline.掉掉 Trump again raised tariff escalation risk on China, adding another layer of uncertainty heading into the weekend.
 
 ACTION BOARD
-OPPORTUNITY: DXYZ running — if SpaceX timeline news confirms, momentum can carry further. Trim into strength if it re-tests prior resistance.
-RISK: MU warning is a canary for semis. If MU guides down, NVDA and ETN likely follow. Watch the tape on their next print.
-RESEARCH: Cloudflare thesis refresh still needed — today's bounce doesn't resolve the valuation question or confirm the long-term thesis is intact. Monitor NET's response if broader AI sentiment deteriorates.
+Opportunity: MU still constructive on memory supercycle thesis; any relief rally in semis worth watching for relative strength.
+Risk: DXYZ volume collapse — speculative names getting crushed without fundamental news; avoid bottom-catching.
+Research: INTC near multi-year support — clarify whether the AI PC/edge narrative has any near-term catalyst or if it's just value trap.
