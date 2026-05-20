@@ -102,7 +102,7 @@ export default function ContentsList({ notes }: { notes: ResearchNoteSummary[] }
             aria-label={`${lead.title} — lead note`}
           >
             <div className="cardArt cardArtHero">
-              <NoteIllustration slug={lead.slug} section={lead.section} variant="hero" />
+              <NoteIllustration slug={lead.slug} section={lead.section} variant="hero" visualKey={lead.visualKey} keywords={lead.keywords} />
             </div>
             <div className="leadCardBody">
               <div className="cardEyebrow">{SECTION_LABEL[lead.section]}</div>
@@ -129,7 +129,7 @@ export default function ContentsList({ notes }: { notes: ResearchNoteSummary[] }
                   aria-label={note.title}
                 >
                   <div className="cardArt">
-                    <NoteIllustration slug={note.slug} section={note.section} variant="card" />
+                    <NoteIllustration slug={note.slug} section={note.section} variant="card" visualKey={note.visualKey} keywords={note.keywords} />
                   </div>
                   <div className="gridCardBody">
                     <div className="cardEyebrow">{SECTION_LABEL[note.section]}</div>

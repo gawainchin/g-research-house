@@ -2,6 +2,7 @@
 title: China AI Infrastructure — The Better Trade May Be Power and Equipment, Not Platform Hype
 slug: china-ai-infrastructure-hidden-power-play
 section: financial-research
+visualKey: infrastructure
 date: 2026-05-16
 tags:
   - investing

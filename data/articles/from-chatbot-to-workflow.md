@@ -2,7 +2,8 @@
 title: From Chatbot to Workflow
 slug: from-chatbot-to-workflow
 section: ai-research
-date: 2026-05-05
+visualKey: workflow
+date: 2026-05-10
 tags:
   - ai
   - agents

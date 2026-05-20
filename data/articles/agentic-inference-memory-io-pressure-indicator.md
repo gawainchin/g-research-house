@@ -2,6 +2,7 @@
 title: Agentic Inference Is Becoming a Memory and I/O Problem
 slug: agentic-inference-memory-io-pressure-indicator
 section: ai-research
+visualKey: memory-io
 date: 2026-05-16
 tags:
   - ai

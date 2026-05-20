@@ -73,6 +73,7 @@ function getArticleCache(): Map<string, ResearchArticle> {
       date: toIsoDateString(fm.date),
       tags: Array.isArray(fm.tags) ? fm.tags.map(String) : [],
       keywords: Array.isArray(fm.keywords) ? fm.keywords.map(String) : [],
+      visualKey: typeof fm.visualKey === 'string' ? fm.visualKey : undefined,
       readingTime: Number(fm.readingTime ?? 5),
       format: String(fm.format ?? 'thesis'),
       perspective: (fm.perspective ?? 'investor') as ResearchPerspective,

@@ -2,6 +2,7 @@
 title: A Higher US 10Y Would Not Hurt the Market Equally — It Would Hit Duration First
 slug: us10y-duration-first
 section: financial-research
+visualKey: valuation
 date: 2026-05-16
 tags:
   - investing

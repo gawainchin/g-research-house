@@ -2,6 +2,7 @@
 title: AI Power Semis — Why Infineon, onsemi, and Wolfspeed Are Not the Same Trade
 slug: ai-power-semis-wolfspeed-onsemi-infineon
 section: financial-research
+visualKey: power-semiconductor
 date: 2026-05-16
 tags:
   - investing

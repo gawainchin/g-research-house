@@ -2,6 +2,7 @@
 title: Hooks Don't Replace Prompts
 slug: hooks-dont-replace-prompts
 section: ai-research
+visualKey: hooks
 date: 2026-05-20
 tags:
   - ai

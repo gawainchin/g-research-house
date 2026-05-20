@@ -55,6 +55,7 @@ export interface ResearchNoteSummary {
   date: string
   tags: string[]
   keywords: string[]
+  visualKey?: string
   readingTime: number
   format: string
   perspective: ResearchPerspective
