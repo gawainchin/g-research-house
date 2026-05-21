@@ -1346,6 +1346,47 @@
           "url": "https://github.com/ComposioHQ/awesome-codex-skills"
         }
       ]
+    },
+    {
+      "slug": "why-geoffrey-hinton-insists-llms-need-a-world-model",
+      "title": "Why Geoffrey Hinton Insists LLMs Need a World Model",
+      "section": "ai-research",
+      "summary": "Strong next-token prediction forces LLMs to build partial internal world models \u2014 but reliable agents need external scaffolding to close the gap between inference and action.",
+      "date": "2026-05-21",
+      "tags": [
+        "ai",
+        "llms",
+        "agents",
+        "world-models",
+        "planning",
+        "geoffrey-hinton"
+      ],
+      "readingTime": 7,
+      "format": "thesis",
+      "perspective": "analyst",
+      "relatedSlugs": [
+        "hooks-dont-replace-prompts",
+        "agentic-inference-memory-io-pressure-indicator",
+        "from-chatbot-to-workflow"
+      ],
+      "sourceLinks": [
+        {
+          "label": "CBS News / 60 Minutes \u2014 Geoffrey Hinton interview transcript",
+          "url": "https://www.cbsnews.com/news/geoffrey-hinton-ai-dangers-60-minutes-transcript"
+        },
+        {
+          "label": "Google DeepMind \u2014 Genie: Generative Interactive Environments",
+          "url": "https://deepmind.google/research/publications/60474"
+        },
+        {
+          "label": "ICML 2025 \u2014 Plan-and-Act",
+          "url": "https://icml.cc/virtual/2025/poster/43522"
+        },
+        {
+          "label": "Frontiers in AI \u2014 Causal reasoning and planning under uncertainty",
+          "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1730614/full"
+        }
+      ]
     }
   ]
 }
