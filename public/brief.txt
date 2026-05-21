@@ -1,24 +1,26 @@
 OVERNIGHT MAP
-Risk-off tone dominant as tariff headlines resurfaced.掉 CPI hotter than expected — front-loaded cut pricing unwound.掉 Long duration assets under pressure as yields climbed. Nasdaq down 0.8%, Dow -0.6%, S&P -0.5%. VIX elevated near 24.
+Risk-on tone persists — Nasdaq posted its third consecutive weekly gain, extending the AI trade's run. S&P futures up +0.58%, Nasdaq futures +0.96%, while Dow futures lag. MU's big day (+4.76%) reflects continued AI capex thesis in focus. Crude -8.28% is a notable macro signal — demand concerns or supply normalization. Hang Seng +0.48% in early Thursday Asia trade.
 
 US CLOSE MOVERS
-DXYZ -8.5% — speculative compression, no clear single catalyst
-ETN -2.6% — industrial names caught in broad rotation
-MSFT -1.4% — growth tech underperforming risk-off
-MU +2.5% — memory holding bid despite broad weakness
-NET +2.5% — back close to even; insider selling news already priced
-INTC +2.4% — bottom fishing; not a thesis change
+STRONG
+- INTC +7.36% — Morgan Stanley upgrade to overweight, data center growth projected at ~30% YoY in 2026
+- MU +4.76% — AI memory demand thesis intact, one of the best AI基建 plays in book
+- TSLA +3.25% — rebounding, but still legacy bag — not a clean thesis refresh
+
+WEAK
+- DXYZ +0.25% — flat, underperforming the AI risk-on move; the punt is not working yet
+- BABA -0.86% — continues to lag; US-China tariff uncertainty weighing on China tech
 
 HK LIVE MOVERS
-2800.HK -1.2% — HK broad selloff
-GDS -3.1% — China AI/ad tech sentiment sour
-BABA +1.8% — trying to hold; needs catalyst to confirm
-1816.HK +1.2% — CGN modest outperformance; defensives working
+- GDS -9.28% — Q1 revenue beat (+23.6% YoY) but adjusted EBITDA only +8%, miss on run-rate; market punishing the quality concession
+- 1816.HK -3.51% — China utility/infra name weak; macro headwinds and rate sensitivity
+- BABA -0.86% — see above; position held, not added
 
 MARKET NEWS
-掉掉 US April CPI came in above expectations at +0.3% MoM core — rekindled inflation concerns and triggered repricing of Fed cut timeline.掉掉 Trump again raised tariff escalation risk on China, adding another layer of uncertainty heading into the weekend.
+- WTI crude crashed -8.28% — supply signal or demand concern, either way a risk-off macro cross-wind
+- Morgan Stanley upgraded Intel, raised data center target to $21.8B revenue for 2026 — significant analyst shift
 
 ACTION BOARD
-Opportunity: MU still constructive on memory supercycle thesis; any relief rally in semis worth watching for relative strength.
-Risk: DXYZ volume collapse — speculative names getting crushed without fundamental news; avoid bottom-catching.
-Research: INTC near multi-year support — clarify whether the AI PC/edge narrative has any near-term catalyst or if it's just value trap.
+- OPPO: INTC's upgrade is real — 7.36% move on a single analyst note is institutional signal, not noise. Watch for follow-through.
+- RISK: GDS -9.28% post-earnings is a credibility test. Revenue beat but EBITDA miss means the growth is slowing. Size accordingly — redemption risk if fund flows follow.
+- RESEARCH: MU is the cleanest AI infrastructure name in the book at this stage. What would cause this thesis to break, and what is the entry discipline if it pulls back?
