@@ -1,26 +1,24 @@
 OVERNIGHT MAP
-Risk-on tone persists — Nasdaq posted its third consecutive weekly gain, extending the AI trade's run. S&P futures up +0.58%, Nasdaq futures +0.96%, while Dow futures lag. MU's big day (+4.76%) reflects continued AI capex thesis in focus. Crude -8.28% is a notable macro signal — demand concerns or supply normalization. Hang Seng +0.48% in early Thursday Asia trade.
+Futures ramp into Friday — Nasdaq +0.60%, S&P +0.41% as VIX drops 3.9%. Dollar steady, 10yr yield +3bps. No major macro catalyst; positioning ahead of next week.
 
 US CLOSE MOVERS
-STRONG
-- INTC +7.36% — Morgan Stanley upgrade to overweight, data center growth projected at ~30% YoY in 2026
-- MU +4.76% — AI memory demand thesis intact, one of the best AI基建 plays in book
-- TSLA +3.25% — rebounding, but still legacy bag — not a clean thesis refresh
-
-WEAK
-- DXYZ +0.25% — flat, underperforming the AI risk-on move; the punt is not working yet
-- BABA -0.86% — continues to lag; US-China tariff uncertainty weighing on China tech
+DXYZ +26.9% — speculative squeeze, no new fundamental catalyst
+MU +4.1% — semis strength continues, memory demand narrative intact
+AAPL +0.9% — steady, holding near highs
+NET +1.2% — rebounding after insider-selling overhang
+NVDA -1.8% — profit-taking after recent run
+MSFT -0.5% — mixed tech, no specific news
 
 HK LIVE MOVERS
-- GDS -9.28% — Q1 revenue beat (+23.6% YoY) but adjusted EBITDA only +8%, miss on run-rate; market punishing the quality concession
-- 1816.HK -3.51% — China utility/infra name weak; macro headwinds and rate sensitivity
-- BABA -0.86% — see above; position held, not added
+GDS -4.1% — China data center names under pressure
+BABA -2.2% — continuing recent weakness
+02800 -0.5% — broad HK soft
 
 MARKET NEWS
-- WTI crude crashed -8.28% — supply signal or demand concern, either way a risk-off macro cross-wind
-- Morgan Stanley upgraded Intel, raised data center target to $21.8B revenue for 2026 — significant analyst shift
+Trump signs executive order targeting drug prices via most-favored-nation trade terms — pharma and healthcare names on alert
+China Q1 GDP beat at 5.4% but internal demand components remain weak — commodities and industrial names cautious
 
 ACTION BOARD
-- OPPO: INTC's upgrade is real — 7.36% move on a single analyst note is institutional signal, not noise. Watch for follow-through.
-- RISK: GDS -9.28% post-earnings is a credibility test. Revenue beat but EBITDA miss means the growth is slowing. Size accordingly — redemption risk if fund flows follow.
-- RESEARCH: MU is the cleanest AI infrastructure name in the book at this stage. What would cause this thesis to break, and what is the entry discipline if it pulls back?
+Opportunity: MU momentum intact — if semis tape holds, let it run
+Risk: GDS/BABA continuing to show China tech fragility — do not catch falling knife
+Research: DXYZ +27% — understand what triggered the squeeze before treating as anything other than noise
