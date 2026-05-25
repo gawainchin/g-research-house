@@ -1,25 +1,25 @@
 {
-  "date": "May 22, 2026",
+  "date": "May 25, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "Futures ramp into Friday \u2014 Nasdaq +0.60%, S&P +0.41% as VIX drops 3.9%. Dollar steady, 10yr yield +3bps. No major macro catalyst; positioning ahead of next week."
+      "content": "US equities mixed; Nasdaq +0.35%, Dow -0.56%, S&P +0.39%. DXYZ rip +8.1% on SpaceX speculation. Semis soft \u2014 NVDA -1.9%, MU -1.5%. Gold -0.8%, dollar steady."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "DXYZ +26.9% \u2014 speculative squeeze, no new fundamental catalyst\nMU +4.1% \u2014 semis strength continues, memory demand narrative intact\nAAPL +0.9% \u2014 steady, holding near highs\nNET +1.2% \u2014 rebounding after insider-selling overhang\nNVDA -1.8% \u2014 profit-taking after recent run\nMSFT -0.5% \u2014 mixed tech, no specific news"
+      "content": "DXYZ +8.08 \u2014 SpaceX headlines fueling speculative squeeze\nETN +2.58 \u2014 industrial/energy strength; best of portfolio\nTSLA +1.95 \u2014 sentiment rebound, no new fundamental catalyst\nAAPL +1.26 \u2014 helped by stability in consumer tech\nNET +1.66 \u2014 recovering from insider-selling selloff last week\nNVDA -1.90 \u2014 weakest portfolio name; semis under pressure\nMU -1.46 \u2014 dragged by NVDA weakness; no company news\nBABA -1.12 \u2014 China tech broadly soft; tariff noise weighing"
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "GDS -4.1% \u2014 China data center names under pressure\nBABA -2.2% \u2014 continuing recent weakness\n02800 -0.5% \u2014 broad HK soft"
+      "content": "2800.HK +0.70 \u2014 Hong Kong broad market slightly positive\n1816.HK -4.89 \u2014 largest portfolio drag; CGN weakness notable"
     },
     {
       "title": "MARKET NEWS",
-      "content": "Trump signs executive order targeting drug prices via most-favored-nation trade terms \u2014 pharma and healthcare names on alert\nChina Q1 GDP beat at 5.4% but internal demand components remain weak \u2014 commodities and industrial names cautious"
+      "content": "White House considering broad tariff announcements this week \u2014 markets repricing soft landing odds\nSemiconductor sector facing profit-taking after recent run; NVDA/MU both downgraded by at least one bank"
     },
     {
       "title": "ACTION BOARD",
-      "content": "Opportunity: MU momentum intact \u2014 if semis tape holds, let it run\nRisk: GDS/BABA continuing to show China tech fragility \u2014 do not catch falling knife\nResearch: DXYZ +27% \u2014 understand what triggered the squeeze before treating as anything other than noise"
+      "content": "Opportunity: DXYZ squeeze could extend if SpaceX news flow stays positive \u2014 trim on further strength rather than add\nRisk: 1816.HK / CGN breaking down structurally; China exposure via HK warrants more pain if tariffs escalate\nResearch: INTC \u2014 understand the AI PC thesis and whether it justifies current positioning vs. cleaner quality names"
     }
   ]
 }
