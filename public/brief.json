@@ -1,25 +1,25 @@
 {
-  "date": "May 25, 2026",
+  "date": "May 26, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "US equities mixed; Nasdaq +0.35%, Dow -0.56%, S&P +0.39%. DXYZ rip +8.1% on SpaceX speculation. Semis soft \u2014 NVDA -1.9%, MU -1.5%. Gold -0.8%, dollar steady."
+      "content": "Risk-on carries into Tuesday. S&P +0.37%, Nasdaq +0.19%, Dow +0.58% \u2014 broad divergence with small caps outperforming. VIX compressed to 16.59. USD steady."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "DXYZ +8.08 \u2014 SpaceX headlines fueling speculative squeeze\nETN +2.58 \u2014 industrial/energy strength; best of portfolio\nTSLA +1.95 \u2014 sentiment rebound, no new fundamental catalyst\nAAPL +1.26 \u2014 helped by stability in consumer tech\nNET +1.66 \u2014 recovering from insider-selling selloff last week\nNVDA -1.90 \u2014 weakest portfolio name; semis under pressure\nMU -1.46 \u2014 dragged by NVDA weakness; no company news\nBABA -1.12 \u2014 China tech broadly soft; tariff noise weighing"
+      "content": "DXYZ +8.08% \u2014 speculative bid, SpaceX-adjacent narrative picking up\nETN +2.58% \u2014 broad elex equipment holding AI capex theme\nAAPL +1.26% \u2014 iPhone cycle chatter, relatively firm\nNET +1.66% \u2014 bounce from yesterday's insider-selling overshoot\nNVDA -1.90% \u2014 semi sector still under pressure\nMU -1.46% \u2014 same, Micron dragging"
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "2800.HK +0.70 \u2014 Hong Kong broad market slightly positive\n1816.HK -4.89 \u2014 largest portfolio drag; CGN weakness notable"
+      "content": "02800 +0.70% \u2014 modest China bounce, HK dry powder still unused\n1816.HK -4.89% \u2014 CGN hit hard on broad HK risk-off; thesis still intact but watch position sizing\nBABA -1.12% \u2014 still under pressure, GDS -0.40% \u2014 quiet weakness"
     },
     {
       "title": "MARKET NEWS",
-      "content": "White House considering broad tariff announcements this week \u2014 markets repricing soft landing odds\nSemiconductor sector facing profit-taking after recent run; NVDA/MU both downgraded by at least one bank"
+      "content": "Oil crude -4.89% \u2014 demand concerns weighing on energy, macro headwind for risk assets\nNikkei +2.87% \u2014 Japan re-rating narrative intact, yen stability helping"
     },
     {
       "title": "ACTION BOARD",
-      "content": "Opportunity: DXYZ squeeze could extend if SpaceX news flow stays positive \u2014 trim on further strength rather than add\nRisk: 1816.HK / CGN breaking down structurally; China exposure via HK warrants more pain if tariffs escalate\nResearch: INTC \u2014 understand the AI PC thesis and whether it justifies current positioning vs. cleaner quality names"
+      "content": "Opportunity: DXYZ running hot on SpaceX narrative \u2014 trim if TSLA or broader spec appetite softens; don't chase.\nRisk: CGN down hard on HK sentiment \u2014 watch whether portfolio HK cash sits idle while positions derisk.\nResearch: NVDA/MU tape looks weak \u2014 understand whether this is AI capex peak anxiety or something more structural before adding."
     }
   ]
 }
