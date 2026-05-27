@@ -1,25 +1,25 @@
 {
-  "date": "May 26, 2026",
+  "date": "May 27, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "Risk-on carries into Tuesday. S&P +0.37%, Nasdaq +0.19%, Dow +0.58% \u2014 broad divergence with small caps outperforming. VIX compressed to 16.59. USD steady."
+      "content": "Risk-on rotated into tech leadership overnight. Nasdaq +1.19%, S&P +0.61%, Dow -0.23%. VIX climbing +2.53% to 17.01 \u2014 the tape looks stronger than it is; internally the Dow's weakness vs Nasdaq signals narrow leadership, not broad participation."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "DXYZ +8.08% \u2014 speculative bid, SpaceX-adjacent narrative picking up\nETN +2.58% \u2014 broad elex equipment holding AI capex theme\nAAPL +1.26% \u2014 iPhone cycle chatter, relatively firm\nNET +1.66% \u2014 bounce from yesterday's insider-selling overshoot\nNVDA -1.90% \u2014 semi sector still under pressure\nMU -1.46% \u2014 same, Micron dragging"
+      "content": "MU +19.29% \u2014 earnings beat, AI memory demand intact, guidance raised\nETN +3.01% \u2014 industrial strength, exposure playing\nINTC +3.07% \u2014 technically sound but macro tail wind unclear\nDXYZ -9.65% \u2014 speculative punt under pressure; specific catalyst unclear, tape punishing risk\nMSFT -0.61% / NVDA -0.22% \u2014 quiet session, no new news"
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "02800 +0.70% \u2014 modest China bounce, HK dry powder still unused\n1816.HK -4.89% \u2014 CGN hit hard on broad HK risk-off; thesis still intact but watch position sizing\nBABA -1.12% \u2014 still under pressure, GDS -0.40% \u2014 quiet weakness"
+      "content": "CGN +3.74% / 1816.HK +0.64% \u2014 small energy holdings quietly bid\nGDS -2.94% \u2014 China tech still under pressure, no new catalyst"
     },
     {
       "title": "MARKET NEWS",
-      "content": "Oil crude -4.89% \u2014 demand concerns weighing on energy, macro headwind for risk assets\nNikkei +2.87% \u2014 Japan re-rating narrative intact, yen stability helping"
+      "content": "Nasdaq up 1.2%, Dow down \u2014 this is a rotation into tech, not a new bull burst. Breadth is the tell.\nMU's earnings beat gives semis a floor, but the VIX warning should not be ignored."
     },
     {
       "title": "ACTION BOARD",
-      "content": "Opportunity: DXYZ running hot on SpaceX narrative \u2014 trim if TSLA or broader spec appetite softens; don't chase.\nRisk: CGN down hard on HK sentiment \u2014 watch whether portfolio HK cash sits idle while positions derisk.\nResearch: NVDA/MU tape looks weak \u2014 understand whether this is AI capex peak anxiety or something more structural before adding."
+      "content": "Opportunity: MU earnings confirm AI infrastructure capex is real and still flowing \u2014 the thesis is intact, but waiting for a pullback rather than chasing a +19% move is the right discipline.\nRisk: DXYZ at -9.65% is a reminder that speculative positions can decouple fast without warning; the book has idle HK cash (HK$135k) as buffer \u2014 don't rush to deploy it here.\nResearch: Understand whether MU's memory dominance is a durable moat or a cyclical tailwind about to normalize \u2014 that answer changes how much credit NVDA and MSFT deserve for the AI theme."
     }
   ]
 }
