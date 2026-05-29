@@ -1,24 +1,20 @@
-MORNING BRIEF — May 27, 2026
-
 OVERNIGHT MAP
-Risk-on rotated into tech leadership overnight. Nasdaq +1.19%, S&P +0.61%, Dow -0.23%. VIX climbing +2.53% to 17.01 — the tape looks stronger than it is; internally the Dow's weakness vs Nasdaq signals narrow leadership, not broad participation.
+Risk-on bias intact — Nasdaq leads, yields dip, VIX compressed to 15.74.
+Nasdaq +0.91%, Dow +0.05%, S&P +0.58%. Gold +1.66%, 10Y yield -0.58%.
+HK live: HSI -1.06%, 2800.HK -2.32% — China policy uncertainty weighing on HK.
 
 US CLOSE MOVERS
-MU +19.29% — earnings beat, AI memory demand intact, guidance raised
-ETN +3.01% — industrial strength, exposure playing
-INTC +3.07% — technically sound but macro tail wind unclear
-DXYZ -9.65% — speculative punt under pressure; specific catalyst unclear, tape punishing risk
-MSFT -0.61% / NVDA -0.22% — quiet session, no new news
+Strong: MSFT +3.47% (AI infra strength), DXYZ +1.56% (speculative appetite), NVDA +0.78%
+Weak: ETN -1.09%, XLU -1.13%, INTC -0.72%
 
 HK LIVE MOVERS
-CGN +3.74% / 1816.HK +0.64% — small energy holdings quietly bid
-GDS -2.94% — China tech still under pressure, no new catalyst
+2800.HK -2.32% — broad HK weakness; BABA -1.25%, CGN (1816.HK) -1.95%
 
 MARKET NEWS
-Nasdaq up 1.2%, Dow down — this is a rotation into tech, not a new bull burst. Breadth is the tell.
-MU's earnings beat gives semis a floor, but the VIX warning should not be ignored.
+VIX -3.38% to 15.74 — fear gauge compressing, AI momentum intact.
+Gold +1.66% — falling yields supporting growth/quality over defensives.
 
 ACTION BOARD
-Opportunity: MU earnings confirm AI infrastructure capex is real and still flowing — the thesis is intact, but waiting for a pullback rather than chasing a +19% move is the right discipline.
-Risk: DXYZ at -9.65% is a reminder that speculative positions can decouple fast without warning; the book has idle HK cash (HK$135k) as buffer — don't rush to deploy it here.
-Research: Understand whether MU's memory dominance is a durable moat or a cyclical tailwind about to normalize — that answer changes how much credit NVDA and MSFT deserve for the AI theme.
+Opportunity: NET +9.03% — insider-selling dip likely sentiment, not fundamental break. Watch for stabilization before treating as entry.
+Risk: HK weakness — 2800 underperforming, China policy signals unclear. Size exposure accordingly.
+Research: Duration trade vs. growth rotation — if 10Y keeps falling, quality growth gets another leg. Understand the cross-asset signal.

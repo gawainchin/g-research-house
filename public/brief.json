@@ -1,25 +1,25 @@
 {
-  "date": "May 27, 2026",
+  "date": "May 29, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "Risk-on rotated into tech leadership overnight. Nasdaq +1.19%, S&P +0.61%, Dow -0.23%. VIX climbing +2.53% to 17.01 \u2014 the tape looks stronger than it is; internally the Dow's weakness vs Nasdaq signals narrow leadership, not broad participation."
+      "content": "Risk-on bias intact \u2014 Nasdaq leads, yields dip, VIX compressed to 15.74.\nNasdaq +0.91%, Dow +0.05%, S&P +0.58%. Gold +1.66%, 10Y yield -0.58%.\nHK live: HSI -1.06%, 2800.HK -2.32% \u2014 China policy uncertainty weighing on HK."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "MU +19.29% \u2014 earnings beat, AI memory demand intact, guidance raised\nETN +3.01% \u2014 industrial strength, exposure playing\nINTC +3.07% \u2014 technically sound but macro tail wind unclear\nDXYZ -9.65% \u2014 speculative punt under pressure; specific catalyst unclear, tape punishing risk\nMSFT -0.61% / NVDA -0.22% \u2014 quiet session, no new news"
+      "content": "Strong: MSFT +3.47% (AI infra strength), DXYZ +1.56% (speculative appetite), NVDA +0.78%\nWeak: ETN -1.09%, XLU -1.13%, INTC -0.72%"
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "CGN +3.74% / 1816.HK +0.64% \u2014 small energy holdings quietly bid\nGDS -2.94% \u2014 China tech still under pressure, no new catalyst"
+      "content": "2800.HK -2.32% \u2014 broad HK weakness; BABA -1.25%, CGN (1816.HK) -1.95%"
     },
     {
       "title": "MARKET NEWS",
-      "content": "Nasdaq up 1.2%, Dow down \u2014 this is a rotation into tech, not a new bull burst. Breadth is the tell.\nMU's earnings beat gives semis a floor, but the VIX warning should not be ignored."
+      "content": "VIX -3.38% to 15.74 \u2014 fear gauge compressing, AI momentum intact.\nGold +1.66% \u2014 falling yields supporting growth/quality over defensives."
     },
     {
       "title": "ACTION BOARD",
-      "content": "Opportunity: MU earnings confirm AI infrastructure capex is real and still flowing \u2014 the thesis is intact, but waiting for a pullback rather than chasing a +19% move is the right discipline.\nRisk: DXYZ at -9.65% is a reminder that speculative positions can decouple fast without warning; the book has idle HK cash (HK$135k) as buffer \u2014 don't rush to deploy it here.\nResearch: Understand whether MU's memory dominance is a durable moat or a cyclical tailwind about to normalize \u2014 that answer changes how much credit NVDA and MSFT deserve for the AI theme."
+      "content": "Opportunity: NET +9.03% \u2014 insider-selling dip likely sentiment, not fundamental break. Watch for stabilization before treating as entry.\nRisk: HK weakness \u2014 2800 underperforming, China policy signals unclear. Size exposure accordingly.\nResearch: Duration trade vs. growth rotation \u2014 if 10Y keeps falling, quality growth gets another leg. Understand the cross-asset signal."
     }
   ]
 }
