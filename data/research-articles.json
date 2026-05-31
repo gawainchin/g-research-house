@@ -1,10 +1,441 @@
 {
   "articles": [
     {
+      "slug": "why-geoffrey-hinton-insists-llms-need-a-world-model",
+      "title": "Why Geoffrey Hinton Insists LLMs Need a World Model",
+      "section": "financial-research",
+      "summary": "Geoffrey Hinton is right that strong next-token prediction implies partial internal world structure, but current LLMs still need external memory, planning, and environment feedback before they become reliable action-grade world models.",
+      "date": "2026-05-31",
+      "tags": [
+        "ai",
+        "llms",
+        "agents",
+        "world-models",
+        "planning",
+        "geoffrey-hinton"
+      ],
+      "readingTime": 8,
+      "format": "thesis",
+      "perspective": "investor",
+      "relatedSlugs": [
+        "hooks-dont-replace-prompts",
+        "agentic-inference-memory-io-pressure-indicator",
+        "from-chatbot-to-workflow"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "---"
+        },
+        {
+          "type": "paragraph",
+          "text": "title: Why Geoffrey Hinton Insists LLMs Need a World Model"
+        },
+        {
+          "type": "paragraph",
+          "text": "slug: why-geoffrey-hinton-insists-llms-need-a-world-model"
+        },
+        {
+          "type": "paragraph",
+          "text": "section: ai-research"
+        },
+        {
+          "type": "paragraph",
+          "text": "date: 2026-05-21"
+        },
+        {
+          "type": "paragraph",
+          "text": "tags:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "ai",
+            "llms",
+            "agents",
+            "world-models",
+            "planning",
+            "geoffrey-hinton"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "keywords:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "world models",
+            "LLM agents",
+            "Hinton",
+            "planning architecture",
+            "agent scaffolding"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "format: thesis"
+        },
+        {
+          "type": "paragraph",
+          "text": "summary: Strong next-token prediction forces LLMs to build partial internal world models — but reliable agents need external scaffolding to close the gap between inference and action."
+        },
+        {
+          "type": "paragraph",
+          "text": "readingTime: 7"
+        },
+        {
+          "type": "paragraph",
+          "text": "relatedSlugs:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "hooks-dont-replace-prompts",
+            "agentic-inference-memory-io-pressure-indicator",
+            "from-chatbot-to-workflow"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "sourceLinks:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "label: \"CBS News / 60 Minutes — Geoffrey Hinton interview transcript\""
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "url: \"https://www.cbsnews.com/news/geoffrey-hinton-ai-dangers-60-minutes-transcript\""
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "label: \"Google DeepMind — Genie: Generative Interactive Environments\""
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "url: \"https://deepmind.google/research/publications/60474\""
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "label: \"ICML 2025 — Plan-and-Act\""
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "url: \"https://icml.cc/virtual/2025/poster/43522\""
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "label: \"Frontiers in AI — Causal reasoning and planning under uncertainty\""
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "url: \"https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1730614/full\""
+        },
+        {
+          "type": "paragraph",
+          "text": "---"
+        },
+        {
+          "type": "paragraph",
+          "text": "# Why Geoffrey Hinton Insists LLMs Need a World Model"
+        },
+        {
+          "type": "paragraph",
+          "text": "*World models* is one of those phrases that sounds like philosophy but is actually engineering. The core idea: a system that holds an internal map of how things work — entities, transitions, cause-effect, what typically happens next — and can run limited simulations against that map before committing to action."
+        },
+        {
+          "type": "paragraph",
+          "text": "That is not a metaphor. It is a specific architectural requirement. A world model lets an agent ask \"if I do X, what is likely to happen?\" and get a non-trivial answer, not just pattern-matched bluster."
+        },
+        {
+          "type": "heading",
+          "text": "Hinton's argument, stripped of the drama"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hinton's claim is that strong next-token prediction already forces a model to build pieces of this. Not by design — by pressure. To predict accurately across ambiguous, multi-context human language, you cannot just memorize surface statistics. You have to infer latent structure: what entities exist, how they relate, what dynamics they are subject to, what comes next given the current state."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is not a philosophical claim about consciousness or understanding. It is an induction-pressure argument: the task is hard enough that the network must represent something like a world to solve it well."
+        },
+        {
+          "type": "paragraph",
+          "text": "The \"just autocomplete\" frame is misleading because accurate multi-step prediction requires internal coherence that pure surface statistics cannot provide. If a model consistently predicts well across messy contexts, something structural is being learned. That structure is the seed of a world model."
+        },
+        {
+          "type": "heading",
+          "text": "Where current LLMs do and do not qualify"
+        },
+        {
+          "type": "paragraph",
+          "text": "Current LLMs show clear signs of learned world structure. They track local context, infer hidden state, and compress regularities about how systems behave. Give a frontier model a compact board state or a simple process description and it can often predict the next plausible move or failure mode. That suggests learned dynamics, even if it does not prove robust internal simulation."
+        },
+        {
+          "type": "paragraph",
+          "text": "What they lack is action-grade robustness:"
+        },
+        {
+          "type": "paragraph",
+          "text": "| What LLMs do well | What breaks under agent demands |"
+        },
+        {
+          "type": "paragraph",
+          "text": "|---|---|"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Local context tracking | Long-horizon state consistency |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Pattern compression | Explicit causal structure under uncertainty |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| In-context inference | Persistent goal state across sessions |"
+        },
+        {
+          "type": "paragraph",
+          "text": "| Coherent bluster | Reliable counterfactual simulation |"
+        },
+        {
+          "type": "paragraph",
+          "text": "The pattern is consistent: LLMs are better at sounding like they understand a system than reliably steering one. For chatbot-style tasks that is fine. For agents — which must preserve state, choose actions, observe feedback, update plans — it is a different engineering problem."
+        },
+        {
+          "type": "paragraph",
+          "text": ":::comparison-table"
+        },
+        {
+          "type": "paragraph",
+          "text": "title: \"LLMs: where the world-model gap shows\""
+        },
+        {
+          "type": "paragraph",
+          "text": "columns: [\"What LLMs do well\", \"What breaks under agent demands\"]"
+        },
+        {
+          "type": "paragraph",
+          "text": "rows:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "[\"Local context tracking\", \"Long-horizon state consistency\"]",
+            "[\"Pattern compression\", \"Explicit causal structure under uncertainty\"]",
+            "[\"In-context inference\", \"Persistent goal state across sessions\"]",
+            "[\"Coherent bluster\", \"Reliable counterfactual simulation\"]"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": ":::"
+        },
+        {
+          "type": "heading",
+          "text": "Why agent stacks keep growing external layers"
+        },
+        {
+          "type": "paragraph",
+          "text": "The practical agent stack looks like this: base model plus memory, plus planner, plus tool layer, plus environment feedback, plus control loop. Every few months another layer appears."
+        },
+        {
+          "type": "paragraph",
+          "text": "That is the market re-creating a world model around the LLM, not inside it. The planner does causal decomposition. The memory module does state persistence. The tool layer does grounding. The feedback loop does observation. None of those are the LLM itself — they are scaffolding that compensates for the LLM's gap."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is not a failure of the LLM. It is an accurate accounting of what a raw language model is strong at and what it is not. The LLM does the reasoning; the scaffolding does the persistence, grounding, and simulation. Whether that external scaffolding counts as a \"world model\" depends on how carefully you define the term — but the functional content is there, distributed across the stack."
+        },
+        {
+          "type": "heading",
+          "text": "The term is being stretched thin"
+        },
+        {
+          "type": "paragraph",
+          "text": "\"World model\" is now used to describe at least three different things:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "**Implicit internal structure** — what Hinton argues is induced by strong prediction. Partially real, hard to verify, partly theoretical."
+          ]
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "**Bigger context windows + retrieval** — what most commercial \"world model\" products actually ship. Useful, but not the same thing. Retrieval gives you more facts. Memory gives you more persistence. Neither predicts state transitions or supports serious counterfactuals."
+          ]
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "**Action-grade simulation** — what agents actually need: a system that predicts what happens if you do X, in environment Y, starting from state Z. This requires either strong internal modeling or an external simulation layer. Current LLMs alone do not provide it reliably."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The confusion is commercially useful to people selling \"world model\" products. The technical reality is more prosaic: we have good partial world models in LLMs and good external scaffolding around them, but no clean end-to-end architecture that combines them reliably for long-horizon agent tasks."
+        },
+        {
+          "type": "heading",
+          "text": "The serious work is at the intersection"
+        },
+        {
+          "type": "paragraph",
+          "text": "Where this gets interesting for builders is the emerging research layer where action meets simulation:"
+        },
+        {
+          "type": "paragraph",
+          "text": "**Genie (Google DeepMind)** learns controllable dynamics from video and lets agents act inside generated environments — explicitly framed as a foundation world model that separates dynamics learning from policy learning."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Plan-and-Act (ICML 2025)** demonstrates that long-horizon agent success improves substantially when planning is separated from execution rather than leaving everything to raw next-token generation. The planner does the simulation; the actor does the token generation."
+        },
+        {
+          "type": "paragraph",
+          "text": "**Causal planning research** keeps finding the same ceiling: LLM pattern recognition is useful but brittle when the task requires explicit causal structure under uncertainty. You can prompt around it; you cannot train your way through it reliably."
+        },
+        {
+          "type": "paragraph",
+          "text": "The pattern in all three: the problem is not the LLM. The problem is that reliable agents need to predict consequences before committing to actions, and a raw LLM — however smart — does not have a reliable mechanism for that unless something else provides it."
+        },
+        {
+          "type": "paragraph",
+          "text": ":::flowchart"
+        },
+        {
+          "type": "paragraph",
+          "text": "title: From next-token prediction to reliable agent action"
+        },
+        {
+          "type": "paragraph",
+          "text": "steps:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "{label: \"Token prediction\", note: \"LLM base — predicts next token\"}",
+            "{label: \"Latent world structure\", note: \"Induced by prediction pressure — internal inference\"}",
+            "{label: \"Planning layer\", note: \"Causal decomposition, separate from generation\"}",
+            "{label: \"Tool/action loop\", note: \"Grounding + execution\"}",
+            "{label: \"Environment feedback\", note: \"Consequence tracking closes the loop\"}"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "caption: \"LLM provides inference; scaffolding provides state, simulation, and feedback.\""
+        },
+        {
+          "type": "paragraph",
+          "text": ":::"
+        },
+        {
+          "type": "heading",
+          "text": "What this means for agent builders"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hinton's point, interpreted for builders rather than philosophers: strong language models are necessary but not sufficient for reliable agents. The induction pressure argument tells you the LLM has learned something structurally useful about how the world works. It does not tell you that structure is accessible, consistent, or sufficient for long-horizon task completion."
+        },
+        {
+          "type": "paragraph",
+          "text": "The practical implication: invest in the scaffolding as seriously as you invest in the model."
+        },
+        {
+          "type": "paragraph",
+          "text": "Specifically:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "**Planner separation matters** — treating planning as a distinct layer from action generation produces better long-horizon outcomes than trusting a single LLM to do both. This is now evidenced across multiple benchmarks."
+          ]
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "**Memory is not optional** — state persistence across sessions is a world-model substrate, not a nice-to-have. Agents without persistent memory repeat failures and cannot track goal progress reliably."
+          ]
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "**Feedback loops are load-bearing** — environment observation and consequence tracking are how the system validates whether its internal model (or its scaffolding's model) was correct. Without that, you cannot close the simulation-reality gap."
+          ]
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "**The hybrid architecture is the working answer** — for now, reliable agents are LLM + planner + memory + tools + feedback. That is not a temporary patch; it is the current best practice. Whether it gets subsumed into next-generation foundation models is an open empirical question."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "What remains unproven"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Whether language-only pretraining can produce robust causal world models without external scaffolding",
+            "Whether current agent stacks are building genuine world modeling capability or just layered compensations for model limitations",
+            "Whether \"world model\" becomes a precise technical category or collapses into marketing fog",
+            "Whether the next generation of foundation models closes the gap internally or whether the hybrid stack remains the winning architecture"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": ":::key-takeaways"
+        },
+        {
+          "type": "paragraph",
+          "text": "takeaways:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "{icon: \"✓\", text: \"Local context tracking — strong inference within a session\"}",
+            "{icon: \"✓\", text: \"Pattern compression — compresses system dynamics into internal representations\"}",
+            "{icon: \"✓\", text: \"In-context reasoning — infers hidden state from explicit prompts\"}",
+            "{icon: \"✗\", text: \"Long-horizon state consistency — breaks at 5+ action sequences\"}",
+            "{icon: \"✗\", text: \"Explicit causal robustness — causal structure under uncertainty is brittle\"}",
+            "{icon: \"✗\", text: \"Persistent goal state — cannot reliably hold goal across sessions without memory scaffolding\"}"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "caption: \"The gap matters for agents, not chatbots.\""
+        },
+        {
+          "type": "paragraph",
+          "text": ":::"
+        },
+        {
+          "type": "heading",
+          "text": "Visual package"
+        },
+        {
+          "type": "paragraph",
+          "text": "Visual blocks are integrated inline above — comparison-table (section 2), flowchart (section 5), key-takeaways (section 7)."
+        }
+      ]
+    },
+    {
       "slug": "agentic-coding-real-bottleneck",
       "title": "Agentic Coding's Real Bottleneck Is Operational Discipline",
       "section": "ai-research",
-      "summary": "GitHub's 19\u201362% token savings from operational interventions, not model upgrades. The constraint has moved from capability to the operating layer.",
+      "summary": "GitHub's 19–62% token savings from operational interventions, not model upgrades. The constraint has moved from capability to the operating layer.",
       "date": "2026-05-13",
       "tags": [
         "ai",
@@ -27,7 +458,7 @@
           "url": "https://github.com"
         },
         {
-          "label": "GitHub token-efficiency results \u2014 May 2026",
+          "label": "GitHub token-efficiency results — May 2026",
           "url": "https://github.com"
         },
         {
@@ -40,12 +471,12 @@
           "type": "thesis-card",
           "label": "Core Thesis",
           "title": "The constraint has moved from capability to the operating layer.",
-          "text": "GitHub's 19\u201362% token savings come from operational interventions \u2014 relevance gates, staged writes, CLI over MCP \u2014 not from switching models. Once agent systems move from demos into production CI/CD and toolchains, the differentiator is whether you can operate them safely, cheaply, and observably."
+          "text": "GitHub's 19–62% token savings come from operational interventions — relevance gates, staged writes, CLI over MCP — not from switching models. Once agent systems move from demos into production CI/CD and toolchains, the differentiator is whether you can operate them safely, cheaply, and observably."
         },
         {
           "type": "key-takeaways",
           "items": [
-            "Token telemetry and relevance gates deliver 19\u201362% savings by controlling what enters the context window \u2014 an operational fix, not a model upgrade.",
+            "Token telemetry and relevance gates deliver 19–62% savings by controlling what enters the context window — an operational fix, not a model upgrade.",
             "Safe outputs and staged writes constrain blast radius: the agent proposes, a human approves before anything commits.",
             "CLI over MCP for deterministic reads eliminates tool-calling overhead where the operation is known and deterministic.",
             "Anthropic's 2026 report independently confirms the failure mode shift: from 'model didn't understand' to 'token budget blown with no trace.'"
@@ -57,7 +488,7 @@
           "metrics": [
             {
               "label": "GitHub token savings (operational)",
-              "value": "19\u201362%"
+              "value": "19–62%"
             },
             {
               "label": "Operating patterns that win",
@@ -80,9 +511,9 @@
         {
           "type": "bullets",
           "items": [
-            "Token telemetry and relevance gates \u2014 running a relevance check before sending context to the model cuts unnecessary token consumption.",
-            "Safe outputs and staged writes \u2014 rather than letting an agent write directly to production, agents produce an artifact that a human reviews before committing.",
-            "CLI over MCP for deterministic reads \u2014 replacing some MCP tool fetches with direct gh CLI calls reduces latency and eliminates tool-definition parsing overhead."
+            "Token telemetry and relevance gates — running a relevance check before sending context to the model cuts unnecessary token consumption.",
+            "Safe outputs and staged writes — rather than letting an agent write directly to production, agents produce an artifact that a human reviews before committing.",
+            "CLI over MCP for deterministic reads — replacing some MCP tool fetches with direct gh CLI calls reduces latency and eliminates tool-definition parsing overhead."
           ]
         },
         {
@@ -95,7 +526,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The implication is not that agents are unreliable. It is that operating them responsibly requires a distinct set of infrastructure decisions \u2014 observability, cost controls, access governance, output validation \u2014 that are structurally different from operating deterministic software."
+          "text": "The implication is not that agents are unreliable. It is that operating them responsibly requires a distinct set of infrastructure decisions — observability, cost controls, access governance, output validation — that are structurally different from operating deterministic software."
         },
         {
           "type": "heading",
@@ -121,11 +552,36 @@
         },
         {
           "type": "paragraph",
-          "text": "Whether GitHub's specific operating patterns generalize to environments outside GitHub Actions \u2014 enterprise CI systems, custom toolchains, multi-cloud deployments \u2014 is still open. The token-efficiency gains come from a specific environment with a specific class of tasks. Real-world enterprise usage at scale will stress-test whether the same patterns hold."
+          "text": "Whether GitHub's specific operating patterns generalize to environments outside GitHub Actions — enterprise CI systems, custom toolchains, multi-cloud deployments — is still open. The token-efficiency gains come from a specific environment with a specific class of tasks. Real-world enterprise usage at scale will stress-test whether the same patterns hold."
         },
         {
           "type": "paragraph",
-          "text": "The bigger open question is whether operational discipline becomes the primary differentiator for agentic systems broadly. If it does, the market for \"AI DevOps\" \u2014 tooling that sits on top of agents to govern, observe, and constrain them \u2014 may be larger than the market for the agents themselves. That is a meaningful framing shift, and it is early."
+          "text": "The bigger open question is whether operational discipline becomes the primary differentiator for agentic systems broadly. If it does, the market for \"AI DevOps\" — tooling that sits on top of agents to govern, observe, and constrain them — may be larger than the market for the agents themselves. That is a meaningful framing shift, and it is early."
+        }
+      ]
+    },
+    {
+      "slug": "awesome-codex-skills",
+      "title": "8 Skills That Actually Make Codex Worth Using",
+      "section": "ai-research",
+      "summary": "The awesome-codex-skills repo has 880 skills across 5 categories — here's how to cut through the noise: 8 skills worth installing today, what each actually does, and why they'd disappear from your workflow if you removed them.",
+      "date": "2026-05-12",
+      "tags": [
+        "ai",
+        "tooling",
+        "codex",
+        "composio",
+        "developer-tools",
+        "productivity"
+      ],
+      "readingTime": 5,
+      "format": "thesis",
+      "perspective": "analyst",
+      "relatedSlugs": [],
+      "sourceLinks": [
+        {
+          "label": "ComposioHQ/awesome-codex-skills GitHub",
+          "url": "https://github.com/ComposioHQ/awesome-codex-skills"
         }
       ]
     },
@@ -133,7 +589,7 @@
       "slug": "what-a-russia-ukraine-ceasefire-would-actually-change",
       "title": "What a Russia-Ukraine Ceasefire Would Actually Change",
       "section": "financial-research",
-      "summary": "A ceasefire would be disinflationary for Europe at the margin, but the real market effect is sector rotation \u2014 not a universal risk-on melt-up.",
+      "summary": "A ceasefire would be disinflationary for Europe at the margin, but the real market effect is sector rotation — not a universal risk-on melt-up.",
       "date": "2026-05-11",
       "tags": [
         "investing",
@@ -151,23 +607,23 @@
       "relatedSlugs": [],
       "sourceLinks": [
         {
-          "label": "Al Jazeera \u2014 May 8 ceasefire failure",
+          "label": "Al Jazeera — May 8 ceasefire failure",
           "url": "https://www.aljazeera.com/news/2026/5/8/russia-ukraine-trade-fire-despite-victory-day-ceasefire"
         },
         {
-          "label": "CNBC \u2014 defense selloff on ceasefire hopes",
+          "label": "CNBC — defense selloff on ceasefire hopes",
           "url": "https://www.cnbc.com/2026/04/10/european-stocks-us-iran-ceasefire-uncertainty.html"
         },
         {
-          "label": "Janus Henderson \u2014 Europe rearmament thesis",
+          "label": "Janus Henderson — Europe rearmament thesis",
           "url": "https://www.janushenderson.com/en-us/investor/article/european-defense-stocks-the-magnitude-of-europes-rearmament-remains-underappreciated/"
         },
         {
-          "label": "Reuters \u2014 global markets reaction",
+          "label": "Reuters — global markets reaction",
           "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-04-22/"
         },
         {
-          "label": "S&P Global \u2014 gas-market shifts",
+          "label": "S&P Global — gas-market shifts",
           "url": "https://www.spglobal.com/energy/en/news-research/latest-news/natural-gas/022426-feature-four-years-on-russia-ukraine-war-drives-lasting-gas-market-shifts"
         }
       ],
@@ -183,7 +639,7 @@
           "items": [
             "Defense stocks can sell off on peace headlines, but the order-book thesis survives because NATO spending has already structurally reset higher.",
             "The market is over-ascribing oil and gas moves to Ukraine; the dominant live energy variable is Iran/Hormuz, not a near-term Russia-Ukraine pause.",
-            "The real trade is sector rotation \u2014 construction, Eastern European capex, and selected EM risk assets if peace proves durable \u2014 not a blanket global melt-up.",
+            "The real trade is sector rotation — construction, Eastern European capex, and selected EM risk assets if peace proves durable — not a blanket global melt-up.",
             "A one-week ceasefire changes sentiment; a 90+ day ceasefire with a reconstruction framework changes earnings expectations."
           ]
         },
@@ -215,11 +671,11 @@
         },
         {
           "type": "paragraph",
-          "text": "The market\u2019s lazy framing is that peace means risk-on. That is too broad and too early. A short ceasefire can knock down defense multiples for a few sessions. It does not reverse the procurement cycle that Europe has already committed to, and it does not magically normalize energy if Middle East supply risk stays elevated."
+          "text": "The market’s lazy framing is that peace means risk-on. That is too broad and too early. A short ceasefire can knock down defense multiples for a few sessions. It does not reverse the procurement cycle that Europe has already committed to, and it does not magically normalize energy if Middle East supply risk stays elevated."
         },
         {
           "type": "paragraph",
-          "text": "The better framing is narrower: a ceasefire would be mildly disinflationary for Europe, constructive for reconstruction-adjacent capex, and negative for the shortest-duration defense trade. But the structural underwrites \u2014 NATO rearmament, EU energy independence, and Eastern European hardening \u2014 remain in place even if a peace dividend never fully arrives."
+          "text": "The better framing is narrower: a ceasefire would be mildly disinflationary for Europe, constructive for reconstruction-adjacent capex, and negative for the shortest-duration defense trade. But the structural underwrites — NATO rearmament, EU energy independence, and Eastern European hardening — remain in place even if a peace dividend never fully arrives."
         },
         {
           "type": "heading",
@@ -228,9 +684,9 @@
         {
           "type": "bullets",
           "items": [
-            "Short-dated defense names can sell off sharply on ceasefire optimism, as April\u2019s moves in Rheinmetall, Hensoldt, BAE, and Saab showed.",
+            "Short-dated defense names can sell off sharply on ceasefire optimism, as April’s moves in Rheinmetall, Hensoldt, BAE, and Saab showed.",
             "Construction and materials can catch a relief bid if the market starts underwriting real reconstruction timelines.",
-            "The euro and EM risk assets can rally on falling geopolitical risk premium \u2014 but only if the ceasefire looks durable rather than theatrical."
+            "The euro and EM risk assets can rally on falling geopolitical risk premium — but only if the ceasefire looks durable rather than theatrical."
           ]
         },
         {
@@ -239,11 +695,11 @@
         },
         {
           "type": "paragraph",
-          "text": "Europe\u2019s defense posture has already reset. The important question is not whether the next ceasefire headline lands; it is whether European parliaments will reverse commitments to spend 3.5% of GDP on defense and 5% on broader security. That looks unlikely. The order books may wobble around the edges, but the industrial base buildout remains a multi-year story."
+          "text": "Europe’s defense posture has already reset. The important question is not whether the next ceasefire headline lands; it is whether European parliaments will reverse commitments to spend 3.5% of GDP on defense and 5% on broader security. That looks unlikely. The order books may wobble around the edges, but the industrial base buildout remains a multi-year story."
         },
         {
           "type": "paragraph",
-          "text": "Energy is also less ceasefire-sensitive than many traders assume. Europe is still on a legal path to phase out Russian gas and LNG by end-2027. On oil, the live driver is Iran/Hormuz disruption. That is why Russian crude\u2019s move from roughly $40/bbl in December 2025 to roughly $62/bbl now says more about Middle East stress than about Ukraine."
+          "text": "Energy is also less ceasefire-sensitive than many traders assume. Europe is still on a legal path to phase out Russian gas and LNG by end-2027. On oil, the live driver is Iran/Hormuz disruption. That is why Russian crude’s move from roughly $40/bbl in December 2025 to roughly $62/bbl now says more about Middle East stress than about Ukraine."
         },
         {
           "type": "heading",
@@ -311,7 +767,7 @@
             "The ceasefire has to hold for at least 90+ days. Diplomatic photo-op pauses are not enough.",
             "A reconstruction governance framework has to materialize. Markets cannot capitalize slogans; they need disbursement pipes and legal structure.",
             "NATO spending commitments have to survive political transition. That is likely, but it still matters.",
-            "Middle East oil stress has to cool as well. A Ukraine ceasefire alone does not solve Europe\u2019s energy sensitivity if Hormuz remains unstable."
+            "Middle East oil stress has to cool as well. A Ukraine ceasefire alone does not solve Europe’s energy sensitivity if Hormuz remains unstable."
           ]
         },
         {
@@ -323,13 +779,846 @@
         {
           "type": "verdict",
           "label": "Bottom Line",
-          "text": "A Russia-Ukraine ceasefire would matter, but not in the cartoon version the market wants. The durable thesis is not \u201cpeace means everything up.\u201d It is that Europe gets a marginal disinflationary relief valve, defense loses some headline torque but keeps the structural backlog, and the true upside sits in reconstruction-sensitive sectors only if ceasefire durability becomes real rather than theatrical."
+          "text": "A Russia-Ukraine ceasefire would matter, but not in the cartoon version the market wants. The durable thesis is not “peace means everything up.” It is that Europe gets a marginal disinflationary relief valve, defense loses some headline torque but keeps the structural backlog, and the true upside sits in reconstruction-sensitive sectors only if ceasefire durability becomes real rather than theatrical."
+        }
+      ]
+    },
+    {
+      "slug": "slides-are-becoming-agent-native-software",
+      "title": "Slides Are Becoming Agent-Native Software",
+      "section": "ai-research",
+      "summary": "The constrained canvas is the interface contract — open-slide demonstrates why fixed substrates, bidirectional annotation, and source-owned artifacts make reliable human-agent visual collaboration possible.",
+      "date": "2026-05-07",
+      "tags": [
+        "ai",
+        "agents",
+        "workflow",
+        "infrastructure",
+        "slides",
+        "open-source"
+      ],
+      "readingTime": 7,
+      "format": "thesis",
+      "perspective": "operator",
+      "sourceLinks": [
+        {
+          "label": "GitHub Repo",
+          "url": "https://github.com/1weiho/open-slide"
+        }
+      ],
+      "heroImage": {
+        "url": "https://github.com/user-attachments/assets/02f5e6d7-12a7-4a8e-88e7-ae8770a96584",
+        "alt": "open-slide GitHub cover image",
+        "caption": "open-slide repository cover image from the project's GitHub README."
+      },
+      "relatedSlugs": [
+        "from-chatbot-to-workflow",
+        "agentic-inference-memory-io-pressure-indicator"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "A 395-star GitHub repo with three contributors isn't usually worth a house note. open-slide is the exception — not because of the star count, but because of the engineering bet it makes: every slide is a typed React component on a fixed 1920×1080 canvas, authored by an agent and revised through a source-control review loop."
+        },
+        {
+          "type": "paragraph",
+          "text": "That design choice is what makes it worth writing about. The pattern it demonstrates — constrained canvas + bidirectional annotation + file-owned artifacts — shows up in other agent-native systems too. If you care about how agents and humans collaborate on structured visual work, this is a clean example of the pattern working at the surface level."
+        },
+        {
+          "type": "metric-strip",
+          "metrics": [
+            {
+              "value": "1920×1080",
+              "label": "Fixed Canvas"
+            },
+            {
+              "value": "TypeScript",
+              "label": "Surface Language"
+            },
+            {
+              "value": "3",
+              "label": "Authors"
+            },
+            {
+              "value": "MIT",
+              "label": "License"
+            }
+          ]
+        },
+        {
+          "type": "thesis-card",
+          "label": "Core Thesis",
+          "title": "The constrained canvas is the interface contract",
+          "text": "Slides are becoming agent-native software. Not because AI can generate them faster, but because the design of the surface — fixed canvas, typed components, bidirectional annotation — is what makes reliable human-agent collaboration on visual artifacts possible. open-slide is a clean implementation of that pattern."
+        },
+        {
+          "type": "heading",
+          "text": "How It Works"
+        },
+        {
+          "type": "paragraph",
+          "text": "open-slide scaffolds a workspace with npx @open-slide/cli init my-deck. What you get is a TypeScript monorepo (pnpm + Turbo) with Vite and React already wired up. The agent's job is to write .tsx slide components into that workspace."
+        },
+        {
+          "type": "paragraph",
+          "text": "The authoring loop has three steps: the agent drafts slide components on the fixed 1920×1080 canvas; the author toggles inspect mode, clicks any element, and drops a @slide-comment marker directly on what needs to change — no context switching; running /apply-comments feeds the annotated context back to the agent, which rewrites exactly what's flagged, clears the markers, and the loop repeats."
+        },
+        {
+          "type": "paragraph",
+          "text": "The result lives as React source files. Export goes to static HTML and PDF, deployable to Vercel, Cloudflare, or Netlify. There's no proprietary agent layer — any coding agent that can read and write files can drive this workflow."
+        },
+        {
+          "type": "flowchart",
+          "title": "The @slide-comment Authoring Loop",
+          "steps": [
+            {
+              "label": "Agent drafts slide components",
+              "note": "Writes .tsx files into a typed React workspace. Canvas is fixed: 1920×1080."
+            },
+            {
+              "label": "Human inspects and annotates",
+              "note": "Toggles inspect mode, clicks any element, drops an @slide-comment marker in-place."
+            },
+            {
+              "label": "Agent applies comments",
+              "note": "Runs /apply-comments. Rewrites exactly what was flagged, clears markers."
+            },
+            {
+              "label": "Loop repeats",
+              "note": "Revision is targeted and additive — slides 1–3 are untouched while slide 4 is fixed."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "What Makes It Different from Generic AI Slide Tools"
+        },
+        {
+          "type": "paragraph",
+          "text": "Beautiful.ai, Tome, Gamma, SlideGen — these are prompt-to-artifact systems. You write a prompt, the system returns a finished deck, you edit the output or regenerate. The iteration path is either manual or a full regeneration."
+        },
+        {
+          "type": "paragraph",
+          "text": "open-slide is structurally different: the agent has a file it owns and revises. The review loop is in source control, not in a separate UI. You're not reviewing a finished artifact — you're reviewing a work-in-progress with the agent still present and able to act on your feedback directly."
+        },
+        {
+          "type": "paragraph",
+          "text": "The practical difference: when you spot a misaligned chart or a dense paragraph on slide 4, you drop a comment on that element. The agent fixes exactly that element. You don't regenerate the deck and lose changes on slides 1–3."
+        },
+        {
+          "type": "comparison-table",
+          "title": "open-slide vs. Generic AI Slide Tools",
+          "columns": [
+            "Dimension",
+            "Gamma / Tome / Beautiful.ai",
+            "open-slide"
+          ],
+          "rows": [
+            [
+              "Output format",
+              "Hosted, locked web view",
+              "Source files — React, deployable anywhere"
+            ],
+            [
+              "Agent role",
+              "One-shot: prompt → artifact",
+              "Ongoing authoring partner"
+            ],
+            [
+              "Review mechanism",
+              "Accept/reject finished deck",
+              "In-source @slide-comment markers"
+            ],
+            [
+              "Iteration model",
+              "Regenerate (loses edits on other slides)",
+              "Targeted /apply-comments (additive)"
+            ],
+            [
+              "Canvas",
+              "Abstracted away",
+              "Explicit 1920×1080 React canvas"
+            ],
+            [
+              "Agent lock-in",
+              "Proprietary prompt layer",
+              "Any coding agent — file-level interface"
+            ],
+            [
+              "Audience",
+              "Non-technical presenters",
+              "Developers / agent-orchestrating leads"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Why the Canvas Constraint Matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "Generic AI on a blank canvas puts all the constraint burden on the prompt. For slides, that means the agent has to infer layout, spacing, aspect ratios, and brand boundaries from natural language. It can produce reasonable output, but the revision path is blunt: regenerate or manually edit."
+        },
+        {
+          "type": "paragraph",
+          "text": "A fixed canvas + typed component model changes the agent's problem. The agent works inside real constraints: a known coordinate system, a defined slide boundary, typed slide components it can read and modify. This is the same logic behind linters directing agent code — the constraint isn't limiting what the agent can do, it's defining the interface contract that makes bidirectional iteration possible."
+        },
+        {
+          "type": "paragraph",
+          "text": "The AGENTS.md rules in the repo reinforce this. Biome compliance before commit, no casual dependency additions, comment-free-by-default code. These aren't style preferences — they're the kinds of rules that define how a second party (human reviewer or second agent) reads the artifact."
+        },
+        {
+          "type": "callout",
+          "label": "AGENTS.md as Interface Contract",
+          "text": "\"Write no comments by default — only when the WHY is non-obvious.\" This isn't a style preference. It's a lint rule for shared readability between a human reviewer and a second agent. The constraint defines how a third party reads the artifact."
+        },
+        {
+          "type": "heading",
+          "text": "The @slide-comment Loop as an Engineering Pattern"
+        },
+        {
+          "type": "paragraph",
+          "text": "What's happening here is a micro plan → act → review cycle, implemented at the surface level. The agent proposes. The human inspects and annotates in-context. The agent revises. The markers clear. Repeat."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is the same human-in-the-loop gating pattern that shows up in responsible agentic systems — except here it lives in a lightweight, single-session workflow rather than a multi-step pipeline. The canvas is the linter. The annotation is the interface. The source file is the contract."
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "label": "Independent Convergence",
+          "text": "Builder.io's Agent Native framework landed on \"Slides\" as one of 11 agent-native templates — with agent and UI as equal citizens. Two independent projects, no coordination, same structural bet. When that happens, it's worth treating as a signal, not a coincidence."
+        },
+        {
+          "type": "heading",
+          "text": "What open-slide Gets Right"
+        },
+        {
+          "type": "paragraph",
+          "text": "Three things stand out from an engineering perspective."
+        },
+        {
+          "type": "paragraph",
+          "text": "File ownership: the agent works on a typed source artifact it can read and revise. There's no blob of generated output it has to reason around — the file is the artifact."
+        },
+        {
+          "type": "paragraph",
+          "text": "Bidirectional annotation without context switching: the @slide-comment markers feed directly into the agent's revision path. The human flags what's wrong in the medium where it matters — the visual surface — and the agent acts on it in the source."
+        },
+        {
+          "type": "paragraph",
+          "text": "No lock-in: any coding agent can drive the file layer. There's no proprietary prompt layer or agent infrastructure required. If your team uses Claude Code, Codex, or Cursor, this workflow plugs in without a platform migration."
+        },
+        {
+          "type": "key-takeaways",
+          "items": [
+            "File ownership — the agent works on a typed source artifact it can read and revise. No blob of generated output to reason around.",
+            "Bidirectional annotation without context switching — the human flags what needs changing on the visual surface; the agent receives it as source-level markers.",
+            "No lock-in — any coding agent (Claude Code, Codex, Cursor, Gemini CLI) drives the file layer. No proprietary platform required."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "What Remains Unproven"
+        },
+        {
+          "type": "paragraph",
+          "text": "These are the engineering questions worth watching: maintainer velocity at scale — single-maintainer repo with Claude-as-contributor, untested across larger contributor bases; non-developer adoption — CLI scaffold and TypeScript workspace assume developer context, whether this reaches PMs and researchers is unresolved; multi-agent workflows — current loop is one human plus one agent, collaborative agent teams are unexplored; quality benchmarks — no public evals for slide quality, accessibility, or brand consistency; enterprise requirements — SSO, audit logs, compliance archives remain unaddressed."
+        },
+        {
+          "type": "scenario-ladder",
+          "title": "Engineering Questions Worth Watching",
+          "scenarios": [
+            {
+              "label": "Scale risk",
+              "text": "Single-maintainer repo with Claude-as-contributor. No evidence the pattern sustains across a larger contributor base or more complex feature work."
+            },
+            {
+              "label": "Adoption ceiling",
+              "text": "CLI scaffold and TypeScript workspace assume developer context. Whether this reaches PMs, founders, or researchers — the broader deck-making market — is unresolved."
+            },
+            {
+              "label": "Multi-agent gaps",
+              "text": "Current loop is one human + one agent. Whether collaborative agent teams (draft → edit → review) map cleanly onto this surface is unexplored."
+            }
+          ]
+        },
+        {
+          "type": "verdict",
+          "label": "Bottom Line for Technical Leads",
+          "text": "open-slide is a small project. Its value isn't in its star count — it's in the engineering pattern it demonstrates. The combination of constrained visual substrate, bidirectional annotation interface, and source-owned artifact layer is a reproducible design pattern that will show up beyond slides. If you're evaluating how to build agent-human collaboration into visual workflows, this is a concrete data point worth understanding at the engineering level."
+        }
+      ]
+    },
+    {
+      "slug": "from-chatbot-to-workflow",
+      "title": "From Chatbot to Workflow",
+      "section": "ai-research",
+      "summary": "Why AI agents need task systems, not just better prompts — and what workflow infrastructure actually provides that prompts cannot.",
+      "date": "2026-05-05",
+      "tags": [
+        "ai",
+        "agents",
+        "workflow",
+        "orchestration",
+        "infrastructure",
+        "data-science"
+      ],
+      "readingTime": 8,
+      "format": "workflow",
+      "perspective": "operator",
+      "relatedSlugs": [
+        "agentic-inference-memory-io-pressure-indicator"
+      ],
+      "content": [
+        {
+          "type": "thesis-card",
+          "label": "Core Thesis",
+          "title": "The bottleneck is not prompting — it is the absence of task infrastructure.",
+          "text": "Once AI work becomes multi-step, the winning system is not the cleverest prompt. It is workflow, state management, review gates, and orchestration. Better prompts improve individual outputs. Task systems improve reliable output at scale."
+        },
+        {
+          "type": "key-takeaways",
+          "items": [
+            "Chat interfaces are built for one-shot answers — they are not designed as production operating environments for AI systems.",
+            "Task systems add: durable state, structured handoffs, review gates, and observability — capabilities prompts alone cannot provide.",
+            "The practical shift: from 'how do I prompt better?' to 'what task system do I need to run this reliably in production?'",
+            "Kanban-style orchestration turns multi-agent pipelines into auditable, retryable, human-in-the-loop workflows."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "The Problem With One-Shot Thinking"
+        },
+        {
+          "type": "paragraph",
+          "text": "The standard mental model for AI-assisted work is still a single-turn exchange: you prompt, it responds, you done. Even with sophisticated prompting — chain-of-thought, few-shot, system-level instructions — you're still operating inside a paradigm designed for one-shot answers."
+        },
+        {
+          "type": "paragraph",
+          "text": "This works for tasks that are genuinely one-shot: a translation, a code snippet, a quick summarisation. But a large class of real developer and DS workflows are not one-shot. They involve multi-step reasoning with mid-course corrections, tracking state across long horizons, handing off partial work between agents or between an agent and a human, review gates where output must meet a standard before proceeding, and observability: knowing what ran, when, why, and what changed."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "label": "Key insight",
+          "text": "Better prompts don't solve any of these. They can't. The problem isn't the quality of the prompt — it's the absence of a task system underneath it."
+        },
+        {
+          "type": "heading",
+          "text": "What a Task System Actually Does"
+        },
+        {
+          "type": "paragraph",
+          "text": "A task system is infrastructure for agentic work. It sits under the prompt layer and provides four capabilities that prompts alone cannot."
+        },
+        {
+          "type": "comparison-table",
+          "title": "Chatbot vs Workflow System",
+          "columns": [
+            "Dimension",
+            "Chatbot (prompt-only)",
+            "Workflow System"
+          ],
+          "rows": [
+            [
+              "Unit of work",
+              "One reply",
+              "Multi-step task"
+            ],
+            [
+              "State",
+              "Mostly transient",
+              "Persistent task state"
+            ],
+            [
+              "Quality control",
+              "User manually checks",
+              "Built-in review gates"
+            ],
+            [
+              "Failure handling",
+              "Human re-prompts",
+              "Retry / reassign automatically"
+            ],
+            [
+              "Multi-agent",
+              "Not native",
+              "First-class coordination"
+            ],
+            [
+              "Observability",
+              "Black box",
+              "Full audit trail"
+            ]
+          ]
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Persistence: A task has durable identity and state that survives any single session or API call. An agent can pick up work it started yesterday without re-explaining context.",
+            "Structured Handoffs: When one agent finishes a piece of work and another needs to continue, a handoff is a state transition — not a prompt. The receiving agent reads what happened, why, and what the constraints are for the next step.",
+            "Review and Gatekeeping: A review step isn't a revision prompt — it's a mechanism that stops forward progress until a condition is met. This creates the difference between \"the AI suggested it\" and \"the system approved it.\"",
+            "Observability: Who did what, when, for how long, and with what result. Without this, agent runs are black boxes. With it, you can audit, debug, and improve."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "The Shift: From Chat Interface to Workflow Runtime"
+        },
+        {
+          "type": "paragraph",
+          "text": "The dominant AI product interface — the chat window — is a reasonable default for exploration and one-off tasks. But it was never designed as an operating environment for production AI systems."
+        },
+        {
+          "type": "paragraph",
+          "text": "A workflow runtime is event-driven (actions trigger based on state changes, not user prompts), long-horizon (tasks can span hours or days), multi-agent (multiple agents can work in parallel or sequence with state coordination), and human-in-the-loop capable (review steps, approval gates, and manual override points are native concepts)."
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "label": "Operational question",
+          "text": "The practical consequence for DS leads: the question is no longer \"how do I prompt this model better?\" The question is \"what task system do I need to run this model reliably in production?\""
+        },
+        {
+          "type": "heading",
+          "text": "Case Study: Kanban-Style Task Orchestration for AI Agents"
+        },
+        {
+          "type": "paragraph",
+          "text": "The pattern that exemplifies this shift is treating AI agent work like a Kanban board — not metaphorically, but architecturally. Each unit of work is a task with a defined state (todo, in-progress, review, done), a responsible agent, an output the next stage can consume, and an optional human review gate before promotion."
+        },
+        {
+          "type": "flowchart",
+          "title": "Research Pipeline: Kanban-Style Multi-Agent Flow",
+          "steps": [
+            {
+              "label": "Researcher Agent",
+              "note": "Scans sources, drafts findings, writes intermediate output"
+            },
+            {
+              "label": "Analyst Agent",
+              "note": "Reviews findings for gaps, flags what's missing or unclear"
+            },
+            {
+              "label": "Human Review Gate",
+              "note": "DS lead approves before synthesis proceeds"
+            },
+            {
+              "label": "Writer Agent",
+              "note": "Synthesises approved findings into final deliverable"
+            },
+            {
+              "label": "Done + Archived",
+              "note": "Task closed, output durable, audit trail complete"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Each stage is auditable. Each output is durable. A human reviewer can intercede at any checkpoint. And if any stage fails or produces unsatisfactory output, the system handles retry and reassignment — not a human re-prompting from scratch."
+        },
+        {
+          "type": "heading",
+          "text": "Why This Matters for Data Science Teams Specifically"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Evaluation becomes a workflow problem, not a prompt problem. With multi-step agent pipelines, \"is this good?\" is a question you ask at each transition. Per-task, per-stage evaluation frameworks become necessary.",
+            "Agent reliability requires state management. Agents lose context, hit limits, and produce inconsistent outputs across runs. Durable task state is what lets you operate AI infrastructure with confidence rather than hope.",
+            "Multi-agent coordination introduces failure modes that single-prompt setups don't have. Structured workflows with explicit checkpoints catch failures closer to the source.",
+            "The operational question changes. Instead of \"which model should we use?\", the questions become: \"what does our agent workflow look like?\", \"where do we need review gates?\", and \"how do we observe what our agents are actually doing?\""
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Better prompts improve individual outputs. Task systems improve reliable output at scale."
+        },
+        {
+          "type": "verdict",
+          "label": "Bottom line",
+          "text": "For teams deploying AI agents beyond one-off tasks, the investment that pays off is not more prompting talent — it's workflow infrastructure. Durable state, structured handoffs, review gates, and observability. The DS leads best positioned for the next wave of AI infrastructure are the ones already thinking in terms of workflows, not just prompts."
+        }
+      ]
+    },
+    {
+      "slug": "palantir-rule-of-40-deep-dive",
+      "title": "Palantir and the 127% Rule of 40 — When Growth Obscures Price",
+      "section": "financial-research",
+      "summary": "PLTR posts a 127% Rule of 40 score. The quality is real — but at 287x forward P/E, the bar for delivering the number is unforgiving.",
+      "date": "2026-05-05",
+      "tags": [
+        "investing",
+        "ai",
+        "saas",
+        "palantir",
+        "rule-of-40",
+        "valuation"
+      ],
+      "readingTime": 7,
+      "format": "thesis",
+      "perspective": "investor",
+      "relatedSlugs": [],
+      "content": [
+        {
+          "type": "thesis-card",
+          "label": "Core Thesis",
+          "title": "PLTR's 127% Rule of 40 score is legitimate — but it is already priced in.",
+          "text": "The business is exceptional by software quality metrics: 70% revenue growth, 57% EBITDA margin, 119% net revenue retention, and a government moat that commercial software can't replicate. At $94 and a forward P/E approaching 300x, the equity is priced for everything to go right — including the government segment decelerating at precisely the wrong moment."
+        },
+        {
+          "type": "metric-strip",
+          "title": "Q1 2025 Operational Scorecard",
+          "metrics": [
+            {
+              "label": "Revenue Growth (YoY)",
+              "value": "70%",
+              "note": "Total revenue $886M"
+            },
+            {
+              "label": "EBITDA Margin",
+              "value": "57%",
+              "note": "Rule of 40 score: 127%"
+            },
+            {
+              "label": "Net Revenue Retention",
+              "value": "119%",
+              "note": "Existing cohort expansion"
+            },
+            {
+              "label": "Forward P/E",
+              "value": "~287x",
+              "note": "On Q1 run-rate"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "The Numbers Behind the Score"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Rule of 40 framework — revenue growth rate plus EBITDA margin — is a quality-at-scale screen. A score above 40% is considered healthy for a mature software business. PLTR's 127% puts it in rare company: the kind of number that makes fundamental investors pay attention before they even check the multiple."
+        },
+        {
+          "type": "paragraph",
+          "text": "Drilling in: 70% total revenue growth was driven by 55% commercial revenue growth, with U.S. commercial specifically up 40%. The government segment — which PLTR has been trying to de-emphasize narratively — still anchors the base and provides the contract durability that makes the commercial expansion credible to enterprise buyers."
+        },
+        {
+          "type": "paragraph",
+          "text": "The 119% NRR tells the upsell story: existing customers are spending more year-over-year. That is exactly what a platform flywheel should produce. AIP, PLTR's AI-enabled data operating system, is the mechanism through which existing government contracts are expanding and new commercial logos are being added."
+        },
+        {
+          "type": "heading",
+          "text": "Where the Bull Case Lives"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Government moat is structural, not cyclical. Defense and intelligence budgets are entitlement programs with high switching costs — PLTR is embedded in operational workflows that take years to migrate.",
+            "AIP is expanding addressable market. Moving from data integration (the legacy Ontology platform) to AI-powered inference against that data stack opens enterprise buyers who previously found PLTR too complex.",
+            "57% EBITDA margin means the company is already highly profitable at scale — not burning cash to fund growth."
+          ]
+        },
+        {
+          "type": "comparison-table",
+          "title": "PLTR vs High-Growth SaaS Comp Benchmarks",
+          "columns": [
+            "Metric",
+            "PLTR Q1 2025",
+            "High-Growth SaaS Median"
+          ],
+          "rows": [
+            [
+              "Revenue Growth",
+              "70%",
+              "25-35%"
+            ],
+            [
+              "EBITDA Margin",
+              "57%",
+              "10-20%"
+            ],
+            [
+              "NRR",
+              "119%",
+              "110-115%"
+            ],
+            [
+              "Rule of 40 Score",
+              "127%",
+              "35-55%"
+            ],
+            [
+              "Forward P/E",
+              "~287x",
+              "40-80x (elevated)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "The Bear's Case — and Why It Matters"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "At $94 and ~$92B market cap, the stock requires PLTR to keep delivering 70%+ growth into a large base. The math gets harder: a 70% growth rate on $3.5B revenue is $6B in new ARR equivalent — against a comp set that grows 25-30%.",
+            "U.S. commercial deceleration is a live risk. 40% U.S. commercial growth sounds exceptional until you remember that PLTR's commercial segment started from a small base. The absolute dollar magnitude of incremental commercial revenue needs to keep accelerating for the multiple to hold.",
+            "Government concentration risk is underpriced. PLTR's most durable contracts also represent its most politically exposed segment. A defense budget renegotiation or a contract restructuring would hit the narrative faster than the fundamentals.",
+            "Valuation demands perfection. 287x forward P/E gives the stock essentially zero room for a growth scare, a government shutdown, or a commercial beat that isn't large enough."
+          ]
+        },
+        {
+          "type": "scenario-ladder",
+          "title": "PLTR Price Scenarios Over 12 Months",
+          "scenarios": [
+            {
+              "label": "Bull",
+              "probability": "20%",
+              "outcome": "+30-40%",
+              "description": "Commercial acceleration accelerates further, government stays stable, AIP drives material new logos. Stock tests $130+."
+            },
+            {
+              "label": "Base",
+              "probability": "50%",
+              "outcome": "Flat to +10%",
+              "description": "Numbers hit but guidance doesn't surprise. Growth rate normalizes toward 50%. Multiple compresses slightly as growth deceleration is priced. Stock drifts to $100-105."
+            },
+            {
+              "label": "Bear",
+              "probability": "30%",
+              "outcome": "-25-40%",
+              "description": "Commercial growth slows to 25-30%, government segment disappoints, or a large deal slips. Multiple derates. Stock returns to $60-70 range."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "label": "Valuation context",
+          "text": "The highest-quality SaaS businesses in history have rarely sustained 70% revenue growth at $90B+ market caps. The historical precedents — Salesforce, ServiceNow — took significant multiple compression before recovering. PLTR is not expensive by narrative. It is expensive by the math of what it needs to deliver."
+        },
+        {
+          "type": "quote",
+          "text": "A 127% Rule of 40 score is one of the best in software. The question is what multiple that score deserves when the market has already assigned it."
+        },
+        {
+          "type": "verdict",
+          "label": "Bottom line",
+          "text": "PLTR is an exceptional business executing well. The quality metrics — margin, retention, growth — are real. But at ~287x forward P/E, the equity is not priced for a good business; it is priced for a generational software franchise delivering at the high end of its range for years. The risk/reward at current prices favors keeping this on the watchlist rather than building a position. If the stock pulls back 25-30% on a growth scare, the calculus changes materially."
+        }
+      ]
+    },
+    {
+      "slug": "cerebras-ipo-wafer-scale-inference",
+      "title": "Cerebras IPO — Wafer-Scale Inference and the $4B Question",
+      "section": "financial-research",
+      "summary": "Cerebras comes to market at $4B valuation with $510M revenue and an unusual architectural bet: bigger is better. The numbers tell a compelling but concentrated story.",
+      "date": "2026-05-05",
+      "tags": [
+        "investing",
+        "ai",
+        "semiconductors",
+        "ipo",
+        "cerebras",
+        "inference",
+        "wse"
+      ],
+      "readingTime": 7,
+      "format": "thesis",
+      "perspective": "investor",
+      "relatedSlugs": [],
+      "content": [
+        {
+          "type": "thesis-card",
+          "label": "Core Thesis",
+          "title": "Cerebras has real revenue and real technology — but an 86% revenue concentration in a single geographic partnership is not a growth story, it is a concentration risk.",
+          "text": "The wafer-scale engine architecture is genuinely differentiated for a specific workload: large-context inference where memory bandwidth is the bottleneck. The OpenAI MRA alone justifies a baseline revenue stream. But at a $4B IPO valuation against $510M revenue and a 76% growth rate, the valuation requires the rest of the business to develop faster than any inference-first semiconductor has managed historically."
+        },
+        {
+          "type": "metric-strip",
+          "title": "Cerebras IPO Snapshot",
+          "metrics": [
+            {
+              "label": "Revenue (FY2024 est.)",
+              "value": "~$510M",
+              "note": "~76% YoY growth"
+            },
+            {
+              "label": "OpenAI MRA",
+              "value": "$20B+",
+              "note": "800k wafers/year"
+            },
+            {
+              "label": "UAE/G42 Revenue Share",
+              "value": "86%",
+              "note": "Geographic concentration"
+            },
+            {
+              "label": "IPO Valuation",
+              "value": "$4B",
+              "note": "vs GPU incumbents at 20x+ revenue"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "The Wafer-Scale Bet"
+        },
+        {
+          "type": "paragraph",
+          "text": "The WSE-3 (Wafer Scale Engine 3) is Cerebras's core differentiator: a single silicon wafer containing 900,000 AI cores and 82GB of on-chip SRAM. The architectural argument is that for large-model inference — particularly long-context tasks where the model exceeds GPU memory and requires multi-GPU partitioning — the communication overhead between chips becomes the bottleneck, not compute."
+        },
+        {
+          "type": "flowchart",
+          "title": "Wafer-Scale vs GPU: When Bigger Wins",
+          "steps": [
+            {
+              "label": "Short Context / Standard Inference",
+              "note": "GPU cluster preferred — cost/performance optimal"
+            },
+            {
+              "label": "Long Context (100K+ tokens)",
+              "note": "Memory bandwidth bottleneck — WSE advantage grows"
+            },
+            {
+              "label": "Multi-GPU Partitioning Overhead",
+              "note": "Communication fabric limits GPU scaling"
+            },
+            {
+              "label": "WSE Single-Wafer Solution",
+              "note": "On-chip SRAM eliminates partition overhead"
+            },
+            {
+              "label": "Inference Cost Curve",
+              "note": "WSE economics improve non-linearly at large context"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This is not a general-purpose argument. Cerebras is not trying to replace NVIDIA's GPU cluster for training or short-context inference. The pitch is specifically: if your workload is large-context AI — legal document analysis, whole-codebase reasoning, genomic sequence processing — wafer-scale inference delivers a step-change in performance per watt and per dollar at sufficient scale."
+        },
+        {
+          "type": "heading",
+          "text": "The Numbers"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "$510M revenue with 76% growth is a credible software-like growth rate for a semiconductor company — but the growth rate is from a small base, and the quality of that revenue matters.",
+            "$20B+ MRA (maximum revenue arrangement) from OpenAI is the anchor contract. 800,000 wafers per year at reported pricing implies a substantial long-term revenue floor, assuming OpenAI's inference demand continues to scale.",
+            "86% revenue concentration in the UAE/G42 partnership is the critical risk. G42 (Abu Dhabi's AI champion) is both Cerebras's largest customer and a geopolitical asset operating in a region where U.S.-China technology competition is acute. This is not a diversified enterprise SaaS revenue base — it is a single-region strategic relationship."
+          ]
+        },
+        {
+          "type": "comparison-table",
+          "title": "Cerebras vs GPU Incumbents — Valuation Comparison",
+          "columns": [
+            "Metric",
+            "Cerebras (IPO)",
+            "NVIDIA (GPU Incumbents)",
+            "Groq"
+          ],
+          "rows": [
+            [
+              "Revenue",
+              "$510M",
+              "$130B+",
+              "$100-200M est."
+            ],
+            [
+              "Growth",
+              "76%",
+              "~100% (trailing)",
+              "High (early stage)"
+            ],
+            [
+              "Valuation",
+              "$4B",
+              "$3T+",
+              "$2.5B (rumored)"
+            ],
+            [
+              "Revenue Multiple",
+              "~8x",
+              "~25x",
+              "~15-20x"
+            ],
+            [
+              "Key Customer",
+              "G42/OpenAI",
+              "Hyperscale (diversified)",
+              "Systran, others"
+            ],
+            [
+              "Architecture",
+              "Wafer-scale (WSE-3)",
+              "GPU cluster",
+              "LPU (deterministic)"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "What the Investor Should Actually Focus On"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "The OpenAI MRA is the floor, not the ceiling. $20B+ in maximum revenue arrangements sounds large but is structured against OpenAI's inference scaling. Whether that inference volume materializes and at what ASPs determines actual revenue recognition.",
+            "Geographic diversification is the real story to watch post-IPO. G42 partnership is valuable but the question is whether Cerebras can replicate that model with U.S. hyperscalers, European sovereign AI, or Asian partners.",
+            "The inference economics story needs a public reference customer beyond G42. Right now the customer base is thin on disclosed enterprise or hyperscaler references.",
+            "WSE-4 development cadence matters. The semiconductor roadmap — process node, memory capacity, power efficiency — is the competitive moat. Competitors (especially Groq with its deterministic LPUs) are advancing quickly."
+          ]
+        },
+        {
+          "type": "scenario-ladder",
+          "title": "Cerebras IPO Scenarios",
+          "scenarios": [
+            {
+              "label": "Bull",
+              "probability": "25%",
+              "outcome": "+50-80%",
+              "description": "U.S. hyperscaler wins disclosed, G42 MRA converts to recognized revenue faster, WSE-4 tape-out successful. Stock rerates toward GPU-companion peers at 15-20x revenue."
+            },
+            {
+              "label": "Base",
+              "probability": "45%",
+              "outcome": "+10-25%",
+              "description": "G42 revenue holds, OpenAI MRA converts steadily, no dramatic U.S. expansion but no major customer loss. Stock debuts in a reasonable range and drifts up with execution."
+            },
+            {
+              "label": "Bear",
+              "probability": "30%",
+              "outcome": "-30-50%",
+              "description": "G42 relationship politically disrupted (UAE-China tech tensions), OpenAI inference demand slows, or Groq/ASIC competition erodes WSE value proposition. Stock falls toward cash/asset value."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "insight",
+          "label": "Investor context",
+          "text": "Suntr凌's reported $50M crossover investment (from T. Rowe Price heritage) signals that at least one institutional crossover fund sees Cerebras as a long-duration infrastructure bet, not a quick flip. That is meaningful signal for a semiconductor IPO."
+        },
+        {
+          "type": "quote",
+          "text": "Wafer-scale inference is a real architectural bet. The question is whether the workload shift toward large-context AI happens fast enough and at sufficient scale to justify owning the only company pursuing it commercially."
+        },
+        {
+          "type": "verdict",
+          "label": "Bottom line",
+          "text": "Cerebras IPO is worth watching — not because the $4B valuation is obviously cheap or expensive, but because wafer-scale inference is the clearest architectural differentiation in AI semiconductors since Groq's deterministic LPUs. The G42 revenue concentration is a real risk that deserves weight. The ideal entry point is post-lockup or on a growth scare related to inference capex cycles. At $510M revenue and 76% growth, this is a business in early innings — but the timing of the IPO reflects a window, not necessarily optimal conditions for public shareholders."
         }
       ]
     },
     {
       "slug": "ai-power-semis-wolfspeed-onsemi-infineon",
-      "title": "AI Power Semis \u2014 Wolfspeed vs onsemi vs Infineon",
+      "title": "AI Power Semis — Wolfspeed vs onsemi vs Infineon",
       "section": "financial-research",
       "summary": "Three ways to express the AI power theme, but with very different quality, risk, and valuation profiles.",
       "date": "2026-05-02",
@@ -386,60 +1675,6 @@
       ]
     },
     {
-      "slug": "china-ai-infrastructure-hidden-power-play",
-      "title": "China AI Infrastructure \u2014 The Hidden Power Play",
-      "section": "financial-research",
-      "summary": "The better AI expression may sit in power, grid, and equipment layers rather than platform headlines.",
-      "date": "2026-04-09",
-      "tags": [
-        "investing",
-        "china",
-        "ai",
-        "infrastructure",
-        "energy"
-      ],
-      "readingTime": 8,
-      "format": "thesis",
-      "perspective": "investor",
-      "relatedSlugs": [
-        "ai-power-semis-wolfspeed-onsemi-infineon"
-      ],
-      "content": [
-        {
-          "type": "paragraph",
-          "text": "China's AI buildout is not only a software or GPU story. It is also a power-demand story, and the market still underprices the equipment and generation layers that make that buildout physically possible."
-        },
-        {
-          "type": "heading",
-          "text": "The chain"
-        },
-        {
-          "type": "paragraph",
-          "text": "LLM deployment growth drives data-center load, which drives electricity demand, which then pushes value toward generation assets, power equipment, and grid-enabling suppliers."
-        },
-        {
-          "type": "heading",
-          "text": "What the investor should care about"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Visible backlog beats vague AI narrative.",
-            "Dispatchable power and equipment order flow matter more than headline model launches.",
-            "The best setups are where AI demand upgrades an already investable business, not where AI is the only story holding up the multiple."
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Practical read"
-        },
-        {
-          "type": "paragraph",
-          "text": "This lens naturally pushes attention toward names tied to energized power, nuclear buildout, backup generation, and electrical equipment \u2014 not just cloud or application winners."
-        }
-      ]
-    },
-    {
       "slug": "agentic-inference-memory-io-pressure-indicator",
       "title": "Agentic Inference Memory / I-O Pressure Indicator",
       "section": "ai-research",
@@ -490,901 +1725,56 @@
       ]
     },
     {
-      "slug": "from-chatbot-to-workflow",
-      "title": "From Chatbot to Workflow",
-      "section": "ai-research",
-      "summary": "Why AI agents need task systems, not just better prompts \u2014 and what workflow infrastructure actually provides that prompts cannot.",
-      "date": "2026-05-05",
+      "slug": "china-ai-infrastructure-hidden-power-play",
+      "title": "China AI Infrastructure — The Hidden Power Play",
+      "section": "financial-research",
+      "summary": "The better AI expression may sit in power, grid, and equipment layers rather than platform headlines.",
+      "date": "2026-04-09",
       "tags": [
+        "investing",
+        "china",
         "ai",
-        "agents",
-        "workflow",
-        "orchestration",
         "infrastructure",
-        "data-science"
+        "energy"
       ],
       "readingTime": 8,
-      "format": "workflow",
-      "perspective": "operator",
-      "relatedSlugs": [
-        "agentic-inference-memory-io-pressure-indicator"
-      ],
-      "content": [
-        {
-          "type": "thesis-card",
-          "label": "Core Thesis",
-          "title": "The bottleneck is not prompting \u2014 it is the absence of task infrastructure.",
-          "text": "Once AI work becomes multi-step, the winning system is not the cleverest prompt. It is workflow, state management, review gates, and orchestration. Better prompts improve individual outputs. Task systems improve reliable output at scale."
-        },
-        {
-          "type": "key-takeaways",
-          "items": [
-            "Chat interfaces are built for one-shot answers \u2014 they are not designed as production operating environments for AI systems.",
-            "Task systems add: durable state, structured handoffs, review gates, and observability \u2014 capabilities prompts alone cannot provide.",
-            "The practical shift: from 'how do I prompt better?' to 'what task system do I need to run this reliably in production?'",
-            "Kanban-style orchestration turns multi-agent pipelines into auditable, retryable, human-in-the-loop workflows."
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "The Problem With One-Shot Thinking"
-        },
-        {
-          "type": "paragraph",
-          "text": "The standard mental model for AI-assisted work is still a single-turn exchange: you prompt, it responds, you done. Even with sophisticated prompting \u2014 chain-of-thought, few-shot, system-level instructions \u2014 you're still operating inside a paradigm designed for one-shot answers."
-        },
-        {
-          "type": "paragraph",
-          "text": "This works for tasks that are genuinely one-shot: a translation, a code snippet, a quick summarisation. But a large class of real developer and DS workflows are not one-shot. They involve multi-step reasoning with mid-course corrections, tracking state across long horizons, handing off partial work between agents or between an agent and a human, review gates where output must meet a standard before proceeding, and observability: knowing what ran, when, why, and what changed."
-        },
-        {
-          "type": "callout",
-          "variant": "warning",
-          "label": "Key insight",
-          "text": "Better prompts don't solve any of these. They can't. The problem isn't the quality of the prompt \u2014 it's the absence of a task system underneath it."
-        },
-        {
-          "type": "heading",
-          "text": "What a Task System Actually Does"
-        },
-        {
-          "type": "paragraph",
-          "text": "A task system is infrastructure for agentic work. It sits under the prompt layer and provides four capabilities that prompts alone cannot."
-        },
-        {
-          "type": "comparison-table",
-          "title": "Chatbot vs Workflow System",
-          "columns": [
-            "Dimension",
-            "Chatbot (prompt-only)",
-            "Workflow System"
-          ],
-          "rows": [
-            [
-              "Unit of work",
-              "One reply",
-              "Multi-step task"
-            ],
-            [
-              "State",
-              "Mostly transient",
-              "Persistent task state"
-            ],
-            [
-              "Quality control",
-              "User manually checks",
-              "Built-in review gates"
-            ],
-            [
-              "Failure handling",
-              "Human re-prompts",
-              "Retry / reassign automatically"
-            ],
-            [
-              "Multi-agent",
-              "Not native",
-              "First-class coordination"
-            ],
-            [
-              "Observability",
-              "Black box",
-              "Full audit trail"
-            ]
-          ]
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Persistence: A task has durable identity and state that survives any single session or API call. An agent can pick up work it started yesterday without re-explaining context.",
-            "Structured Handoffs: When one agent finishes a piece of work and another needs to continue, a handoff is a state transition \u2014 not a prompt. The receiving agent reads what happened, why, and what the constraints are for the next step.",
-            "Review and Gatekeeping: A review step isn't a revision prompt \u2014 it's a mechanism that stops forward progress until a condition is met. This creates the difference between \"the AI suggested it\" and \"the system approved it.\"",
-            "Observability: Who did what, when, for how long, and with what result. Without this, agent runs are black boxes. With it, you can audit, debug, and improve."
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "The Shift: From Chat Interface to Workflow Runtime"
-        },
-        {
-          "type": "paragraph",
-          "text": "The dominant AI product interface \u2014 the chat window \u2014 is a reasonable default for exploration and one-off tasks. But it was never designed as an operating environment for production AI systems."
-        },
-        {
-          "type": "paragraph",
-          "text": "A workflow runtime is event-driven (actions trigger based on state changes, not user prompts), long-horizon (tasks can span hours or days), multi-agent (multiple agents can work in parallel or sequence with state coordination), and human-in-the-loop capable (review steps, approval gates, and manual override points are native concepts)."
-        },
-        {
-          "type": "callout",
-          "variant": "insight",
-          "label": "Operational question",
-          "text": "The practical consequence for DS leads: the question is no longer \"how do I prompt this model better?\" The question is \"what task system do I need to run this model reliably in production?\""
-        },
-        {
-          "type": "heading",
-          "text": "Case Study: Kanban-Style Task Orchestration for AI Agents"
-        },
-        {
-          "type": "paragraph",
-          "text": "The pattern that exemplifies this shift is treating AI agent work like a Kanban board \u2014 not metaphorically, but architecturally. Each unit of work is a task with a defined state (todo, in-progress, review, done), a responsible agent, an output the next stage can consume, and an optional human review gate before promotion."
-        },
-        {
-          "type": "flowchart",
-          "title": "Research Pipeline: Kanban-Style Multi-Agent Flow",
-          "steps": [
-            {
-              "label": "Researcher Agent",
-              "note": "Scans sources, drafts findings, writes intermediate output"
-            },
-            {
-              "label": "Analyst Agent",
-              "note": "Reviews findings for gaps, flags what's missing or unclear"
-            },
-            {
-              "label": "Human Review Gate",
-              "note": "DS lead approves before synthesis proceeds"
-            },
-            {
-              "label": "Writer Agent",
-              "note": "Synthesises approved findings into final deliverable"
-            },
-            {
-              "label": "Done + Archived",
-              "note": "Task closed, output durable, audit trail complete"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "Each stage is auditable. Each output is durable. A human reviewer can intercede at any checkpoint. And if any stage fails or produces unsatisfactory output, the system handles retry and reassignment \u2014 not a human re-prompting from scratch."
-        },
-        {
-          "type": "heading",
-          "text": "Why This Matters for Data Science Teams Specifically"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Evaluation becomes a workflow problem, not a prompt problem. With multi-step agent pipelines, \"is this good?\" is a question you ask at each transition. Per-task, per-stage evaluation frameworks become necessary.",
-            "Agent reliability requires state management. Agents lose context, hit limits, and produce inconsistent outputs across runs. Durable task state is what lets you operate AI infrastructure with confidence rather than hope.",
-            "Multi-agent coordination introduces failure modes that single-prompt setups don't have. Structured workflows with explicit checkpoints catch failures closer to the source.",
-            "The operational question changes. Instead of \"which model should we use?\", the questions become: \"what does our agent workflow look like?\", \"where do we need review gates?\", and \"how do we observe what our agents are actually doing?\""
-          ]
-        },
-        {
-          "type": "quote",
-          "text": "Better prompts improve individual outputs. Task systems improve reliable output at scale."
-        },
-        {
-          "type": "verdict",
-          "label": "Bottom line",
-          "text": "For teams deploying AI agents beyond one-off tasks, the investment that pays off is not more prompting talent \u2014 it's workflow infrastructure. Durable state, structured handoffs, review gates, and observability. The DS leads best positioned for the next wave of AI infrastructure are the ones already thinking in terms of workflows, not just prompts."
-        }
-      ]
-    },
-    {
-      "slug": "palantir-rule-of-40-deep-dive",
-      "title": "Palantir and the 127% Rule of 40 \u2014 When Growth Obscures Price",
-      "section": "financial-research",
-      "summary": "PLTR posts a 127% Rule of 40 score. The quality is real \u2014 but at 287x forward P/E, the bar for delivering the number is unforgiving.",
-      "date": "2026-05-05",
-      "tags": [
-        "investing",
-        "ai",
-        "saas",
-        "palantir",
-        "rule-of-40",
-        "valuation"
-      ],
-      "readingTime": 7,
       "format": "thesis",
       "perspective": "investor",
-      "relatedSlugs": [],
-      "content": [
-        {
-          "type": "thesis-card",
-          "label": "Core Thesis",
-          "title": "PLTR's 127% Rule of 40 score is legitimate \u2014 but it is already priced in.",
-          "text": "The business is exceptional by software quality metrics: 70% revenue growth, 57% EBITDA margin, 119% net revenue retention, and a government moat that commercial software can't replicate. At $94 and a forward P/E approaching 300x, the equity is priced for everything to go right \u2014 including the government segment decelerating at precisely the wrong moment."
-        },
-        {
-          "type": "metric-strip",
-          "title": "Q1 2025 Operational Scorecard",
-          "metrics": [
-            {
-              "label": "Revenue Growth (YoY)",
-              "value": "70%",
-              "note": "Total revenue $886M"
-            },
-            {
-              "label": "EBITDA Margin",
-              "value": "57%",
-              "note": "Rule of 40 score: 127%"
-            },
-            {
-              "label": "Net Revenue Retention",
-              "value": "119%",
-              "note": "Existing cohort expansion"
-            },
-            {
-              "label": "Forward P/E",
-              "value": "~287x",
-              "note": "On Q1 run-rate"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "The Numbers Behind the Score"
-        },
-        {
-          "type": "paragraph",
-          "text": "The Rule of 40 framework \u2014 revenue growth rate plus EBITDA margin \u2014 is a quality-at-scale screen. A score above 40% is considered healthy for a mature software business. PLTR's 127% puts it in rare company: the kind of number that makes fundamental investors pay attention before they even check the multiple."
-        },
-        {
-          "type": "paragraph",
-          "text": "Drilling in: 70% total revenue growth was driven by 55% commercial revenue growth, with U.S. commercial specifically up 40%. The government segment \u2014 which PLTR has been trying to de-emphasize narratively \u2014 still anchors the base and provides the contract durability that makes the commercial expansion credible to enterprise buyers."
-        },
-        {
-          "type": "paragraph",
-          "text": "The 119% NRR tells the upsell story: existing customers are spending more year-over-year. That is exactly what a platform flywheel should produce. AIP, PLTR's AI-enabled data operating system, is the mechanism through which existing government contracts are expanding and new commercial logos are being added."
-        },
-        {
-          "type": "heading",
-          "text": "Where the Bull Case Lives"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "Government moat is structural, not cyclical. Defense and intelligence budgets are entitlement programs with high switching costs \u2014 PLTR is embedded in operational workflows that take years to migrate.",
-            "AIP is expanding addressable market. Moving from data integration (the legacy Ontology platform) to AI-powered inference against that data stack opens enterprise buyers who previously found PLTR too complex.",
-            "57% EBITDA margin means the company is already highly profitable at scale \u2014 not burning cash to fund growth."
-          ]
-        },
-        {
-          "type": "comparison-table",
-          "title": "PLTR vs High-Growth SaaS Comp Benchmarks",
-          "columns": [
-            "Metric",
-            "PLTR Q1 2025",
-            "High-Growth SaaS Median"
-          ],
-          "rows": [
-            [
-              "Revenue Growth",
-              "70%",
-              "25-35%"
-            ],
-            [
-              "EBITDA Margin",
-              "57%",
-              "10-20%"
-            ],
-            [
-              "NRR",
-              "119%",
-              "110-115%"
-            ],
-            [
-              "Rule of 40 Score",
-              "127%",
-              "35-55%"
-            ],
-            [
-              "Forward P/E",
-              "~287x",
-              "40-80x (elevated)"
-            ]
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "The Bear's Case \u2014 and Why It Matters"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "At $94 and ~$92B market cap, the stock requires PLTR to keep delivering 70%+ growth into a large base. The math gets harder: a 70% growth rate on $3.5B revenue is $6B in new ARR equivalent \u2014 against a comp set that grows 25-30%.",
-            "U.S. commercial deceleration is a live risk. 40% U.S. commercial growth sounds exceptional until you remember that PLTR's commercial segment started from a small base. The absolute dollar magnitude of incremental commercial revenue needs to keep accelerating for the multiple to hold.",
-            "Government concentration risk is underpriced. PLTR's most durable contracts also represent its most politically exposed segment. A defense budget renegotiation or a contract restructuring would hit the narrative faster than the fundamentals.",
-            "Valuation demands perfection. 287x forward P/E gives the stock essentially zero room for a growth scare, a government shutdown, or a commercial beat that isn't large enough."
-          ]
-        },
-        {
-          "type": "scenario-ladder",
-          "title": "PLTR Price Scenarios Over 12 Months",
-          "scenarios": [
-            {
-              "label": "Bull",
-              "probability": "20%",
-              "outcome": "+30-40%",
-              "description": "Commercial acceleration accelerates further, government stays stable, AIP drives material new logos. Stock tests $130+."
-            },
-            {
-              "label": "Base",
-              "probability": "50%",
-              "outcome": "Flat to +10%",
-              "description": "Numbers hit but guidance doesn't surprise. Growth rate normalizes toward 50%. Multiple compresses slightly as growth deceleration is priced. Stock drifts to $100-105."
-            },
-            {
-              "label": "Bear",
-              "probability": "30%",
-              "outcome": "-25-40%",
-              "description": "Commercial growth slows to 25-30%, government segment disappoints, or a large deal slips. Multiple derates. Stock returns to $60-70 range."
-            }
-          ]
-        },
-        {
-          "type": "callout",
-          "variant": "warning",
-          "label": "Valuation context",
-          "text": "The highest-quality SaaS businesses in history have rarely sustained 70% revenue growth at $90B+ market caps. The historical precedents \u2014 Salesforce, ServiceNow \u2014 took significant multiple compression before recovering. PLTR is not expensive by narrative. It is expensive by the math of what it needs to deliver."
-        },
-        {
-          "type": "quote",
-          "text": "A 127% Rule of 40 score is one of the best in software. The question is what multiple that score deserves when the market has already assigned it."
-        },
-        {
-          "type": "verdict",
-          "label": "Bottom line",
-          "text": "PLTR is an exceptional business executing well. The quality metrics \u2014 margin, retention, growth \u2014 are real. But at ~287x forward P/E, the equity is not priced for a good business; it is priced for a generational software franchise delivering at the high end of its range for years. The risk/reward at current prices favors keeping this on the watchlist rather than building a position. If the stock pulls back 25-30% on a growth scare, the calculus changes materially."
-        }
-      ]
-    },
-    {
-      "slug": "cerebras-ipo-wafer-scale-inference",
-      "title": "Cerebras IPO \u2014 Wafer-Scale Inference and the $4B Question",
-      "section": "financial-research",
-      "summary": "Cerebras comes to market at $4B valuation with $510M revenue and an unusual architectural bet: bigger is better. The numbers tell a compelling but concentrated story.",
-      "date": "2026-05-05",
-      "tags": [
-        "investing",
-        "ai",
-        "semiconductors",
-        "ipo",
-        "cerebras",
-        "inference",
-        "wse"
-      ],
-      "readingTime": 7,
-      "format": "thesis",
-      "perspective": "investor",
-      "relatedSlugs": [],
-      "content": [
-        {
-          "type": "thesis-card",
-          "label": "Core Thesis",
-          "title": "Cerebras has real revenue and real technology \u2014 but an 86% revenue concentration in a single geographic partnership is not a growth story, it is a concentration risk.",
-          "text": "The wafer-scale engine architecture is genuinely differentiated for a specific workload: large-context inference where memory bandwidth is the bottleneck. The OpenAI MRA alone justifies a baseline revenue stream. But at a $4B IPO valuation against $510M revenue and a 76% growth rate, the valuation requires the rest of the business to develop faster than any inference-first semiconductor has managed historically."
-        },
-        {
-          "type": "metric-strip",
-          "title": "Cerebras IPO Snapshot",
-          "metrics": [
-            {
-              "label": "Revenue (FY2024 est.)",
-              "value": "~$510M",
-              "note": "~76% YoY growth"
-            },
-            {
-              "label": "OpenAI MRA",
-              "value": "$20B+",
-              "note": "800k wafers/year"
-            },
-            {
-              "label": "UAE/G42 Revenue Share",
-              "value": "86%",
-              "note": "Geographic concentration"
-            },
-            {
-              "label": "IPO Valuation",
-              "value": "$4B",
-              "note": "vs GPU incumbents at 20x+ revenue"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "The Wafer-Scale Bet"
-        },
-        {
-          "type": "paragraph",
-          "text": "The WSE-3 (Wafer Scale Engine 3) is Cerebras's core differentiator: a single silicon wafer containing 900,000 AI cores and 82GB of on-chip SRAM. The architectural argument is that for large-model inference \u2014 particularly long-context tasks where the model exceeds GPU memory and requires multi-GPU partitioning \u2014 the communication overhead between chips becomes the bottleneck, not compute."
-        },
-        {
-          "type": "flowchart",
-          "title": "Wafer-Scale vs GPU: When Bigger Wins",
-          "steps": [
-            {
-              "label": "Short Context / Standard Inference",
-              "note": "GPU cluster preferred \u2014 cost/performance optimal"
-            },
-            {
-              "label": "Long Context (100K+ tokens)",
-              "note": "Memory bandwidth bottleneck \u2014 WSE advantage grows"
-            },
-            {
-              "label": "Multi-GPU Partitioning Overhead",
-              "note": "Communication fabric limits GPU scaling"
-            },
-            {
-              "label": "WSE Single-Wafer Solution",
-              "note": "On-chip SRAM eliminates partition overhead"
-            },
-            {
-              "label": "Inference Cost Curve",
-              "note": "WSE economics improve non-linearly at large context"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "text": "This is not a general-purpose argument. Cerebras is not trying to replace NVIDIA's GPU cluster for training or short-context inference. The pitch is specifically: if your workload is large-context AI \u2014 legal document analysis, whole-codebase reasoning, genomic sequence processing \u2014 wafer-scale inference delivers a step-change in performance per watt and per dollar at sufficient scale."
-        },
-        {
-          "type": "heading",
-          "text": "The Numbers"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "$510M revenue with 76% growth is a credible software-like growth rate for a semiconductor company \u2014 but the growth rate is from a small base, and the quality of that revenue matters.",
-            "$20B+ MRA (maximum revenue arrangement) from OpenAI is the anchor contract. 800,000 wafers per year at reported pricing implies a substantial long-term revenue floor, assuming OpenAI's inference demand continues to scale.",
-            "86% revenue concentration in the UAE/G42 partnership is the critical risk. G42 (Abu Dhabi's AI champion) is both Cerebras's largest customer and a geopolitical asset operating in a region where U.S.-China technology competition is acute. This is not a diversified enterprise SaaS revenue base \u2014 it is a single-region strategic relationship."
-          ]
-        },
-        {
-          "type": "comparison-table",
-          "title": "Cerebras vs GPU Incumbents \u2014 Valuation Comparison",
-          "columns": [
-            "Metric",
-            "Cerebras (IPO)",
-            "NVIDIA (GPU Incumbents)",
-            "Groq"
-          ],
-          "rows": [
-            [
-              "Revenue",
-              "$510M",
-              "$130B+",
-              "$100-200M est."
-            ],
-            [
-              "Growth",
-              "76%",
-              "~100% (trailing)",
-              "High (early stage)"
-            ],
-            [
-              "Valuation",
-              "$4B",
-              "$3T+",
-              "$2.5B (rumored)"
-            ],
-            [
-              "Revenue Multiple",
-              "~8x",
-              "~25x",
-              "~15-20x"
-            ],
-            [
-              "Key Customer",
-              "G42/OpenAI",
-              "Hyperscale (diversified)",
-              "Systran, others"
-            ],
-            [
-              "Architecture",
-              "Wafer-scale (WSE-3)",
-              "GPU cluster",
-              "LPU (deterministic)"
-            ]
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "What the Investor Should Actually Focus On"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "The OpenAI MRA is the floor, not the ceiling. $20B+ in maximum revenue arrangements sounds large but is structured against OpenAI's inference scaling. Whether that inference volume materializes and at what ASPs determines actual revenue recognition.",
-            "Geographic diversification is the real story to watch post-IPO. G42 partnership is valuable but the question is whether Cerebras can replicate that model with U.S. hyperscalers, European sovereign AI, or Asian partners.",
-            "The inference economics story needs a public reference customer beyond G42. Right now the customer base is thin on disclosed enterprise or hyperscaler references.",
-            "WSE-4 development cadence matters. The semiconductor roadmap \u2014 process node, memory capacity, power efficiency \u2014 is the competitive moat. Competitors (especially Groq with its deterministic LPUs) are advancing quickly."
-          ]
-        },
-        {
-          "type": "scenario-ladder",
-          "title": "Cerebras IPO Scenarios",
-          "scenarios": [
-            {
-              "label": "Bull",
-              "probability": "25%",
-              "outcome": "+50-80%",
-              "description": "U.S. hyperscaler wins disclosed, G42 MRA converts to recognized revenue faster, WSE-4 tape-out successful. Stock rerates toward GPU-companion peers at 15-20x revenue."
-            },
-            {
-              "label": "Base",
-              "probability": "45%",
-              "outcome": "+10-25%",
-              "description": "G42 revenue holds, OpenAI MRA converts steadily, no dramatic U.S. expansion but no major customer loss. Stock debuts in a reasonable range and drifts up with execution."
-            },
-            {
-              "label": "Bear",
-              "probability": "30%",
-              "outcome": "-30-50%",
-              "description": "G42 relationship politically disrupted (UAE-China tech tensions), OpenAI inference demand slows, or Groq/ASIC competition erodes WSE value proposition. Stock falls toward cash/asset value."
-            }
-          ]
-        },
-        {
-          "type": "callout",
-          "variant": "insight",
-          "label": "Investor context",
-          "text": "Suntr\u51cc's reported $50M crossover investment (from T. Rowe Price heritage) signals that at least one institutional crossover fund sees Cerebras as a long-duration infrastructure bet, not a quick flip. That is meaningful signal for a semiconductor IPO."
-        },
-        {
-          "type": "quote",
-          "text": "Wafer-scale inference is a real architectural bet. The question is whether the workload shift toward large-context AI happens fast enough and at sufficient scale to justify owning the only company pursuing it commercially."
-        },
-        {
-          "type": "verdict",
-          "label": "Bottom line",
-          "text": "Cerebras IPO is worth watching \u2014 not because the $4B valuation is obviously cheap or expensive, but because wafer-scale inference is the clearest architectural differentiation in AI semiconductors since Groq's deterministic LPUs. The G42 revenue concentration is a real risk that deserves weight. The ideal entry point is post-lockup or on a growth scare related to inference capex cycles. At $510M revenue and 76% growth, this is a business in early innings \u2014 but the timing of the IPO reflects a window, not necessarily optimal conditions for public shareholders."
-        }
-      ]
-    },
-    {
-      "slug": "slides-are-becoming-agent-native-software",
-      "title": "Slides Are Becoming Agent-Native Software",
-      "section": "ai-research",
-      "summary": "The constrained canvas is the interface contract \u2014 open-slide demonstrates why fixed substrates, bidirectional annotation, and source-owned artifacts make reliable human-agent visual collaboration possible.",
-      "date": "2026-05-07",
-      "tags": [
-        "ai",
-        "agents",
-        "workflow",
-        "infrastructure",
-        "slides",
-        "open-source"
-      ],
-      "readingTime": 7,
-      "format": "thesis",
-      "perspective": "operator",
-      "sourceLinks": [
-        {
-          "label": "GitHub Repo",
-          "url": "https://github.com/1weiho/open-slide"
-        }
-      ],
-      "heroImage": {
-        "url": "https://github.com/user-attachments/assets/02f5e6d7-12a7-4a8e-88e7-ae8770a96584",
-        "alt": "open-slide GitHub cover image",
-        "caption": "open-slide repository cover image from the project's GitHub README."
-      },
       "relatedSlugs": [
-        "from-chatbot-to-workflow",
-        "agentic-inference-memory-io-pressure-indicator"
+        "ai-power-semis-wolfspeed-onsemi-infineon"
       ],
       "content": [
         {
           "type": "paragraph",
-          "text": "A 395-star GitHub repo with three contributors isn't usually worth a house note. open-slide is the exception \u2014 not because of the star count, but because of the engineering bet it makes: every slide is a typed React component on a fixed 1920\u00d71080 canvas, authored by an agent and revised through a source-control review loop."
-        },
-        {
-          "type": "paragraph",
-          "text": "That design choice is what makes it worth writing about. The pattern it demonstrates \u2014 constrained canvas + bidirectional annotation + file-owned artifacts \u2014 shows up in other agent-native systems too. If you care about how agents and humans collaborate on structured visual work, this is a clean example of the pattern working at the surface level."
-        },
-        {
-          "type": "metric-strip",
-          "metrics": [
-            {
-              "value": "1920\u00d71080",
-              "label": "Fixed Canvas"
-            },
-            {
-              "value": "TypeScript",
-              "label": "Surface Language"
-            },
-            {
-              "value": "3",
-              "label": "Authors"
-            },
-            {
-              "value": "MIT",
-              "label": "License"
-            }
-          ]
-        },
-        {
-          "type": "thesis-card",
-          "label": "Core Thesis",
-          "title": "The constrained canvas is the interface contract",
-          "text": "Slides are becoming agent-native software. Not because AI can generate them faster, but because the design of the surface \u2014 fixed canvas, typed components, bidirectional annotation \u2014 is what makes reliable human-agent collaboration on visual artifacts possible. open-slide is a clean implementation of that pattern."
+          "text": "China's AI buildout is not only a software or GPU story. It is also a power-demand story, and the market still underprices the equipment and generation layers that make that buildout physically possible."
         },
         {
           "type": "heading",
-          "text": "How It Works"
+          "text": "The chain"
         },
         {
           "type": "paragraph",
-          "text": "open-slide scaffolds a workspace with npx @open-slide/cli init my-deck. What you get is a TypeScript monorepo (pnpm + Turbo) with Vite and React already wired up. The agent's job is to write .tsx slide components into that workspace."
-        },
-        {
-          "type": "paragraph",
-          "text": "The authoring loop has three steps: the agent drafts slide components on the fixed 1920\u00d71080 canvas; the author toggles inspect mode, clicks any element, and drops a @slide-comment marker directly on what needs to change \u2014 no context switching; running /apply-comments feeds the annotated context back to the agent, which rewrites exactly what's flagged, clears the markers, and the loop repeats."
-        },
-        {
-          "type": "paragraph",
-          "text": "The result lives as React source files. Export goes to static HTML and PDF, deployable to Vercel, Cloudflare, or Netlify. There's no proprietary agent layer \u2014 any coding agent that can read and write files can drive this workflow."
-        },
-        {
-          "type": "flowchart",
-          "title": "The @slide-comment Authoring Loop",
-          "steps": [
-            {
-              "label": "Agent drafts slide components",
-              "note": "Writes .tsx files into a typed React workspace. Canvas is fixed: 1920\u00d71080."
-            },
-            {
-              "label": "Human inspects and annotates",
-              "note": "Toggles inspect mode, clicks any element, drops an @slide-comment marker in-place."
-            },
-            {
-              "label": "Agent applies comments",
-              "note": "Runs /apply-comments. Rewrites exactly what was flagged, clears markers."
-            },
-            {
-              "label": "Loop repeats",
-              "note": "Revision is targeted and additive \u2014 slides 1\u20133 are untouched while slide 4 is fixed."
-            }
-          ]
+          "text": "LLM deployment growth drives data-center load, which drives electricity demand, which then pushes value toward generation assets, power equipment, and grid-enabling suppliers."
         },
         {
           "type": "heading",
-          "text": "What Makes It Different from Generic AI Slide Tools"
+          "text": "What the investor should care about"
         },
         {
-          "type": "paragraph",
-          "text": "Beautiful.ai, Tome, Gamma, SlideGen \u2014 these are prompt-to-artifact systems. You write a prompt, the system returns a finished deck, you edit the output or regenerate. The iteration path is either manual or a full regeneration."
-        },
-        {
-          "type": "paragraph",
-          "text": "open-slide is structurally different: the agent has a file it owns and revises. The review loop is in source control, not in a separate UI. You're not reviewing a finished artifact \u2014 you're reviewing a work-in-progress with the agent still present and able to act on your feedback directly."
-        },
-        {
-          "type": "paragraph",
-          "text": "The practical difference: when you spot a misaligned chart or a dense paragraph on slide 4, you drop a comment on that element. The agent fixes exactly that element. You don't regenerate the deck and lose changes on slides 1\u20133."
-        },
-        {
-          "type": "comparison-table",
-          "title": "open-slide vs. Generic AI Slide Tools",
-          "columns": [
-            "Dimension",
-            "Gamma / Tome / Beautiful.ai",
-            "open-slide"
-          ],
-          "rows": [
-            [
-              "Output format",
-              "Hosted, locked web view",
-              "Source files \u2014 React, deployable anywhere"
-            ],
-            [
-              "Agent role",
-              "One-shot: prompt \u2192 artifact",
-              "Ongoing authoring partner"
-            ],
-            [
-              "Review mechanism",
-              "Accept/reject finished deck",
-              "In-source @slide-comment markers"
-            ],
-            [
-              "Iteration model",
-              "Regenerate (loses edits on other slides)",
-              "Targeted /apply-comments (additive)"
-            ],
-            [
-              "Canvas",
-              "Abstracted away",
-              "Explicit 1920\u00d71080 React canvas"
-            ],
-            [
-              "Agent lock-in",
-              "Proprietary prompt layer",
-              "Any coding agent \u2014 file-level interface"
-            ],
-            [
-              "Audience",
-              "Non-technical presenters",
-              "Developers / agent-orchestrating leads"
-            ]
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Why the Canvas Constraint Matters"
-        },
-        {
-          "type": "paragraph",
-          "text": "Generic AI on a blank canvas puts all the constraint burden on the prompt. For slides, that means the agent has to infer layout, spacing, aspect ratios, and brand boundaries from natural language. It can produce reasonable output, but the revision path is blunt: regenerate or manually edit."
-        },
-        {
-          "type": "paragraph",
-          "text": "A fixed canvas + typed component model changes the agent's problem. The agent works inside real constraints: a known coordinate system, a defined slide boundary, typed slide components it can read and modify. This is the same logic behind linters directing agent code \u2014 the constraint isn't limiting what the agent can do, it's defining the interface contract that makes bidirectional iteration possible."
-        },
-        {
-          "type": "paragraph",
-          "text": "The AGENTS.md rules in the repo reinforce this. Biome compliance before commit, no casual dependency additions, comment-free-by-default code. These aren't style preferences \u2014 they're the kinds of rules that define how a second party (human reviewer or second agent) reads the artifact."
-        },
-        {
-          "type": "callout",
-          "label": "AGENTS.md as Interface Contract",
-          "text": "\"Write no comments by default \u2014 only when the WHY is non-obvious.\" This isn't a style preference. It's a lint rule for shared readability between a human reviewer and a second agent. The constraint defines how a third party reads the artifact."
-        },
-        {
-          "type": "heading",
-          "text": "The @slide-comment Loop as an Engineering Pattern"
-        },
-        {
-          "type": "paragraph",
-          "text": "What's happening here is a micro plan \u2192 act \u2192 review cycle, implemented at the surface level. The agent proposes. The human inspects and annotates in-context. The agent revises. The markers clear. Repeat."
-        },
-        {
-          "type": "paragraph",
-          "text": "This is the same human-in-the-loop gating pattern that shows up in responsible agentic systems \u2014 except here it lives in a lightweight, single-session workflow rather than a multi-step pipeline. The canvas is the linter. The annotation is the interface. The source file is the contract."
-        },
-        {
-          "type": "callout",
-          "variant": "insight",
-          "label": "Independent Convergence",
-          "text": "Builder.io's Agent Native framework landed on \"Slides\" as one of 11 agent-native templates \u2014 with agent and UI as equal citizens. Two independent projects, no coordination, same structural bet. When that happens, it's worth treating as a signal, not a coincidence."
-        },
-        {
-          "type": "heading",
-          "text": "What open-slide Gets Right"
-        },
-        {
-          "type": "paragraph",
-          "text": "Three things stand out from an engineering perspective."
-        },
-        {
-          "type": "paragraph",
-          "text": "File ownership: the agent works on a typed source artifact it can read and revise. There's no blob of generated output it has to reason around \u2014 the file is the artifact."
-        },
-        {
-          "type": "paragraph",
-          "text": "Bidirectional annotation without context switching: the @slide-comment markers feed directly into the agent's revision path. The human flags what's wrong in the medium where it matters \u2014 the visual surface \u2014 and the agent acts on it in the source."
-        },
-        {
-          "type": "paragraph",
-          "text": "No lock-in: any coding agent can drive the file layer. There's no proprietary prompt layer or agent infrastructure required. If your team uses Claude Code, Codex, or Cursor, this workflow plugs in without a platform migration."
-        },
-        {
-          "type": "key-takeaways",
+          "type": "bullets",
           "items": [
-            "File ownership \u2014 the agent works on a typed source artifact it can read and revise. No blob of generated output to reason around.",
-            "Bidirectional annotation without context switching \u2014 the human flags what needs changing on the visual surface; the agent receives it as source-level markers.",
-            "No lock-in \u2014 any coding agent (Claude Code, Codex, Cursor, Gemini CLI) drives the file layer. No proprietary platform required."
+            "Visible backlog beats vague AI narrative.",
+            "Dispatchable power and equipment order flow matter more than headline model launches.",
+            "The best setups are where AI demand upgrades an already investable business, not where AI is the only story holding up the multiple."
           ]
         },
         {
           "type": "heading",
-          "text": "What Remains Unproven"
+          "text": "Practical read"
         },
         {
           "type": "paragraph",
-          "text": "These are the engineering questions worth watching: maintainer velocity at scale \u2014 single-maintainer repo with Claude-as-contributor, untested across larger contributor bases; non-developer adoption \u2014 CLI scaffold and TypeScript workspace assume developer context, whether this reaches PMs and researchers is unresolved; multi-agent workflows \u2014 current loop is one human plus one agent, collaborative agent teams are unexplored; quality benchmarks \u2014 no public evals for slide quality, accessibility, or brand consistency; enterprise requirements \u2014 SSO, audit logs, compliance archives remain unaddressed."
-        },
-        {
-          "type": "scenario-ladder",
-          "title": "Engineering Questions Worth Watching",
-          "scenarios": [
-            {
-              "label": "Scale risk",
-              "text": "Single-maintainer repo with Claude-as-contributor. No evidence the pattern sustains across a larger contributor base or more complex feature work."
-            },
-            {
-              "label": "Adoption ceiling",
-              "text": "CLI scaffold and TypeScript workspace assume developer context. Whether this reaches PMs, founders, or researchers \u2014 the broader deck-making market \u2014 is unresolved."
-            },
-            {
-              "label": "Multi-agent gaps",
-              "text": "Current loop is one human + one agent. Whether collaborative agent teams (draft \u2192 edit \u2192 review) map cleanly onto this surface is unexplored."
-            }
-          ]
-        },
-        {
-          "type": "verdict",
-          "label": "Bottom Line for Technical Leads",
-          "text": "open-slide is a small project. Its value isn't in its star count \u2014 it's in the engineering pattern it demonstrates. The combination of constrained visual substrate, bidirectional annotation interface, and source-owned artifact layer is a reproducible design pattern that will show up beyond slides. If you're evaluating how to build agent-human collaboration into visual workflows, this is a concrete data point worth understanding at the engineering level."
-        }
-      ]
-    },
-    {
-      "slug": "awesome-codex-skills",
-      "title": "8 Skills That Actually Make Codex Worth Using",
-      "section": "ai-research",
-      "summary": "The awesome-codex-skills repo has 880 skills across 5 categories \u2014 here's how to cut through the noise: 8 skills worth installing today, what each actually does, and why they'd disappear from your workflow if you removed them.",
-      "date": "2026-05-12",
-      "tags": [
-        "ai",
-        "tooling",
-        "codex",
-        "composio",
-        "developer-tools",
-        "productivity"
-      ],
-      "readingTime": 5,
-      "format": "thesis",
-      "perspective": "analyst",
-      "relatedSlugs": [],
-      "sourceLinks": [
-        {
-          "label": "ComposioHQ/awesome-codex-skills GitHub",
-          "url": "https://github.com/ComposioHQ/awesome-codex-skills"
-        }
-      ]
-    },
-    {
-      "slug": "why-geoffrey-hinton-insists-llms-need-a-world-model",
-      "title": "Why Geoffrey Hinton Insists LLMs Need a World Model",
-      "section": "ai-research",
-      "summary": "Strong next-token prediction forces LLMs to build partial internal world models \u2014 but reliable agents need external scaffolding to close the gap between inference and action.",
-      "date": "2026-05-21",
-      "tags": [
-        "ai",
-        "llms",
-        "agents",
-        "world-models",
-        "planning",
-        "geoffrey-hinton"
-      ],
-      "readingTime": 7,
-      "format": "thesis",
-      "perspective": "analyst",
-      "relatedSlugs": [
-        "hooks-dont-replace-prompts",
-        "agentic-inference-memory-io-pressure-indicator",
-        "from-chatbot-to-workflow"
-      ],
-      "sourceLinks": [
-        {
-          "label": "CBS News / 60 Minutes \u2014 Geoffrey Hinton interview transcript",
-          "url": "https://www.cbsnews.com/news/geoffrey-hinton-ai-dangers-60-minutes-transcript"
-        },
-        {
-          "label": "Google DeepMind \u2014 Genie: Generative Interactive Environments",
-          "url": "https://deepmind.google/research/publications/60474"
-        },
-        {
-          "label": "ICML 2025 \u2014 Plan-and-Act",
-          "url": "https://icml.cc/virtual/2025/poster/43522"
-        },
-        {
-          "label": "Frontiers in AI \u2014 Causal reasoning and planning under uncertainty",
-          "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1730614/full"
+          "text": "This lens naturally pushes attention toward names tied to energized power, nuclear buildout, backup generation, and electrical equipment — not just cloud or application winners."
         }
       ]
     }
