@@ -3,7 +3,7 @@
     {
       "slug": "why-geoffrey-hinton-insists-llms-need-a-world-model",
       "title": "Why Geoffrey Hinton Insists LLMs Need a World Model",
-      "section": "financial-research",
+      "section": "ai-research",
       "summary": "Geoffrey Hinton is right that strong next-token prediction implies partial internal world structure, but current LLMs still need external memory, planning, and environment feedback before they become reliable action-grade world models.",
       "date": "2026-05-31",
       "tags": [
@@ -16,7 +16,7 @@
       ],
       "readingTime": 8,
       "format": "thesis",
-      "perspective": "investor",
+      "perspective": "operator",
       "relatedSlugs": [
         "hooks-dont-replace-prompts",
         "agentic-inference-memory-io-pressure-indicator",
