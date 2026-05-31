@@ -1,25 +1,25 @@
 {
-  "date": "May 29, 2026",
+  "date": "May 31, 2026",
   "sections": [
     {
-      "title": "OVERNIGHT MAP",
-      "content": "Risk-on bias intact \u2014 Nasdaq leads, yields dip, VIX compressed to 15.74.\nNasdaq +0.91%, Dow +0.05%, S&P +0.58%. Gold +1.66%, 10Y yield -0.58%.\nHK live: HSI -1.06%, 2800.HK -2.32% \u2014 China policy uncertainty weighing on HK."
+      "title": "WEEKEND MAP",
+      "content": "US cash markets closed Friday with a mixed finish. The AI trade staged a comeback \u2014 MSFT led at +5.45%, NET surged +6.01%, and MU added +5.14%. But the broader tape was more fragile: INTC dropped -5.14%, DXYZ fell -2.98%, and NVDA and TSLA both lingered in the red. ES=F futures flat (+0.18%) heading into the weekend. The weekend brought no relief \u2014 tariffs reinstated via court order, Middle East energy shock still unresolved, and Fed officials making clear they are not looking through the oil spike."
     },
     {
-      "title": "US CLOSE MOVERS",
-      "content": "Strong: MSFT +3.47% (AI infra strength), DXYZ +1.56% (speculative appetite), NVDA +0.78%\nWeak: ETN -1.09%, XLU -1.13%, INTC -0.72%"
+      "title": "CRYPTO / 24-7 MARKETS",
+      "content": "BTC: $73,809 (+0.60%) \u2014 grinding quietly higher, no catalyst, no drama.\nETH: $2,021 (+0.43%) \u2014 same quiet tone.\nOil (CL=F): $87.36 (-1.73%) \u2014 pulling back from the spike but still elevated on Middle East risk premium.\nGold (GLD): $4,171 (+1.05%) \u2014 bid as the inflation/defensive play."
     },
     {
-      "title": "HK LIVE MOVERS",
-      "content": "2800.HK -2.32% \u2014 broad HK weakness; BABA -1.25%, CGN (1816.HK) -1.95%"
+      "title": "WHAT MATTERS THIS WEEK",
+      "content": "Two things are stacking up as the key tests:\n\n1. Fed speak. Multiple officials (Bowman, Schmid, Kashkari) have pivoted hawkish \u2014 explicitly saying the oil shock may require rate hikes, not cuts. The market is currently pricing ~60% chance of a hike by year-end. Any further hawkish reinforcement this week will pressure risk assets broadly.\n\n2. China/HK technicals. HSI is attempting a base (+0.70% Friday). BABA and GDS are in the book at meaningful\u4e8f\u635f. The question is whether the China stimulus narrative can hold its ground against a rising-rate, tariff-reinstated macro headwind from the US."
     },
     {
-      "title": "MARKET NEWS",
-      "content": "VIX -3.38% to 15.74 \u2014 fear gauge compressing, AI momentum intact.\nGold +1.66% \u2014 falling yields supporting growth/quality over defensives."
+      "title": "WATCHLIST SETUP",
+      "content": "- MSFT, MU, NET \u2014 momentum on the long side, but watch for overextension after Friday's moves.\n- INTC \u2014 semiconductor weakness is real. -5.14% Friday and no clear bottom signal.\n- BABA / GDS \u2014 both held relatively well given the tariff news. Worth watching whether the base-building narrative survives the hawkish Fed pivot.\n- GLD \u2014 if \"higher for longer\" rates become the consensus trade, gold's run may face a ceiling. Currently holding +1.05% but the macro setup is less friendly than it was a month ago."
     },
     {
       "title": "ACTION BOARD",
-      "content": "Opportunity: NET +9.03% \u2014 insider-selling dip likely sentiment, not fundamental break. Watch for stabilization before treating as entry.\nRisk: HK weakness \u2014 2800 underperforming, China policy signals unclear. Size exposure accordingly.\nResearch: Duration trade vs. growth rotation \u2014 if 10Y keeps falling, quality growth gets another leg. Understand the cross-asset signal."
+      "content": "- Opportunity: MU and MSFT are showing real AI infrastructure momentum. If the tape stays range-bound, these are the names to accumulate on any pullback.\n- Risk: INTC is deteriorating. The -5.14% print on no major headline is a warning sign \u2014 semiconductor sentiment is turning and the book has exposure through multiple names.\n- Research: Determine whether BABA's relative resilience (-1.54%) against the tariff news is a genuine safe harbor bid or just lagging price discovery. If it's the former, the HK idle cash setup becomes a potential re-rating trade."
     }
   ]
 }
