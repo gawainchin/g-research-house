@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import ContentsList from '../components/contents-list'
-import { formatDisplayDate, getFeaturedNotes, getSchemaRules, getSiteData } from '../lib/research'
+import { formatDisplayDate, getAllNotes, getFeaturedNotes, getSchemaRules, getSiteData } from '../lib/research'
 
 const RULE = '#ece6dd'
 const SERIF = 'var(--font-newsreader), Newsreader, Georgia, serif'
@@ -20,9 +20,10 @@ const navLink = {
 
 export default function Home() {
   const site = getSiteData()
+  const allNotes = getAllNotes()
   const featured = getFeaturedNotes()
   const rules = getSchemaRules()
-  const latest = featured[0]
+  const latest = allNotes[0] ?? featured[0]
 
   return (
     <main
@@ -118,7 +119,7 @@ export default function Home() {
         </p>
       </section>
 
-      <ContentsList notes={featured} />
+      <ContentsList notes={allNotes} />
 
       <details style={{ borderTop: `1px solid ${RULE}`, paddingTop: '1.2rem', marginTop: '3rem' }}>
         <summary
