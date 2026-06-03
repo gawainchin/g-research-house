@@ -1,25 +1,25 @@
 {
-  "date": "May 31, 2026",
+  "date": "Jun 3, 2026",
   "sections": [
     {
-      "title": "WEEKEND MAP",
-      "content": "US cash markets closed Friday with a mixed finish. The AI trade staged a comeback \u2014 MSFT led at +5.45%, NET surged +6.01%, and MU added +5.14%. But the broader tape was more fragile: INTC dropped -5.14%, DXYZ fell -2.98%, and NVDA and TSLA both lingered in the red. ES=F futures flat (+0.18%) heading into the weekend. The weekend brought no relief \u2014 tariffs reinstated via court order, Middle East energy shock still unresolved, and Fed officials making clear they are not looking through the oil spike."
+      "title": "OVERNIGHT MAP",
+      "content": "- US tape stayed firm but narrow: fresh record closes, AI infrastructure still doing the lifting, defensives also bid.\n- Cross-asset tone was less clean than the equity headline: oil jumped, bitcoin sold off hard, and gold stayed supported.\nAnchor numbers: S&P 500 +0.13%, Dow +0.45%, Nasdaq +0.03%, VIX -1.7%, WTI +3.1%, BTC -6.6%."
     },
     {
-      "title": "CRYPTO / 24-7 MARKETS",
-      "content": "BTC: $73,809 (+0.60%) \u2014 grinding quietly higher, no catalyst, no drama.\nETH: $2,021 (+0.43%) \u2014 same quiet tone.\nOil (CL=F): $87.36 (-1.73%) \u2014 pulling back from the spike but still elevated on Middle East risk premium.\nGold (GLD): $4,171 (+1.05%) \u2014 bid as the inflation/defensive play."
+      "title": "US CLOSE MOVERS",
+      "content": "- ETN +4.4% \u2014 industrial/AI power-equipment bid still has legs.\n- BABA ADR +4.3% / GDS ADR +3.9% \u2014 China tech rerating carried into US trading.\n- AAPL +2.9% / MU +2.8% \u2014 quality megacap and memory both worked.\n\n- MSFT -4.2% \u2014 sharp underperformance despite the AI tape; worth checking whether this is positioning, news, or rotation.\n- DXYZ -3.8% \u2014 speculative sleeve lagged even with records elsewhere.\n- INTC -1.3% / NVDA -0.7% \u2014 chip leadership was selective, not blanket risk-on."
     },
     {
-      "title": "WHAT MATTERS THIS WEEK",
-      "content": "Two things are stacking up as the key tests:\n\n1. Fed speak. Multiple officials (Bowman, Schmid, Kashkari) have pivoted hawkish \u2014 explicitly saying the oil shock may require rate hikes, not cuts. The market is currently pricing ~60% chance of a hike by year-end. Any further hawkish reinforcement this week will pressure risk assets broadly.\n\n2. China/HK technicals. HSI is attempting a base (+0.70% Friday). BABA and GDS are in the book at meaningful\u4e8f\u635f. The question is whether the China stimulus narrative can hold its ground against a rising-rate, tariff-reinstated macro headwind from the US."
+      "title": "HK LIVE MOVERS",
+      "content": "- HK is pre-open at run time; live movers unavailable, so these are last completed HK-session moves.\n- BABA 9988.HK +6.6% and GDS 9698.HK +4.5% led the HK book; same China/AI rerating signal as the ADRs.\n- 2800.HK +1.1% tracked the broader Hang Seng gain; CGN 1816.HK -1.9% lagged as defensives did not join the beta rally."
     },
     {
-      "title": "WATCHLIST SETUP",
-      "content": "- MSFT, MU, NET \u2014 momentum on the long side, but watch for overextension after Friday's moves.\n- INTC \u2014 semiconductor weakness is real. -5.14% Friday and no clear bottom signal.\n- BABA / GDS \u2014 both held relatively well given the tariff news. Worth watching whether the base-building narrative survives the hawkish Fed pivot.\n- GLD \u2014 if \"higher for longer\" rates become the consensus trade, gold's run may face a ceiling. Currently holding +1.05% but the macro setup is less friendly than it was a month ago."
+      "title": "MARKET NEWS",
+      "content": "- Investopedia/Yahoo: all three major US indexes closed at fresh records as HPE, Marvell and optical/networking names rallied on AI infrastructure demand.\n- Yahoo: the rally remains concentrated \u2014 AI enablers are carrying most of the S&P advance while oil and Middle East tension keep macro risk alive."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: MU and MSFT are showing real AI infrastructure momentum. If the tape stays range-bound, these are the names to accumulate on any pullback.\n- Risk: INTC is deteriorating. The -5.14% print on no major headline is a warning sign \u2014 semiconductor sentiment is turning and the book has exposure through multiple names.\n- Research: Determine whether BABA's relative resilience (-1.54%) against the tariff news is a genuine safe harbor bid or just lagging price discovery. If it's the former, the HK idle cash setup becomes a potential re-rating trade."
+      "content": "- Opportunity: China tech is showing coordinated strength across ADRs and HK listings, making BABA/GDS/2800 the cleanest near-term rerating sleeve to respect.\n- Risk: MSFT selling off while the AI complex makes records is a real relative-strength warning, not noise.\n- Research: Check whether MSFT\u2019s move is tied to company-specific news, AI/cybersecurity spending concerns, or simply crowd rotation out of megacap quality."
     }
   ]
 }
