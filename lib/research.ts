@@ -7,6 +7,7 @@ import houseViewData from '../data/house-view.json'
 import marketWatchData from '../data/market-watch.json'
 import whatChangedData from '../data/what-changed.json'
 import { parseInlineBlocks } from './inline-blocks.mjs'
+import { findAutoLinkedArticleSlugs, mergeArticleSlugs } from './market-watch-utils.mjs'
 import type {
   ContentBlock,
   ExternalLink,
@@ -14,6 +15,7 @@ import type {
   HouseThesis,
   HouseViewData,
   MarketWatchData,
+  MarketTicker,
   ResearchArticle,
   ResearchCluster,
   ResearchNoteSummary,
@@ -143,6 +145,12 @@ export function getRelatedNotes(slugs: string[]) {
   return slugs
     .map((slug) => allNotes.find((note) => note.slug === slug))
     .filter(Boolean) as ResearchNoteSummary[]
+}
+
+export function getRelatedNotesForTicker(ticker: MarketTicker) {
+  const allNotes = getAllNotes()
+  const autoLinkedSlugs = findAutoLinkedArticleSlugs(ticker, allNotes)
+  return getRelatedNotes(mergeArticleSlugs(ticker.articleSlugs, autoLinkedSlugs))
 }
 
 export function getSectionMeta(section: ResearchSectionSlug) {

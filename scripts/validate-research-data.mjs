@@ -93,11 +93,18 @@ export function validateResearchData(root = process.cwd()) {
       marketWatchlist.tickers.map((ticker) => ticker.symbol),
       'market watch snapshot symbols must match market-watchlist.json order'
     )
+    for (const ticker of marketWatchlist.tickers) {
+      assert.ok(typeof ticker.watchReason === 'string' && ticker.watchReason.trim(), `${ticker.symbol}: watchReason must be a non-empty string`)
+      assert.ok(Array.isArray(ticker.autoLinkKeywords) && ticker.autoLinkKeywords.length > 0, `${ticker.symbol}: autoLinkKeywords must be a non-empty array`)
+      assert.ok(ticker.autoLinkKeywords.every((keyword) => typeof keyword === 'string' && keyword.trim()), `${ticker.symbol}: autoLinkKeywords must be non-empty strings`)
+    }
   }
   for (const ticker of marketWatch.tickers) {
     assert.ok(ticker.symbol && typeof ticker.symbol === 'string', 'market ticker missing symbol')
     assert.ok(ticker.name && typeof ticker.name === 'string', `${ticker.symbol}: missing name`)
     assert.ok(ticker.theme && typeof ticker.theme === 'string', `${ticker.symbol}: missing theme`)
+    assert.ok(typeof ticker.watchReason === 'string' && ticker.watchReason.trim(), `${ticker.symbol}: watchReason must be a non-empty string`)
+    assert.ok(Array.isArray(ticker.autoLinkKeywords) && ticker.autoLinkKeywords.length > 0, `${ticker.symbol}: autoLinkKeywords must be a non-empty array`)
     assert.equal(typeof ticker.dataOk, 'boolean', `${ticker.symbol}: dataOk must be boolean`)
     if (ticker.dataOk) {
       assert.ok(Number.isFinite(ticker.price), `successful market ticker ${ticker.symbol} must have numeric price`)

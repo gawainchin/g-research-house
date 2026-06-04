@@ -7,6 +7,14 @@
       "articleSlugs": [
         "ai-is-not-the-climate-bubble-valuation-rhymes",
         "cerebras-ipo-wafer-scale-inference"
+      ],
+      "watchReason": "Core AI accelerator bellwether; watch for capex durability, margins, and inference mix.",
+      "autoLinkKeywords": [
+        "NVIDIA",
+        "GPU",
+        "AI accelerator",
+        "semis",
+        "capex"
       ]
     },
     {
@@ -15,6 +23,13 @@
       "theme": "AI leaders / semis",
       "articleSlugs": [
         "ai-is-not-the-climate-bubble-valuation-rhymes"
+      ],
+      "watchReason": "Second-source GPU contender; useful read-through on accelerator pricing and share gains.",
+      "autoLinkKeywords": [
+        "AMD",
+        "GPU",
+        "accelerator",
+        "semis"
       ]
     },
     {
@@ -24,6 +39,14 @@
       "articleSlugs": [
         "ai-is-not-the-climate-bubble-valuation-rhymes",
         "ai-cooling-next-data-center-bottleneck"
+      ],
+      "watchReason": "Platform AI monetization anchor across cloud, Copilot, and enterprise workflow adoption.",
+      "autoLinkKeywords": [
+        "Microsoft",
+        "Copilot",
+        "Azure",
+        "AI platform",
+        "cloud"
       ]
     },
     {
@@ -33,6 +56,13 @@
       "articleSlugs": [
         "ai-is-not-the-climate-bubble-valuation-rhymes",
         "ai-cooling-next-data-center-bottleneck"
+      ],
+      "watchReason": "Hyperscaler capex and open-model indicator; watch ad resilience versus AI infrastructure spend.",
+      "autoLinkKeywords": [
+        "Meta",
+        "open model",
+        "hyperscaler",
+        "AI capex"
       ]
     },
     {
@@ -41,6 +71,14 @@
       "theme": "AI leaders / platforms",
       "articleSlugs": [
         "ai-is-not-the-climate-bubble-valuation-rhymes"
+      ],
+      "watchReason": "Search-to-AI transition and TPU/cloud monetization indicator.",
+      "autoLinkKeywords": [
+        "Alphabet",
+        "Google",
+        "TPU",
+        "search",
+        "AI platform"
       ]
     },
     {
@@ -50,6 +88,13 @@
       "articleSlugs": [
         "ai-is-not-the-climate-bubble-valuation-rhymes",
         "palantir-rule-of-40-deep-dive"
+      ],
+      "watchReason": "Valuation-discipline bellwether for AI software and enterprise deployment intensity.",
+      "autoLinkKeywords": [
+        "Palantir",
+        "Rule of 40",
+        "AI software",
+        "valuation"
       ]
     },
     {
@@ -59,6 +104,14 @@
       "articleSlugs": [
         "ai-is-not-the-climate-bubble-valuation-rhymes",
         "ai-cooling-next-data-center-bottleneck"
+      ],
+      "watchReason": "Data-center thermal and power infrastructure proxy tied to AI buildout constraints.",
+      "autoLinkKeywords": [
+        "Vertiv",
+        "cooling",
+        "thermal",
+        "data center",
+        "AI power"
       ]
     },
     {
@@ -68,6 +121,13 @@
       "articleSlugs": [
         "ai-is-not-the-climate-bubble-valuation-rhymes",
         "ai-cooling-next-data-center-bottleneck"
+      ],
+      "watchReason": "Electrification bottleneck proxy for AI data-center power demand.",
+      "autoLinkKeywords": [
+        "Eaton",
+        "electrification",
+        "power",
+        "data center"
       ]
     },
     {
@@ -76,6 +136,13 @@
       "theme": "Memory / HBM",
       "articleSlugs": [
         "agentic-inference-memory-io-pressure-indicator"
+      ],
+      "watchReason": "HBM/memory-cycle read-through for agentic inference and bandwidth constraints.",
+      "autoLinkKeywords": [
+        "Micron",
+        "HBM",
+        "memory",
+        "bandwidth"
       ]
     },
     {
@@ -84,6 +151,13 @@
       "theme": "Memory / HBM",
       "articleSlugs": [
         "agentic-inference-memory-io-pressure-indicator"
+      ],
+      "watchReason": "Korean memory bellwether; watch HBM competitiveness versus SK Hynix.",
+      "autoLinkKeywords": [
+        "Samsung",
+        "HBM",
+        "memory",
+        "Korea"
       ]
     },
     {
@@ -92,6 +166,13 @@
       "theme": "Memory / HBM",
       "articleSlugs": [
         "agentic-inference-memory-io-pressure-indicator"
+      ],
+      "watchReason": "HBM leader and direct read-through on high-end AI memory demand.",
+      "autoLinkKeywords": [
+        "SK Hynix",
+        "HBM",
+        "memory",
+        "Korea"
       ]
     },
     {
@@ -101,6 +182,13 @@
       "articleSlugs": [
         "agentic-inference-memory-io-pressure-indicator",
         "cerebras-ipo-wafer-scale-inference"
+      ],
+      "watchReason": "Semicap/packaging proxy for advanced process and HBM supply-chain intensity.",
+      "autoLinkKeywords": [
+        "Applied Materials",
+        "semicap",
+        "packaging",
+        "HBM"
       ]
     },
     {
@@ -110,6 +198,13 @@
       "articleSlugs": [
         "cerebras-ipo-wafer-scale-inference",
         "ai-power-semis-wolfspeed-onsemi-infineon"
+      ],
+      "watchReason": "Foundry and advanced-packaging anchor for AI accelerator supply.",
+      "autoLinkKeywords": [
+        "TSMC",
+        "foundry",
+        "advanced packaging",
+        "semis"
       ]
     },
     {
@@ -118,6 +213,12 @@
       "theme": "Power semiconductors",
       "articleSlugs": [
         "ai-power-semis-wolfspeed-onsemi-infineon"
+      ],
+      "watchReason": "Power semiconductor exposure for electrification and data-center power chains.",
+      "autoLinkKeywords": [
+        "Infineon",
+        "power semiconductor",
+        "silicon carbide"
       ]
     },
     {
@@ -126,6 +227,12 @@
       "theme": "Power semiconductors",
       "articleSlugs": [
         "ai-power-semis-wolfspeed-onsemi-infineon"
+      ],
+      "watchReason": "Power semiconductor cycle read-through with AI/power optionality.",
+      "autoLinkKeywords": [
+        "onsemi",
+        "power semiconductor",
+        "silicon carbide"
       ]
     },
     {
@@ -134,6 +241,12 @@
       "theme": "Power semiconductors / optionality",
       "articleSlugs": [
         "ai-power-semis-wolfspeed-onsemi-infineon"
+      ],
+      "watchReason": "High-beta silicon-carbide optionality; watch balance-sheet and power-semi sentiment.",
+      "autoLinkKeywords": [
+        "Wolfspeed",
+        "silicon carbide",
+        "power semiconductor"
       ]
     },
     {
@@ -142,6 +255,13 @@
       "theme": "AI data centers / compute infra",
       "articleSlugs": [
         "why-iren-may-be-structurally-safer-than-nebius"
+      ],
+      "watchReason": "AI data-center compute-infra proxy with power-site optionality.",
+      "autoLinkKeywords": [
+        "IREN",
+        "AI data center",
+        "compute infra",
+        "power site"
       ]
     },
     {
@@ -150,6 +270,12 @@
       "theme": "AI cloud / compute infra",
       "articleSlugs": [
         "why-iren-may-be-structurally-safer-than-nebius"
+      ],
+      "watchReason": "AI cloud compute-infra proxy; useful compare versus IREN’s asset profile.",
+      "autoLinkKeywords": [
+        "Nebius",
+        "AI cloud",
+        "compute infra"
       ]
     },
     {
@@ -158,6 +284,13 @@
       "theme": "China AI / platforms",
       "articleSlugs": [
         "china-ai-infrastructure-hidden-power-play"
+      ],
+      "watchReason": "China platform/hardware AI proxy via devices, EVs, and edge AI ecosystem.",
+      "autoLinkKeywords": [
+        "Xiaomi",
+        "China AI",
+        "edge AI",
+        "hardware"
       ]
     },
     {
@@ -166,6 +299,13 @@
       "theme": "China AI / platforms",
       "articleSlugs": [
         "china-ai-infrastructure-hidden-power-play"
+      ],
+      "watchReason": "China AI platform anchor across consumer, games, cloud, and model distribution.",
+      "autoLinkKeywords": [
+        "Tencent",
+        "China AI",
+        "platform",
+        "cloud"
       ]
     },
     {
@@ -174,6 +314,13 @@
       "theme": "China AI / cloud",
       "articleSlugs": [
         "china-ai-infrastructure-hidden-power-play"
+      ],
+      "watchReason": "China cloud and model-stack indicator; watch AI cloud monetization and platform sentiment.",
+      "autoLinkKeywords": [
+        "Alibaba",
+        "China AI",
+        "cloud",
+        "Qwen"
       ]
     }
   ]

@@ -156,6 +156,8 @@ export interface MarketTicker {
   symbol: string
   name: string
   theme: string
+  watchReason: string
+  autoLinkKeywords: string[]
   articleSlugs: string[]
   currency?: string | null
   price?: number | null

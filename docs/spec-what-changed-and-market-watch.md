@@ -90,10 +90,12 @@ interface MarketWatchData {
 
 Each ticker includes:
 - symbol, name, theme
+- watch reason: concise editorial rationale for why the ticker belongs on the monitor
+- auto-link keywords: ticker/name/theme terms used to discover related research notes at render time
 - price/currency
 - 1D, 5D, 1M, YTD percentage changes
 - market cap when available
-- article slugs that mention or relate to the ticker
+- manual article slugs plus automatically inferred related research links
 - `dataOk` and `error` so failures render honestly
 
 ## Validation
@@ -113,6 +115,10 @@ Extend `npm run validate:data` to check:
    - `npm run validate:data`
    - `npm run build`
 5. Push static snapshot.
+
+Automation:
+- `.github/workflows/refresh-market-watch.yml` runs on weekdays at `22:30 UTC` and can also be triggered manually with `workflow_dispatch`.
+- The workflow installs Node/Python dependencies, runs `npm run refresh:markets`, and commits `data/market-watch.json` only if the snapshot changed.
 
 Shortcut:
 

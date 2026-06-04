@@ -6,7 +6,13 @@ import os from 'node:os'
 import path from 'node:path'
 import { parseInlineBlocks } from '../lib/inline-blocks.mjs'
 import { validateResearchData } from '../scripts/validate-research-data.mjs'
-import { isMarketWatchStale } from '../lib/market-watch-utils.mjs'
+import {
+  findAutoLinkedArticleSlugs,
+  getThemeFilters,
+  getTopMovers,
+  isMarketWatchStale,
+  mergeArticleSlugs,
+} from '../lib/market-watch-utils.mjs'
 
 const workdir = path.resolve(import.meta.dirname, '..')
 
@@ -61,6 +67,58 @@ test('market watchlist config symbols match generated market snapshot symbols', 
     snapshot.tickers.map((ticker) => ticker.symbol),
     watchlist.tickers.map((ticker) => ticker.symbol)
   )
+})
+
+test('market watch validation requires watch reasons and auto-link keywords', () => {
+  const tmp = copyFixtureRoot()
+  const watchlistPath = path.join(tmp, 'data', 'market-watchlist.json')
+  const watchlist = JSON.parse(fs.readFileSync(watchlistPath, 'utf8'))
+  delete watchlist.tickers[0].watchReason
+  watchlist.tickers[1].autoLinkKeywords = []
+  fs.writeFileSync(watchlistPath, JSON.stringify(watchlist, null, 2))
+
+  assert.throws(
+    () => validateResearchData(tmp),
+    /watchReason must be a non-empty string|autoLinkKeywords must be a non-empty array/
+  )
+})
+
+test('market utility ranks top movers by absolute 1D move', () => {
+  const movers = getTopMovers([
+    { symbol: 'FLAT', dataOk: true, change1D: 0.2 },
+    { symbol: 'DOWN', dataOk: true, change1D: -4.5 },
+    { symbol: 'UP', dataOk: true, change1D: 3.1 },
+    { symbol: 'BROKEN', dataOk: false, change1D: -99 },
+  ], 2)
+
+  assert.deepEqual(movers.map((ticker) => ticker.symbol), ['DOWN', 'UP'])
+})
+
+test('market utility creates stable theme filters with counts', () => {
+  const filters = getThemeFilters([
+    { symbol: 'NVDA', theme: 'AI leaders / semis' },
+    { symbol: 'AMD', theme: 'AI leaders / semis' },
+    { symbol: 'VRT', theme: 'AI power / cooling' },
+  ])
+
+  assert.deepEqual(filters, [
+    { theme: 'AI leaders / semis', anchor: 'ai-leaders-semis', count: 2 },
+    { theme: 'AI power / cooling', anchor: 'ai-power-cooling', count: 1 },
+  ])
+})
+
+test('market utility auto-links articles from ticker keywords and keeps manual links first', () => {
+  const articles = [
+    { slug: 'manual-note', title: 'Manual note', summary: '', tags: [], keywords: [] },
+    { slug: 'hbm-note', title: 'HBM cycle', summary: 'Memory bandwidth matters.', tags: ['memory'], keywords: ['HBM', 'SK Hynix'] },
+    { slug: 'other-note', title: 'Unrelated', summary: '', tags: [], keywords: ['duration'] },
+  ]
+  const autoLinked = findAutoLinkedArticleSlugs(
+    { symbol: 'MU', name: 'Micron', articleSlugs: ['manual-note'], autoLinkKeywords: ['HBM', 'Micron'] },
+    articles
+  )
+
+  assert.deepEqual(mergeArticleSlugs(['manual-note'], autoLinked), ['manual-note', 'hbm-note'])
 })
 
 test('parses matching four-colon content blocks', () => {

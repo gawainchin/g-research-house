@@ -1,6 +1,6 @@
 {
   "title": "Ticker Monitor",
-  "updated": "2026-06-04T15:48:23+00:00",
+  "updated": "2026-06-04T16:06:01+00:00",
   "source": "yfinance snapshot; delayed market data; educational context only",
   "summary": "Price-move context for tickers mentioned across G Research House articles and thesis clusters.",
   "tickers": [
@@ -12,12 +12,20 @@
         "ai-is-not-the-climate-bubble-valuation-rhymes",
         "cerebras-ipo-wafer-scale-inference"
       ],
+      "watchReason": "Core AI accelerator bellwether; watch for capex durability, margins, and inference mix.",
+      "autoLinkKeywords": [
+        "NVIDIA",
+        "GPU",
+        "AI accelerator",
+        "semis",
+        "capex"
+      ],
       "currency": "USD",
-      "price": 216.55999755859375,
-      "change1D": 0.8428393753638019,
-      "change5D": 1.0781785571032598,
-      "change1M": 10.208650157045174,
-      "changeYTD": 14.673015917134391,
+      "price": 217.3300018310547,
+      "change1D": 1.2013978258694769,
+      "change5D": 1.437573783456103,
+      "change1M": 10.600509837686856,
+      "changeYTD": 15.080749169755459,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -29,12 +37,19 @@
       "articleSlugs": [
         "ai-is-not-the-climate-bubble-valuation-rhymes"
       ],
+      "watchReason": "Second-source GPU contender; useful read-through on accelerator pricing and share gains.",
+      "autoLinkKeywords": [
+        "AMD",
+        "GPU",
+        "accelerator",
+        "semis"
+      ],
       "currency": "USD",
-      "price": 520.944580078125,
-      "change1D": -3.9768927737941717,
-      "change5D": 0.5509762926690254,
-      "change1M": 46.63755158420639,
-      "changeYTD": 133.11611278134396,
+      "price": 520.3200073242188,
+      "change1D": -4.092017143664595,
+      "change5D": 0.4304233536948754,
+      "change1M": 46.46174436224568,
+      "changeYTD": 132.83662437104522,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -47,12 +62,20 @@
         "ai-is-not-the-climate-bubble-valuation-rhymes",
         "ai-cooling-next-data-center-bottleneck"
       ],
+      "watchReason": "Platform AI monetization anchor across cloud, Copilot, and enterprise workflow adoption.",
+      "autoLinkKeywords": [
+        "Microsoft",
+        "Copilot",
+        "Azure",
+        "AI platform",
+        "cloud"
+      ],
       "currency": "USD",
-      "price": 429.8662109375,
-      "change1D": 0.5911486454012849,
-      "change5D": 0.6736037773499737,
-      "change1M": 4.493705536309078,
-      "changeYTD": -9.107665091037164,
+      "price": 429.4700012207031,
+      "change1D": 0.4984333086220927,
+      "change5D": 0.580812441286227,
+      "change1M": 4.397393194412502,
+      "changeYTD": -9.191440985389843,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -65,12 +88,19 @@
         "ai-is-not-the-climate-bubble-valuation-rhymes",
         "ai-cooling-next-data-center-bottleneck"
       ],
+      "watchReason": "Hyperscaler capex and open-model indicator; watch ad resilience versus AI infrastructure spend.",
+      "autoLinkKeywords": [
+        "Meta",
+        "open model",
+        "hyperscaler",
+        "AI capex"
+      ],
       "currency": "USD",
-      "price": 638.1900024414062,
-      "change1D": 2.4414945021526524,
-      "change5D": 0.45648829894460174,
-      "change1M": 5.492921724049382,
-      "changeYTD": -1.8788104745757872,
+      "price": 641.1799926757812,
+      "change1D": 2.921444151919128,
+      "change5D": 0.9271379766963683,
+      "change1M": 5.987167645395597,
+      "changeYTD": -1.419101927992572,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -82,12 +112,20 @@
       "articleSlugs": [
         "ai-is-not-the-climate-bubble-valuation-rhymes"
       ],
+      "watchReason": "Search-to-AI transition and TPU/cloud monetization indicator.",
+      "autoLinkKeywords": [
+        "Alphabet",
+        "Google",
+        "TPU",
+        "search",
+        "AI platform"
+      ],
       "currency": "USD",
-      "price": 368.9700012207031,
-      "change1D": 2.7800248635936775,
-      "change5D": -5.423833952086154,
-      "change1M": -5.009909590406214,
-      "changeYTD": 17.077584758544127,
+      "price": 370.8299865722656,
+      "change1D": 3.2981410791316446,
+      "change5D": -4.947073557273363,
+      "change1M": -4.5310625943878025,
+      "changeYTD": 17.66777526705907,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -100,12 +138,19 @@
         "ai-is-not-the-climate-bubble-valuation-rhymes",
         "palantir-rule-of-40-deep-dive"
       ],
+      "watchReason": "Valuation-discipline bellwether for AI software and enterprise deployment intensity.",
+      "autoLinkKeywords": [
+        "Palantir",
+        "Rule of 40",
+        "AI software",
+        "valuation"
+      ],
       "currency": "USD",
-      "price": 143.09620666503906,
-      "change1D": 0.6302459465755694,
-      "change5D": -0.17007791201339995,
-      "change1M": 5.287471716059655,
-      "changeYTD": -14.752647358077853,
+      "price": 142.92999267578125,
+      "change1D": 0.5133584692021964,
+      "change5D": -0.28603576990673396,
+      "change1M": 5.165174618878332,
+      "changeYTD": -14.851666772264348,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -118,12 +163,20 @@
         "ai-is-not-the-climate-bubble-valuation-rhymes",
         "ai-cooling-next-data-center-bottleneck"
       ],
+      "watchReason": "Data-center thermal and power infrastructure proxy tied to AI buildout constraints.",
+      "autoLinkKeywords": [
+        "Vertiv",
+        "cooling",
+        "thermal",
+        "data center",
+        "AI power"
+      ],
       "currency": "USD",
-      "price": 316.2500915527344,
-      "change1D": -4.5830046997290985,
-      "change5D": 0.658889466296908,
-      "change1M": -7.263473772484474,
-      "changeYTD": 80.08660694355274,
+      "price": 317.4100036621094,
+      "change1D": -4.233043288664939,
+      "change5D": 1.0280765999193697,
+      "change1M": -6.923343531811543,
+      "changeYTD": 80.74711153061702,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -136,12 +189,19 @@
         "ai-is-not-the-climate-bubble-valuation-rhymes",
         "ai-cooling-next-data-center-bottleneck"
       ],
+      "watchReason": "Electrification bottleneck proxy for AI data-center power demand.",
+      "autoLinkKeywords": [
+        "Eaton",
+        "electrification",
+        "power",
+        "data center"
+      ],
       "currency": "USD",
-      "price": 415.8699951171875,
-      "change1D": -1.2677753249497936,
-      "change5D": 3.46568955345814,
-      "change1M": 1.219395887710517,
-      "changeYTD": 27.056917973530602,
+      "price": 415.3500061035156,
+      "change1D": -1.3912265782962674,
+      "change5D": 3.336319744403715,
+      "change1M": 1.0928347641620872,
+      "changeYTD": 26.898050533626396,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -153,12 +213,19 @@
       "articleSlugs": [
         "agentic-inference-memory-io-pressure-indicator"
       ],
+      "watchReason": "HBM/memory-cycle read-through for agentic inference and bandwidth constraints.",
+      "autoLinkKeywords": [
+        "Micron",
+        "HBM",
+        "memory",
+        "bandwidth"
+      ],
       "currency": "USD",
-      "price": 1004.155029296875,
-      "change1D": -6.985644353237175,
-      "change5D": 8.731268197797458,
-      "change1M": 56.8502046470043,
-      "changeYTD": 218.35488762571376,
+      "price": 1007.135009765625,
+      "change1D": -6.709610319593184,
+      "change5D": 9.053944523781453,
+      "change1M": 57.315681124968854,
+      "changeYTD": 219.29965344331865,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -169,6 +236,13 @@
       "theme": "Memory / HBM",
       "articleSlugs": [
         "agentic-inference-memory-io-pressure-indicator"
+      ],
+      "watchReason": "Korean memory bellwether; watch HBM competitiveness versus SK Hynix.",
+      "autoLinkKeywords": [
+        "Samsung",
+        "HBM",
+        "memory",
+        "Korea"
       ],
       "currency": "KRW",
       "price": 360500.0,
@@ -186,6 +260,13 @@
       "theme": "Memory / HBM",
       "articleSlugs": [
         "agentic-inference-memory-io-pressure-indicator"
+      ],
+      "watchReason": "HBM leader and direct read-through on high-end AI memory demand.",
+      "autoLinkKeywords": [
+        "SK Hynix",
+        "HBM",
+        "memory",
+        "Korea"
       ],
       "currency": "KRW",
       "price": 2360000.0,
@@ -205,12 +286,19 @@
         "agentic-inference-memory-io-pressure-indicator",
         "cerebras-ipo-wafer-scale-inference"
       ],
+      "watchReason": "Semicap/packaging proxy for advanced process and HBM supply-chain intensity.",
+      "autoLinkKeywords": [
+        "Applied Materials",
+        "semicap",
+        "packaging",
+        "HBM"
+      ],
       "currency": "USD",
-      "price": 495.75,
-      "change1D": -1.0024540455308317,
-      "change5D": 10.245064951652228,
-      "change1M": 20.673285419800536,
-      "changeYTD": 84.38279056907277,
+      "price": 496.3349914550781,
+      "change1D": -0.8856356522740194,
+      "change5D": 10.375155563777794,
+      "change1M": 20.815681467862657,
+      "changeYTD": 84.60036466276186,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -223,12 +311,19 @@
         "cerebras-ipo-wafer-scale-inference",
         "ai-power-semis-wolfspeed-onsemi-infineon"
       ],
+      "watchReason": "Foundry and advanced-packaging anchor for AI accelerator supply.",
+      "autoLinkKeywords": [
+        "TSMC",
+        "foundry",
+        "advanced packaging",
+        "semis"
+      ],
       "currency": "USD",
-      "price": 443.54998779296875,
-      "change1D": 1.5709050615334341,
-      "change5D": 4.39909689916802,
-      "change1M": 12.459112008973673,
-      "changeYTD": 38.77851385183586,
+      "price": 444.5,
+      "change1D": 1.7884534830040488,
+      "change5D": 4.62270284931301,
+      "change1M": 12.699981205548404,
+      "changeYTD": 39.075754942719264,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -240,12 +335,18 @@
       "articleSlugs": [
         "ai-power-semis-wolfspeed-onsemi-infineon"
       ],
+      "watchReason": "Power semiconductor exposure for electrification and data-center power chains.",
+      "autoLinkKeywords": [
+        "Infineon",
+        "power semiconductor",
+        "silicon carbide"
+      ],
       "currency": "EUR",
-      "price": 84.875,
-      "change1D": -3.5511363636363646,
-      "change5D": 5.948070594612775,
-      "change1M": 43.297316657037065,
-      "changeYTD": 121.80844467218428,
+      "price": 85.05000305175781,
+      "change1D": -3.352269259366125,
+      "change5D": 6.166524034164,
+      "change1M": 43.59278019428228,
+      "changeYTD": 122.2657896468327,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -257,12 +358,18 @@
       "articleSlugs": [
         "ai-power-semis-wolfspeed-onsemi-infineon"
       ],
+      "watchReason": "Power semiconductor cycle read-through with AI/power optionality.",
+      "autoLinkKeywords": [
+        "onsemi",
+        "power semiconductor",
+        "silicon carbide"
+      ],
       "currency": "USD",
-      "price": 129.52499389648438,
-      "change1D": -3.2890308520814537,
-      "change5D": 4.6497514821903785,
-      "change1M": 26.156614596747808,
-      "changeYTD": 128.439139600762,
+      "price": 130.16000366210938,
+      "change1D": -2.814895258598493,
+      "change5D": 5.16280778246343,
+      "change1M": 26.77511053222068,
+      "changeYTD": 129.5590862622796,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -274,12 +381,18 @@
       "articleSlugs": [
         "ai-power-semis-wolfspeed-onsemi-infineon"
       ],
+      "watchReason": "High-beta silicon-carbide optionality; watch balance-sheet and power-semi sentiment.",
+      "autoLinkKeywords": [
+        "Wolfspeed",
+        "silicon carbide",
+        "power semiconductor"
+      ],
       "currency": "USD",
-      "price": 64.98500061035156,
-      "change1D": 5.375389232742922,
-      "change5D": -0.09992688448381415,
-      "change1M": 77.40922390231127,
-      "changeYTD": 243.2910700618614,
+      "price": 67.44499969482422,
+      "change1D": 9.364361435617784,
+      "change5D": 3.6817779103881065,
+      "change1M": 84.12502792289584,
+      "changeYTD": 256.2863106578166,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -291,12 +404,19 @@
       "articleSlugs": [
         "why-iren-may-be-structurally-safer-than-nebius"
       ],
+      "watchReason": "AI data-center compute-infra proxy with power-site optionality.",
+      "autoLinkKeywords": [
+        "IREN",
+        "AI data center",
+        "compute infra",
+        "power site"
+      ],
       "currency": "USD",
-      "price": 60.6150016784668,
-      "change1D": -7.429751724274536,
-      "change5D": -5.362999546643654,
-      "change1M": 10.732553562034441,
-      "changeYTD": 41.95550490733546,
+      "price": 60.939998626708984,
+      "change1D": -6.933421651610027,
+      "change5D": -4.85558825428265,
+      "change1M": 11.326263715993079,
+      "changeYTD": 42.716621868542326,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -308,12 +428,18 @@
       "articleSlugs": [
         "why-iren-may-be-structurally-safer-than-nebius"
       ],
+      "watchReason": "AI cloud compute-infra proxy; useful compare versus IREN’s asset profile.",
+      "autoLinkKeywords": [
+        "Nebius",
+        "AI cloud",
+        "compute infra"
+      ],
       "currency": "USD",
-      "price": 247.71499633789062,
-      "change1D": -1.5754118139213458,
-      "change5D": 9.443757332261526,
-      "change1M": 40.811163549465675,
-      "changeYTD": 175.3918896522336,
+      "price": 248.22999572753906,
+      "change1D": -1.3707871299434293,
+      "change5D": 9.671290864991477,
+      "change1M": 41.10390990861119,
+      "changeYTD": 175.9644292932797,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -325,12 +451,19 @@
       "articleSlugs": [
         "china-ai-infrastructure-hidden-power-play"
       ],
+      "watchReason": "China platform/hardware AI proxy via devices, EVs, and edge AI ecosystem.",
+      "autoLinkKeywords": [
+        "Xiaomi",
+        "China AI",
+        "edge AI",
+        "hardware"
+      ],
       "currency": "HKD",
-      "price": 28.3799991607666,
-      "change1D": -0.6997927343364352,
-      "change5D": -0.6302531811684053,
-      "change1M": -6.8286276632436245,
-      "changeYTD": -29.543197564957822,
+      "price": 28.579999923706055,
+      "change1D": -3.511144112291187,
+      "change5D": 0.6338038999772921,
+      "change1M": -7.746932388614958,
+      "changeYTD": -29.046671326128216,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -342,12 +475,19 @@
       "articleSlugs": [
         "china-ai-infrastructure-hidden-power-play"
       ],
+      "watchReason": "China AI platform anchor across consumer, games, cloud, and model distribution.",
+      "autoLinkKeywords": [
+        "Tencent",
+        "China AI",
+        "platform",
+        "cloud"
+      ],
       "currency": "HKD",
-      "price": 459.0,
-      "change1D": -1.586619638362774,
-      "change5D": 8.000000000000007,
-      "change1M": -2.795428179964521,
-      "changeYTD": -26.32423756019262,
+      "price": 466.3999938964844,
+      "change1D": -3.1561486740853906,
+      "change5D": 7.366482608106439,
+      "change1M": -1.3953501275931535,
+      "changeYTD": -25.13643757680829,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -359,12 +499,19 @@
       "articleSlugs": [
         "china-ai-infrastructure-hidden-power-play"
       ],
+      "watchReason": "China cloud and model-stack indicator; watch AI cloud monetization and platform sentiment.",
+      "autoLinkKeywords": [
+        "Alibaba",
+        "China AI",
+        "cloud",
+        "Qwen"
+      ],
       "currency": "HKD",
-      "price": 123.5,
-      "change1D": -2.448656012231132,
-      "change5D": 1.3957281655565978,
-      "change1M": -5.86890024950214,
-      "changeYTD": -17.114093959731548,
+      "price": 126.5999984741211,
+      "change1D": -3.2849469998934566,
+      "change5D": 1.8503582991913348,
+      "change1M": -3.872436288761183,
+      "changeYTD": -15.033558071059671,
       "marketCap": null,
       "dataOk": true,
       "error": null
