@@ -566,6 +566,89 @@ function MetricStrip({ block }: { block: ContentBlock }) {
   )
 }
 
+// ── Exposure Matrix ─────────────────────────────────────────────────────────
+function ExposureMatrix({ block, section }: { block: ContentBlock; section?: string }) {
+  const points = block.points ?? []
+  const theme = sectionTheme(section)
+  const clampPct = (value: number) => Math.max(6, Math.min(94, Number(value) || 0))
+
+  return (
+    <div style={{ margin: '1.5rem 0 2rem', padding: '1rem', background: '#faf8f5', border: '1px solid #e6e0d6', borderRadius: '4px' }}>
+      {block.title && <div style={visualTitleStyle}>{block.title}</div>}
+      <div style={{ position: 'relative', minHeight: 360, padding: '1rem 1rem 2.4rem 2.4rem', background: '#fffdfa', border: '1px solid #e6e0d6', borderRadius: '4px', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: '1rem 1rem 2.4rem 2.4rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr' }}>
+          <div style={{ background: '#f8f4ec' }} />
+          <div style={{ background: theme.accentLight }} />
+          <div style={{ background: '#fbf9f5' }} />
+          <div style={{ background: '#f7f5f0' }} />
+        </div>
+
+        <div style={{ position: 'absolute', left: '2.4rem', right: '1rem', bottom: '2.4rem', borderTop: '1.5px solid #9b9185' }} />
+        <div style={{ position: 'absolute', left: '2.4rem', top: '1rem', bottom: '2.4rem', borderLeft: '1.5px solid #9b9185' }} />
+        <div style={{ position: 'absolute', left: 'calc(50% + 0.7rem)', top: '1rem', bottom: '2.4rem', borderLeft: '1px dashed #d8d0c3' }} />
+        <div style={{ position: 'absolute', left: '2.4rem', right: '1rem', top: 'calc(50% - 0.2rem)', borderTop: '1px dashed #d8d0c3' }} />
+
+        <div style={{ position: 'absolute', right: '1rem', bottom: '0.65rem', color: theme.muted, fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+          {block.xAxis ?? 'Directness'} →
+        </div>
+        <div style={{ position: 'absolute', left: '-0.9rem', top: '46%', transform: 'rotate(-90deg)', transformOrigin: 'center', color: theme.muted, fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+          {block.yAxis ?? 'Investability'} →
+        </div>
+        <div style={{ position: 'absolute', right: '1.25rem', top: '1.25rem', color: '#776d63', fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.72rem', fontWeight: 600 }}>
+          Cleaner expressions
+        </div>
+        <div style={{ position: 'absolute', left: '2.75rem', top: '1.25rem', color: '#958b80', fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.72rem' }}>
+          Liquid, but less direct
+        </div>
+        <div style={{ position: 'absolute', right: '1.25rem', bottom: '2.8rem', color: '#958b80', fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.72rem' }}>
+          Direct, but harder to own cleanly
+        </div>
+
+        <div style={{ position: 'absolute', inset: '1rem 1rem 2.4rem 2.4rem' }}>
+          {points.map((point, index) => {
+            const x = clampPct(point.x)
+            const y = clampPct(point.y)
+            const isPrimary = x >= 75 && y >= 65
+            return (
+              <div
+                key={`${point.label}-${index}`}
+                style={{
+                  position: 'absolute',
+                  left: `${x}%`,
+                  bottom: `${y}%`,
+                  transform: 'translate(-50%, 50%)',
+                  maxWidth: 132,
+                  padding: '0.42rem 0.55rem',
+                  background: isPrimary ? theme.accent : '#fffdfa',
+                  color: isPrimary ? '#fffdfa' : '#2e2a26',
+                  border: `1px solid ${isPrimary ? theme.accent : '#d8d0c3'}`,
+                  boxShadow: '0 5px 14px rgba(42, 38, 34, 0.08)',
+                  borderRadius: 6,
+                  fontFamily: 'Helvetica Neue, sans-serif',
+                  zIndex: 1,
+                }}
+              >
+                <div style={{ fontSize: '0.82rem', fontWeight: 700, lineHeight: 1.2 }}>{point.label}</div>
+                {point.bucket && <div style={{ marginTop: '0.15rem', fontSize: '0.68rem', lineHeight: 1.25, opacity: 0.82 }}>{point.bucket}</div>}
+              </div>
+            )
+          })}
+        </div>
+      </div>
+      {points.some((point) => point.note) && (
+        <div style={{ display: 'grid', gap: '0.4rem', marginTop: '0.75rem', fontFamily: 'Helvetica Neue, sans-serif' }}>
+          {points.map((point) => point.note ? (
+            <div key={`${point.label}-note`} style={{ display: 'grid', gridTemplateColumns: '82px 1fr', gap: '0.55rem', color: '#5f564d', fontSize: '0.78rem', lineHeight: 1.45 }}>
+              <span style={{ color: theme.accent, fontWeight: 700 }}>{point.label}</span>
+              <span>{renderText(point.note)}</span>
+            </div>
+          ) : null)}
+        </div>
+      )}
+    </div>
+  )
+}
+
 // ── Scorecard ────────────────────────────────────────────────────────────────
 function Scorecard({ block, section }: { block: ContentBlock; section?: string }) {
   const criteria = block.criteria ?? []
@@ -754,6 +837,45 @@ function Timeline({ block, section }: { block: ContentBlock; section?: string })
   )
 }
 
+// ── Constraint Stack ─────────────────────────────────────────────────────────
+function ConstraintStack({ block, section }: { block: ContentBlock; section?: string }) {
+  const layers = block.layers ?? []
+  const theme = sectionTheme(section)
+  const statusStyle = (status?: string) => {
+    const normalized = (status ?? '').toLowerCase()
+    if (['bottleneck', 'scarce', 'blocked'].includes(normalized)) return { background: theme.accent, color: '#fffdfa', border: theme.accent }
+    if (['tightening', 'watch', 'mixed'].includes(normalized)) return { background: '#fff3d8', color: '#8a5a10', border: '#e6c37a' }
+    if (['strong', 'clear', 'healthy'].includes(normalized)) return { background: '#eaf4ea', color: '#386641', border: '#b7d8b7' }
+    if (['output', 'delivered'].includes(normalized)) return { background: '#ece7ff', color: '#5b45a3', border: '#cfc4ff' }
+    return { background: '#f1ece4', color: '#6b635a', border: '#ddd5c5' }
+  }
+
+  return (
+    <div style={{ margin: '1.5rem 0 2rem', padding: '1rem', background: '#faf8f5', border: '1px solid #e6e0d6', borderRadius: '4px' }}>
+      {block.title && <div style={visualTitleStyle}>{block.title}</div>}
+      <div style={{ display: 'grid', gap: '0.65rem' }}>
+        {layers.map((layer, index) => {
+          const style = statusStyle(layer.status)
+          const isBottleneck = ['bottleneck', 'scarce', 'blocked'].includes((layer.status ?? '').toLowerCase())
+          return (
+            <div key={`${layer.label}-${index}`} style={{ position: 'relative' }}>
+              {index > 0 && <div style={{ position: 'absolute', left: 18, top: -10, width: 2, height: 12, background: '#d8d0c3' }} />}
+              <div style={{ display: 'grid', gridTemplateColumns: '36px minmax(0, 1fr) auto', gap: '0.75rem', alignItems: 'center', padding: '0.75rem 0.85rem', background: isBottleneck ? theme.accentLight : '#fffdfa', border: `1px solid ${isBottleneck ? theme.accentBorder : '#e6e0d6'}`, borderRadius: 6, boxShadow: isBottleneck ? '0 6px 18px rgba(42, 38, 34, 0.08)' : 'none' }}>
+                <div style={{ width: 28, height: 28, borderRadius: 999, background: isBottleneck ? theme.accent : '#eee7dc', color: isBottleneck ? '#fffdfa' : '#6b635a', display: 'grid', placeItems: 'center', fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.78rem', fontWeight: 700 }}>{index + 1}</div>
+                <div>
+                  <div style={{ color: '#2e2a26', fontWeight: 700, fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.92rem', lineHeight: 1.25 }}>{layer.label}</div>
+                  {(layer.note ?? layer.text) && <div style={{ marginTop: '0.18rem', color: '#5f564d', lineHeight: 1.45, fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.82rem' }}>{renderText(layer.note ?? layer.text ?? '')}</div>}
+                </div>
+                {layer.status && <div style={{ alignSelf: 'start', padding: '0.22rem 0.48rem', borderRadius: 999, background: style.background, color: style.color, border: `1px solid ${style.border}`, textTransform: 'uppercase', letterSpacing: '0.05em', fontFamily: 'Helvetica Neue, sans-serif', fontSize: '0.62rem', fontWeight: 700, whiteSpace: 'nowrap' }}>{layer.status}</div>}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 // ── Stack Diagram ────────────────────────────────────────────────────────────
 function StackDiagram({ block, section }: { block: ContentBlock; section?: string }) {
   const layers = block.layers ?? []
@@ -829,6 +951,12 @@ export default function ArticleBlock({ block, section }: { block: ContentBlock; 
 
     case 'metric-strip':
       return <MetricStrip block={block} />
+
+    case 'exposure-matrix':
+      return <ExposureMatrix block={block} section={section} />
+
+    case 'constraint-stack':
+      return <ConstraintStack block={block} section={section} />
 
     case 'scorecard':
       return <Scorecard block={block} section={section} />

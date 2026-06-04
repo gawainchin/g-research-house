@@ -101,6 +101,39 @@ const demoBlocks: { eyebrow: string; summary: string; block: ContentBlock }[] = 
     },
   },
   {
+    eyebrow: 'Constraint Stack',
+    summary: 'Layered bottleneck map for physical, regulatory, and financial constraints.',
+    block: {
+      type: 'constraint-stack',
+      title: 'Where the AI power constraint really sits',
+      layers: [
+        { label: 'Demand', status: 'strong', note: 'Hyperscaler load growth remains visible.' },
+        { label: 'Site control', status: 'mixed', note: 'Land is necessary but not sufficient.' },
+        { label: 'Interconnection queue', status: 'bottleneck', note: 'Approval timing and upgrade scope decide financeability.' },
+        { label: 'Reliability studies', status: 'tightening', note: 'Load-drop scrutiny raises the bar before energization.' },
+        { label: 'Equipment', status: 'scarce', note: 'Transformers, switchgear, substations and EPC capacity gate execution.' },
+        { label: 'Delivered capacity', status: 'output', note: 'Only energized capacity creates monetizable AI infrastructure.' },
+      ],
+    },
+  },
+  {
+    eyebrow: 'Exposure Matrix',
+    summary: 'Investor expression map for bottleneck directness versus public-market cleanliness.',
+    block: {
+      type: 'exposure-matrix',
+      title: 'AI Power Bottleneck Exposure Map',
+      xAxis: 'Directness to bottleneck',
+      yAxis: 'Public-market investability',
+      points: [
+        { label: 'ETN / GEV', bucket: 'Power equipment', x: 86, y: 82, note: 'Direct grid-upgrade spend with liquid public equities.' },
+        { label: 'PWR', bucket: 'Transmission / EPC', x: 80, y: 56, note: 'Execution lever, less pure AI upside.' },
+        { label: 'CEG / VST', bucket: 'Co-location / generation', x: 67, y: 78, note: 'Firm power scarcity, but policy-sensitive.' },
+        { label: 'DLR / EQIX', bucket: 'Power-ready data centers', x: 45, y: 72, note: 'Owns campuses, not the whole interconnection chain.' },
+        { label: 'Grid studies', bucket: 'Software / compliance', x: 76, y: 28, note: 'Mechanically direct, weak pure-play exposure.' },
+      ],
+    },
+  },
+  {
     eyebrow: 'Scorecard',
     summary: 'A structured rating for subjective but repeatable judgments.',
     block: {

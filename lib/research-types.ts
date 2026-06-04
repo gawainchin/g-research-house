@@ -14,6 +14,8 @@ export type ContentBlockType =
   | 'verdict'
   | 'scenario-ladder'
   | 'metric-strip'
+  | 'exposure-matrix'
+  | 'constraint-stack'
   | 'scorecard'
   | 'bar-chart'
   | 'line-chart'
@@ -31,11 +33,14 @@ export interface ContentBlock {
   rows?: string[][]
   steps?: { label: string; note?: string }[]
   metrics?: { label: string; value: string }[]
+  xAxis?: string
+  yAxis?: string
+  points?: { label: string; bucket?: string; x: number; y: number; note?: string }[]
   criteria?: { label: string; score: number; note?: string }[]
   bars?: { label: string; value: number; note?: string }[]
   series?: { label: string; points: { label: string; value: number }[] }[]
   events?: { label: string; date?: string; text: string }[]
-  layers?: { label: string; text: string }[]
+  layers?: { label: string; text?: string; note?: string; status?: string }[]
   unit?: string
   scenarios?: {
     label: string

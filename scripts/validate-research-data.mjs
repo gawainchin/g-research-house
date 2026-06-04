@@ -98,6 +98,32 @@ export function validateResearchData(root = process.cwd()) {
             `${slug}: metrics missing/empty in metric-strip`
           )
           break
+        case 'exposure-matrix':
+          assert.ok(
+            Array.isArray(block.points) && block.points.length > 0,
+            `${slug}: points missing/empty in exposure-matrix`
+          )
+          assert.ok(
+            block.points.every((point) =>
+              point &&
+              typeof point === 'object' &&
+              typeof point.label === 'string' &&
+              Number.isFinite(Number(point.x)) &&
+              Number.isFinite(Number(point.y))
+            ),
+            `${slug}: every exposure-matrix point must define label, numeric x, and numeric y`
+          )
+          break
+        case 'constraint-stack':
+          assert.ok(
+            Array.isArray(block.layers) && block.layers.length > 0,
+            `${slug}: layers missing/empty in constraint-stack`
+          )
+          assert.ok(
+            block.layers.every((layer) => layer && typeof layer === 'object' && typeof layer.label === 'string'),
+            `${slug}: every constraint-stack layer must define a label`
+          )
+          break
         case 'scorecard':
           assert.ok(
             Array.isArray(block.criteria) && block.criteria.length > 0,

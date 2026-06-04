@@ -30,6 +30,8 @@
       "verdict",
       "scenario-ladder",
       "metric-strip",
+      "exposure-matrix",
+      "constraint-stack",
       "scorecard",
       "bar-chart",
       "line-chart",
