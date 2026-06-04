@@ -10,6 +10,7 @@ export function validateResearchData(root = process.cwd()) {
 
   const site = JSON.parse(fs.readFileSync(path.join(root, 'data', 'site.json'), 'utf8'))
   const schema = JSON.parse(fs.readFileSync(path.join(root, 'data', 'research-schema.json'), 'utf8'))
+  const houseView = JSON.parse(fs.readFileSync(path.join(root, 'data', 'house-view.json'), 'utf8'))
 
   const allowedSections = new Set(schema.sections.map((s) => s.slug))
   const allowedBlockTypes = new Set(schema.articleShape.contentBlockTypes)
@@ -27,6 +28,38 @@ export function validateResearchData(root = process.cwd()) {
   assert.equal(typeof site.title, 'string')
   assert.ok(Array.isArray(site.sections) && site.sections.length === 2, 'site must define two sections')
   assert.ok(articles.length >= 4, `seed at least four articles, got ${articles.length}`)
+
+  assert.equal(typeof houseView.title, 'string', 'house view title must be a string')
+  assert.equal(typeof houseView.updated, 'string', 'house view updated must be a string')
+  assert.equal(typeof houseView.summary, 'string', 'house view summary must be a string')
+  assert.ok(Array.isArray(houseView.theses) && houseView.theses.length > 0, 'house view must define theses')
+  assert.ok(Array.isArray(houseView.clusters) && houseView.clusters.length > 0, 'house view must define clusters')
+
+  const articleSlugs = new Set(articles.map((article) => article.slug))
+  const clusterSlugs = new Set(houseView.clusters.map((cluster) => cluster.slug))
+
+  for (const thesis of houseView.theses) {
+    assert.ok(thesis.slug && typeof thesis.slug === 'string', 'house thesis missing slug')
+    assert.ok(thesis.title && typeof thesis.title === 'string', `${thesis.slug}: house thesis missing title`)
+    assert.ok(allowedSections.has(thesis.lens), `${thesis.slug}: invalid thesis lens ${thesis.lens}`)
+    assert.ok(clusterSlugs.has(thesis.clusterSlug), `${thesis.slug}: unknown clusterSlug ${thesis.clusterSlug}`)
+    for (const field of ['status', 'conviction', 'claim', 'whatChanged', 'wouldChangeView']) {
+      assert.ok(typeof thesis[field] === 'string' && thesis[field].trim(), `${thesis.slug}: missing ${field}`)
+    }
+  }
+
+  for (const cluster of houseView.clusters) {
+    assert.ok(cluster.slug && typeof cluster.slug === 'string', 'research cluster missing slug')
+    assert.ok(cluster.title && typeof cluster.title === 'string', `${cluster.slug}: research cluster missing title`)
+    assert.ok(allowedSections.has(cluster.lens), `${cluster.slug}: invalid cluster lens ${cluster.lens}`)
+    assert.ok(Array.isArray(cluster.articleSlugs) && cluster.articleSlugs.length > 0, `${cluster.slug}: articleSlugs must be non-empty`)
+    for (const field of ['status', 'conviction', 'summary', 'thesis', 'wouldChangeView']) {
+      assert.ok(typeof cluster[field] === 'string' && cluster[field].trim(), `${cluster.slug}: missing ${field}`)
+    }
+    for (const slug of cluster.articleSlugs) {
+      assert.ok(articleSlugs.has(slug), `${cluster.slug}: unknown article slug ${slug}`)
+    }
+  }
 
   for (const { slug, fm, content } of articles) {
     assert.ok(slug, `${slug}: missing slug`)

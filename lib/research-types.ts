@@ -98,6 +98,38 @@ export interface SiteData {
   sections: SiteSection[]
 }
 
+export interface HouseThesis {
+  slug: string
+  title: string
+  status: string
+  conviction: string
+  lens: ResearchSectionSlug
+  claim: string
+  whatChanged: string
+  wouldChangeView: string
+  clusterSlug: string
+}
+
+export interface ResearchCluster {
+  slug: string
+  title: string
+  lens: ResearchSectionSlug
+  status: string
+  conviction: string
+  summary: string
+  thesis: string
+  wouldChangeView: string
+  articleSlugs: string[]
+}
+
+export interface HouseViewData {
+  title: string
+  updated: string
+  summary: string
+  theses: HouseThesis[]
+  clusters: ResearchCluster[]
+}
+
 export function formatDisplayDate(date: string) {
   return new Date(date).toLocaleDateString('en-US', {
     year: 'numeric',

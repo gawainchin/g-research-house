@@ -205,8 +205,41 @@
   margin-top: 1rem;
 }
 
+.houseThesisGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.houseThesisCard,
+.clusterCard {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  background: #fffdfa;
+  border: 1px solid #e6e0d6;
+  border-top: 3px solid #8b7d6b;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.houseThesisCard:hover,
+.clusterCard:hover {
+  background: #faf6ed;
+  border-color: #d8cebe;
+  transform: translateY(-1px);
+}
+
+.houseThesisCard:focus-visible,
+.clusterCard:focus-visible {
+  outline: 2px solid #8b7d6b;
+  outline-offset: 2px;
+}
+
 @media (max-width: 640px) {
-  .cardGrid {
+  .cardGrid,
+  .houseThesisGrid {
     grid-template-columns: 1fr;
   }
   .leadCardTitle {

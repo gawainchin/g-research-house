@@ -3,12 +3,16 @@ import path from 'node:path'
 import matter from 'gray-matter'
 import siteData from '../data/site.json'
 import schemaData from '../data/research-schema.json'
+import houseViewData from '../data/house-view.json'
 import { parseInlineBlocks } from './inline-blocks.mjs'
 import type {
   ContentBlock,
   ExternalLink,
   HeroImage,
+  HouseThesis,
+  HouseViewData,
   ResearchArticle,
+  ResearchCluster,
   ResearchNoteSummary,
   ResearchPerspective,
   ResearchSectionSlug,
@@ -20,7 +24,10 @@ export type {
   ContentBlockType,
   ExternalLink,
   HeroImage,
+  HouseThesis,
+  HouseViewData,
   ResearchArticle,
+  ResearchCluster,
   ResearchNoteSummary,
   ResearchPerspective,
   ResearchSectionSlug,
@@ -30,6 +37,7 @@ export type {
 export { formatDisplayDate } from './research-types'
 
 const site = siteData as SiteData
+const houseView = houseViewData as HouseViewData
 const schema = schemaData as {
   schemaVersion: number
   rules: string[]
@@ -129,4 +137,31 @@ export function getRelatedNotes(slugs: string[]) {
 
 export function getSectionMeta(section: ResearchSectionSlug) {
   return site.sections.find((item) => item.slug === section)
+}
+
+export function getHouseView() {
+  return houseView
+}
+
+export function getHouseTheses() {
+  return houseView.theses
+}
+
+export function getResearchClusters() {
+  return houseView.clusters
+}
+
+export function getResearchClusterBySlug(slug: string) {
+  return houseView.clusters.find((cluster) => cluster.slug === slug)
+}
+
+export function getThesisForCluster(clusterSlug: string) {
+  return houseView.theses.find((thesis) => thesis.clusterSlug === clusterSlug)
+}
+
+export function getNotesForCluster(cluster: ResearchCluster) {
+  const allNotes = getAllNotes()
+  return cluster.articleSlugs
+    .map((slug) => allNotes.find((note) => note.slug === slug))
+    .filter(Boolean) as ResearchNoteSummary[]
 }

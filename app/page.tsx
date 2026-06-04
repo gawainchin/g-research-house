@@ -1,6 +1,7 @@
 import Link from 'next/link'
+import HouseViewSummary from '../components/house-view-summary'
 import ContentsList from '../components/contents-list'
-import { formatDisplayDate, getAllNotes, getFeaturedNotes, getSchemaRules, getSiteData } from '../lib/research'
+import { formatDisplayDate, getAllNotes, getFeaturedNotes, getHouseView, getSchemaRules, getSiteData } from '../lib/research'
 
 const RULE = '#ece6dd'
 const SERIF = 'var(--font-newsreader), Newsreader, Georgia, serif'
@@ -22,6 +23,7 @@ export default function Home() {
   const site = getSiteData()
   const allNotes = getAllNotes()
   const featured = getFeaturedNotes()
+  const houseView = getHouseView()
   const rules = getSchemaRules()
   const latest = allNotes[0] ?? featured[0]
 
@@ -68,6 +70,8 @@ export default function Home() {
           aria-label="Sections"
           style={{ ...eyebrow, display: 'flex', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center' }}
         >
+          <Link href="/house-view" style={navLink}>House View</Link>
+          <span aria-hidden style={{ color: '#bcb3a5' }}>·</span>
           <Link href="/ai-research" style={navLink}>AI Research</Link>
           <span aria-hidden style={{ color: '#bcb3a5' }}>·</span>
           <Link href="/financial-research" style={navLink}>Financial Research</Link>
@@ -118,6 +122,8 @@ export default function Home() {
           {site.intro}
         </p>
       </section>
+
+      <HouseViewSummary houseView={houseView} />
 
       <ContentsList notes={allNotes} />
 

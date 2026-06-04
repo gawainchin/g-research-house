@@ -1,0 +1,117 @@
+{
+  "title": "House View",
+  "updated": "2026-06-04",
+  "summary": "Current working theses across AI infrastructure, agent workflows, valuation discipline, and macro risk. This is the map before the archive.",
+  "theses": [
+    {
+      "slug": "ai-physical-bottlenecks",
+      "title": "AI physical bottlenecks are becoming the investable edge",
+      "status": "Strengthening",
+      "conviction": "High",
+      "lens": "financial-research",
+      "claim": "The AI trade is shifting from model excitement toward power, packaging, memory, cooling, and interconnect scarcity.",
+      "whatChanged": "Power, advanced packaging, and memory evidence strengthened; optics and brownfield liquid cooling remain threshold-gated rather than fully proven.",
+      "wouldChangeView": "Evidence that hyperscalers can source power, memory, and advanced packaging faster than current lead-time signals imply.",
+      "clusterSlug": "ai-physical-bottlenecks"
+    },
+    {
+      "slug": "ai-valuation-discipline",
+      "title": "The AI theme is real; expression risk is now the hard part",
+      "status": "Active",
+      "conviction": "Medium-high",
+      "lens": "financial-research",
+      "claim": "The current AI run is healthier than prior theme bubbles at the leader level, but second-order names increasingly price future demand before economics are proven.",
+      "whatChanged": "The AI-versus-climate-cycle comparison showed the analogy is useful for valuation discipline, not for declaring AI a fake bubble.",
+      "wouldChangeView": "A broad earnings inflection across second-order beneficiaries that makes high multiples fall without a price reset.",
+      "clusterSlug": "ai-valuation-discipline"
+    },
+    {
+      "slug": "agent-workflow-discipline",
+      "title": "Agent workflows need control systems, not more prompt theater",
+      "status": "Active",
+      "conviction": "High",
+      "lens": "ai-research",
+      "claim": "Production agent quality comes from hooks, evals, checkpoints, handoffs, and operational discipline more than from one clever prompt.",
+      "whatChanged": "The site now has multiple AI-operator pieces converging on workflow architecture as the real bottleneck.",
+      "wouldChangeView": "Evidence that frontier-model capability alone removes the need for explicit workflow gates in production use.",
+      "clusterSlug": "agent-workflow-discipline"
+    },
+    {
+      "slug": "china-ai-platforms-and-infra",
+      "title": "China AI exposure splits into platform quality and infrastructure leverage",
+      "status": "Watchlist",
+      "conviction": "Medium",
+      "lens": "financial-research",
+      "claim": "The better China AI opportunities are not always the flashiest models; cloud, platforms, power equipment, and operating leverage matter more.",
+      "whatChanged": "Recent watchlist work separated valuation-sane platform exposure from crowded AI-infra trades.",
+      "wouldChangeView": "Regulatory, geopolitical, or margin evidence that overwhelms the AI/platform monetization path.",
+      "clusterSlug": "china-ai-platforms-and-infra"
+    }
+  ],
+  "clusters": [
+    {
+      "slug": "ai-physical-bottlenecks",
+      "title": "AI Physical Bottlenecks",
+      "lens": "financial-research",
+      "status": "Active",
+      "conviction": "High",
+      "summary": "Power, cooling, memory, packaging, and infrastructure constraints behind the AI buildout.",
+      "thesis": "The market is increasingly pricing AI as a physical infrastructure problem, not only a model/software problem.",
+      "wouldChangeView": "Clear evidence that bottleneck lead times normalize without margin pressure, capex overshoot, or delayed data-center delivery.",
+      "articleSlugs": [
+        "ai-is-not-the-climate-bubble-valuation-rhymes",
+        "agentic-inference-memory-io-pressure-indicator",
+        "ai-cooling-next-data-center-bottleneck",
+        "ai-power-semis-wolfspeed-onsemi-infineon",
+        "china-ai-infrastructure-hidden-power-play",
+        "cerebras-ipo-wafer-scale-inference"
+      ]
+    },
+    {
+      "slug": "ai-valuation-discipline",
+      "title": "AI Valuation Discipline",
+      "lens": "financial-research",
+      "status": "Active",
+      "conviction": "Medium-high",
+      "summary": "Theme-cycle comparisons, expensive narrative checks, and risk/reward discipline for AI equities.",
+      "thesis": "AI is not automatically a bubble, but the market can still overpay for weak expressions of a real theme.",
+      "wouldChangeView": "Broad earnings and FCF conversion across second-order AI names that validates the multiples without a drawdown.",
+      "articleSlugs": [
+        "ai-is-not-the-climate-bubble-valuation-rhymes",
+        "palantir-rule-of-40-deep-dive",
+        "why-iren-may-be-structurally-safer-than-nebius",
+        "us10y-duration-first"
+      ]
+    },
+    {
+      "slug": "agent-workflow-discipline",
+      "title": "Agent Workflow Discipline",
+      "lens": "ai-research",
+      "status": "Active",
+      "conviction": "High",
+      "summary": "Hooks, handoffs, slides-as-software, coding agents, and operational control layers for real agent work.",
+      "thesis": "Useful agents are not just model calls; they are controlled systems with explicit gates, reusable skills, eval loops, and workflow memory.",
+      "wouldChangeView": "A reliable pattern where model capability alone replaces structured workflow control in production environments.",
+      "articleSlugs": [
+        "hooks-dont-replace-prompts",
+        "agentic-coding-real-bottleneck",
+        "from-chatbot-to-workflow",
+        "slides-are-becoming-agent-native-software",
+        "awesome-codex-skills"
+      ]
+    },
+    {
+      "slug": "china-ai-platforms-and-infra",
+      "title": "China AI Platforms and Infrastructure",
+      "lens": "financial-research",
+      "status": "Watchlist",
+      "conviction": "Medium",
+      "summary": "China AI platform exposure, infrastructure picks-and-shovels, and valuation-sane ways to express the theme.",
+      "thesis": "China AI exposure should be split between platform monetization quality and infrastructure leverage rather than treated as one broad beta trade.",
+      "wouldChangeView": "Evidence that policy/geopolitical risk or platform margin pressure dominates AI monetization and infrastructure demand.",
+      "articleSlugs": [
+        "china-ai-infrastructure-hidden-power-play"
+      ]
+    }
+  ]
+}
