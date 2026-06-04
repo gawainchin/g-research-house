@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { getMarketWatch, getRelatedNotes } from '../../lib/research'
 import type { MarketTicker } from '../../lib/research'
+import { isMarketWatchStale, MARKET_WATCH_STALE_HOURS } from '../../lib/market-watch-utils.mjs'
 
 const SERIF = 'var(--font-newsreader), Newsreader, Georgia, serif'
 const SANS = 'Helvetica Neue, sans-serif'
@@ -47,6 +48,7 @@ function fmtMarketCap(value?: number | null, currency?: string | null) {
 
 export default function MarketsPage() {
   const data = getMarketWatch()
+  const isStale = isMarketWatchStale(data.updated)
   const grouped = data.tickers.reduce<Record<string, MarketTicker[]>>((acc, ticker) => {
     acc[ticker.theme] ||= []
     acc[ticker.theme].push(ticker)
@@ -74,6 +76,11 @@ export default function MarketsPage() {
         <div style={{ marginTop: '1rem', padding: '0.85rem 1rem', background: '#f7f5f0', border: `1px solid ${RULE}`, color: '#4f473f', fontFamily: SANS, fontSize: '0.9rem', lineHeight: 1.6 }}>
           <strong>Educational context only.</strong> {data.source}. Prices are delayed snapshots and should not be used for trading decisions.
         </div>
+        {isStale ? (
+          <div style={{ marginTop: '0.75rem', padding: '0.85rem 1rem', background: '#fff4e6', border: '1px solid #e5b777', color: '#6b4618', fontFamily: SANS, fontSize: '0.9rem', lineHeight: 1.6 }}>
+            <strong>Snapshot may be stale.</strong> This market watch was last refreshed more than {MARKET_WATCH_STALE_HOURS} hours ago. Refresh the static data before relying on these moves for current context.
+          </div>
+        ) : null}
       </header>
 
       <section style={{ display: 'grid', gap: '1.25rem' }}>

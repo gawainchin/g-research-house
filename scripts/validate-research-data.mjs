@@ -12,6 +12,10 @@ export function validateResearchData(root = process.cwd()) {
   const schema = JSON.parse(fs.readFileSync(path.join(root, 'data', 'research-schema.json'), 'utf8'))
   const houseView = JSON.parse(fs.readFileSync(path.join(root, 'data', 'house-view.json'), 'utf8'))
   const marketWatch = JSON.parse(fs.readFileSync(path.join(root, 'data', 'market-watch.json'), 'utf8'))
+  const marketWatchlistPath = path.join(root, 'data', 'market-watchlist.json')
+  const marketWatchlist = fs.existsSync(marketWatchlistPath)
+    ? JSON.parse(fs.readFileSync(marketWatchlistPath, 'utf8'))
+    : null
   const whatChanged = JSON.parse(fs.readFileSync(path.join(root, 'data', 'what-changed.json'), 'utf8'))
 
   const allowedSections = new Set(schema.sections.map((s) => s.slug))
@@ -80,12 +84,27 @@ export function validateResearchData(root = process.cwd()) {
 
   assert.equal(typeof marketWatch.title, 'string', 'market watch title must be a string')
   assert.equal(typeof marketWatch.updated, 'string', 'market watch updated must be a string')
+  assert.ok(!Number.isNaN(new Date(marketWatch.updated).getTime()), 'market watch updated must be parseable as a date')
   assert.ok(Array.isArray(marketWatch.tickers) && marketWatch.tickers.length > 0, 'market watch tickers must be non-empty')
+  if (marketWatchlist) {
+    assert.ok(Array.isArray(marketWatchlist.tickers) && marketWatchlist.tickers.length > 0, 'market watchlist tickers must be non-empty')
+    assert.deepEqual(
+      marketWatch.tickers.map((ticker) => ticker.symbol),
+      marketWatchlist.tickers.map((ticker) => ticker.symbol),
+      'market watch snapshot symbols must match market-watchlist.json order'
+    )
+  }
   for (const ticker of marketWatch.tickers) {
     assert.ok(ticker.symbol && typeof ticker.symbol === 'string', 'market ticker missing symbol')
     assert.ok(ticker.name && typeof ticker.name === 'string', `${ticker.symbol}: missing name`)
     assert.ok(ticker.theme && typeof ticker.theme === 'string', `${ticker.symbol}: missing theme`)
     assert.equal(typeof ticker.dataOk, 'boolean', `${ticker.symbol}: dataOk must be boolean`)
+    if (ticker.dataOk) {
+      assert.ok(Number.isFinite(ticker.price), `successful market ticker ${ticker.symbol} must have numeric price`)
+      for (const field of ['change1D', 'change5D', 'change1M', 'changeYTD']) {
+        assert.ok(ticker[field] == null || Number.isFinite(ticker[field]), `${ticker.symbol}: ${field} must be numeric or null`)
+      }
+    }
     assert.ok(Array.isArray(ticker.articleSlugs), `${ticker.symbol}: articleSlugs must be an array`)
     for (const slug of ticker.articleSlugs) {
       assert.ok(articleSlugs.has(slug), `${ticker.symbol}: unknown article slug ${slug}`)

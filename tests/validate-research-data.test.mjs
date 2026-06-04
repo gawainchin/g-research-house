@@ -1,10 +1,20 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { execFileSync } from 'node:child_process'
+import fs from 'node:fs'
+import os from 'node:os'
 import path from 'node:path'
 import { parseInlineBlocks } from '../lib/inline-blocks.mjs'
+import { validateResearchData } from '../scripts/validate-research-data.mjs'
+import { isMarketWatchStale } from '../lib/market-watch-utils.mjs'
 
 const workdir = path.resolve(import.meta.dirname, '..')
+
+function copyFixtureRoot() {
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'grh-validate-'))
+  fs.cpSync(path.join(workdir, 'data'), path.join(tmp, 'data'), { recursive: true })
+  return tmp
+}
 
 test('research data validates cleanly', () => {
   const output = execFileSync('node', ['scripts/validate-research-data.mjs'], {
@@ -19,6 +29,38 @@ test('parses matching triple-colon content blocks', () => {
   const blocks = parseInlineBlocks(':::paragraph\ntext: Hello\n:::')
 
   assert.deepEqual(blocks, [{ type: 'paragraph', text: 'Hello' }])
+})
+
+test('market watch stale helper flags snapshots older than threshold', () => {
+  const now = new Date('2026-06-04T12:00:00.000Z')
+
+  assert.equal(isMarketWatchStale('2026-06-03T10:59:59.000Z', now), true)
+  assert.equal(isMarketWatchStale('2026-06-03T12:30:00.000Z', now), false)
+  assert.equal(isMarketWatchStale('not-a-date', now), true)
+})
+
+test('market watch validation rejects successful rows without numeric prices', () => {
+  const tmp = copyFixtureRoot()
+  const marketWatchPath = path.join(tmp, 'data', 'market-watch.json')
+  const marketWatch = JSON.parse(fs.readFileSync(marketWatchPath, 'utf8'))
+  marketWatch.tickers[0].dataOk = true
+  marketWatch.tickers[0].price = null
+  fs.writeFileSync(marketWatchPath, JSON.stringify(marketWatch, null, 2))
+
+  assert.throws(
+    () => validateResearchData(tmp),
+    /successful market ticker .* numeric price/
+  )
+})
+
+test('market watchlist config symbols match generated market snapshot symbols', () => {
+  const watchlist = JSON.parse(fs.readFileSync(path.join(workdir, 'data', 'market-watchlist.json'), 'utf8'))
+  const snapshot = JSON.parse(fs.readFileSync(path.join(workdir, 'data', 'market-watch.json'), 'utf8'))
+
+  assert.deepEqual(
+    snapshot.tickers.map((ticker) => ticker.symbol),
+    watchlist.tickers.map((ticker) => ticker.symbol)
+  )
 })
 
 test('parses matching four-colon content blocks', () => {
