@@ -78,6 +78,10 @@ export default function Home() {
           <span aria-hidden style={{ color: '#bcb3a5' }}>·</span>
           <Link href="/graph" style={navLink}>Graph</Link>
           <span aria-hidden style={{ color: '#bcb3a5' }}>·</span>
+          <Link href="/what-changed" style={navLink}>What Changed</Link>
+          <span aria-hidden style={{ color: '#bcb3a5' }}>·</span>
+          <Link href="/markets" style={navLink}>Markets</Link>
+          <span aria-hidden style={{ color: '#bcb3a5' }}>·</span>
           <Link href="/visual-demo" style={navLink}>Visual</Link>
         </nav>
       </header>

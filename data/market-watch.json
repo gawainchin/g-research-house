@@ -1,0 +1,373 @@
+{
+  "title": "Ticker Monitor",
+  "updated": "2026-06-04T06:05:10+00:00",
+  "source": "yfinance snapshot; delayed market data; educational context only",
+  "summary": "Price-move context for tickers mentioned across G Research House articles and thesis clusters.",
+  "tickers": [
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "theme": "AI leaders / semis",
+      "articleSlugs": [
+        "ai-is-not-the-climate-bubble-valuation-rhymes",
+        "cerebras-ipo-wafer-scale-inference"
+      ],
+      "currency": "USD",
+      "price": 214.75,
+      "change1D": -3.621760640406191,
+      "change5D": 1.0112859053435397,
+      "change1M": 8.197301805062196,
+      "changeYTD": 13.71458462240538,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "AMD",
+      "name": "AMD",
+      "theme": "AI leaders / semis",
+      "articleSlugs": [
+        "ai-is-not-the-climate-bubble-valuation-rhymes"
+      ],
+      "currency": "USD",
+      "price": 542.52001953125,
+      "change1D": 4.022710125359996,
+      "change5D": 9.480568708120618,
+      "change1M": 58.84523217135591,
+      "changeYTD": 142.77084913757488,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "theme": "AI leaders / platforms",
+      "articleSlugs": [
+        "ai-is-not-the-climate-bubble-valuation-rhymes",
+        "ai-cooling-next-data-center-bottleneck"
+      ],
+      "currency": "USD",
+      "price": 427.3399963378906,
+      "change1D": -3.1655755133551677,
+      "change5D": 3.554894330291636,
+      "change1M": 3.317054635334049,
+      "changeYTD": -9.641816270165293,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms",
+      "theme": "AI leaders / platforms",
+      "articleSlugs": [
+        "ai-is-not-the-climate-bubble-valuation-rhymes",
+        "ai-cooling-next-data-center-bottleneck"
+      ],
+      "currency": "USD",
+      "price": 622.97998046875,
+      "change1D": 4.2417508121782355,
+      "change5D": -1.9330713578847192,
+      "change1M": 2.0592729275808352,
+      "changeYTD": -4.217338879840005,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet",
+      "theme": "AI leaders / platforms",
+      "articleSlugs": [
+        "ai-is-not-the-climate-bubble-valuation-rhymes"
+      ],
+      "currency": "USD",
+      "price": 358.989990234375,
+      "change1D": -0.7903871275111829,
+      "change5D": -7.674304289374745,
+      "change1M": -6.330074302837573,
+      "changeYTD": 13.91083521717933,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "PLTR",
+      "name": "Palantir",
+      "theme": "AI valuation discipline",
+      "articleSlugs": [
+        "ai-is-not-the-climate-bubble-valuation-rhymes",
+        "palantir-rule-of-40-deep-dive"
+      ],
+      "currency": "USD",
+      "price": 142.1999969482422,
+      "change1D": -6.551883643735101,
+      "change5D": 7.312657794206134,
+      "change1M": -2.622750026070453,
+      "changeYTD": -15.28655044013325,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "VRT",
+      "name": "Vertiv",
+      "theme": "AI power / cooling",
+      "articleSlugs": [
+        "ai-is-not-the-climate-bubble-valuation-rhymes",
+        "ai-cooling-next-data-center-bottleneck"
+      ],
+      "currency": "USD",
+      "price": 331.44000244140625,
+      "change1D": -0.9118323065009037,
+      "change5D": 3.64625796066651,
+      "change1M": 0.14200719671559892,
+      "changeYTD": 88.73640526704096,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "ETN",
+      "name": "Eaton",
+      "theme": "AI power / electrification",
+      "articleSlugs": [
+        "ai-is-not-the-climate-bubble-valuation-rhymes",
+        "ai-cooling-next-data-center-bottleneck"
+      ],
+      "currency": "USD",
+      "price": 421.2099914550781,
+      "change1D": 0.8596322924823596,
+      "change5D": 3.6518435209792255,
+      "change1M": -0.29116820831822654,
+      "changeYTD": 28.688397725973758,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron",
+      "theme": "Memory / HBM",
+      "articleSlugs": [
+        "agentic-inference-memory-io-pressure-indicator"
+      ],
+      "currency": "USD",
+      "price": 1079.5699462890625,
+      "change1D": 1.4538080122224128,
+      "change5D": 16.281597302595884,
+      "change1M": 87.27902219235905,
+      "changeYTD": 242.26425094500286,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "005930.KS",
+      "name": "Samsung Electronics",
+      "theme": "Memory / HBM",
+      "articleSlugs": [
+        "agentic-inference-memory-io-pressure-indicator"
+      ],
+      "currency": "KRW",
+      "price": 356500.0,
+      "change1D": -1.109570041608876,
+      "change5D": 16.12377850162867,
+      "change1M": 61.6780045351474,
+      "changeYTD": 177.431906614786,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "000660.KS",
+      "name": "SK Hynix",
+      "theme": "Memory / HBM",
+      "articleSlugs": [
+        "agentic-inference-memory-io-pressure-indicator"
+      ],
+      "currency": "KRW",
+      "price": 2303500.0,
+      "change1D": -2.3940677966101664,
+      "change5D": 2.6972804279982165,
+      "change1M": 79.1213063763608,
+      "changeYTD": 240.25110782865582,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "AMAT",
+      "name": "Applied Materials",
+      "theme": "Semicap / packaging",
+      "articleSlugs": [
+        "agentic-inference-memory-io-pressure-indicator",
+        "cerebras-ipo-wafer-scale-inference"
+      ],
+      "currency": "USD",
+      "price": 500.7699890136719,
+      "change1D": 2.1875321880901577,
+      "change5D": 11.716673511137055,
+      "change1M": 27.949814187266163,
+      "changeYTD": 86.24985982367066,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "TSM",
+      "name": "TSMC",
+      "theme": "Foundry / advanced packaging",
+      "articleSlugs": [
+        "cerebras-ipo-wafer-scale-inference",
+        "ai-power-semis-wolfspeed-onsemi-infineon"
+      ],
+      "currency": "USD",
+      "price": 436.69000244140625,
+      "change1D": -2.2386890114720503,
+      "change5D": 3.302342178759954,
+      "change1M": 8.734846833834409,
+      "changeYTD": 36.632152453265455,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "IFX.DE",
+      "name": "Infineon",
+      "theme": "Power semiconductors",
+      "articleSlugs": [
+        "ai-power-semis-wolfspeed-onsemi-infineon"
+      ],
+      "currency": "EUR",
+      "price": 88.0,
+      "change1D": 0.0,
+      "change5D": 14.687861527439928,
+      "change1M": 45.45454545454546,
+      "changeYTD": 129.9751768029716,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "ON",
+      "name": "onsemi",
+      "theme": "Power semiconductors",
+      "articleSlugs": [
+        "ai-power-semis-wolfspeed-onsemi-infineon"
+      ],
+      "currency": "USD",
+      "price": 133.92999267578125,
+      "change1D": 4.11224604417908,
+      "change5D": 7.238364424943766,
+      "change1M": 31.252441664179976,
+      "changeYTD": 136.20809677893558,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "WOLF",
+      "name": "Wolfspeed",
+      "theme": "Power semiconductors / optionality",
+      "articleSlugs": [
+        "ai-power-semis-wolfspeed-onsemi-infineon"
+      ],
+      "currency": "USD",
+      "price": 61.66999816894531,
+      "change1D": 0.9990120896412602,
+      "change5D": -2.513436918708656,
+      "change1M": 71.59154291985685,
+      "changeYTD": 225.77917155174953,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "IREN",
+      "name": "IREN",
+      "theme": "AI data centers / compute infra",
+      "articleSlugs": [
+        "why-iren-may-be-structurally-safer-than-nebius"
+      ],
+      "currency": "USD",
+      "price": 65.4800033569336,
+      "change1D": -1.6816743886603813,
+      "change5D": -3.4787634262281153,
+      "change1M": 32.336305502670015,
+      "changeYTD": 53.34895125755021,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "NBIS",
+      "name": "Nebius",
+      "theme": "AI cloud / compute infra",
+      "articleSlugs": [
+        "why-iren-may-be-structurally-safer-than-nebius"
+      ],
+      "currency": "USD",
+      "price": 251.67999267578125,
+      "change1D": -3.4154556585703766,
+      "change5D": 20.78514113043779,
+      "change1M": 42.65955973696622,
+      "changeYTD": 179.79989017742776,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "1810.HK",
+      "name": "Xiaomi",
+      "theme": "China AI / platforms",
+      "articleSlugs": [
+        "china-ai-infrastructure-hidden-power-play"
+      ],
+      "currency": "HKD",
+      "price": 28.440000534057617,
+      "change1D": -0.4898509098046344,
+      "change5D": -0.4201643351844697,
+      "change1M": -6.631643503380003,
+      "changeYTD": -29.39423685217385,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "0700.HK",
+      "name": "Tencent",
+      "theme": "China AI / platforms",
+      "articleSlugs": [
+        "china-ai-infrastructure-hidden-power-play"
+      ],
+      "currency": "HKD",
+      "price": 457.6000061035156,
+      "change1D": -1.8867898602335509,
+      "change5D": 7.670589671415451,
+      "change1M": -3.091911420178961,
+      "changeYTD": -26.54895568161868,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    },
+    {
+      "symbol": "9988.HK",
+      "name": "Alibaba",
+      "theme": "China AI / cloud",
+      "articleSlugs": [
+        "china-ai-infrastructure-hidden-power-play"
+      ],
+      "currency": "HKD",
+      "price": 123.0999984741211,
+      "change1D": -2.7646129875076197,
+      "change5D": 1.0673196960519382,
+      "change1M": -6.1737794683916825,
+      "changeYTD": -17.38255135965028,
+      "marketCap": null,
+      "dataOk": true,
+      "error": null
+    }
+  ]
+}

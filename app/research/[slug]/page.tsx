@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import ArticleBlock from '../../../components/article-block'
 import { ArticleResearchGraph } from '../../../components/research-graph'
-import { formatDisplayDate, getAllNotes, getArticleBySlug, getRelatedNotes } from '../../../lib/research'
+import { formatDisplayDate, getAllNotes, getArticleBySlug, getClustersForArticleSlug, getRelatedNotes } from '../../../lib/research'
 import type { ContentBlock } from '../../../lib/research'
 
 // ── Section accent colors ────────────────────────────────────────────────────
@@ -265,6 +265,72 @@ function ArticleHeader({ article }: {
 }
 
 // ── Article footer with verdict ─────────────────────────────────────────────
+function ArticleClusterBacklinks({ article }: {
+  article: ReturnType<typeof getArticleBySlug> & { content: ContentBlock[] }
+}) {
+  const clusters = getClustersForArticleSlug(article.slug)
+  if (!clusters.length) return null
+
+  return (
+    <section style={{
+      margin: '0 0 2rem',
+      padding: '1rem',
+      background: '#fbfaf7',
+      border: '1px solid #ece6dd',
+      borderLeft: '3px solid #1f2933',
+      borderRadius: 4,
+    }}>
+      <div style={{
+        fontSize: '0.68rem',
+        letterSpacing: '0.1em',
+        textTransform: 'uppercase',
+        color: '#8a8278',
+        fontFamily: 'Helvetica Neue, sans-serif',
+        marginBottom: '0.75rem',
+      }}>
+        Part of this research cluster
+      </div>
+      <div style={{ display: 'grid', gap: '0.85rem' }}>
+        {clusters.map((cluster) => (
+          <Link key={cluster.slug} href={`/themes/${cluster.slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', alignItems: 'flex-start' }}>
+              <div>
+                <div style={{
+                  color: '#181818',
+                  fontSize: '1.05rem',
+                  fontFamily: 'Georgia, serif',
+                  marginBottom: '0.3rem',
+                }}>
+                  {cluster.title}
+                </div>
+                <div style={{
+                  color: '#5a544d',
+                  fontFamily: 'Helvetica Neue, sans-serif',
+                  fontSize: '0.9rem',
+                  lineHeight: 1.6,
+                }}>
+                  {cluster.thesis}
+                </div>
+              </div>
+              <div style={{
+                whiteSpace: 'nowrap',
+                color: '#6f665d',
+                fontFamily: 'Helvetica Neue, sans-serif',
+                fontSize: '0.75rem',
+                textTransform: 'uppercase',
+                letterSpacing: '0.06em',
+              }}>
+                {cluster.status} · {cluster.conviction}
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+// ── Article footer with verdict ─────────────────────────────────────────────
 function ArticleFooter({ article }: {
   article: ReturnType<typeof getArticleBySlug> & { content: ContentBlock[] }
 }) {
@@ -348,6 +414,7 @@ export default async function ResearchArticlePage({ params }: { params: Promise<
   return (
     <main style={{ maxWidth: 780, margin: '0 auto', padding: '3.5rem 1.5rem 4rem' }}>
       <ArticleHeader article={{ ...article, content: article.content } as ReturnType<typeof getArticleBySlug> & { content: ContentBlock[] }} />
+      <ArticleClusterBacklinks article={{ ...article, content: article.content } as ReturnType<typeof getArticleBySlug> & { content: ContentBlock[] }} />
 
       <article>
         {renderedBlocks.map((block, index) => (

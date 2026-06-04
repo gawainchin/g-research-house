@@ -130,6 +130,52 @@ export interface HouseViewData {
   clusters: ResearchCluster[]
 }
 
+export interface WhatChangedEntry {
+  id: string
+  date: string
+  clusterSlug?: string
+  title: string
+  direction: string
+  status: string
+  whatChanged: string
+  thesisImpact: string
+  expressionImpact: string
+  followUp: string
+  articleSlugs: string[]
+}
+
+export interface WhatChangedData {
+  title: string
+  updated: string
+  sourceNote: string
+  summary: string
+  entries: WhatChangedEntry[]
+}
+
+export interface MarketTicker {
+  symbol: string
+  name: string
+  theme: string
+  articleSlugs: string[]
+  currency?: string | null
+  price?: number | null
+  change1D?: number | null
+  change5D?: number | null
+  change1M?: number | null
+  changeYTD?: number | null
+  marketCap?: number | null
+  dataOk: boolean
+  error?: string | null
+}
+
+export interface MarketWatchData {
+  title: string
+  updated: string
+  source: string
+  summary: string
+  tickers: MarketTicker[]
+}
+
 export function formatDisplayDate(date: string) {
   return new Date(date).toLocaleDateString('en-US', {
     year: 'numeric',

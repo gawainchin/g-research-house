@@ -11,6 +11,8 @@ export function validateResearchData(root = process.cwd()) {
   const site = JSON.parse(fs.readFileSync(path.join(root, 'data', 'site.json'), 'utf8'))
   const schema = JSON.parse(fs.readFileSync(path.join(root, 'data', 'research-schema.json'), 'utf8'))
   const houseView = JSON.parse(fs.readFileSync(path.join(root, 'data', 'house-view.json'), 'utf8'))
+  const marketWatch = JSON.parse(fs.readFileSync(path.join(root, 'data', 'market-watch.json'), 'utf8'))
+  const whatChanged = JSON.parse(fs.readFileSync(path.join(root, 'data', 'what-changed.json'), 'utf8'))
 
   const allowedSections = new Set(schema.sections.map((s) => s.slug))
   const allowedBlockTypes = new Set(schema.articleShape.contentBlockTypes)
@@ -58,6 +60,35 @@ export function validateResearchData(root = process.cwd()) {
     }
     for (const slug of cluster.articleSlugs) {
       assert.ok(articleSlugs.has(slug), `${cluster.slug}: unknown article slug ${slug}`)
+    }
+  }
+
+  assert.equal(typeof whatChanged.title, 'string', 'what changed title must be a string')
+  assert.equal(typeof whatChanged.updated, 'string', 'what changed updated must be a string')
+  assert.ok(Array.isArray(whatChanged.entries) && whatChanged.entries.length > 0, 'what changed entries must be non-empty')
+  for (const entry of whatChanged.entries) {
+    assert.ok(entry.id && typeof entry.id === 'string', 'what changed entry missing id')
+    if (entry.clusterSlug) assert.ok(clusterSlugs.has(entry.clusterSlug), `${entry.id}: unknown clusterSlug ${entry.clusterSlug}`)
+    for (const field of ['date', 'title', 'direction', 'status', 'whatChanged', 'thesisImpact', 'expressionImpact', 'followUp']) {
+      assert.ok(typeof entry[field] === 'string' && entry[field].trim(), `${entry.id}: missing ${field}`)
+    }
+    assert.ok(Array.isArray(entry.articleSlugs), `${entry.id}: articleSlugs must be an array`)
+    for (const slug of entry.articleSlugs) {
+      assert.ok(articleSlugs.has(slug), `${entry.id}: unknown article slug ${slug}`)
+    }
+  }
+
+  assert.equal(typeof marketWatch.title, 'string', 'market watch title must be a string')
+  assert.equal(typeof marketWatch.updated, 'string', 'market watch updated must be a string')
+  assert.ok(Array.isArray(marketWatch.tickers) && marketWatch.tickers.length > 0, 'market watch tickers must be non-empty')
+  for (const ticker of marketWatch.tickers) {
+    assert.ok(ticker.symbol && typeof ticker.symbol === 'string', 'market ticker missing symbol')
+    assert.ok(ticker.name && typeof ticker.name === 'string', `${ticker.symbol}: missing name`)
+    assert.ok(ticker.theme && typeof ticker.theme === 'string', `${ticker.symbol}: missing theme`)
+    assert.equal(typeof ticker.dataOk, 'boolean', `${ticker.symbol}: dataOk must be boolean`)
+    assert.ok(Array.isArray(ticker.articleSlugs), `${ticker.symbol}: articleSlugs must be an array`)
+    for (const slug of ticker.articleSlugs) {
+      assert.ok(articleSlugs.has(slug), `${ticker.symbol}: unknown article slug ${slug}`)
     }
   }
 

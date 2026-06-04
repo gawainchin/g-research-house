@@ -1,0 +1,56 @@
+{
+  "title": "What Changed",
+  "updated": "2026-06-04",
+  "sourceNote": "Obsidian overnight synthesis — 2026-06-04",
+  "summary": "Latest curated deltas from the overnight research pass. The main change is not a new AI-infra thesis, but stronger evidence inside the physical bottleneck stack.",
+  "entries": [
+    {
+      "id": "memory-optics-evidence-strengthened-2026-06-04",
+      "date": "2026-06-04",
+      "clusterSlug": "ai-physical-bottlenecks",
+      "title": "Memory and optics evidence strengthened; power and packaging stayed confirmed",
+      "direction": "Strengthened",
+      "status": "Material evidence update",
+      "whatChanged": "Memory gained broader DRAM shortage quantification, with Nikkei reporting planned output increases may meet only about 60% of demand through around 2027. Optics gained more specific InP / 1.6T supply-chain pressure evidence.",
+      "thesisImpact": "The AI physical bottleneck thesis strengthened. The edge is increasingly threshold evidence inside the bottleneck stack rather than another generic claim that AI infrastructure is tight.",
+      "expressionImpact": "No expression ranking changed yet. Memory scarcity is more convincing, but Samsung remains the more valuation-sane memory expression while SK Hynix is the cleaner but more crowded HBM scarcity exposure.",
+      "followUp": "Pull Coherent, Lumentum, AAOI, Credo, Broadcom, and Keysight commentary for explicit 800G/1.6T lead-time, utilization, optical-test, and bring-up friction language.",
+      "articleSlugs": [
+        "agentic-inference-memory-io-pressure-indicator",
+        "ai-is-not-the-climate-bubble-valuation-rhymes",
+        "ai-cooling-next-data-center-bottleneck"
+      ]
+    },
+    {
+      "id": "liquid-cooling-remains-threshold-gated-2026-06-04",
+      "date": "2026-06-04",
+      "clusterSlug": "ai-physical-bottlenecks",
+      "title": "Liquid cooling is stronger as a narrative, but still threshold-gated",
+      "direction": "Stable / watch",
+      "status": "Evidence not upgraded",
+      "whatChanged": "Brownfield retrofit commentary increased, but named scaled retrofit-order evidence from hyperscalers and colocation operators is still missing.",
+      "thesisImpact": "Cooling remains a real constraint, but the public-market expression needs more proof that retrofit adoption becomes a direct revenue/margin driver rather than just a data-center architecture talking point.",
+      "expressionImpact": "Keep cooling-exposed names in the pullback-only / monitor bucket unless customer order evidence improves.",
+      "followUp": "Search operator disclosures for named brownfield liquid-cooling retrofit orders at Equinix, Digital Realty, CoreWeave, Microsoft, Meta, Oracle, and HPE.",
+      "articleSlugs": [
+        "ai-cooling-next-data-center-bottleneck"
+      ]
+    },
+    {
+      "id": "valuation-discipline-still-needed-2026-06-04",
+      "date": "2026-06-04",
+      "clusterSlug": "ai-valuation-discipline",
+      "title": "Bottleneck conviction and fresh-entry attractiveness are diverging",
+      "direction": "Confirmed",
+      "status": "Discipline reminder",
+      "whatChanged": "The stronger bottleneck evidence did not automatically make every related equity attractive at current prices.",
+      "thesisImpact": "The AI theme remains real, but the House View should distinguish thesis quality from expression quality.",
+      "expressionImpact": "Use valuation-sane expression maps and ticker movement context before chasing second-order AI beneficiaries.",
+      "followUp": "Refresh the memory/HBM and power-equipment watchlist after material price moves or fresh earnings commentary.",
+      "articleSlugs": [
+        "ai-is-not-the-climate-bubble-valuation-rhymes",
+        "palantir-rule-of-40-deep-dive"
+      ]
+    }
+  ]
+}

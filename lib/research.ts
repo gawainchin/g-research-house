@@ -4,6 +4,8 @@ import matter from 'gray-matter'
 import siteData from '../data/site.json'
 import schemaData from '../data/research-schema.json'
 import houseViewData from '../data/house-view.json'
+import marketWatchData from '../data/market-watch.json'
+import whatChangedData from '../data/what-changed.json'
 import { parseInlineBlocks } from './inline-blocks.mjs'
 import type {
   ContentBlock,
@@ -11,12 +13,14 @@ import type {
   HeroImage,
   HouseThesis,
   HouseViewData,
+  MarketWatchData,
   ResearchArticle,
   ResearchCluster,
   ResearchNoteSummary,
   ResearchPerspective,
   ResearchSectionSlug,
   SiteData,
+  WhatChangedData,
 } from './research-types'
 
 export type {
@@ -26,6 +30,8 @@ export type {
   HeroImage,
   HouseThesis,
   HouseViewData,
+  MarketTicker,
+  MarketWatchData,
   ResearchArticle,
   ResearchCluster,
   ResearchNoteSummary,
@@ -33,11 +39,15 @@ export type {
   ResearchSectionSlug,
   SiteData,
   SiteSection,
+  WhatChangedData,
+  WhatChangedEntry,
 } from './research-types'
 export { formatDisplayDate } from './research-types'
 
 const site = siteData as SiteData
 const houseView = houseViewData as HouseViewData
+const marketWatch = marketWatchData as MarketWatchData
+const whatChanged = whatChangedData as WhatChangedData
 const schema = schemaData as {
   schemaVersion: number
   rules: string[]
@@ -153,6 +163,18 @@ export function getResearchClusters() {
 
 export function getResearchClusterBySlug(slug: string) {
   return houseView.clusters.find((cluster) => cluster.slug === slug)
+}
+
+export function getClustersForArticleSlug(slug: string) {
+  return houseView.clusters.filter((cluster) => cluster.articleSlugs.includes(slug))
+}
+
+export function getMarketWatch() {
+  return marketWatch
+}
+
+export function getWhatChanged() {
+  return whatChanged
 }
 
 export function getThesisForCluster(clusterSlug: string) {
