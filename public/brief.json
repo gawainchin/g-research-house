@@ -1,25 +1,25 @@
 {
-  "date": "Jun 3, 2026",
+  "date": "Jun 4, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US tape stayed firm but narrow: fresh record closes, AI infrastructure still doing the lifting, defensives also bid.\n- Cross-asset tone was less clean than the equity headline: oil jumped, bitcoin sold off hard, and gold stayed supported.\nAnchor numbers: S&P 500 +0.13%, Dow +0.45%, Nasdaq +0.03%, VIX -1.7%, WTI +3.1%, BTC -6.6%."
+      "content": "- US tape stayed constructive but narrow: AI/software leadership carried the index while speculative and defensive pockets lagged.\n- Macro was not clean risk-on: crude jumped, the dollar firmed, yields edged higher, and gold slipped.\nAnchor numbers: S&P 500 +0.44%, Nasdaq +0.67%, Dow +0.08%; 10Y 4.49%, WTI +9.1%, gold -1.6%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- ETN +4.4% \u2014 industrial/AI power-equipment bid still has legs.\n- BABA ADR +4.3% / GDS ADR +3.9% \u2014 China tech rerating carried into US trading.\n- AAPL +2.9% / MU +2.8% \u2014 quality megacap and memory both worked.\n\n- MSFT -4.2% \u2014 sharp underperformance despite the AI tape; worth checking whether this is positioning, news, or rotation.\n- DXYZ -3.8% \u2014 speculative sleeve lagged even with records elsewhere.\n- INTC -1.3% / NVDA -0.7% \u2014 chip leadership was selective, not blanket risk-on."
+      "content": "Strongest:\n- NET +26.8% \u2014 software beta ripped; still needs thesis refresh, not blind chasing.\n- MU +16.3% \u2014 memory/AI momentum remains the cleanest upside pulse in the book.\n- MSFT +3.6%, ETN +3.7% \u2014 quality AI/industrial exposure participated without looking extended versus the high-beta names.\n\nWeakest:\n- DXYZ -24.1% \u2014 speculative optionality was punished hard; this is not core risk.\n- INTC -7.4% \u2014 idiosyncratic semi weakness while better AI semis worked.\n- TSLA -3.8%, XLU -3.2% \u2014 legacy/speculative and defensives both lagged the growth-led tape."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open at run time; live movers unavailable, so these are last completed HK-session moves.\n- BABA 9988.HK +6.6% and GDS 9698.HK +4.5% led the HK book; same China/AI rerating signal as the ADRs.\n- 2800.HK +1.1% tracked the broader Hang Seng gain; CGN 1816.HK -1.9% lagged as defensives did not join the beta rally."
+      "content": "- HK is pre-open; Yahoo regular-market timestamps still point to the prior completed HK session, so these are last-session moves, not live prints.\n- GDS HK +9.8% \u2014 strongest HK holding; high-beta China tech rerating impulse.\n- CGN +2.3%, 02800 +1.5%, Alibaba HK +1.9% \u2014 breadth was positive, with the broad tracker and core China exposure both firm."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Investopedia/Yahoo: all three major US indexes closed at fresh records as HPE, Marvell and optical/networking names rallied on AI infrastructure demand.\n- Yahoo: the rally remains concentrated \u2014 AI enablers are carrying most of the S&P advance while oil and Middle East tension keep macro risk alive."
+      "content": "- Oil stayed the macro swing factor: Reuters/CNBC coverage tied the move to Iran-war uncertainty and a market still waiting for clearer US-Iran deal signals.\n- The US close was still led by AI/software: Reuters noted Microsoft-linked AI PC momentum, Micron strength, and a firm semiconductor/software tape."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: China tech is showing coordinated strength across ADRs and HK listings, making BABA/GDS/2800 the cleanest near-term rerating sleeve to respect.\n- Risk: MSFT selling off while the AI complex makes records is a real relative-strength warning, not noise.\n- Research: Check whether MSFT\u2019s move is tied to company-specific news, AI/cybersecurity spending concerns, or simply crowd rotation out of megacap quality."
+      "content": "- Opportunity: MU/MSFT/NET strength says the market still pays for AI-linked growth, but the cleaner add candidates are quality leaders on pullbacks, not the biggest one-day spikes.\n- Risk: DXYZ and TSLA weakness warn that speculative beta is no longer getting a free ride even while the index grinds higher.\n- Research: Re-check NET after the violent rebound \u2014 decide whether the thesis has improved or whether this is just valuation-sensitive software beta."
     }
   ]
 }
