@@ -1,25 +1,25 @@
 {
-  "date": "Jun 4, 2026",
+  "date": "Jun 8, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US tape stayed constructive but narrow: AI/software leadership carried the index while speculative and defensive pockets lagged.\n- Macro was not clean risk-on: crude jumped, the dollar firmed, yields edged higher, and gold slipped.\nAnchor numbers: S&P 500 +0.44%, Nasdaq +0.67%, Dow +0.08%; 10Y 4.49%, WTI +9.1%, gold -1.6%."
+      "content": "- Monday setup is stabilization after Friday\u2019s tech-led drawdown: US futures are near flat, Nasdaq futures slightly green, while the completed cash session left clear damage in AI beta.\n- Crypto bounced over the weekend and oil/gold are firmer, so the tape is not full risk-off; it is more \u201cgrowth was hit, macro hedges still bid.\u201d\n- Anchors: S&P -2.64%, Nasdaq -4.18%, Dow -1.35% Friday; ES -0.04%, NQ +0.17%; BTC +3.8%, ETH +7.4%; WTI +2.4%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "Strongest:\n- NET +26.8% \u2014 software beta ripped; still needs thesis refresh, not blind chasing.\n- MU +16.3% \u2014 memory/AI momentum remains the cleanest upside pulse in the book.\n- MSFT +3.6%, ETN +3.7% \u2014 quality AI/industrial exposure participated without looking extended versus the high-beta names.\n\nWeakest:\n- DXYZ -24.1% \u2014 speculative optionality was punished hard; this is not core risk.\n- INTC -7.4% \u2014 idiosyncratic semi weakness while better AI semis worked.\n- TSLA -3.8%, XLU -3.2% \u2014 legacy/speculative and defensives both lagged the growth-led tape."
+      "content": "- XLU +0.9% \u2014 only clean green in the US book; defensives did their job.\n- AAPL -1.3% \u2014 relative strength versus the Nasdaq selloff.\n- SPY -2.6% / MSFT -2.7% \u2014 broad beta and quality held better than semis/spec growth.\n- MU -13.3% \u2014 worst hit; memory/cyclical AI beta got repriced hard.\n- INTC -11.3% \u2014 value/rerating sleeve still not immune when semis de-risk.\n- NET -6.9% \u2014 expensive software remains fragile when growth multiples compress."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open; Yahoo regular-market timestamps still point to the prior completed HK session, so these are last-session moves, not live prints.\n- GDS HK +9.8% \u2014 strongest HK holding; high-beta China tech rerating impulse.\n- CGN +2.3%, 02800 +1.5%, Alibaba HK +1.9% \u2014 breadth was positive, with the broad tracker and core China exposure both firm."
+      "content": "- HK is pre-open; Yahoo regular-market timestamps still point to Friday\u2019s close, so these are last completed HK-session moves, not live intraday prints.\n- GDS / 9698.HK +0.7% \u2014 relative bright spot against weak HK tech.\n- BABA / 9988.HK -0.9% and 02800.HK -1.0% \u2014 broad HK/China beta soft but not broken.\n- CGN / 1816.HK -2.8% \u2014 defensive ballast lagged on the day; Hang Seng -1.15%."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Oil stayed the macro swing factor: Reuters/CNBC coverage tied the move to Iran-war uncertainty and a market still waiting for clearer US-Iran deal signals.\n- The US close was still led by AI/software: Reuters noted Microsoft-linked AI PC momentum, Micron strength, and a firm semiconductor/software tape."
+      "content": "- Hong Kong closed Friday down for a third session as tech, semiconductor and financial shares dragged; Trading Economics cited SMIC, Tencent, Xiaomi and AIA among key weights.\n- The global tape is still watching Iran / Strait of Hormuz headlines: oil is higher, while US futures are steady as markets price some chance of de-escalation."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: MU/MSFT/NET strength says the market still pays for AI-linked growth, but the cleaner add candidates are quality leaders on pullbacks, not the biggest one-day spikes.\n- Risk: DXYZ and TSLA weakness warn that speculative beta is no longer getting a free ride even while the index grinds higher.\n- Research: Re-check NET after the violent rebound \u2014 decide whether the thesis has improved or whether this is just valuation-sensitive software beta."
+      "content": "- Opportunity: If Monday opens orderly, relative strength in AAPL/MSFT versus semis argues for adding quality before chasing the most damaged AI beta.\n- Risk: MU/INTC/NET show the weak spot is valuation-sensitive growth plus semis, and that can bleed into NVDA/ETN if futures fade.\n- Research: Re-check whether HK dry powder should stay parked until Hang Seng stabilizes, or be staged into 02800/BABA if Friday\u2019s weakness extends without new policy damage."
     }
   ]
 }
