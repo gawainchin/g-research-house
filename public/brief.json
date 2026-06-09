@@ -1,25 +1,25 @@
 {
-  "date": "Jun 8, 2026",
+  "date": "Jun 9, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- Monday setup is stabilization after Friday\u2019s tech-led drawdown: US futures are near flat, Nasdaq futures slightly green, while the completed cash session left clear damage in AI beta.\n- Crypto bounced over the weekend and oil/gold are firmer, so the tape is not full risk-off; it is more \u201cgrowth was hit, macro hedges still bid.\u201d\n- Anchors: S&P -2.64%, Nasdaq -4.18%, Dow -1.35% Friday; ES -0.04%, NQ +0.17%; BTC +3.8%, ETH +7.4%; WTI +2.4%."
+      "content": "- US tape repaired some of Friday\u2019s tech damage, but it was narrow: semis and AI beta led, defensives lagged.\n- Hong Kong is pre-open; latest completed HK session stayed heavy, with China tech/data-center names still weak.\n- Anchors: Nasdaq +0.86%, S&P 500 +0.30%, Dow -0.16%; HSI last session -1.22%, BTC roughly flat near $63k."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- XLU +0.9% \u2014 only clean green in the US book; defensives did their job.\n- AAPL -1.3% \u2014 relative strength versus the Nasdaq selloff.\n- SPY -2.6% / MSFT -2.7% \u2014 broad beta and quality held better than semis/spec growth.\n- MU -13.3% \u2014 worst hit; memory/cyclical AI beta got repriced hard.\n- INTC -11.3% \u2014 value/rerating sleeve still not immune when semis de-risk.\n- NET -6.9% \u2014 expensive software remains fragile when growth multiples compress."
+      "content": "- INTC +11.2% \u2014 strongest book name; lifted by reports big AI players may consider Intel foundry capacity.\n- MU +9.9% \u2014 memory/semi rebound, high beta working again after Friday\u2019s selloff.\n- TSLA +4.6% \u2014 speculative/AI-beta bid returned with the chip complex.\n- DXYZ -6.1% \u2014 weakest; private-market optionality still trading like fragile risk appetite.\n- AAPL -1.9% \u2014 WWDC/AI reveal became a sell-the-news event.\n- XLU -1.9%, MSFT -1.2% \u2014 defensive yield proxy and mega-cap software both lagged the narrow rebound."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open; Yahoo regular-market timestamps still point to Friday\u2019s close, so these are last completed HK-session moves, not live intraday prints.\n- GDS / 9698.HK +0.7% \u2014 relative bright spot against weak HK tech.\n- BABA / 9988.HK -0.9% and 02800.HK -1.0% \u2014 broad HK/China beta soft but not broken.\n- CGN / 1816.HK -2.8% \u2014 defensive ballast lagged on the day; Hang Seng -1.15%."
+      "content": "- HK is pre-open; Yahoo regular-market timestamps still point to Jun 8, so these are last completed HK-session moves, not live Jun 9 trading.\n- 9698.HK / GDS -6.3% \u2014 weakest HK holding; data-center rerating remains under pressure.\n- 9988.HK / BABA -2.9% \u2014 China platform beta weak ahead of the open.\n- 1816.HK -1.3%, 2800.HK -1.2% \u2014 CGN and the Tracker Fund both tracked the softer HSI tape."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Hong Kong closed Friday down for a third session as tech, semiconductor and financial shares dragged; Trading Economics cited SMIC, Tencent, Xiaomi and AIA among key weights.\n- The global tape is still watching Iran / Strait of Hormuz headlines: oil is higher, while US futures are steady as markets price some chance of de-escalation."
+      "content": "- Chip stocks drove the US bounce: Intel, Micron and Nvidia were cited among the leaders after Friday\u2019s tech drawdown.\n- Apple closed lower after WWDC as investors treated the Siri / Apple Intelligence update as not enough to reset the AI narrative."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: If Monday opens orderly, relative strength in AAPL/MSFT versus semis argues for adding quality before chasing the most damaged AI beta.\n- Risk: MU/INTC/NET show the weak spot is valuation-sensitive growth plus semis, and that can bleed into NVDA/ETN if futures fade.\n- Research: Re-check whether HK dry powder should stay parked until Hang Seng stabilizes, or be staged into 02800/BABA if Friday\u2019s weakness extends without new policy damage."
+      "content": "- Opportunity: The rebound is telling you semis still have sponsorship; MU/INTC strength is worth respecting before fading it.\n- Risk: Breadth is not confirming the headline bounce \u2014 DXYZ, AAPL, XLU and HK tech weakness say risk appetite is selective, not clean.\n- Research: Check whether Intel\u2019s foundry-rumor move is backed by real customer economics or just squeeze mechanics."
     }
   ]
 }
