@@ -1,25 +1,25 @@
 {
-  "date": "June 11, 2026",
+  "date": "June 12, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- Risk-off close: Middle East escalation pushed oil higher, while the AI/chip complex took the main equity hit.\n- Futures are still soft into Asia; HK is pre-open, so HK movers below use the last completed session, not live prints.\n- Anchors: S&P -1.62%, Nasdaq -1.98%, Dow -1.87%, VIX +11.8%, WTI futures about +5.1%, 10Y 4.54%."
+      "content": "- US tape snapped back hard: semis and high-beta growth led after Iran-strike risk faded; oil reversed lower while gold still caught a bid.\n- For the book, the message was not just \u201crisk-on\u201d: chips ripped, China ADRs lagged, and ballast still worked.\nAnchor numbers: Nasdaq +2.54%, S&P 500 +1.75%, Dow +1.86%; gold +3.20%, oil -4.37%, BTC +3.43%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- Strongest: DXYZ +3.9% \u2014 speculative pocket held up despite the broader growth drawdown.\n- AAPL +0.4% \u2014 rare megacap relative strength; XLU +0.1% also acted as ballast.\n- Weakest: GDS ADR -7.3% \u2014 China growth beta sold with risk.\n- NET -7.0% \u2014 expensive software stayed pressure-sensitive.\n- ETN -6.5%, MU -4.7%, NVDA -3.7% \u2014 AI/capex winners were the main funding source."
+      "content": "- MU +11.66% \u2014 memory/AI supply squeeze trade stayed the cleanest upside expression.\n- INTC +9.27% \u2014 double-upgrade / AI server CPU rerating narrative kept squeezing higher.\n- DXYZ +7.32%, TSLA +4.60% \u2014 speculative beta caught the risk-on bid; useful, but not core signal.\n- BABA ADR -2.33% \u2014 US-listed China lagged despite the broader rally; do not read the US tape as China confirmation.\n- MSFT -1.77% \u2014 quality mega-cap underperformed sharply versus semis, so leadership was narrow inside AI.\n- XLU +0.11% \u2014 defensive ballast was flat; not needed yesterday, but not breaking."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open; these are last completed HK-session moves from Yahoo chart data.\n- GDS-SW / 9698.HK +1.8% \u2014 clear relative strength versus the HK book.\n- BABA / 9988.HK -3.1% \u2014 main drag in the HK account.\n- Tracker Fund / 2800.HK -1.0% and CGN / 1816.HK -0.7% \u2014 softer, but less eventful than BABA."
+      "content": "- HK is pre-open: Yahoo regular-market timestamps still point to the 11 Jun close, so these are last completed HK-session moves, not live prints.\n- 9698.HK -6.22% and 9988.HK -5.37% \u2014 HK China tech was the real weak spot; ADR weakness did not create a clean overnight reversal signal.\n- 2800.HK -0.64% and 1816.HK -0.66% \u2014 broad HK beta and CGN were softer but not disorderly."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- CNBC attributed the U.S. selloff to Trump threatening more Iran attacks after U.S. strikes, with Strait of Hormuz risk lifting crude.\n- May CPI was hot on headline inflation at +4.2% y/y, but core was softer at +2.9%, leaving the Fed-on-hold story intact for now."
+      "content": "- US stocks surged after reports that Trump cancelled planned Iran strikes and said an Iran deal could be signed, taking immediate geopolitical risk premium out of oil.\n- Semiconductors had their best day in over a year, with the SOX up roughly 8%, while Micron led on memory-supply tightness tied to AI accelerator demand."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: If AI selling is mostly de-risking rather than thesis damage, MSFT/NVDA/MU deserve first review before chasing lower-quality rebounds.\n- Risk: Oil/geopolitical shock plus crowded chip selling is the bad mix for the book because it hits growth multiples and raises macro fragility at the same time.\n- Research: Check whether the chip drawdown is tied to forced rotation/IPO funding noise or a real change in AI capex expectations."
+      "content": "- Opportunity: MU/NVDA/INTC are still where the tape is paying for AI scarcity, but add discipline matters after a vertical rebound.\n- Risk: HK China exposure remains the portfolio\u2019s clearest warning light; BABA/GDS are not confirming the US risk-on move yet.\n- Research: Re-check whether the China book needs a policy-catalyst threshold before deploying more of the HK cash pile."
     }
   ]
 }
