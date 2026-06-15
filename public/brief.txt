@@ -1,28 +1,28 @@
-Morning brief — 12 Jun 2026, 08:01 HKT
+Morning brief — Mon Jun 15, 2026, 08:00 HKT
 
 OVERNIGHT MAP
-- US tape snapped back hard: semis and high-beta growth led after Iran-strike risk faded; oil reversed lower while gold still caught a bid.
-- For the book, the message was not just “risk-on”: chips ripped, China ADRs lagged, and ballast still worked.
-Anchor numbers: Nasdaq +2.54%, S&P 500 +1.75%, Dow +1.86%; gold +3.20%, oil -4.37%, BTC +3.43%.
+- Monday setup is risk-on after Friday’s higher US close: futures are firmer, crypto is green, and the book’s main damage was concentrated in DXYZ rather than broad beta.
+- The macro tape is still Middle-East/energy-led: oil is down hard on renewed Iran-US peace hopes, while gold has not fully given back the safety bid.
+- Anchors: S&P +0.50%, Nasdaq +0.31%, Dow +0.70%; ES +0.77%, NQ +1.23%; WTI -4.62%, BTC +2.01%.
 
 US CLOSE MOVERS
-- MU +11.66% — memory/AI supply squeeze trade stayed the cleanest upside expression.
-- INTC +9.27% — double-upgrade / AI server CPU rerating narrative kept squeezing higher.
-- DXYZ +7.32%, TSLA +4.60% — speculative beta caught the risk-on bid; useful, but not core signal.
-- BABA ADR -2.33% — US-listed China lagged despite the broader rally; do not read the US tape as China confirmation.
-- MSFT -1.77% — quality mega-cap underperformed sharply versus semis, so leadership was narrow inside AI.
-- XLU +0.11% — defensive ballast was flat; not needed yesterday, but not breaking.
+- INTC +6.51% — clear strongest portfolio name; old cyclical/value exposure finally had momentum.
+- TSLA +1.82% — legacy bag caught the risk-on bid.
+- XLU +1.09% — defensive ballast worked even with equities green.
+- DXYZ -25.14% — worst hit; SpaceX IPO sucked attention into the direct listing and away from proxy-style private-market vehicles.
+- AAPL -1.52%, MU -1.43% — megacap/semis lagged despite the index close being positive.
+- ETN -0.57% — industrial quality was not where money chased on Friday.
 
 HK LIVE MOVERS
-- HK is pre-open: Yahoo regular-market timestamps still point to the 11 Jun close, so these are last completed HK-session moves, not live prints.
-- 9698.HK -6.22% and 9988.HK -5.37% — HK China tech was the real weak spot; ADR weakness did not create a clean overnight reversal signal.
-- 2800.HK -0.64% and 1816.HK -0.66% — broad HK beta and CGN were softer but not disorderly.
+- HK is pre-open; Yahoo timestamps still point to Friday’s completed session, so treat these as last-session moves, not live prints.
+- 9988.HK +2.61% — BABA was the cleanest HK holding rebound.
+- 2800.HK +1.95% and 1816.HK +1.33% — broad HK beta and CGN both helped; 9698.HK +0.68% was positive but less forceful.
 
 MARKET NEWS
-- US stocks surged after reports that Trump cancelled planned Iran strikes and said an Iran deal could be signed, taking immediate geopolitical risk premium out of oil.
-- Semiconductors had their best day in over a year, with the SOX up roughly 8%, while Micron led on memory-supply tightness tied to AI accelerator demand.
+- Reuters said Wall Street closed higher Friday as SpaceX’s record public debut dominated trading and investors leaned into hopes for an Iran-US peace deal.
+- Oil slid on possible Strait of Hormuz reopening, which helps the inflation/rates narrative but also removes some geopolitical premium from energy.
 
 ACTION BOARD
-- Opportunity: MU/NVDA/INTC are still where the tape is paying for AI scarcity, but add discipline matters after a vertical rebound.
-- Risk: HK China exposure remains the portfolio’s clearest warning light; BABA/GDS are not confirming the US risk-on move yet.
-- Research: Re-check whether the China book needs a policy-catalyst threshold before deploying more of the HK cash pile.
+- Opportunity: HK exposure has the cleaner setup if Friday’s BABA/Tracker strength carries into the open, because the account still has meaningful idle cash.
+- Risk: DXYZ needs discipline now; a 25% drop after the SpaceX debut says the proxy trade can break even when the headline asset is exciting.
+- Research: Check whether INTC’s move was company-specific or just short-covering/value rotation before treating it as a real thesis upgrade.
