@@ -127,6 +127,30 @@ test('parses matching four-colon content blocks', () => {
   assert.deepEqual(blocks, [{ type: 'heading', text: 'Four-colon heading' }])
 })
 
+test('splits raw markdown headings and paragraphs around structured blocks', () => {
+  const blocks = parseInlineBlocks(`## Why QEC Is a Good Example
+
+Quantum error correction is almost tailor-made for this pattern.
+
+:::flowchart
+title: Flow
+steps:
+  - {label: Generate, note: Search}
+:::
+
+## What Remains Unproven
+
+Hardware impact is still unproven.`)
+
+  assert.deepEqual(blocks, [
+    { type: 'heading', text: 'Why QEC Is a Good Example' },
+    { type: 'paragraph', text: 'Quantum error correction is almost tailor-made for this pattern.' },
+    { type: 'flowchart', title: 'Flow', steps: [{ label: 'Generate', note: 'Search' }] },
+    { type: 'heading', text: 'What Remains Unproven' },
+    { type: 'paragraph', text: 'Hardware impact is still unproven.' },
+  ])
+})
+
 test('rejects mismatched content block fences in strict mode', () => {
   assert.throws(
     () => parseInlineBlocks('::::paragraph\ntext: Broken fence\n:::', { strict: true }),
