@@ -1,5 +1,5 @@
 ---
-title: LLMs Are Search Engines for Science, Not Answer Engines
+title: LLMs Are Discovery Search Engines, Not Answer Engines
 slug: llms-are-search-engines-for-science-not-answer-engines
 section: ai-research
 date: 2026-06-15
@@ -18,6 +18,7 @@ keywords:
   - AlphaEvolve
   - verifier loops
 format: thesis
+perspective: operator
 summary: >-
   IBM's quantum-error-correction work is a clean case study in the real discovery pattern: LLMs generate candidate programs, formal verifiers create trust, and the loop compounds search.
 readingTime: 6
@@ -43,7 +44,7 @@ The useful story in IBM's new quantum-error-correction work is not that an LLM "
 That is the mental model shift. In science and technical operations, the model is not primarily an answer engine. It is a search engine over candidate explanations, programs, molecular designs, proofs, schedules, circuits, or code constructions. The trust does not come from fluent output. It comes from the verifier loop around it.
 
 :::metric-strip
-title: "Read the IBM result as a search system, not a chatbot claim"
+title: "Read IBM’s Result as a Search System, Not a Chatbot Claim"
 metrics:
   - {label: "465 candidate QEC codes", value: "97 CSS BB + 368 non-CSS PBB variants", note: "At n ≤ 360"}
   - {label: "~200k candidates screened", value: "five LLM-guided evolutionary campaigns", note: "Cheap search before expensive checks"}
@@ -51,7 +52,7 @@ metrics:
   - {label: "Verifier loop creates trust", value: "rank checks + decoders + MILP-style checks + expert review", note: "The moat is evaluation, not fluent text"}
 :::
 
-## What IBM actually built
+## What IBM Actually Built
 
 The related arXiv paper, *Evolutionary Discovery of Bivariate Bicycle Codes with LLM-Guided Search*, describes a workflow for discovering quantum low-density parity-check codes, especially bivariate bicycle (BB) and perturbed bivariate bicycle (PBB) codes. These codes matter because quantum computers need error correction: many noisy physical qubits must encode fewer, more reliable logical qubits. A code is usually summarized as `[[n,k,d]]`: physical qubits, logical qubits, and distance.
 
@@ -59,14 +60,14 @@ The system does not ask a chatbot to name the best code. It evolves Python gener
 
 That distinction matters. The LLM is not proving distance, running a decoder, or deciding physical viability. It is generating structured bets.
 
-## The discovery stack: generate, filter, verify, interpret
+## The Discovery Stack: Generate, Filter, Verify, Interpret
 
 The IBM/Qiskit workflow is valuable because it routes model creativity through increasingly hard gates. First comes cheap screening: compute basic properties such as encoding dimension using GF(2) rank checks. Then approximate decoding and distance estimates filter candidates further. Then exact or stronger checks — including MILP-based distance verification for selected cases and post-hoc verification across discovered codes — decide which claims deserve trust. Finally, experts interpret whether a candidate is novel, decomposable, useful, or just an artifact of the search.
 
 This is why the paper's distance-trap example is important. Some BB codes with `A = B` have exact distance `d = 2`; BP-OSD missed that trap even after heavy trials, while MILP caught it quickly. That is the real lesson: even the verifier stack has failure modes, so discovery systems need layered evaluators, not one magic score.
 
 :::flowchart
-title: "Scientific LLM workflow: search first, answer later"
+title: "Scientific LLM Workflow: Search First, Answer Later"
 steps:
   - {label: "Generate", note: "LLM acts as generator/search operator, mutating programs or candidate designs"}
   - {label: "Filter", note: "Cheap deterministic screens remove invalid, duplicate, or low-signal candidates"}
@@ -75,7 +76,7 @@ steps:
   - {label: "Feed back", note: "Verified winners and failures seed the next search round"}
 :::
 
-## Why QEC is a good example
+## Why QEC Is a Good Example
 
 Quantum error correction is almost tailor-made for this pattern. The search space is combinatorial and enormous. Human intuition matters, but it cannot enumerate every useful algebraic construction. At the same time, many candidate properties are checkable: commutativity constraints, rank, distance bounds, decoder behavior, equivalence classes, and figure of merit.
 
@@ -84,7 +85,7 @@ That combination — huge generative space plus meaningful evaluators — is exa
 The 465 codes should be read in that frame. They are not deployable quantum-computing breakthroughs. They are a catalog of candidate constructions, including known recoveries, new finite-length representatives, and non-CSS variants with interesting trade-offs. Some look better on figure of merit; some are decomposable; some need stronger distance confidence; all remain far from proving practical fault-tolerant hardware performance.
 
 :::comparison-table
-title: "Answer engine vs discovery search engine"
+title: "Answer Engine vs. Discovery Search Engine"
 columns: ["Lens", "Answer engine", "Discovery search engine"]
 rows:
   - ["Role", "Return a polished answer directly to the user", "Generate many structured bets for a downstream evaluation loop"]
@@ -94,7 +95,7 @@ rows:
   - ["Weak domains", "High-consequence factual or technical claims without independent checks", "Domains where verification is slow, subjective, sparse, political, or weakly tied to reality"]
 :::
 
-## The operator lesson
+## The Operator Lesson
 
 This is the same family resemblance that made FunSearch and AlphaEvolve interesting. FunSearch paired a frozen LLM with a systematic evaluator to search over programs, producing new mathematical and algorithmic discoveries. AlphaEvolve generalized the idea into an evolutionary coding agent for algorithms and systems optimization, where automated evaluators score candidate programs and evolutionary selection compounds gains.
 
@@ -104,7 +105,7 @@ The same pattern travels well beyond quantum codes. In drug discovery, models ca
 
 The boundary is just as important. This pattern breaks where verification is slow, subjective, sparse, or weakly correlated with reality. If there is no cheap evaluator, the LLM merely creates more plausible-looking noise. If the evaluator is gamed, the system optimizes the wrong proxy. If human review is missing, the catalog fills with artifacts.
 
-## What remains unproven
+## What Remains Unproven
 
 First, IBM has not shown that these candidates improve real quantum hardware outcomes. Code parameters and simulations are necessary, not sufficient. Physical layout, syndrome extraction, thresholds, correlated noise, decoder practicality, and implementation overhead still matter.
 
