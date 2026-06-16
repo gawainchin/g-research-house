@@ -1,25 +1,25 @@
 {
-  "date": "Jun 15, 2026",
+  "date": "June 16, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- Monday setup is risk-on after Friday\u2019s higher US close: futures are firmer, crypto is green, and the book\u2019s main damage was concentrated in DXYZ rather than broad beta.\n- The macro tape is still Middle-East/energy-led: oil is down hard on renewed Iran-US peace hopes, while gold has not fully given back the safety bid.\n- Anchors: S&P +0.50%, Nasdaq +0.31%, Dow +0.70%; ES +0.77%, NQ +1.23%; WTI -4.62%, BTC +2.01%."
+      "content": "- Risk caught a clean relief bid after a tentative US-Iran deal eased oil-shock fear; growth/semis led, defensives lagged less than expected because gold also caught a bid.\n- This is helpful for the book\u2019s AI/growth sleeve, but the move is geopolitical-relief first, not a fresh all-clear on earnings or rates.\nAnchor numbers: Nasdaq +3.07%, S&P 500 +1.65%, Dow +0.92%, VIX -8.37%, crude -3.99%, gold +2.94%, BTC +0.84%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- INTC +6.51% \u2014 clear strongest portfolio name; old cyclical/value exposure finally had momentum.\n- TSLA +1.82% \u2014 legacy bag caught the risk-on bid.\n- XLU +1.09% \u2014 defensive ballast worked even with equities green.\n- DXYZ -25.14% \u2014 worst hit; SpaceX IPO sucked attention into the direct listing and away from proxy-style private-market vehicles.\n- AAPL -1.52%, MU -1.43% \u2014 megacap/semis lagged despite the index close being positive.\n- ETN -0.57% \u2014 industrial quality was not where money chased on Friday."
+      "content": "- MU +10.84% \u2014 strongest holding; memory/AI beta caught the biggest squeeze.\n- ETN +4.00%, NVDA +3.54%, NET +3.16% \u2014 broad risk-on helped AI infrastructure and higher-duration growth.\n- MSFT +2.31%, AAPL +1.82%, SPY +1.76% \u2014 quality/core exposure participated cleanly.\n- DXYZ -3.35% \u2014 speculative sleeve failed to join the rally; still the weak read-through.\n- BABA ADR -0.24% \u2014 flat-to-soft versus the US risk rally; use HK line for actual HK-account exposure."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open; Yahoo timestamps still point to Friday\u2019s completed session, so treat these as last-session moves, not live prints.\n- 9988.HK +2.61% \u2014 BABA was the cleanest HK holding rebound.\n- 2800.HK +1.95% and 1816.HK +1.33% \u2014 broad HK beta and CGN both helped; 9698.HK +0.68% was positive but less forceful."
+      "content": "- HK is pre-open: Yahoo timestamps still point to Monday\u2019s HK close, so these are last completed HK-session moves, not live intraday prints.\n- 02800.HK +1.95% and HSI +1.93% \u2014 broad HK beta rebounded with global risk appetite.\n- 9988.HK -0.82%, 9698.HK -2.16%, 1816.HK -1.97% \u2014 the HK account\u2019s single-name China/value sleeve lagged the index."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Reuters said Wall Street closed higher Friday as SpaceX\u2019s record public debut dominated trading and investors leaned into hopes for an Iran-US peace deal.\n- Oil slid on possible Strait of Hormuz reopening, which helps the inflation/rates narrative but also removes some geopolitical premium from energy."
+      "content": "- Global equities rallied and oil fell after reports of a tentative US-Iran deal to extend the ceasefire and reopen the Strait of Hormuz; that directly explains the risk-on / crude-down setup.\n- Asia followed the relief trade into Monday\u2019s close, with Hong Kong up, but the book\u2019s BABA/GDS/CGN lines did not confirm broad single-name strength."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: HK exposure has the cleaner setup if Friday\u2019s BABA/Tracker strength carries into the open, because the account still has meaningful idle cash.\n- Risk: DXYZ needs discipline now; a 25% drop after the SpaceX debut says the proxy trade can break even when the headline asset is exciting.\n- Research: Check whether INTC\u2019s move was company-specific or just short-covering/value rotation before treating it as a real thesis upgrade."
+      "content": "- Opportunity: The cleanest upside confirmation is still US AI infrastructure \u2014 MU/NVDA/ETN/NET led while core beta also worked.\n- Risk: HK China single names are not keeping pace with the index, so don\u2019t read a stronger HSI as proof the BABA/GDS thesis is back on offense.\n- Research: Check whether MU\u2019s move is earnings-revision durable or just short-covering after the geopolitical risk premium came out."
     }
   ]
 }
