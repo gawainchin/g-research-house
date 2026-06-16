@@ -1,5 +1,5 @@
 ---
-title: LLMs Are Discovery Search Engines, Not Answer Engines
+title: The Verifier Loop Is the Product
 slug: llms-are-search-engines-for-science-not-answer-engines
 section: ai-research
 date: 2026-06-15
@@ -21,7 +21,7 @@ format: thesis
 perspective: operator
 summary: >-
   IBM's quantum-error-correction work is a clean case study in the real discovery pattern: LLMs generate candidate programs, formal verifiers create trust, and the loop compounds search.
-readingTime: 6
+readingTime: 5
 relatedSlugs:
   - agentic-inference-memory-io-pressure-indicator
   - hooks-dont-replace-prompts
@@ -39,9 +39,17 @@ sourceLinks:
     url: "https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/"
 ---
 
-The useful story in IBM's new quantum-error-correction work is not that an LLM "did quantum physics." It is that a model was placed inside a discovery loop: generate many candidate programs, reject most of them with formal checks, promote the survivors, and feed the evidence back into the next search round.
+The weakest way to read IBM’s quantum-error-correction work is also the most tempting one.
 
-That is the mental model shift. In science and technical operations, the model is not primarily an answer engine. It is a search engine over candidate explanations, programs, molecular designs, proofs, schedules, circuits, or code constructions. The trust does not come from fluent output. It comes from the verifier loop around it.
+AI found quantum codes. LLMs are doing science. Another frontier falls.
+
+Nice headline. Wrong lesson.
+
+The useful story is stranger and more practical: the LLM was not trusted to be right. It was used to generate lots of structured bets. Then a stack of checks, simulations, solvers, and human interpretation decided which bets deserved attention.
+
+That is the part worth copying.
+
+The verifier loop is the product.
 
 :::metric-strip
 title: "Read IBM’s Result as a Search System, Not a Chatbot Claim"
@@ -52,19 +60,29 @@ metrics:
   - {label: "Verifier loop creates trust", value: "rank checks + decoders + MILP-style checks + expert review", note: "The moat is evaluation, not fluent text"}
 :::
 
-## What IBM Actually Built
+## The old mistake
 
-The related arXiv paper, *Evolutionary Discovery of Bivariate Bicycle Codes with LLM-Guided Search*, describes a workflow for discovering quantum low-density parity-check codes, especially bivariate bicycle (BB) and perturbed bivariate bicycle (PBB) codes. These codes matter because quantum computers need error correction: many noisy physical qubits must encode fewer, more reliable logical qubits. A code is usually summarized as `[[n,k,d]]`: physical qubits, logical qubits, and distance.
+We keep asking LLMs for answers when we should be asking them for candidates.
 
-The system does not ask a chatbot to name the best code. It evolves Python generator programs. Those programs emit polynomial tuples that define candidate BB or PBB codes across many lattice sizes. OpenEvolve provides the evolutionary loop: LLMs mutate programs, the pipeline scores candidates, the best patterns survive, and results feed back into future prompts.
+That mistake is easy to make. Chat interfaces train us to expect a polished response. The model talks like it knows. It gives the impression of judgment.
 
-That distinction matters. The LLM is not proving distance, running a decoder, or deciding physical viability. It is generating structured bets.
+But in scientific and technical work, that is usually the wrong interface. The valuable thing is not a fluent final answer. The valuable thing is a wider search over programs, explanations, molecules, proofs, schedules, circuits, or code constructions.
 
-## The Discovery Stack: Generate, Filter, Verify, Interpret
+Then something outside the model has to decide what survives.
 
-The IBM/Qiskit workflow is valuable because it routes model creativity through increasingly hard gates. First comes cheap screening: compute basic properties such as encoding dimension using GF(2) rank checks. Then approximate decoding and distance estimates filter candidates further. Then exact or stronger checks — including MILP-based distance verification for selected cases and post-hoc verification across discovered codes — decide which claims deserve trust. Finally, experts interpret whether a candidate is novel, decomposable, useful, or just an artifact of the search.
+## What IBM actually built
 
-This is why the paper's distance-trap example is important. Some BB codes with `A = B` have exact distance `d = 2`; BP-OSD missed that trap even after heavy trials, while MILP caught it quickly. That is the real lesson: even the verifier stack has failure modes, so discovery systems need layered evaluators, not one magic score.
+The related arXiv paper, *Evolutionary Discovery of Bivariate Bicycle Codes with LLM-Guided Search*, describes a workflow for discovering quantum low-density parity-check codes, especially bivariate bicycle (BB) and perturbed bivariate bicycle (PBB) codes.
+
+These codes matter because quantum computers need error correction. Many noisy physical qubits must encode fewer, more reliable logical qubits. A code is usually summarized as `[[n,k,d]]`: physical qubits, logical qubits, and distance.
+
+IBM’s system did not ask a chatbot to name the best code.
+
+It evolved Python generator programs. Those programs emitted polynomial tuples that define candidate BB or PBB codes across many lattice sizes. OpenEvolve provided the evolutionary loop: LLMs mutate programs, the pipeline scores candidates, the best patterns survive, and the evidence feeds back into future prompts.
+
+The LLM was not proving distance. It was not running the decoder. It was not deciding physical viability.
+
+It was generating structured bets.
 
 :::flowchart
 title: "Scientific LLM Workflow: Search First, Answer Later"
@@ -76,13 +94,19 @@ steps:
   - {label: "Feed back", note: "Verified winners and failures seed the next search round"}
 :::
 
-## Why QEC Is a Good Example
+## Why QEC is a good test case
 
-Quantum error correction is almost tailor-made for this pattern. The search space is combinatorial and enormous. Human intuition matters, but it cannot enumerate every useful algebraic construction. At the same time, many candidate properties are checkable: commutativity constraints, rank, distance bounds, decoder behavior, equivalence classes, and figure of merit.
+Quantum error correction is almost tailor-made for this pattern.
 
-That combination — huge generative space plus meaningful evaluators — is exactly where LLM search becomes useful. The model can propose odd-looking program mutations that a human may not have written. The formal pipeline can reject most of them without sentimentality. The human scientist then studies the survivors.
+The search space is huge. Human intuition matters, but it cannot enumerate every useful algebraic construction. At the same time, many candidate properties are checkable: commutativity constraints, rank, distance bounds, decoder behavior, equivalence classes, and figure of merit.
 
-The 465 codes should be read in that frame. They are not deployable quantum-computing breakthroughs. They are a catalog of candidate constructions, including known recoveries, new finite-length representatives, and non-CSS variants with interesting trade-offs. Some look better on figure of merit; some are decomposable; some need stronger distance confidence; all remain far from proving practical fault-tolerant hardware performance.
+That combination is where LLM search starts to make sense.
+
+The model can propose odd-looking program mutations. The formal pipeline can reject most of them without sentimentality. The scientist studies the survivors.
+
+The 465 codes should be read in that frame. They are not deployable quantum-computing breakthroughs. They are a catalog of candidate constructions, including known recoveries, new finite-length representatives, and non-CSS variants with interesting trade-offs.
+
+Some look better on figure of merit. Some are decomposable. Some need stronger distance confidence. All remain far from proving practical fault-tolerant hardware performance.
 
 :::comparison-table
 title: "Answer Engine vs. Discovery Search Engine"
@@ -91,26 +115,51 @@ rows:
   - ["Role", "Return a polished answer directly to the user", "Generate many structured bets for a downstream evaluation loop"]
   - ["Failure mode", "Hallucinated certainty: fluent output gets mistaken for truth", "Verifier gaming, blind spots, or validation cost become the bottleneck"]
   - ["Reliability layer", "Prompting, citations, and model self-consistency", "External tests, simulations, solvers, MILP-style checks, assays, and expert review"]
-  - ["Best domains", "Low-stakes language tasks, summarization, drafting, and retrieval where errors are cheap", "Combinatorial search spaces where candidates are hard to invent but relatively easier to score"]
-  - ["Weak domains", "High-consequence factual or technical claims without independent checks", "Domains where verification is slow, subjective, sparse, political, or weakly tied to reality"]
+  - ["Best domains", "Low-stakes language tasks where errors are cheap", "Combinatorial search spaces where candidates are hard to invent but easier to score"]
+  - ["Weak domains", "High-consequence claims without independent checks", "Domains where verification is slow, subjective, sparse, political, or weakly tied to reality"]
 :::
 
-## The Operator Lesson
+## The distance trap
 
-This is the same family resemblance that made FunSearch and AlphaEvolve interesting. FunSearch paired a frozen LLM with a systematic evaluator to search over programs, producing new mathematical and algorithmic discoveries. AlphaEvolve generalized the idea into an evolutionary coding agent for algorithms and systems optimization, where automated evaluators score candidate programs and evolutionary selection compounds gains.
+The most useful detail in the paper is not the big candidate count. It is the verifier failure.
 
-For a data-science or platform team, the implication is practical: do not ask the agent for one perfect answer. Ask it to generate a portfolio of candidates, then make the evaluation harness brutally explicit. Feature candidates should face leakage tests and holdout metrics. Forecasting ideas should face backtests and calibration checks. Data-quality hypotheses should face reproducible queries. Code changes should face unit tests, type checks, benchmarks, and production guardrails. The LLM widens the candidate pool; the harness decides what earns attention.
+Some BB codes with `A = B` have exact distance `d = 2`. BP-OSD missed that trap even after heavy trials. MILP caught it quickly.
 
-The same pattern travels well beyond quantum codes. In drug discovery, models can propose molecules while docking, ADMET predictors, synthesis constraints, and assays filter them. In materials, candidates can be screened by simulation before lab work. In chip design and systems optimization, generated code or layouts can be compiled, benchmarked, and stress-tested. In theorem proving, LLMs can suggest lemmas while proof assistants enforce correctness.
+That is the whole article in miniature.
 
-The boundary is just as important. This pattern breaks where verification is slow, subjective, sparse, or weakly correlated with reality. If there is no cheap evaluator, the LLM merely creates more plausible-looking noise. If the evaluator is gamed, the system optimizes the wrong proxy. If human review is missing, the catalog fills with artifacts.
+Even the verifier stack has failure modes. A discovery system does not need one magic score. It needs layered evaluators, each with known weaknesses, plus humans who understand what those weaknesses mean.
 
-## What Remains Unproven
+## The operator lesson
 
-First, IBM has not shown that these candidates improve real quantum hardware outcomes. Code parameters and simulations are necessary, not sufficient. Physical layout, syndrome extraction, thresholds, correlated noise, decoder practicality, and implementation overhead still matter.
+This is the same family resemblance that made FunSearch and AlphaEvolve interesting. The model expands the candidate frontier. The evaluator decides what deserves another round.
 
-Second, the workflow proves search utility, not scientific autonomy. Humans define the representation, the scoring cascade, the campaigns, and the interpretation. The system is powerful because the human and formal components are explicit.
+For a DS or platform team, the protocol is straightforward:
 
-Third, generalization depends on verifier quality. LLM-guided discovery is strongest when candidates can be scored reliably and often. It is weakest in domains where the ground truth is expensive, delayed, or political.
+:::bullets
+items:
+  - "Ask the model for many candidates, not one perfect answer."
+  - "Make the evaluation harness explicit."
+  - "Keep cheap filters before expensive checks."
+  - "Track verifier failures as first-class evidence."
+  - "Let humans interpret the survivors."
+:::
 
-So the clean takeaway is not "LLMs can now do science." It is sharper: LLMs are becoming high-throughput proposal engines for scientific and technical work. Treat them like search. Pair them with ruthless evaluators. Publish the verifier loop, not the chatbot demo.
+Feature ideas should face leakage tests and holdout metrics. Forecasting ideas should face backtests and calibration checks. Data-quality hypotheses should face reproducible queries. Code changes should face unit tests, type checks, benchmarks, and production guardrails.
+
+The LLM widens the candidate pool. The harness decides what earns attention.
+
+## What remains unproven
+
+IBM has not shown that these candidates improve real quantum hardware outcomes. Code parameters and simulations are necessary, not sufficient. Physical layout, syndrome extraction, thresholds, correlated noise, decoder practicality, and implementation overhead still matter.
+
+The workflow proves search utility, not scientific autonomy. Humans define the representation, scoring cascade, campaigns, and interpretation.
+
+Generalization depends on verifier quality. LLM-guided discovery is strongest when candidates can be scored reliably and often. It is weakest where ground truth is expensive, delayed, subjective, or politically shaped.
+
+So the takeaway is not that LLMs can now do science.
+
+It is sharper: stop publishing chatbot demos. Publish the verifier loop.
+
+## The question
+
+Where in your workflow are you still asking the model for an answer when you should be building a search-and-verify loop?
