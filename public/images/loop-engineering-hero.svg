@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Loop engineering system diagram</title>
+  <desc id="desc">A prompt card feeding an engineered loop with observe, act, verify, recover, escalate, and learn stages, surrounded by rails for tools, memory, permissions, evals, and logs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f3ea"/>
+      <stop offset="55%" stop-color="#efe8dc"/>
+      <stop offset="100%" stop-color="#e4dccd"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f2933"/>
+      <stop offset="100%" stop-color="#4a5568"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#2e2a26" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#3d4560"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.22" stroke="#cbbfae" stroke-width="1">
+    <path d="M120 150H1480M120 300H1480M120 450H1480M120 600H1480M120 750H1480"/>
+    <path d="M250 90V810M500 90V810M750 90V810M1000 90V810M1250 90V810"/>
+  </g>
+
+  <text x="120" y="110" fill="#2e2a26" font-family="Georgia, serif" font-size="54" font-weight="400">The loop is the product</text>
+  <text x="122" y="155" fill="#73695f" font-family="Helvetica Neue, Arial, sans-serif" font-size="23">A prompt starts the work. The loop keeps the system honest.</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="120" y="338" width="270" height="180" rx="18" fill="#fffaf2" stroke="#d8ccbc" stroke-width="2"/>
+    <text x="152" y="388" fill="#8a5a36" font-family="Helvetica Neue, Arial, sans-serif" font-size="18" letter-spacing="2">PROMPT</text>
+    <text x="152" y="430" fill="#2e2a26" font-family="Georgia, serif" font-size="29">Tell the model</text>
+    <text x="152" y="468" fill="#2e2a26" font-family="Georgia, serif" font-size="29">what to do</text>
+    <path d="M152 492H330" stroke="#d8ccbc" stroke-width="2"/>
+  </g>
+
+  <path d="M410 428 C485 428 505 428 570 428" fill="none" stroke="#3d4560" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <g transform="translate(790 450)">
+    <circle r="245" fill="#fbfaf7" stroke="#d8ccbc" stroke-width="2" filter="url(#softShadow)"/>
+    <circle r="164" fill="none" stroke="#3d4560" stroke-width="7" stroke-dasharray="18 14" opacity="0.9"/>
+    <path d="M0 -164 A164 164 0 0 1 142 -82" fill="none" stroke="#1f2933" stroke-width="9" marker-end="url(#arrow)"/>
+    <path d="M142 -82 A164 164 0 0 1 142 82" fill="none" stroke="#1f2933" stroke-width="9" marker-end="url(#arrow)"/>
+    <path d="M142 82 A164 164 0 0 1 0 164" fill="none" stroke="#1f2933" stroke-width="9" marker-end="url(#arrow)"/>
+    <path d="M0 164 A164 164 0 0 1 -142 82" fill="none" stroke="#1f2933" stroke-width="9" marker-end="url(#arrow)"/>
+    <path d="M-142 82 A164 164 0 0 1 -142 -82" fill="none" stroke="#1f2933" stroke-width="9" marker-end="url(#arrow)"/>
+    <path d="M-142 -82 A164 164 0 0 1 0 -164" fill="none" stroke="#1f2933" stroke-width="9" marker-end="url(#arrow)"/>
+    <circle r="74" fill="url(#ink)"/>
+    <text x="0" y="-8" fill="#fffaf2" font-family="Georgia, serif" font-size="28" text-anchor="middle">agent</text>
+    <text x="0" y="25" fill="#dfe5ec" font-family="Helvetica Neue, Arial, sans-serif" font-size="15" text-anchor="middle">inside a loop</text>
+
+    <g fill="#2e2a26" font-family="Helvetica Neue, Arial, sans-serif" font-size="20" text-anchor="middle">
+      <text x="0" y="-205">observe</text>
+      <text x="180" y="-99">act</text>
+      <text x="180" y="116">verify</text>
+      <text x="0" y="220">recover</text>
+      <text x="-180" y="116">escalate</text>
+      <text x="-180" y="-99">learn</text>
+    </g>
+  </g>
+
+  <g font-family="Helvetica Neue, Arial, sans-serif" font-size="20" fill="#3d4560">
+    <rect x="1120" y="272" width="340" height="58" rx="29" fill="#fffaf2" stroke="#d8ccbc"/>
+    <text x="1290" y="309" text-anchor="middle">tools</text>
+    <rect x="1120" y="350" width="340" height="58" rx="29" fill="#fffaf2" stroke="#d8ccbc"/>
+    <text x="1290" y="387" text-anchor="middle">memory</text>
+    <rect x="1120" y="428" width="340" height="58" rx="29" fill="#fffaf2" stroke="#d8ccbc"/>
+    <text x="1290" y="465" text-anchor="middle">permissions</text>
+    <rect x="1120" y="506" width="340" height="58" rx="29" fill="#fffaf2" stroke="#d8ccbc"/>
+    <text x="1290" y="543" text-anchor="middle">evals</text>
+    <rect x="1120" y="584" width="340" height="58" rx="29" fill="#fffaf2" stroke="#d8ccbc"/>
+    <text x="1290" y="621" text-anchor="middle">logs</text>
+  </g>
+
+  <text x="120" y="810" fill="#73695f" font-family="Helvetica Neue, Arial, sans-serif" font-size="22">Prompting controls a response. Loop engineering controls a workflow.</text>
+</svg>
