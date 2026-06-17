@@ -1,25 +1,25 @@
 {
-  "date": "June 16, 2026",
+  "date": "June 17, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- Risk caught a clean relief bid after a tentative US-Iran deal eased oil-shock fear; growth/semis led, defensives lagged less than expected because gold also caught a bid.\n- This is helpful for the book\u2019s AI/growth sleeve, but the move is geopolitical-relief first, not a fresh all-clear on earnings or rates.\nAnchor numbers: Nasdaq +3.07%, S&P 500 +1.65%, Dow +0.92%, VIX -8.37%, crude -3.99%, gold +2.94%, BTC +0.84%."
+      "content": "- Rotation tape: Dow made another record close, but tech and semis cracked after Monday\u2019s squeeze; this is not broad risk-off, it is profit-taking in crowded AI beta.\n- Oil fell hard on U.S.-Iran interim-deal hopes, easing inflation pressure, while gold held firm and HK is still pre-open.\nAnchor numbers: Dow +0.64%, S&P 500 -0.57%, Nasdaq -1.15%, SOX -5.7%, HSI last close +0.50%, WTI -6.0%, gold +0.5%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- MU +10.84% \u2014 strongest holding; memory/AI beta caught the biggest squeeze.\n- ETN +4.00%, NVDA +3.54%, NET +3.16% \u2014 broad risk-on helped AI infrastructure and higher-duration growth.\n- MSFT +2.31%, AAPL +1.82%, SPY +1.76% \u2014 quality/core exposure participated cleanly.\n- DXYZ -3.35% \u2014 speculative sleeve failed to join the rally; still the weak read-through.\n- BABA ADR -0.24% \u2014 flat-to-soft versus the US risk rally; use HK line for actual HK-account exposure."
+      "content": "- AAPL +0.95% \u2014 rare mega-cap relative strength while Nasdaq sold off.\n- XLU +0.72% / GLD +0.27% \u2014 ballast worked; defensive bid showed up exactly when semis weakened.\n- ETN +0.16% \u2014 held flat-to-up despite pressure on growth/AI-linked industrials.\n- INTC -8.45% \u2014 worst portfolio read-through; chip unwind hit the lower-quality semi bucket hardest.\n- MU -6.18% \u2014 gave back part of its huge run; still a momentum leader, but volatility is now the tax.\n- NVDA -2.37% / NET -2.01% \u2014 AI/software beta cooled with the broader tech rotation."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open: Yahoo timestamps still point to Monday\u2019s HK close, so these are last completed HK-session moves, not live intraday prints.\n- 02800.HK +1.95% and HSI +1.93% \u2014 broad HK beta rebounded with global risk appetite.\n- 9988.HK -0.82%, 9698.HK -2.16%, 1816.HK -1.97% \u2014 the HK account\u2019s single-name China/value sleeve lagged the index."
+      "content": "- HK is pre-open: Yahoo\u2019s latest HK timestamps are Tuesday\u2019s close, so these are last completed HK-session moves, not live intraday prints.\n- 2800.HK +0.64% / HSI +0.50% \u2014 index beta was fine into the close.\n- 9988.HK -2.10% \u2014 Alibaba HK lagged again; still the main drag in the HK book.\n- 1816.HK -1.67% / 9698.HK -0.82% \u2014 CGN and GDS were soft, so the HK account had mixed breadth despite the index being green."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Global equities rallied and oil fell after reports of a tentative US-Iran deal to extend the ceasefire and reopen the Strait of Hormuz; that directly explains the risk-on / crude-down setup.\n- Asia followed the relief trade into Monday\u2019s close, with Hong Kong up, but the book\u2019s BABA/GDS/CGN lines did not confirm broad single-name strength."
+      "content": "- Reuters: the Dow hit a second straight record close, but S&P tech fell 2.3% and the Philadelphia Semiconductor Index dropped 5.7% as investors digested Monday\u2019s rally and waited for the first Fed meeting under Kevin Warsh.\n- Oil dropped roughly 5-6% after details of a U.S.-Iran interim deal pointed to a possible Strait of Hormuz reopening; that helps inflation optics but also cools the geopolitical hedge bid."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: The cleanest upside confirmation is still US AI infrastructure \u2014 MU/NVDA/ETN/NET led while core beta also worked.\n- Risk: HK China single names are not keeping pace with the index, so don\u2019t read a stronger HSI as proof the BABA/GDS thesis is back on offense.\n- Research: Check whether MU\u2019s move is earnings-revision durable or just short-covering after the geopolitical risk premium came out."
+      "content": "- Opportunity: If semis keep falling while the index holds, the next good add is quality-first \u2014 MSFT/NVDA before MU, not a blanket dip-buy across AI beta.\n- Risk: INTC and MU show how quickly crowded chip momentum can reverse; do not let the recent AI run trick you into averaging the weakest names first.\n- Research: Check whether the oil/geopolitical de-escalation is durable enough to change the GLD/defensive ballast sizing, or just a one-day relief headline."
     }
   ]
 }
