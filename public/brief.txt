@@ -1,29 +1,29 @@
-Morning brief — Wed Jun 17, 08:00 HKT
+Morning brief — Thu Jun 18, 2026, 08:00 HKT
 
 OVERNIGHT MAP
-- Rotation tape: Dow made another record close, but tech and semis cracked after Monday’s squeeze; this is not broad risk-off, it is profit-taking in crowded AI beta.
-- Oil fell hard on U.S.-Iran interim-deal hopes, easing inflation pressure, while gold held firm and HK is still pre-open.
-Anchor numbers: Dow +0.64%, S&P 500 -0.57%, Nasdaq -1.15%, SOX -5.7%, HSI last close +0.50%, WTI -6.0%, gold +0.5%.
+- US tape turned defensive after the Fed stayed cautious and officials left the door open to tighter policy; tech did not lead, despite AI demand still looking real.
+- Oil cooled below the recent panic zone on U.S.-Iran deal hopes, but the market is still pricing energy/inflation risk rather than a clean all-clear.
+Anchor numbers: S&P 500 -1.21%, Nasdaq -1.34%, Dow -0.98%; 10Y 4.46%; WTI $75.34; US futures firmer early: NQ +0.95%, ES +0.24%.
 
 US CLOSE MOVERS
-- AAPL +0.95% — rare mega-cap relative strength while Nasdaq sold off.
-- XLU +0.72% / GLD +0.27% — ballast worked; defensive bid showed up exactly when semis weakened.
-- ETN +0.16% — held flat-to-up despite pressure on growth/AI-linked industrials.
-- INTC -8.45% — worst portfolio read-through; chip unwind hit the lower-quality semi bucket hardest.
-- MU -6.18% — gave back part of its huge run; still a momentum leader, but volatility is now the tax.
-- NVDA -2.37% / NET -2.01% — AI/software beta cooled with the broader tech rotation.
+- INTC +3.46% — rare relative strength; semis were not uniformly weak.
+- MU +2.20% — memory/AI infrastructure bid held up best in the book.
+- DXYZ +1.27% — speculative sleeve resisted the broader risk-off tape.
+- MSFT -3.79% — biggest confirmed drag; mega-cap quality did not protect the position.
+- GLD -2.27% — gold sold off with oil easing and haven demand cooling.
+- TSLA -2.05% / NET -1.78% — high-duration growth stayed under pressure.
 
 HK LIVE MOVERS
-- HK is pre-open: Yahoo’s latest HK timestamps are Tuesday’s close, so these are last completed HK-session moves, not live intraday prints.
-- 2800.HK +0.64% / HSI +0.50% — index beta was fine into the close.
-- 9988.HK -2.10% — Alibaba HK lagged again; still the main drag in the HK book.
-- 1816.HK -1.67% / 9698.HK -0.82% — CGN and GDS were soft, so the HK account had mixed breadth despite the index being green.
+- HK is pre-open: Yahoo HK timestamps still point to the prior completed session, so these are last-session moves, not live intraday prints.
+- 9698.HK +3.17% — GDS was the standout HK holding.
+- 2800.HK -1.51% and 1816.HK -1.36% — broad HK beta and CGN lagged; 9988.HK was basically flat at -0.09%.
+- Hang Seng last completed session: -1.40%.
 
 MARKET NEWS
-- Reuters: the Dow hit a second straight record close, but S&P tech fell 2.3% and the Philadelphia Semiconductor Index dropped 5.7% as investors digested Monday’s rally and waited for the first Fed meeting under Kevin Warsh.
-- Oil dropped roughly 5-6% after details of a U.S.-Iran interim deal pointed to a possible Strait of Hormuz reopening; that helps inflation optics but also cools the geopolitical hedge bid.
+- The Fed kept markets focused on inflation and rates: AP reported officials were expected to hold steady, while investors watched for projections that could still imply no near-term easing or even renewed hike risk.
+- Oil stayed below $80 as markets priced a possible U.S.-Iran agreement and Strait of Hormuz reopening, but HSBC warned normalizing flows could take time.
 
 ACTION BOARD
-- Opportunity: If semis keep falling while the index holds, the next good add is quality-first — MSFT/NVDA before MU, not a blanket dip-buy across AI beta.
-- Risk: INTC and MU show how quickly crowded chip momentum can reverse; do not let the recent AI run trick you into averaging the weakest names first.
-- Research: Check whether the oil/geopolitical de-escalation is durable enough to change the GLD/defensive ballast sizing, or just a one-day relief headline.
+- Opportunity: MU’s strength against a red Nasdaq says the AI infrastructure/memory leg still has real sponsorship; respect it before chasing weaker growth names.
+- Risk: MSFT plus NET/TSLA weakness says duration risk is leaking beyond speculative sleeves, so do not read futures strength as a full reset yet.
+- Research: Re-check whether HK cash should wait for a true China policy catalyst or be staged into 2800/9988 weakness before the next rerating attempt.

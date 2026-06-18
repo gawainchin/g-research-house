@@ -1,25 +1,25 @@
 {
-  "date": "June 17, 2026",
+  "date": "Jun 18, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- Rotation tape: Dow made another record close, but tech and semis cracked after Monday\u2019s squeeze; this is not broad risk-off, it is profit-taking in crowded AI beta.\n- Oil fell hard on U.S.-Iran interim-deal hopes, easing inflation pressure, while gold held firm and HK is still pre-open.\nAnchor numbers: Dow +0.64%, S&P 500 -0.57%, Nasdaq -1.15%, SOX -5.7%, HSI last close +0.50%, WTI -6.0%, gold +0.5%."
+      "content": "- US tape turned defensive after the Fed stayed cautious and officials left the door open to tighter policy; tech did not lead, despite AI demand still looking real.\n- Oil cooled below the recent panic zone on U.S.-Iran deal hopes, but the market is still pricing energy/inflation risk rather than a clean all-clear.\nAnchor numbers: S&P 500 -1.21%, Nasdaq -1.34%, Dow -0.98%; 10Y 4.46%; WTI $75.34; US futures firmer early: NQ +0.95%, ES +0.24%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- AAPL +0.95% \u2014 rare mega-cap relative strength while Nasdaq sold off.\n- XLU +0.72% / GLD +0.27% \u2014 ballast worked; defensive bid showed up exactly when semis weakened.\n- ETN +0.16% \u2014 held flat-to-up despite pressure on growth/AI-linked industrials.\n- INTC -8.45% \u2014 worst portfolio read-through; chip unwind hit the lower-quality semi bucket hardest.\n- MU -6.18% \u2014 gave back part of its huge run; still a momentum leader, but volatility is now the tax.\n- NVDA -2.37% / NET -2.01% \u2014 AI/software beta cooled with the broader tech rotation."
+      "content": "- INTC +3.46% \u2014 rare relative strength; semis were not uniformly weak.\n- MU +2.20% \u2014 memory/AI infrastructure bid held up best in the book.\n- DXYZ +1.27% \u2014 speculative sleeve resisted the broader risk-off tape.\n- MSFT -3.79% \u2014 biggest confirmed drag; mega-cap quality did not protect the position.\n- GLD -2.27% \u2014 gold sold off with oil easing and haven demand cooling.\n- TSLA -2.05% / NET -1.78% \u2014 high-duration growth stayed under pressure."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open: Yahoo\u2019s latest HK timestamps are Tuesday\u2019s close, so these are last completed HK-session moves, not live intraday prints.\n- 2800.HK +0.64% / HSI +0.50% \u2014 index beta was fine into the close.\n- 9988.HK -2.10% \u2014 Alibaba HK lagged again; still the main drag in the HK book.\n- 1816.HK -1.67% / 9698.HK -0.82% \u2014 CGN and GDS were soft, so the HK account had mixed breadth despite the index being green."
+      "content": "- HK is pre-open: Yahoo HK timestamps still point to the prior completed session, so these are last-session moves, not live intraday prints.\n- 9698.HK +3.17% \u2014 GDS was the standout HK holding.\n- 2800.HK -1.51% and 1816.HK -1.36% \u2014 broad HK beta and CGN lagged; 9988.HK was basically flat at -0.09%.\n- Hang Seng last completed session: -1.40%."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Reuters: the Dow hit a second straight record close, but S&P tech fell 2.3% and the Philadelphia Semiconductor Index dropped 5.7% as investors digested Monday\u2019s rally and waited for the first Fed meeting under Kevin Warsh.\n- Oil dropped roughly 5-6% after details of a U.S.-Iran interim deal pointed to a possible Strait of Hormuz reopening; that helps inflation optics but also cools the geopolitical hedge bid."
+      "content": "- The Fed kept markets focused on inflation and rates: AP reported officials were expected to hold steady, while investors watched for projections that could still imply no near-term easing or even renewed hike risk.\n- Oil stayed below $80 as markets priced a possible U.S.-Iran agreement and Strait of Hormuz reopening, but HSBC warned normalizing flows could take time."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: If semis keep falling while the index holds, the next good add is quality-first \u2014 MSFT/NVDA before MU, not a blanket dip-buy across AI beta.\n- Risk: INTC and MU show how quickly crowded chip momentum can reverse; do not let the recent AI run trick you into averaging the weakest names first.\n- Research: Check whether the oil/geopolitical de-escalation is durable enough to change the GLD/defensive ballast sizing, or just a one-day relief headline."
+      "content": "- Opportunity: MU\u2019s strength against a red Nasdaq says the AI infrastructure/memory leg still has real sponsorship; respect it before chasing weaker growth names.\n- Risk: MSFT plus NET/TSLA weakness says duration risk is leaking beyond speculative sleeves, so do not read futures strength as a full reset yet.\n- Research: Re-check whether HK cash should wait for a true China policy catalyst or be staged into 2800/9988 weakness before the next rerating attempt."
     }
   ]
 }
