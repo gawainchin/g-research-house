@@ -1,6 +1,6 @@
 {
   "title": "Ticker Monitor",
-  "updated": "2026-06-19T00:11:57+00:00",
+  "updated": "2026-06-19T23:38:56+00:00",
   "source": "yfinance snapshot; delayed market data; educational context only",
   "summary": "Price-move context for tickers mentioned across G Research House articles and thesis clusters.",
   "tickers": [
@@ -245,11 +245,11 @@
         "Korea"
       ],
       "currency": "KRW",
-      "price": 362500.0,
-      "change1D": 4.617604617604609,
-      "change5D": 21.23745819397993,
-      "change1M": 29.0035587188612,
-      "changeYTD": 182.1011673151751,
+      "price": 354000.0,
+      "change1D": -2.344827586206899,
+      "change5D": 9.76744186046512,
+      "change1M": 28.493647912885667,
+      "changeYTD": 175.4863813229572,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -269,11 +269,11 @@
         "Korea"
       ],
       "currency": "KRW",
-      "price": 2685000.0,
-      "change1D": 6.505355017850056,
-      "change5D": 27.79628748215135,
-      "change1M": 45.92391304347827,
-      "changeYTD": 296.602658788774,
+      "price": 2764000.0,
+      "change1D": 2.9422718808193693,
+      "change5D": 28.55813953488373,
+      "change1M": 58.395415472779376,
+      "changeYTD": 308.271787296898,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -342,11 +342,11 @@
         "silicon carbide"
       ],
       "currency": "EUR",
-      "price": 77.05999755859375,
-      "change1D": -2.800203399199419,
-      "change5D": 2.6098523625776915,
-      "change1M": 19.214106259620834,
-      "changeYTD": 101.3850745792518,
+      "price": 82.01000213623047,
+      "change1D": 6.423572196291483,
+      "change5D": 6.423572196291483,
+      "change1M": 20.7094483209044,
+      "changeYTD": 114.32119023740546,
       "marketCap": null,
       "dataOk": true,
       "error": null
