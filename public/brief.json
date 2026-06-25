@@ -1,25 +1,25 @@
 {
-  "date": "Jun 18, 2026",
+  "date": "Jun 25, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US tape turned defensive after the Fed stayed cautious and officials left the door open to tighter policy; tech did not lead, despite AI demand still looking real.\n- Oil cooled below the recent panic zone on U.S.-Iran deal hopes, but the market is still pricing energy/inflation risk rather than a clean all-clear.\nAnchor numbers: S&P 500 -1.21%, Nasdaq -1.34%, Dow -0.98%; 10Y 4.46%; WTI $75.34; US futures firmer early: NQ +0.95%, ES +0.24%."
+      "content": "- US tape was mixed: Dow held up, Nasdaq/S&P softened, and tech leadership looked less clean ahead of Micron\u2019s post-close print.\n- The bigger macro move was commodity relief: oil and gold both fell sharply as the Hormuz risk premium faded.\n- Anchors: S&P 500 -0.10%, Nasdaq -0.43%, Dow +0.35%, 10Y ~4.40%, WTI -4.4%, gold -2.5%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- INTC +3.46% \u2014 rare relative strength; semis were not uniformly weak.\n- MU +2.20% \u2014 memory/AI infrastructure bid held up best in the book.\n- DXYZ +1.27% \u2014 speculative sleeve resisted the broader risk-off tape.\n- MSFT -3.79% \u2014 biggest confirmed drag; mega-cap quality did not protect the position.\n- GLD -2.27% \u2014 gold sold off with oil easing and haven demand cooling.\n- TSLA -2.05% / NET -1.78% \u2014 high-duration growth stayed under pressure."
+      "content": "- XLU +1.0% \u2014 defensive ballast worked while growth cooled.\n- ETN -0.2% / MU -0.3% \u2014 relative resilience inside a soft tape; MU\u2019s real test came after the close.\n- DXYZ -3.3% \u2014 speculative sleeve stayed heavy.\n- GLD -3.0% \u2014 gold gave back war-premium bid.\n- MSFT -2.3%, TSLA -1.6% \u2014 mega-cap/growth weakness did the portfolio damage."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open: Yahoo HK timestamps still point to the prior completed session, so these are last-session moves, not live intraday prints.\n- 9698.HK +3.17% \u2014 GDS was the standout HK holding.\n- 2800.HK -1.51% and 1816.HK -1.36% \u2014 broad HK beta and CGN lagged; 9988.HK was basically flat at -0.09%.\n- Hang Seng last completed session: -1.40%."
+      "content": "- HK is pre-open: Yahoo\u2019s latest regular-market timestamps are still Wed close, not today\u2019s live session.\n- Last completed HK session: 9698.HK +3.9% led the HK book; 9988.HK +0.5% was modestly positive; 1816.HK -0.7% lagged.\n- Tracker Fund 2800.HK +0.4%; Hang Seng +0.3% on the same completed-session basis."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- The Fed kept markets focused on inflation and rates: AP reported officials were expected to hold steady, while investors watched for projections that could still imply no near-term easing or even renewed hike risk.\n- Oil stayed below $80 as markets priced a possible U.S.-Iran agreement and Strait of Hormuz reopening, but HSBC warned normalizing flows could take time."
+      "content": "- Micron reported after the US close; the setup matters because memory/AI capex sentiment is now a direct read-through for NVDA, MU, and broader semis.\n- Oil slid toward prewar levels as Hormuz traffic concerns eased, taking pressure off inflation/rates but also removing some crisis hedges from gold."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: MU\u2019s strength against a red Nasdaq says the AI infrastructure/memory leg still has real sponsorship; respect it before chasing weaker growth names.\n- Risk: MSFT plus NET/TSLA weakness says duration risk is leaking beyond speculative sleeves, so do not read futures strength as a full reset yet.\n- Research: Re-check whether HK cash should wait for a true China policy catalyst or be staged into 2800/9988 weakness before the next rerating attempt."
+      "content": "- Opportunity: if MU confirms AI-memory demand without dragging the whole semi tape lower, the growth sleeve gets a cleaner recovery path than the index close implied.\n- Risk: GLD and DXYZ weakness says the market is de-risking both hedges and speculation at once, which can hide fragility beneath a flat S&P.\n- Research: check whether MU\u2019s guide is broad HBM supply tightness or one-company execution, because that decides whether NVDA/AI hardware deserves follow-through or caution."
     }
   ]
 }

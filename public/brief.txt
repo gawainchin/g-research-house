@@ -1,29 +1,27 @@
-Morning brief — Thu Jun 18, 2026, 08:00 HKT
+Gawain Morning Brief — Thu Jun 25, 2026, 08:01 HKT
 
 OVERNIGHT MAP
-- US tape turned defensive after the Fed stayed cautious and officials left the door open to tighter policy; tech did not lead, despite AI demand still looking real.
-- Oil cooled below the recent panic zone on U.S.-Iran deal hopes, but the market is still pricing energy/inflation risk rather than a clean all-clear.
-Anchor numbers: S&P 500 -1.21%, Nasdaq -1.34%, Dow -0.98%; 10Y 4.46%; WTI $75.34; US futures firmer early: NQ +0.95%, ES +0.24%.
+- US tape was mixed: Dow held up, Nasdaq/S&P softened, and tech leadership looked less clean ahead of Micron’s post-close print.
+- The bigger macro move was commodity relief: oil and gold both fell sharply as the Hormuz risk premium faded.
+- Anchors: S&P 500 -0.10%, Nasdaq -0.43%, Dow +0.35%, 10Y ~4.40%, WTI -4.4%, gold -2.5%.
 
 US CLOSE MOVERS
-- INTC +3.46% — rare relative strength; semis were not uniformly weak.
-- MU +2.20% — memory/AI infrastructure bid held up best in the book.
-- DXYZ +1.27% — speculative sleeve resisted the broader risk-off tape.
-- MSFT -3.79% — biggest confirmed drag; mega-cap quality did not protect the position.
-- GLD -2.27% — gold sold off with oil easing and haven demand cooling.
-- TSLA -2.05% / NET -1.78% — high-duration growth stayed under pressure.
+- XLU +1.0% — defensive ballast worked while growth cooled.
+- ETN -0.2% / MU -0.3% — relative resilience inside a soft tape; MU’s real test came after the close.
+- DXYZ -3.3% — speculative sleeve stayed heavy.
+- GLD -3.0% — gold gave back war-premium bid.
+- MSFT -2.3%, TSLA -1.6% — mega-cap/growth weakness did the portfolio damage.
 
 HK LIVE MOVERS
-- HK is pre-open: Yahoo HK timestamps still point to the prior completed session, so these are last-session moves, not live intraday prints.
-- 9698.HK +3.17% — GDS was the standout HK holding.
-- 2800.HK -1.51% and 1816.HK -1.36% — broad HK beta and CGN lagged; 9988.HK was basically flat at -0.09%.
-- Hang Seng last completed session: -1.40%.
+- HK is pre-open: Yahoo’s latest regular-market timestamps are still Wed close, not today’s live session.
+- Last completed HK session: 9698.HK +3.9% led the HK book; 9988.HK +0.5% was modestly positive; 1816.HK -0.7% lagged.
+- Tracker Fund 2800.HK +0.4%; Hang Seng +0.3% on the same completed-session basis.
 
 MARKET NEWS
-- The Fed kept markets focused on inflation and rates: AP reported officials were expected to hold steady, while investors watched for projections that could still imply no near-term easing or even renewed hike risk.
-- Oil stayed below $80 as markets priced a possible U.S.-Iran agreement and Strait of Hormuz reopening, but HSBC warned normalizing flows could take time.
+- Micron reported after the US close; the setup matters because memory/AI capex sentiment is now a direct read-through for NVDA, MU, and broader semis.
+- Oil slid toward prewar levels as Hormuz traffic concerns eased, taking pressure off inflation/rates but also removing some crisis hedges from gold.
 
 ACTION BOARD
-- Opportunity: MU’s strength against a red Nasdaq says the AI infrastructure/memory leg still has real sponsorship; respect it before chasing weaker growth names.
-- Risk: MSFT plus NET/TSLA weakness says duration risk is leaking beyond speculative sleeves, so do not read futures strength as a full reset yet.
-- Research: Re-check whether HK cash should wait for a true China policy catalyst or be staged into 2800/9988 weakness before the next rerating attempt.
+- Opportunity: if MU confirms AI-memory demand without dragging the whole semi tape lower, the growth sleeve gets a cleaner recovery path than the index close implied.
+- Risk: GLD and DXYZ weakness says the market is de-risking both hedges and speculation at once, which can hide fragility beneath a flat S&P.
+- Research: check whether MU’s guide is broad HBM supply tightness or one-company execution, because that decides whether NVDA/AI hardware deserves follow-through or caution.
