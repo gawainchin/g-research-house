@@ -1,25 +1,25 @@
 {
-  "date": "July 02, 2026",
+  "date": "July 03, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US tape cooled: Nasdaq sold off, S&P slipped, Dow was near flat; the book\u2019s pain was concentrated in crowded AI / chip-beta rather than broad risk-off.\n- Asia is not giving a clean rescue yet: HK is still pre-open on Yahoo, while Japan and Korea last closed firmer; oil fell, gold stayed bid.\nAnchor numbers: Nasdaq -0.66%, S&P 500 -0.22%, Dow -0.03%; NQ futures -1.56%, oil -2.17%, gold +0.63%."
+      "content": "- Split tape: Dow/value held up, Nasdaq/AI hardware sold off again; defensives and gold worked while semis, Tesla and high-beta growth took the hit.\n- HK is not open yet; Yahoo HK timestamps still point to yesterday\u2019s close, so HK movers below are last completed session, not live intraday.\n- Anchors: Dow +1.14%, S&P ~flat, Nasdaq -0.80%, QQQ -1.73%, VIX 16.15, 10Y 4.49%, gold +1.77%, BTC +2.34%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- GDS +5.26%: ADR strength stood out, but HK account exposure is 9698.HK, so treat this as sentiment read-through, not the account move.\n- MSFT +3.02%: best core-quality line in the US book; software quality held while semis cracked.\n- BABA +2.09%: ADR bounce, useful read-through for HK BABA, but not a substitute for 9988.HK live pricing.\n- MU -10.57%: main damage; AI memory beta remains hypersensitive after the prior run.\n- INTC -9.03%: weak legacy/value sleeve; this is not behaving like a defensive rerating name.\n- DXYZ -3.61%, ETN -3.24%: speculative/private-market proxy and AI power-equipment beta both de-risked."
+      "content": "- AAPL +4.84% \u2014 clear relative strength inside mega-cap tech while the Nasdaq lagged.\n- XLU +2.21%, GLD +2.03% \u2014 ballast did its job; market rewarded defensives and hard-asset hedge exposure.\n- MSFT +1.62% \u2014 quality software held better than AI hardware.\n- TSLA -7.49% \u2014 worst portfolio hit; legacy/speculative sleeve remains the pressure point.\n- GDS ADR -5.66%, MU -5.49%, INTC -5.25% \u2014 China/data-center beta and semis were punished together.\n- ETN -3.34%, NVDA -1.39%, NET -1.58% \u2014 AI/capex complex still leaking, though NVDA held better than the weakest chip names."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open: Yahoo regular-market timestamps for 2800.HK, 9988.HK, 9698.HK and 1816.HK still point to the prior HK session, not today\u2019s live trade.\n- Last completed HK moves: 1816.HK -1.47%, 9698.HK -1.40%, 2800.HK -0.51%, 9988.HK -0.16%; breadth was soft, but not a fresh live signal yet.\n- Watch the open for whether ADR strength in BABA/GDS carries into 9988.HK/9698.HK or gets faded."
+      "content": "- HK pre-open: current Yahoo regularMarketTime is yesterday 16:08 HKT, before today\u2019s 09:30 HKT open; treat this as last completed HK session.\n- 9698.HK +5.10% \u2014 strongest HK holding; local GDS outperformed despite the ADR weakness later in New York.\n- 9988.HK +1.78%, 1816.HK +1.49%, 2800.HK +0.95% \u2014 HK book finished constructive yesterday even as Hang Seng slipped about 0.63%."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Reuters framed the overnight tape as stocks flat-to-lower while traders digested Fed comments; the practical effect was higher sensitivity to valuation-heavy tech.\n- Oil fell while gold rose, which helped ballast but did not fully offset the AI-beta drawdown inside the US sleeve."
+      "content": "- U.S. June payroll growth missed expectations and May was revised lower, cooling the labor-market narrative but not enough to create a clean risk-on day.\n- The overnight equity split was mostly factor rotation: semis/high-beta AI sold off while Dow, utilities and gold caught flows."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: If HK opens weak despite BABA/GDS ADR strength, 9988.HK and broad 2800.HK become the cleaner places to watch before chasing US chip volatility.\n- Risk: MU and INTC are flashing idiosyncratic damage, so do not treat the US tech pullback as a simple buy-the-dip until semis stabilize.\n- Research: Re-check whether MU\u2019s move is earnings/guide-specific or a broader AI memory derating, because that decides whether NVDA/MSFT weakness is sympathy or contagion."
+      "content": "- Opportunity: HK names enter the day with a constructive last session and a lot of idle HK cash, so watch whether 9988/9698 confirm strength after the open rather than chasing US ADR noise.\n- Risk: the US book\u2019s crowded AI/semis plus TSLA are still the fragility cluster; do not let one strong AAPL/MSFT day hide the breadth problem.\n- Research: refresh the MU/NVDA/ETN capex-chain thesis versus a possible AI hardware de-rating, because that is the swing factor for the growth sleeve."
     }
   ]
 }
