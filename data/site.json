@@ -3,9 +3,9 @@
   "tagline": "PM-style financial research and applied AI systems research.",
   "intro": "A private research surface built for two distinct lenses: finance asks where the money, risk, and rerating sit; AI asks where the technical bottlenecks, workflows, and stack shifts are actually happening.",
   "featuredSlugs": [
+    "langchain-deep-agents-harness-around-agent-loop",
     "prompt-engineering-was-the-warm-up-loop-engineering-is-the-job",
-    "hooks-dont-replace-prompts",
-    "ai-power-semis-wolfspeed-onsemi-infineon"
+    "hooks-dont-replace-prompts"
   ],
   "sections": [
     {
