@@ -1,6 +1,6 @@
 {
   "title": "Ticker Monitor",
-  "updated": "2026-07-02T23:40:34+00:00",
+  "updated": "2026-07-03T23:36:59+00:00",
   "source": "yfinance snapshot; delayed market data; educational context only",
   "summary": "Price-move context for tickers mentioned across G Research House articles and thesis clusters.",
   "tickers": [
@@ -245,11 +245,11 @@
         "Korea"
       ],
       "currency": "KRW",
-      "price": 286000.0,
-      "change1D": -9.062003179650235,
-      "change5D": -20.223152022315205,
-      "change1M": -20.66574202496533,
-      "changeYTD": 122.56809338521401,
+      "price": 309500.0,
+      "change1D": 8.216783216783208,
+      "change5D": -8.836524300441829,
+      "change1M": -11.948790896159323,
+      "changeYTD": 140.85603112840465,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -269,11 +269,11 @@
         "Korea"
       ],
       "currency": "KRW",
-      "price": 2187000.0,
-      "change1D": -14.570312500000004,
-      "change5D": -25.025711347274594,
-      "change1M": -7.33050847457627,
-      "changeYTD": 223.04283604135895,
+      "price": 2425000.0,
+      "change1D": 10.882487425697306,
+      "change5D": -9.277964833520391,
+      "change1M": 5.52654482158399,
+      "changeYTD": 258.19793205317575,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -459,11 +459,11 @@
         "hardware"
       ],
       "currency": "HKD",
-      "price": 22.600000381469727,
-      "change1D": 4.436233913576304,
-      "change5D": -1.5679386644505078,
-      "change1M": -21.30918899095876,
-      "changeYTD": -43.89274809738654,
+      "price": 22.959999084472656,
+      "change1D": 1.5929145881701023,
+      "change5D": 2.959640672611541,
+      "change1M": -22.48481284963093,
+      "changeYTD": -42.99900749680846,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -483,11 +483,11 @@
         "cloud"
       ],
       "currency": "HKD",
-      "price": 430.20001220703125,
-      "change1D": 0.09307222555232642,
-      "change5D": 0.32649824018615714,
-      "change1M": -1.3302724295799928,
-      "changeYTD": -30.94702853819723,
+      "price": 431.20001220703125,
+      "change1D": 0.2324500166491772,
+      "change5D": 2.325585774202499,
+      "change1M": -10.465114879099758,
+      "changeYTD": -30.786514894537518,
       "marketCap": null,
       "dataOk": true,
       "error": null
@@ -507,11 +507,11 @@
         "Qwen"
       ],
       "currency": "HKD",
-      "price": 94.5,
-      "change1D": 1.7770614464132528,
-      "change5D": -4.9295789242047245,
-      "change1M": -23.045604518291352,
-      "changeYTD": -36.57718120805369,
+      "price": 94.0999984741211,
+      "change1D": -0.42328203796709873,
+      "change5D": -0.9473700272409569,
+      "change1M": -28.11306122096896,
+      "changeYTD": -36.84563860797242,
       "marketCap": null,
       "dataOk": true,
       "error": null
