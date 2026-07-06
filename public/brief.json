@@ -1,25 +1,25 @@
 {
-  "date": "July 03, 2026",
+  "date": "July 6, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- Split tape: Dow/value held up, Nasdaq/AI hardware sold off again; defensives and gold worked while semis, Tesla and high-beta growth took the hit.\n- HK is not open yet; Yahoo HK timestamps still point to yesterday\u2019s close, so HK movers below are last completed session, not live intraday.\n- Anchors: Dow +1.14%, S&P ~flat, Nasdaq -0.80%, QQQ -1.73%, VIX 16.15, 10Y 4.49%, gold +1.77%, BTC +2.34%."
+      "content": "- Monday setup is constructive but uneven: US futures are green after the long weekend, with Nasdaq futures leading, while last US cash session showed rotation out of crowded semis and into Apple / defensives.\n- HK is not open yet; Yahoo\u2019s HK timestamps still point to Friday\u2019s close, so HK movers below are last completed session, not live Monday tape.\nAnchor numbers: ES futures +0.55%, NQ futures +1.52%, Dow futures +0.11%; gold +1.97%, oil -0.64%, BTC +0.71%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- AAPL +4.84% \u2014 clear relative strength inside mega-cap tech while the Nasdaq lagged.\n- XLU +2.21%, GLD +2.03% \u2014 ballast did its job; market rewarded defensives and hard-asset hedge exposure.\n- MSFT +1.62% \u2014 quality software held better than AI hardware.\n- TSLA -7.49% \u2014 worst portfolio hit; legacy/speculative sleeve remains the pressure point.\n- GDS ADR -5.66%, MU -5.49%, INTC -5.25% \u2014 China/data-center beta and semis were punished together.\n- ETN -3.34%, NVDA -1.39%, NET -1.58% \u2014 AI/capex complex still leaking, though NVDA held better than the weakest chip names."
+      "content": "- AAPL +4.84% \u2014 strongest visible portfolio name; helped carry index level despite chip weakness.\n- XLU +2.21% / GLD +2.03% \u2014 defensives worked, confirming the rotation was not pure risk-on.\n- MSFT +1.62% \u2014 quality growth held up better than semis.\n- TSLA -7.49% \u2014 worst book name; delivery beat was not enough to stop selling.\n- GDS ADR -5.66%, MU -5.49%, INTC -5.25% \u2014 semiconductor / China-beta pressure stayed heavy.\n- NVDA -1.39%, NET -1.58% \u2014 AI software/compute was soft, but not the main damage versus MU/INTC."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK pre-open: current Yahoo regularMarketTime is yesterday 16:08 HKT, before today\u2019s 09:30 HKT open; treat this as last completed HK session.\n- 9698.HK +5.10% \u2014 strongest HK holding; local GDS outperformed despite the ADR weakness later in New York.\n- 9988.HK +1.78%, 1816.HK +1.49%, 2800.HK +0.95% \u2014 HK book finished constructive yesterday even as Hang Seng slipped about 0.63%."
+      "content": "- Pre-open: HK live session has not started; use Friday close-to-close only.\n- 2800.HK +1.28% / HSI +1.28% \u2014 broad HK beta bounced.\n- 9988.HK -0.42%, 9698.HK -2.36%, 1816.HK -0.74% \u2014 portfolio HK single names lagged the index; GDS HK was the weak spot."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- U.S. June payroll growth missed expectations and May was revised lower, cooling the labor-market narrative but not enough to create a clean risk-on day.\n- The overnight equity split was mostly factor rotation: semis/high-beta AI sold off while Dow, utilities and gold caught flows."
+      "content": "- Reuters: the Dow hit a record close before the holiday as soft US jobs data cooled rate fears, but the Nasdaq fell 0.8% and the SOX index dropped 5.4%, keeping the \u201cAI trade crowded\u201d warning alive.\n- Tesla fell despite stronger-than-expected Q2 deliveries, which is the useful signal: positioning and narrative still matter more than one operational beat."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: HK names enter the day with a constructive last session and a lot of idle HK cash, so watch whether 9988/9698 confirm strength after the open rather than chasing US ADR noise.\n- Risk: the US book\u2019s crowded AI/semis plus TSLA are still the fragility cluster; do not let one strong AAPL/MSFT day hide the breadth problem.\n- Research: refresh the MU/NVDA/ETN capex-chain thesis versus a possible AI hardware de-rating, because that is the swing factor for the growth sleeve."
+      "content": "- Opportunity: If Monday futures hold, the cleaner add setup is quality growth/broad beta, not automatically the most damaged semis.\n- Risk: The book\u2019s hidden fragility is concentration in rate-sensitive AI/semis plus China beta when both can wobble at the same time.\n- Research: Re-check whether MU/INTC weakness is just position washout or a genuine shift in semi-cycle expectations before adding to either."
     }
   ]
 }
