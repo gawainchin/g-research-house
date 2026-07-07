@@ -1,25 +1,25 @@
 {
-  "date": "July 6, 2026",
+  "date": "July 07, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- Monday setup is constructive but uneven: US futures are green after the long weekend, with Nasdaq futures leading, while last US cash session showed rotation out of crowded semis and into Apple / defensives.\n- HK is not open yet; Yahoo\u2019s HK timestamps still point to Friday\u2019s close, so HK movers below are last completed session, not live Monday tape.\nAnchor numbers: ES futures +0.55%, NQ futures +1.52%, Dow futures +0.11%; gold +1.97%, oil -0.64%, BTC +0.71%."
+      "content": "- Risk stayed bid: US indices closed higher, led by chips/tech, while gold also caught a bid; defensives lagged.\n- HK is pre-open: Yahoo HK regular-market timestamps still point to the last completed session, so HK moves below are last-session marks, not live prints.\n- Anchors: Nasdaq +1.12%, S&P 500 +0.72%, Dow +0.29%; gold +1.48%, oil roughly flat."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- AAPL +4.84% \u2014 strongest visible portfolio name; helped carry index level despite chip weakness.\n- XLU +2.21% / GLD +2.03% \u2014 defensives worked, confirming the rotation was not pure risk-on.\n- MSFT +1.62% \u2014 quality growth held up better than semis.\n- TSLA -7.49% \u2014 worst book name; delivery beat was not enough to stop selling.\n- GDS ADR -5.66%, MU -5.49%, INTC -5.25% \u2014 semiconductor / China-beta pressure stayed heavy.\n- NVDA -1.39%, NET -1.58% \u2014 AI software/compute was soft, but not the main damage versus MU/INTC."
+      "content": "- TSLA +6.69% \u2014 strongest portfolio move; speculative/growth appetite came back hard.\n- ETN +3.74% \u2014 industrial AI/power theme still acting well.\n- DXYZ +2.66% / NET +2.12% \u2014 risk-on helped the higher-beta sleeve.\n- XLU -1.01% \u2014 weakest holding; classic lag in a growth-led tape.\n- MSFT -0.96% \u2014 notable mega-cap softness despite the broader Nasdaq bid.\n- NVDA +0.37% \u2014 positive, but not the leader today; semis were broader than just NVDA."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- Pre-open: HK live session has not started; use Friday close-to-close only.\n- 2800.HK +1.28% / HSI +1.28% \u2014 broad HK beta bounced.\n- 9988.HK -0.42%, 9698.HK -2.36%, 1816.HK -0.74% \u2014 portfolio HK single names lagged the index; GDS HK was the weak spot."
+      "content": "- PRE-OPEN / last completed HK session: 2800.HK +1.28%, 9988.HK +1.97%, 9698.HK +0.62%, 1816.HK -0.74%.\n- China beta looked constructive into the open: BABA HK and Tracker Fund outperformed, while CGN lagged as defensives underperformed.\n- Watch the first hour: if HK follows US risk-on, the dry-powder question shifts from \u201cwait\u201d to \u201cwhere is the cleanest beta?\u201d"
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Reuters: the Dow hit a record close before the holiday as soft US jobs data cooled rate fears, but the Nasdaq fell 0.8% and the SOX index dropped 5.4%, keeping the \u201cAI trade crowded\u201d warning alive.\n- Tesla fell despite stronger-than-expected Q2 deliveries, which is the useful signal: positioning and narrative still matter more than one operational beat."
+      "content": "- Reuters framed the overnight tape as \u201cstocks surge on chip news,\u201d with oil back near pre-war levels after Iran-related risk eased.\n- US futures were still firm into Asia: Nasdaq futures +1.01%, S&P futures +0.76%, Dow futures +0.34% on Yahoo chart marks."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: If Monday futures hold, the cleaner add setup is quality growth/broad beta, not automatically the most damaged semis.\n- Risk: The book\u2019s hidden fragility is concentration in rate-sensitive AI/semis plus China beta when both can wobble at the same time.\n- Research: Re-check whether MU/INTC weakness is just position washout or a genuine shift in semi-cycle expectations before adding to either."
+      "content": "- Opportunity: US growth breadth improved beyond NVDA, and HK China beta has a decent setup if the cash book finally gets a cleaner entry window.\n- Risk: TSLA/DXYZ-style beta is moving fastest, which is useful for P&L but dangerous if it tempts averaging into the least core positions.\n- Research: Re-check whether HK cash should first go into 2800.HK broad beta or BABA-specific rerating exposure if the open confirms strength."
     }
   ]
 }
