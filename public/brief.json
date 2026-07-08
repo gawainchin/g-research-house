@@ -1,25 +1,25 @@
 {
-  "date": "July 07, 2026",
+  "date": "Jul 8, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- Risk stayed bid: US indices closed higher, led by chips/tech, while gold also caught a bid; defensives lagged.\n- HK is pre-open: Yahoo HK regular-market timestamps still point to the last completed session, so HK moves below are last-session marks, not live prints.\n- Anchors: Nasdaq +1.12%, S&P 500 +0.72%, Dow +0.29%; gold +1.48%, oil roughly flat."
+      "content": "- US tape rotated out of crowded AI/semi risk: Nasdaq took the hit, while Microsoft/defensives held up better than the chip complex.\n- Oil was the real macro shock after fresh Hormuz/Iran tanker headlines; Asia chip weakness fed into the US session before HK opened.\nAnchor numbers: Nasdaq -1.16%, S&P 500 -0.45%, Dow -0.25%; WTI +5.54%, gold -1.07%; HSI last session +1.14%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- TSLA +6.69% \u2014 strongest portfolio move; speculative/growth appetite came back hard.\n- ETN +3.74% \u2014 industrial AI/power theme still acting well.\n- DXYZ +2.66% / NET +2.12% \u2014 risk-on helped the higher-beta sleeve.\n- XLU -1.01% \u2014 weakest holding; classic lag in a growth-led tape.\n- MSFT -0.96% \u2014 notable mega-cap softness despite the broader Nasdaq bid.\n- NVDA +0.37% \u2014 positive, but not the leader today; semis were broader than just NVDA."
+      "content": "- NET +8.60% \u2014 clear relative strength; software held up while semis sold off.\n- XLU +0.88% \u2014 defensive ballast worked on a risk-off / oil-spike day.\n- NVDA +0.71%, MSFT +0.54% \u2014 quality AI still bid despite broader chip pressure.\n- INTC -9.66% \u2014 weakest portfolio line; selloff says the market is not forgiving weaker semi stories.\n- MU -4.71% \u2014 memory was in the penalty box after Samsung/Korea weakness.\n- ETN -4.29%, TSLA -4.02%, DXYZ -3.76% \u2014 cyclicals/speculative growth acted like risk budget got cut."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- PRE-OPEN / last completed HK session: 2800.HK +1.28%, 9988.HK +1.97%, 9698.HK +0.62%, 1816.HK -0.74%.\n- China beta looked constructive into the open: BABA HK and Tracker Fund outperformed, while CGN lagged as defensives underperformed.\n- Watch the first hour: if HK follows US risk-on, the dry-powder question shifts from \u201cwait\u201d to \u201cwhere is the cleanest beta?\u201d"
+      "content": "- HK is pre-open: Yahoo regular-market timestamps still point to the prior HK session, so these are last completed-session moves, not fresh live bars.\n- GDS / 9698.HK +2.95% \u2014 strongest HK holding; higher-beta China tech outperformed.\n- Tracker Fund / 2800.HK +1.18% \u2014 broad HK beta was firm into today\u2019s open.\n- CGN / 1816.HK -1.12%, BABA / 9988.HK -0.16% \u2014 defensives and BABA lagged the local tape."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Reuters framed the overnight tape as \u201cstocks surge on chip news,\u201d with oil back near pre-war levels after Iran-related risk eased.\n- US futures were still firm into Asia: Nasdaq futures +1.01%, S&P futures +0.76%, Dow futures +0.34% on Yahoo chart marks."
+      "content": "- CNBC reported US stocks fell Tuesday as investors rotated out of AI-linked names, Micron fell 4.7%, SMH dropped more than 3%, and oil jumped after Iran-related tanker/Hormuz headlines.\n- Reuters flagged a record Hong Kong IPO lock-up overhang: Goldman estimated $274bn of locked-up shares could be released over 12 months, with July/September pressure concentrated."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: US growth breadth improved beyond NVDA, and HK China beta has a decent setup if the cash book finally gets a cleaner entry window.\n- Risk: TSLA/DXYZ-style beta is moving fastest, which is useful for P&L but dangerous if it tempts averaging into the least core positions.\n- Research: Re-check whether HK cash should first go into 2800.HK broad beta or BABA-specific rerating exposure if the open confirms strength."
+      "content": "- Opportunity: NET strength and MSFT/NVDA resilience say the market is separating quality/software winners from weaker semi-cycle names rather than dumping all AI exposure.\n- Risk: INTC/MU weakness plus oil shock is a bad combination for a book with both chip beta and speculative growth.\n- Research: Check whether GDS\u2019s HK outperformance is stock-specific improvement or just short-term China tech beta before treating it as a durable rerating signal."
     }
   ]
 }

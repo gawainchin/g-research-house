@@ -1,28 +1,29 @@
-MORNING BRIEF — Tue 7 Jul 2026, 08:00 HKT
+Morning brief — Wed Jul 8, 2026, 08:00 HKT
 
 OVERNIGHT MAP
-- Risk stayed bid: US indices closed higher, led by chips/tech, while gold also caught a bid; defensives lagged.
-- HK is pre-open: Yahoo HK regular-market timestamps still point to the last completed session, so HK moves below are last-session marks, not live prints.
-- Anchors: Nasdaq +1.12%, S&P 500 +0.72%, Dow +0.29%; gold +1.48%, oil roughly flat.
+- US tape rotated out of crowded AI/semi risk: Nasdaq took the hit, while Microsoft/defensives held up better than the chip complex.
+- Oil was the real macro shock after fresh Hormuz/Iran tanker headlines; Asia chip weakness fed into the US session before HK opened.
+Anchor numbers: Nasdaq -1.16%, S&P 500 -0.45%, Dow -0.25%; WTI +5.54%, gold -1.07%; HSI last session +1.14%.
 
 US CLOSE MOVERS
-- TSLA +6.69% — strongest portfolio move; speculative/growth appetite came back hard.
-- ETN +3.74% — industrial AI/power theme still acting well.
-- DXYZ +2.66% / NET +2.12% — risk-on helped the higher-beta sleeve.
-- XLU -1.01% — weakest holding; classic lag in a growth-led tape.
-- MSFT -0.96% — notable mega-cap softness despite the broader Nasdaq bid.
-- NVDA +0.37% — positive, but not the leader today; semis were broader than just NVDA.
+- NET +8.60% — clear relative strength; software held up while semis sold off.
+- XLU +0.88% — defensive ballast worked on a risk-off / oil-spike day.
+- NVDA +0.71%, MSFT +0.54% — quality AI still bid despite broader chip pressure.
+- INTC -9.66% — weakest portfolio line; selloff says the market is not forgiving weaker semi stories.
+- MU -4.71% — memory was in the penalty box after Samsung/Korea weakness.
+- ETN -4.29%, TSLA -4.02%, DXYZ -3.76% — cyclicals/speculative growth acted like risk budget got cut.
 
 HK LIVE MOVERS
-- PRE-OPEN / last completed HK session: 2800.HK +1.28%, 9988.HK +1.97%, 9698.HK +0.62%, 1816.HK -0.74%.
-- China beta looked constructive into the open: BABA HK and Tracker Fund outperformed, while CGN lagged as defensives underperformed.
-- Watch the first hour: if HK follows US risk-on, the dry-powder question shifts from “wait” to “where is the cleanest beta?”
+- HK is pre-open: Yahoo regular-market timestamps still point to the prior HK session, so these are last completed-session moves, not fresh live bars.
+- GDS / 9698.HK +2.95% — strongest HK holding; higher-beta China tech outperformed.
+- Tracker Fund / 2800.HK +1.18% — broad HK beta was firm into today’s open.
+- CGN / 1816.HK -1.12%, BABA / 9988.HK -0.16% — defensives and BABA lagged the local tape.
 
 MARKET NEWS
-- Reuters framed the overnight tape as “stocks surge on chip news,” with oil back near pre-war levels after Iran-related risk eased.
-- US futures were still firm into Asia: Nasdaq futures +1.01%, S&P futures +0.76%, Dow futures +0.34% on Yahoo chart marks.
+- CNBC reported US stocks fell Tuesday as investors rotated out of AI-linked names, Micron fell 4.7%, SMH dropped more than 3%, and oil jumped after Iran-related tanker/Hormuz headlines.
+- Reuters flagged a record Hong Kong IPO lock-up overhang: Goldman estimated $274bn of locked-up shares could be released over 12 months, with July/September pressure concentrated.
 
 ACTION BOARD
-- Opportunity: US growth breadth improved beyond NVDA, and HK China beta has a decent setup if the cash book finally gets a cleaner entry window.
-- Risk: TSLA/DXYZ-style beta is moving fastest, which is useful for P&L but dangerous if it tempts averaging into the least core positions.
-- Research: Re-check whether HK cash should first go into 2800.HK broad beta or BABA-specific rerating exposure if the open confirms strength.
+- Opportunity: NET strength and MSFT/NVDA resilience say the market is separating quality/software winners from weaker semi-cycle names rather than dumping all AI exposure.
+- Risk: INTC/MU weakness plus oil shock is a bad combination for a book with both chip beta and speculative growth.
+- Research: Check whether GDS’s HK outperformance is stock-specific improvement or just short-term China tech beta before treating it as a durable rerating signal.
