@@ -1,25 +1,25 @@
 {
-  "date": "Jul 8, 2026",
+  "date": "Jul 9, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US tape rotated out of crowded AI/semi risk: Nasdaq took the hit, while Microsoft/defensives held up better than the chip complex.\n- Oil was the real macro shock after fresh Hormuz/Iran tanker headlines; Asia chip weakness fed into the US session before HK opened.\nAnchor numbers: Nasdaq -1.16%, S&P 500 -0.45%, Dow -0.25%; WTI +5.54%, gold -1.07%; HSI last session +1.14%."
+      "content": "- US tape was split: AI/China internet held the Nasdaq up, but oil shock and geopolitics dragged the Dow and broader cyclicals lower.\n- HK is still pre-open on Yahoo timestamps, so HK moves below use the last completed session; setup is risk-on China tech, not broad calm.\nAnchor numbers: Nasdaq +0.20%, S&P 500 -0.28%, Dow -1.09%, VIX +4.8%, WTI +5.7%, gold -1.5%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- NET +8.60% \u2014 clear relative strength; software held up while semis sold off.\n- XLU +0.88% \u2014 defensive ballast worked on a risk-off / oil-spike day.\n- NVDA +0.71%, MSFT +0.54% \u2014 quality AI still bid despite broader chip pressure.\n- INTC -9.66% \u2014 weakest portfolio line; selloff says the market is not forgiving weaker semi stories.\n- MU -4.71% \u2014 memory was in the penalty box after Samsung/Korea weakness.\n- ETN -4.29%, TSLA -4.02%, DXYZ -3.76% \u2014 cyclicals/speculative growth acted like risk budget got cut."
+      "content": "- NVDA +3.7% \u2014 AI leadership stayed bid despite weaker index breadth.\n- NET +1.7% / MU +1.1% \u2014 growth and memory stabilized after recent volatility.\n- BABA ADR +11.0% / GDS ADR +7.9% \u2014 US line confirms the China internet rerating, but HK account exposure should be judged on 9988 / 9698.\n- TSLA -2.2% \u2014 speculative beta lagged; still the weakest visible US growth name.\n- MSFT -1.4% \u2014 mega-cap software did not join the AI strength.\n- GLD -0.8% / XLU -0.7% \u2014 ballast underperformed as oil, not safe-haven demand, drove the macro shock."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open: Yahoo regular-market timestamps still point to the prior HK session, so these are last completed-session moves, not fresh live bars.\n- GDS / 9698.HK +2.95% \u2014 strongest HK holding; higher-beta China tech outperformed.\n- Tracker Fund / 2800.HK +1.18% \u2014 broad HK beta was firm into today\u2019s open.\n- CGN / 1816.HK -1.12%, BABA / 9988.HK -0.16% \u2014 defensives and BABA lagged the local tape."
+      "content": "- Pre-open / last completed HK session: 9988.HK +12.2% \u2014 Alibaba led the China tech move on AI/cloud optimism and margin-improvement expectations.\n- 9698.HK +5.6% \u2014 high-beta China data-center exposure participated strongly.\n- 2800.HK -0.7% / 1816.HK +3.4% \u2014 broad HK beta lagged the single-name internet rally; CGN stayed firm."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- CNBC reported US stocks fell Tuesday as investors rotated out of AI-linked names, Micron fell 4.7%, SMH dropped more than 3%, and oil jumped after Iran-related tanker/Hormuz headlines.\n- Reuters flagged a record Hong Kong IPO lock-up overhang: Goldman estimated $274bn of locked-up shares could be released over 12 months, with July/September pressure concentrated."
+      "content": "- Trump said the US-Iran ceasefire was \u201cover\u201d after renewed hostilities, sending oil sharply higher and pressuring Dow-style cyclicals.\n- Alibaba\u2019s Hong Kong shares jumped as investors refocused on cloud/AI growth, narrowing instant-commerce losses, and pre-earnings margin upside."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: NET strength and MSFT/NVDA resilience say the market is separating quality/software winners from weaker semi-cycle names rather than dumping all AI exposure.\n- Risk: INTC/MU weakness plus oil shock is a bad combination for a book with both chip beta and speculative growth.\n- Research: Check whether GDS\u2019s HK outperformance is stock-specific improvement or just short-term China tech beta before treating it as a durable rerating signal."
+      "content": "- Opportunity: The China rerating signal is real enough to respect \u2014 BABA and GDS are finally moving for stock-specific reasons, not just index beta.\n- Risk: Oil-driven geopolitical stress can bleed into inflation, yields, and growth multiples if it lasts more than one headline cycle.\n- Research: Check whether Alibaba\u2019s cloud/AI acceleration can offset instant-commerce losses sustainably before treating this as more than a sharp rerating bounce."
     }
   ]
 }
