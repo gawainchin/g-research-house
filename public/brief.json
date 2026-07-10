@@ -1,25 +1,25 @@
 {
-  "date": "Jul 9, 2026",
+  "date": "Jul 10, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US tape was split: AI/China internet held the Nasdaq up, but oil shock and geopolitics dragged the Dow and broader cyclicals lower.\n- HK is still pre-open on Yahoo timestamps, so HK moves below use the last completed session; setup is risk-on China tech, not broad calm.\nAnchor numbers: Nasdaq +0.20%, S&P 500 -0.28%, Dow -1.09%, VIX +4.8%, WTI +5.7%, gold -1.5%."
+      "content": "- US tape repaired after the Iran/oil scare: tech led, breadth was less important than AI/growth leadership.\n- HK is pre-open; last completed HK session was strongly risk-on, led by broad tracker and China tech beta.\nAnchor numbers: Nasdaq +1.30%, S&P 500 +0.81%, Dow +0.27%; gold +1.00%, crude -2.26% after the prior Gulf spike."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- NVDA +3.7% \u2014 AI leadership stayed bid despite weaker index breadth.\n- NET +1.7% / MU +1.1% \u2014 growth and memory stabilized after recent volatility.\n- BABA ADR +11.0% / GDS ADR +7.9% \u2014 US line confirms the China internet rerating, but HK account exposure should be judged on 9988 / 9698.\n- TSLA -2.2% \u2014 speculative beta lagged; still the weakest visible US growth name.\n- MSFT -1.4% \u2014 mega-cap software did not join the AI strength.\n- GLD -0.8% / XLU -0.7% \u2014 ballast underperformed as oil, not safe-haven demand, drove the macro shock."
+      "content": "- DXYZ +11.22% \u2014 speculative appetite came back hard.\n- MU +4.52% \u2014 semis led the book; strongest confirmed quality/growth move.\n- TSLA +3.17% \u2014 rebound, but still a legacy-risk name rather than core.\n- NVDA -0.66% \u2014 lagged despite the broader tech bid; watch for fatigue after recent China-chip headlines.\n- XLU -0.51% \u2014 defensives lagged in risk-on tape."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- Pre-open / last completed HK session: 9988.HK +12.2% \u2014 Alibaba led the China tech move on AI/cloud optimism and margin-improvement expectations.\n- 9698.HK +5.6% \u2014 high-beta China data-center exposure participated strongly.\n- 2800.HK -0.7% / 1816.HK +3.4% \u2014 broad HK beta lagged the single-name internet rally; CGN stayed firm."
+      "content": "- HK market is pre-open; Yahoo regular-market timestamps still point to yesterday\u2019s close, so these are last completed HK-session moves, not live ticks.\n- 02800.HK +3.09% and HSI +2.99% \u2014 broad HK beta finally did the work.\n- 9698.HK +1.39%, 9988.HK +0.47% \u2014 China tech participated, but not explosively.\n- 1816.HK -0.36% \u2014 ballast lagged, which is normal on a clean risk-on day."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Trump said the US-Iran ceasefire was \u201cover\u201d after renewed hostilities, sending oil sharply higher and pressuring Dow-style cyclicals.\n- Alibaba\u2019s Hong Kong shares jumped as investors refocused on cloud/AI growth, narrowing instant-commerce losses, and pre-earnings margin upside."
+      "content": "- Reuters framed the tape as tech hopes offsetting Middle East worries: oil had jumped after renewed Gulf hostilities, but markets still leaned toward eventual de-escalation.\n- The AI/semis angle stayed alive after reports that China may allow top AI firms to buy limited quantities of Nvidia H200 chips, while Fed minutes showed inflation concern and some appetite for higher rates."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: The China rerating signal is real enough to respect \u2014 BABA and GDS are finally moving for stock-specific reasons, not just index beta.\n- Risk: Oil-driven geopolitical stress can bleed into inflation, yields, and growth multiples if it lasts more than one headline cycle.\n- Research: Check whether Alibaba\u2019s cloud/AI acceleration can offset instant-commerce losses sustainably before treating this as more than a sharp rerating bounce."
+      "content": "- Opportunity: The cleaner setup is HK broad beta plus selective semis, not chasing every single high-beta rebound.\n- Risk: If oil/yields reprice again, the book\u2019s AI/growth strength can flip quickly because the rally is still liquidity-sensitive.\n- Research: Re-check whether BABA/GDS strength is policy/rerating-led or just beta catch-up before using HK cash aggressively."
     }
   ]
 }

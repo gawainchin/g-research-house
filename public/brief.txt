@@ -1,28 +1,28 @@
-MORNING BRIEF — Thu Jul 9, 2026, 08:00 HKT
+Morning Brief — Fri Jul 10, 2026, 08:00 HKT
 
 OVERNIGHT MAP
-- US tape was split: AI/China internet held the Nasdaq up, but oil shock and geopolitics dragged the Dow and broader cyclicals lower.
-- HK is still pre-open on Yahoo timestamps, so HK moves below use the last completed session; setup is risk-on China tech, not broad calm.
-Anchor numbers: Nasdaq +0.20%, S&P 500 -0.28%, Dow -1.09%, VIX +4.8%, WTI +5.7%, gold -1.5%.
+- US tape repaired after the Iran/oil scare: tech led, breadth was less important than AI/growth leadership.
+- HK is pre-open; last completed HK session was strongly risk-on, led by broad tracker and China tech beta.
+Anchor numbers: Nasdaq +1.30%, S&P 500 +0.81%, Dow +0.27%; gold +1.00%, crude -2.26% after the prior Gulf spike.
 
 US CLOSE MOVERS
-- NVDA +3.7% — AI leadership stayed bid despite weaker index breadth.
-- NET +1.7% / MU +1.1% — growth and memory stabilized after recent volatility.
-- BABA ADR +11.0% / GDS ADR +7.9% — US line confirms the China internet rerating, but HK account exposure should be judged on 9988 / 9698.
-- TSLA -2.2% — speculative beta lagged; still the weakest visible US growth name.
-- MSFT -1.4% — mega-cap software did not join the AI strength.
-- GLD -0.8% / XLU -0.7% — ballast underperformed as oil, not safe-haven demand, drove the macro shock.
+- DXYZ +11.22% — speculative appetite came back hard.
+- MU +4.52% — semis led the book; strongest confirmed quality/growth move.
+- TSLA +3.17% — rebound, but still a legacy-risk name rather than core.
+- NVDA -0.66% — lagged despite the broader tech bid; watch for fatigue after recent China-chip headlines.
+- XLU -0.51% — defensives lagged in risk-on tape.
 
 HK LIVE MOVERS
-- Pre-open / last completed HK session: 9988.HK +12.2% — Alibaba led the China tech move on AI/cloud optimism and margin-improvement expectations.
-- 9698.HK +5.6% — high-beta China data-center exposure participated strongly.
-- 2800.HK -0.7% / 1816.HK +3.4% — broad HK beta lagged the single-name internet rally; CGN stayed firm.
+- HK market is pre-open; Yahoo regular-market timestamps still point to yesterday’s close, so these are last completed HK-session moves, not live ticks.
+- 02800.HK +3.09% and HSI +2.99% — broad HK beta finally did the work.
+- 9698.HK +1.39%, 9988.HK +0.47% — China tech participated, but not explosively.
+- 1816.HK -0.36% — ballast lagged, which is normal on a clean risk-on day.
 
 MARKET NEWS
-- Trump said the US-Iran ceasefire was “over” after renewed hostilities, sending oil sharply higher and pressuring Dow-style cyclicals.
-- Alibaba’s Hong Kong shares jumped as investors refocused on cloud/AI growth, narrowing instant-commerce losses, and pre-earnings margin upside.
+- Reuters framed the tape as tech hopes offsetting Middle East worries: oil had jumped after renewed Gulf hostilities, but markets still leaned toward eventual de-escalation.
+- The AI/semis angle stayed alive after reports that China may allow top AI firms to buy limited quantities of Nvidia H200 chips, while Fed minutes showed inflation concern and some appetite for higher rates.
 
 ACTION BOARD
-- Opportunity: The China rerating signal is real enough to respect — BABA and GDS are finally moving for stock-specific reasons, not just index beta.
-- Risk: Oil-driven geopolitical stress can bleed into inflation, yields, and growth multiples if it lasts more than one headline cycle.
-- Research: Check whether Alibaba’s cloud/AI acceleration can offset instant-commerce losses sustainably before treating this as more than a sharp rerating bounce.
+- Opportunity: The cleaner setup is HK broad beta plus selective semis, not chasing every single high-beta rebound.
+- Risk: If oil/yields reprice again, the book’s AI/growth strength can flip quickly because the rally is still liquidity-sensitive.
+- Research: Re-check whether BABA/GDS strength is policy/rerating-led or just beta catch-up before using HK cash aggressively.
