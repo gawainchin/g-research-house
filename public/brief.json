@@ -1,25 +1,25 @@
 {
-  "date": "Jul 10, 2026",
+  "date": "July 13, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US tape repaired after the Iran/oil scare: tech led, breadth was less important than AI/growth leadership.\n- HK is pre-open; last completed HK session was strongly risk-on, led by broad tracker and China tech beta.\nAnchor numbers: Nasdaq +1.30%, S&P 500 +0.81%, Dow +0.27%; gold +1.00%, crude -2.26% after the prior Gulf spike."
+      "content": "- Monday setup is risk-off at the margin: US futures are softer after Friday\u2019s green close, with oil the main macro pressure point.\n- Portfolio read-through: AI leadership still held up at the US close, but HK is pre-open, so China marks below are last completed session, not live Monday prints.\nAnchor numbers: S&P +0.42%, Nasdaq +0.29%, Dow +0.29%; ES futures -0.31%, NQ -0.52%; WTI +3.30%, gold -0.37%, BTC flat."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- DXYZ +11.22% \u2014 speculative appetite came back hard.\n- MU +4.52% \u2014 semis led the book; strongest confirmed quality/growth move.\n- TSLA +3.17% \u2014 rebound, but still a legacy-risk name rather than core.\n- NVDA -0.66% \u2014 lagged despite the broader tech bid; watch for fatigue after recent China-chip headlines.\n- XLU -0.51% \u2014 defensives lagged in risk-on tape."
+      "content": "- NVDA +4.03% \u2014 clear strongest confirmed growth holding; AI/semis still had sponsorship.\n- XLU +0.62% / SPY +0.43% \u2014 ballast and beta both positive, so Friday was not just a high-beta squeeze.\n- ETN +0.36% \u2014 modest rebound after recent industrial weakness.\n- NET -2.68% \u2014 weakest growth name; still the review bucket, not an automatic add.\n- INTC -2.40% \u2014 value/turnaround exposure lagged despite a positive tape.\n- MU -1.24% \u2014 semis were not uniformly strong; NVDA leadership did not lift the whole chip sleeve."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK market is pre-open; Yahoo regular-market timestamps still point to yesterday\u2019s close, so these are last completed HK-session moves, not live ticks.\n- 02800.HK +3.09% and HSI +2.99% \u2014 broad HK beta finally did the work.\n- 9698.HK +1.39%, 9988.HK +0.47% \u2014 China tech participated, but not explosively.\n- 1816.HK -0.36% \u2014 ballast lagged, which is normal on a clean risk-on day."
+      "content": "- HK is pre-open: Yahoo timestamps still point to the prior HK session, so these are last completed HK moves.\n- 9988.HK +2.04% \u2014 BABA was the strongest HK account holding; China tech momentum still better than broad tape.\n- 2800.HK +0.65% / 1816.HK +0.73% \u2014 broad HK beta and CGN were quietly positive.\n- 9698.HK -1.31% \u2014 GDS lagged; higher-beta China infra remains less clean than BABA."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Reuters framed the tape as tech hopes offsetting Middle East worries: oil had jumped after renewed Gulf hostilities, but markets still leaned toward eventual de-escalation.\n- The AI/semis angle stayed alive after reports that China may allow top AI firms to buy limited quantities of Nvidia H200 chips, while Fed minutes showed inflation concern and some appetite for higher rates."
+      "content": "- US futures opened Monday lower while crude extended higher, keeping the Iran/oil channel as the main weekend catch-up risk for equities.\n- Friday\u2019s US close was constructive but narrow: NVDA did the heavy lifting inside the book, while NET, INTC and MU warned against treating the tape as broad tech risk-on."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: The cleaner setup is HK broad beta plus selective semis, not chasing every single high-beta rebound.\n- Risk: If oil/yields reprice again, the book\u2019s AI/growth strength can flip quickly because the rally is still liquidity-sensitive.\n- Research: Re-check whether BABA/GDS strength is policy/rerating-led or just beta catch-up before using HK cash aggressively."
+      "content": "- Opportunity: If HK opens firm, BABA/02800 strength is the cleaner China expression than chasing GDS beta.\n- Risk: Oil-led macro pressure can turn Friday\u2019s AI-led gains into a narrow rally that fades outside NVDA.\n- Research: Recheck NET\u2019s thesis before adding \u2014 the price action says the market still wants a reason to mark it down faster than megacap AI."
     }
   ]
 }

@@ -1,28 +1,29 @@
-Morning Brief — Fri Jul 10, 2026, 08:00 HKT
+Morning brief — Mon 13 Jul 2026, 08:02 HKT
 
 OVERNIGHT MAP
-- US tape repaired after the Iran/oil scare: tech led, breadth was less important than AI/growth leadership.
-- HK is pre-open; last completed HK session was strongly risk-on, led by broad tracker and China tech beta.
-Anchor numbers: Nasdaq +1.30%, S&P 500 +0.81%, Dow +0.27%; gold +1.00%, crude -2.26% after the prior Gulf spike.
+- Monday setup is risk-off at the margin: US futures are softer after Friday’s green close, with oil the main macro pressure point.
+- Portfolio read-through: AI leadership still held up at the US close, but HK is pre-open, so China marks below are last completed session, not live Monday prints.
+Anchor numbers: S&P +0.42%, Nasdaq +0.29%, Dow +0.29%; ES futures -0.31%, NQ -0.52%; WTI +3.30%, gold -0.37%, BTC flat.
 
 US CLOSE MOVERS
-- DXYZ +11.22% — speculative appetite came back hard.
-- MU +4.52% — semis led the book; strongest confirmed quality/growth move.
-- TSLA +3.17% — rebound, but still a legacy-risk name rather than core.
-- NVDA -0.66% — lagged despite the broader tech bid; watch for fatigue after recent China-chip headlines.
-- XLU -0.51% — defensives lagged in risk-on tape.
+- NVDA +4.03% — clear strongest confirmed growth holding; AI/semis still had sponsorship.
+- XLU +0.62% / SPY +0.43% — ballast and beta both positive, so Friday was not just a high-beta squeeze.
+- ETN +0.36% — modest rebound after recent industrial weakness.
+- NET -2.68% — weakest growth name; still the review bucket, not an automatic add.
+- INTC -2.40% — value/turnaround exposure lagged despite a positive tape.
+- MU -1.24% — semis were not uniformly strong; NVDA leadership did not lift the whole chip sleeve.
 
 HK LIVE MOVERS
-- HK market is pre-open; Yahoo regular-market timestamps still point to yesterday’s close, so these are last completed HK-session moves, not live ticks.
-- 02800.HK +3.09% and HSI +2.99% — broad HK beta finally did the work.
-- 9698.HK +1.39%, 9988.HK +0.47% — China tech participated, but not explosively.
-- 1816.HK -0.36% — ballast lagged, which is normal on a clean risk-on day.
+- HK is pre-open: Yahoo timestamps still point to the prior HK session, so these are last completed HK moves.
+- 9988.HK +2.04% — BABA was the strongest HK account holding; China tech momentum still better than broad tape.
+- 2800.HK +0.65% / 1816.HK +0.73% — broad HK beta and CGN were quietly positive.
+- 9698.HK -1.31% — GDS lagged; higher-beta China infra remains less clean than BABA.
 
 MARKET NEWS
-- Reuters framed the tape as tech hopes offsetting Middle East worries: oil had jumped after renewed Gulf hostilities, but markets still leaned toward eventual de-escalation.
-- The AI/semis angle stayed alive after reports that China may allow top AI firms to buy limited quantities of Nvidia H200 chips, while Fed minutes showed inflation concern and some appetite for higher rates.
+- US futures opened Monday lower while crude extended higher, keeping the Iran/oil channel as the main weekend catch-up risk for equities.
+- Friday’s US close was constructive but narrow: NVDA did the heavy lifting inside the book, while NET, INTC and MU warned against treating the tape as broad tech risk-on.
 
 ACTION BOARD
-- Opportunity: The cleaner setup is HK broad beta plus selective semis, not chasing every single high-beta rebound.
-- Risk: If oil/yields reprice again, the book’s AI/growth strength can flip quickly because the rally is still liquidity-sensitive.
-- Research: Re-check whether BABA/GDS strength is policy/rerating-led or just beta catch-up before using HK cash aggressively.
+- Opportunity: If HK opens firm, BABA/02800 strength is the cleaner China expression than chasing GDS beta.
+- Risk: Oil-led macro pressure can turn Friday’s AI-led gains into a narrow rally that fades outside NVDA.
+- Research: Recheck NET’s thesis before adding — the price action says the market still wants a reason to mark it down faster than megacap AI.
