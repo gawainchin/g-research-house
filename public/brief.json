@@ -1,25 +1,25 @@
 {
-  "date": "Jul 14, 2026",
+  "date": "July 15, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- Risk was defensive: US tech led down, semis were the pressure point, and geopolitics pushed oil sharply higher.\n- HK is not open yet; use last completed HK session, not stale pre-open prints.\nAnchor numbers: Nasdaq -1.55%, S&P 500 -0.79%, Dow -0.26%; oil +11.0%, gold -2.5%, BTC -2.3%."
+      "content": "- US risk tone improved after cooler CPI: Nasdaq led, S&P hit another record-style close, while Dow lagged but stayed positive.\n- The book\u2019s signal was clear: AI/growth recovered, defensives held, speculative DXYZ remained weak; HK is still pre-open, so HK movers below are last completed session.\nAnchor numbers: Nasdaq +0.90%, S&P 500 +0.38%, Dow +0.02%, VIX -3.85%; gold +1.55%, WTI +2.20%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- MSFT +1.53% \u2014 best large-cap quality hold; still acting like the cleanest AI/core exposure.\n- XLU +0.68% / AAPL +0.63% \u2014 ballast and quality held up while higher-beta tech sold off.\n- NET +0.42% \u2014 modest relative strength; still in monitor bucket, not an automatic add.\n- INTC -6.12% \u2014 worst portfolio name; value/rerating trade remains fragile when semis de-risk.\n- MU -4.32% / NVDA -3.52% \u2014 AI beta took the hit as chips sold off.\n- TSLA -3.19% / DXYZ -3.00% \u2014 speculative sleeve offered no cushion in a risk-off tape."
+      "content": "- MU +4.92% \u2014 memory/AI beta led the rebound; strongest portfolio signal.\n- NET +4.53% \u2014 expensive software caught the growth bid after prior sentiment pressure.\n- NVDA +4.06% / INTC +4.50% \u2014 semis bounced broadly; INTC\u2019s move is still rerating/speculative, not quality confirmation.\n- DXYZ -3.32% \u2014 private-market optionality did not participate; weak risk appetite underneath the headline rally.\n- GDS ADR -2.23% \u2014 US ADR lagged; for the HK account, use 9698.HK below, not ADR noise.\n- MSFT -1.55% / AAPL -0.77% \u2014 mega-cap quality lagged the higher-beta AI rebound."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK pre-open at 08:00 HKT; Yahoo regular-market timestamps still point to Jul 13 close, so these are last completed HK-session moves.\n- 02800.HK +0.65% and HSI +0.60% \u2014 broad HK beta held firm.\n- 9988.HK +0.45%, 9698.HK +0.38%, 1816.HK +0.36% \u2014 China/HK book was quietly positive across BABA, GDS and CGN."
+      "content": "- HK market is pre-open; Yahoo regular-market timestamps are still 14 Jul close, so these are last completed HK-session moves, not live intraday prints.\n- 9698.HK +1.44% \u2014 GDS HK was the cleanest local relative-strength name.\n- 2800.HK +0.24% / 9988.HK +0.09% \u2014 broad HK beta and Alibaba were basically flat-positive.\n- 1816.HK -1.45% \u2014 CGN lagged; defensive ballast did not help in the last HK session."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Reuters: stocks slipped, oil rallied and bond yields rose after renewed US-Iran exchanges and Tehran again saying it closed the Strait of Hormuz.\n- The same report flagged Nasdaq-led Wall Street weakness, AI/semiconductor selling pressure, and investors waiting on Tuesday\u2019s US inflation print."
+      "content": "- US CPI came in softer than expected, which helped markets lean back into growth and reduced immediate pressure from the rates narrative.\n- Oil stayed firm on renewed Middle East tension, so the tape is not pure risk-on: energy/geopolitical risk remains the counterweight."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: HK/China exposure is showing relative calm versus US AI beta, so 02800/BABA deserve attention if the US chip wobble stays contained.\n- Risk: oil-driven inflation pressure is the cleanest threat because it can hit growth multiples, semis and Fed-cut expectations at the same time.\n- Research: check whether INTC/MU weakness is sector beta only or a company-specific signal before treating the selloff as a buyable dip."
+      "content": "- Opportunity: AI beta is reasserting leadership, but the clean expression is still quality/earnings-linked names first, not DXYZ-style optionality.\n- Risk: HK opens into a stronger US growth tape but higher oil/geopolitical risk, so China beta could lag if regional risk appetite stays cautious.\n- Research: Re-check whether NET\u2019s rebound is thesis repair or just multiple expansion after insider-selling headlines faded."
     }
   ]
 }

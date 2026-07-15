@@ -1,28 +1,29 @@
-Morning brief — Tue Jul 14, 2026, 08:00 HKT
+Morning brief — Wed 15 Jul 2026, 08:00 HKT
 
 OVERNIGHT MAP
-- Risk was defensive: US tech led down, semis were the pressure point, and geopolitics pushed oil sharply higher.
-- HK is not open yet; use last completed HK session, not stale pre-open prints.
-Anchor numbers: Nasdaq -1.55%, S&P 500 -0.79%, Dow -0.26%; oil +11.0%, gold -2.5%, BTC -2.3%.
+- US risk tone improved after cooler CPI: Nasdaq led, S&P hit another record-style close, while Dow lagged but stayed positive.
+- The book’s signal was clear: AI/growth recovered, defensives held, speculative DXYZ remained weak; HK is still pre-open, so HK movers below are last completed session.
+Anchor numbers: Nasdaq +0.90%, S&P 500 +0.38%, Dow +0.02%, VIX -3.85%; gold +1.55%, WTI +2.20%.
 
 US CLOSE MOVERS
-- MSFT +1.53% — best large-cap quality hold; still acting like the cleanest AI/core exposure.
-- XLU +0.68% / AAPL +0.63% — ballast and quality held up while higher-beta tech sold off.
-- NET +0.42% — modest relative strength; still in monitor bucket, not an automatic add.
-- INTC -6.12% — worst portfolio name; value/rerating trade remains fragile when semis de-risk.
-- MU -4.32% / NVDA -3.52% — AI beta took the hit as chips sold off.
-- TSLA -3.19% / DXYZ -3.00% — speculative sleeve offered no cushion in a risk-off tape.
+- MU +4.92% — memory/AI beta led the rebound; strongest portfolio signal.
+- NET +4.53% — expensive software caught the growth bid after prior sentiment pressure.
+- NVDA +4.06% / INTC +4.50% — semis bounced broadly; INTC’s move is still rerating/speculative, not quality confirmation.
+- DXYZ -3.32% — private-market optionality did not participate; weak risk appetite underneath the headline rally.
+- GDS ADR -2.23% — US ADR lagged; for the HK account, use 9698.HK below, not ADR noise.
+- MSFT -1.55% / AAPL -0.77% — mega-cap quality lagged the higher-beta AI rebound.
 
 HK LIVE MOVERS
-- HK pre-open at 08:00 HKT; Yahoo regular-market timestamps still point to Jul 13 close, so these are last completed HK-session moves.
-- 02800.HK +0.65% and HSI +0.60% — broad HK beta held firm.
-- 9988.HK +0.45%, 9698.HK +0.38%, 1816.HK +0.36% — China/HK book was quietly positive across BABA, GDS and CGN.
+- HK market is pre-open; Yahoo regular-market timestamps are still 14 Jul close, so these are last completed HK-session moves, not live intraday prints.
+- 9698.HK +1.44% — GDS HK was the cleanest local relative-strength name.
+- 2800.HK +0.24% / 9988.HK +0.09% — broad HK beta and Alibaba were basically flat-positive.
+- 1816.HK -1.45% — CGN lagged; defensive ballast did not help in the last HK session.
 
 MARKET NEWS
-- Reuters: stocks slipped, oil rallied and bond yields rose after renewed US-Iran exchanges and Tehran again saying it closed the Strait of Hormuz.
-- The same report flagged Nasdaq-led Wall Street weakness, AI/semiconductor selling pressure, and investors waiting on Tuesday’s US inflation print.
+- US CPI came in softer than expected, which helped markets lean back into growth and reduced immediate pressure from the rates narrative.
+- Oil stayed firm on renewed Middle East tension, so the tape is not pure risk-on: energy/geopolitical risk remains the counterweight.
 
 ACTION BOARD
-- Opportunity: HK/China exposure is showing relative calm versus US AI beta, so 02800/BABA deserve attention if the US chip wobble stays contained.
-- Risk: oil-driven inflation pressure is the cleanest threat because it can hit growth multiples, semis and Fed-cut expectations at the same time.
-- Research: check whether INTC/MU weakness is sector beta only or a company-specific signal before treating the selloff as a buyable dip.
+- Opportunity: AI beta is reasserting leadership, but the clean expression is still quality/earnings-linked names first, not DXYZ-style optionality.
+- Risk: HK opens into a stronger US growth tape but higher oil/geopolitical risk, so China beta could lag if regional risk appetite stays cautious.
+- Research: Re-check whether NET’s rebound is thesis repair or just multiple expansion after insider-selling headlines faded.
