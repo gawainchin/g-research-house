@@ -1,29 +1,27 @@
-Morning brief — Wed 15 Jul 2026, 08:00 HKT
+Morning brief — Fri Jul 17, 2026, 08:00 HKT
 
 OVERNIGHT MAP
-- US risk tone improved after cooler CPI: Nasdaq led, S&P hit another record-style close, while Dow lagged but stayed positive.
-- The book’s signal was clear: AI/growth recovered, defensives held, speculative DXYZ remained weak; HK is still pre-open, so HK movers below are last completed session.
-Anchor numbers: Nasdaq +0.90%, S&P 500 +0.38%, Dow +0.02%, VIX -3.85%; gold +1.55%, WTI +2.20%.
+- US tape turned defensive: Nasdaq sold off on semis/hardware while MSFT and AAPL held the growth sleeve together; defensives beat beta.
+- HK is pre-open: Yahoo timestamps still point to the last completed HK session, so HK moves below are last-session marks, not live prints.
+Anchor numbers: Nasdaq -1.47%, S&P 500 -0.51%, Dow -0.20%; NQ futures -1.96%, 10Y ~4.57%, oil -0.79%, gold -1.49%.
 
 US CLOSE MOVERS
-- MU +4.92% — memory/AI beta led the rebound; strongest portfolio signal.
-- NET +4.53% — expensive software caught the growth bid after prior sentiment pressure.
-- NVDA +4.06% / INTC +4.50% — semis bounced broadly; INTC’s move is still rerating/speculative, not quality confirmation.
-- DXYZ -3.32% — private-market optionality did not participate; weak risk appetite underneath the headline rally.
-- GDS ADR -2.23% — US ADR lagged; for the HK account, use 9698.HK below, not ADR noise.
-- MSFT -1.55% / AAPL -0.77% — mega-cap quality lagged the higher-beta AI rebound.
+- DXYZ +2.34% — speculative/private-growth proxy bucked the risk-off tape.
+- AAPL +1.76% — mega-cap quality bid held up.
+- MSFT +1.38% — strongest core AI/quality name in the book.
+- INTC -5.84% — hardest hit; chip weakness stayed broad.
+- MU -5.65% — memory/hardware pressure continued.
+- ETN -4.02%, NVDA -2.40% — AI capex chain was sold despite no single clean negative headline.
 
 HK LIVE MOVERS
-- HK market is pre-open; Yahoo regular-market timestamps are still 14 Jul close, so these are last completed HK-session moves, not live intraday prints.
-- 9698.HK +1.44% — GDS HK was the cleanest local relative-strength name.
-- 2800.HK +0.24% / 9988.HK +0.09% — broad HK beta and Alibaba were basically flat-positive.
-- 1816.HK -1.45% — CGN lagged; defensive ballast did not help in the last HK session.
+- Pre-open / last completed HK session: GDS 9698.HK +4.09%, BABA 9988.HK +3.09%, Tracker Fund 2800.HK +1.05%.
+- CGN 1816.HK -0.73% lagged; the China/HK book still looked better than the US chip sleeve.
 
 MARKET NEWS
-- US CPI came in softer than expected, which helped markets lean back into growth and reduced immediate pressure from the rates narrative.
-- Oil stayed firm on renewed Middle East tension, so the tape is not pure risk-on: energy/geopolitical risk remains the counterweight.
+- Reuters framed the global pressure as a chipmaker de-rating: ASML failed to rally despite better guidance, while Samsung and SK Hynix dragged Korea sharply lower.
+- Softer US PPI/CPI reduced near-term Fed-hike anxiety, but Middle East escalation kept oil risk alive and stopped the tape from feeling cleanly risk-on.
 
 ACTION BOARD
-- Opportunity: AI beta is reasserting leadership, but the clean expression is still quality/earnings-linked names first, not DXYZ-style optionality.
-- Risk: HK opens into a stronger US growth tape but higher oil/geopolitical risk, so China beta could lag if regional risk appetite stays cautious.
-- Research: Re-check whether NET’s rebound is thesis repair or just multiple expansion after insider-selling headlines faded.
+- Opportunity: HK China beta is quietly acting better than US AI hardware, so BABA/GDS/2800 deserve respect if the gap persists after the open.
+- Risk: MU/NVDA/ETN/INTC weakness says the market is questioning crowded AI-capex exposure, not just one bad ticker.
+- Research: Check whether the semiconductor selloff is valuation digestion or an actual order/capex signal before adding to MU or NVDA.
