@@ -1,25 +1,25 @@
 {
-  "date": "Jul 17, 2026",
+  "date": "July 20, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US tape turned defensive: Nasdaq sold off on semis/hardware while MSFT and AAPL held the growth sleeve together; defensives beat beta.\n- HK is pre-open: Yahoo timestamps still point to the last completed HK session, so HK moves below are last-session marks, not live prints.\nAnchor numbers: Nasdaq -1.47%, S&P 500 -0.51%, Dow -0.20%; NQ futures -1.96%, 10Y ~4.57%, oil -0.79%, gold -1.49%."
+      "content": "- Monday starts as a repair attempt, not a clean risk-on reset: US futures are slightly firmer after Friday\u2019s AI/chip-led selloff, while oil is still the macro pressure point.\n- HK is pre-open; Yahoo\u2019s HK regular-market timestamps still point to Friday\u2019s close, so HK movers below are last completed session moves, not live Monday trading.\nAnchor numbers: Friday US close \u2014 Nasdaq -1.40%, S&P -1.01%, Dow -0.77%; early futures \u2014 NQ +0.26%, ES +0.06%, oil +1.70%, BTC -0.35%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- DXYZ +2.34% \u2014 speculative/private-growth proxy bucked the risk-off tape.\n- AAPL +1.76% \u2014 mega-cap quality bid held up.\n- MSFT +1.38% \u2014 strongest core AI/quality name in the book.\n- INTC -5.84% \u2014 hardest hit; chip weakness stayed broad.\n- MU -5.65% \u2014 memory/hardware pressure continued.\n- ETN -4.02%, NVDA -2.40% \u2014 AI capex chain was sold despite no single clean negative headline."
+      "content": "- NET +1.91% \u2014 relative strength inside growth software while semis and high-beta broke lower.\n- GLD +0.95% \u2014 ballast did its job as equities sold off and Gulf risk kept a bid under hedges.\n- ETN +0.94% \u2014 industrial/electrification exposure held up better than crowded AI hardware.\n- DXYZ -4.35% \u2014 speculative optionality was hit hardest as risk appetite cooled.\n- TSLA -2.61% \u2014 high-beta growth lagged in a tape that punished long-duration risk.\n- NVDA -2.21% \u2014 AI leadership stayed under pressure; MU was only -0.50%, but the chip complex set the tone."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- Pre-open / last completed HK session: GDS 9698.HK +4.09%, BABA 9988.HK +3.09%, Tracker Fund 2800.HK +1.05%.\n- CGN 1816.HK -0.73% lagged; the China/HK book still looked better than the US chip sleeve."
+      "content": "- HK pre-open: use Friday close-to-close moves only until the 09:30 session confirms live prints.\n- 9698.HK -7.37% \u2014 GDS was the clear HK-book weak spot; this is the name to watch at the open.\n- 9988.HK -3.68% and 2800.HK -1.89% \u2014 China/HK beta sold off with HSI -1.78%.\n- 1816.HK +0.37% \u2014 CGN was the only confirmed HK ballast holding green."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Reuters framed the global pressure as a chipmaker de-rating: ASML failed to rally despite better guidance, while Samsung and SK Hynix dragged Korea sharply lower.\n- Softer US PPI/CPI reduced near-term Fed-hike anxiety, but Middle East escalation kept oil risk alive and stopped the tape from feeling cleanly risk-on."
+      "content": "- Reuters framed Friday\u2019s US weakness around a deepening chip selloff and renewed doubt over the durability of the AI rally; Netflix\u2019s weak forecast added pressure to sentiment.\n- Asia also opened Friday under chip pressure, while oil was headed for its sharpest weekly gain in three months as renewed Gulf hostilities kept inflation/geopolitical risk live."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: HK China beta is quietly acting better than US AI hardware, so BABA/GDS/2800 deserve respect if the gap persists after the open.\n- Risk: MU/NVDA/ETN/INTC weakness says the market is questioning crowded AI-capex exposure, not just one bad ticker.\n- Research: Check whether the semiconductor selloff is valuation digestion or an actual order/capex signal before adding to MU or NVDA."
+      "content": "- Opportunity: If Monday futures strength holds after HK opens, the cleaner setup is quality-first recovery \u2014 MSFT/NVDA before weaker optionality like DXYZ.\n- Risk: The warning is not one red day; it is simultaneous pressure in chips, China beta, and speculative growth while oil is rising.\n- Research: Check whether GDS\u2019s Friday drawdown was index/beta-only or tied to company-specific news before treating it as a value pullback."
     }
   ]
 }
