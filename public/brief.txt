@@ -1,29 +1,29 @@
-MORNING BRIEF — Tuesday, July 21, 2026, 08:00 HKT
+Morning brief — Wed Jul 22, 2026, 08:00 HKT
 
 OVERNIGHT MAP
-- US tape was mildly risk-off: oil and yields stayed firm, Apple dragged the Dow, but AI quality held up through MSFT and MU.
-- Futures are flat-to-soft this morning, so the setup is not panic; it is more selective de-risking around expensive / speculative sleeves.
-Anchor numbers: S&P 500 -0.19%, Nasdaq -0.05%, Dow -0.59%; 10Y 4.60%, WTI ~$82.6, gold ~$4,010.
+- Risk tried to stabilize: US cash equities bounced after the recent AI/semis wobble, but futures are flat in Asia and the tape is still earnings-sensitive.
+- Macro is not clean risk-on: oil is still firm on Gulf disruption risk, gold is bid, and 10Y yield pressure has not gone away.
+Anchor numbers: S&P 500 +0.89%, Nasdaq +1.29%, Dow +0.74%; NQ fut -0.05%, crude +0.56%, gold +0.18%, 10Y 4.63%.
 
 US CLOSE MOVERS
-- MSFT +2.15% — cleanest large-cap strength in the book; quality AI bid still alive.
-- INTC +2.13% / MU +1.94% — semis bounced selectively, but not broad enough to call all-clear.
-- NVDA +0.23% — held green, which matters more than the small number after recent volatility.
-- DXYZ -5.39% — speculative optionality got hit hardest; no need to defend it.
-- TSLA -2.96% — legacy-growth pressure continued; still behaving like high-beta risk, not core quality.
-- AAPL -2.14% / NET -1.89% — Apple was the index drag; NET remains valuation-sensitive.
+- MU +12.17% — strongest portfolio name; memory/AI hardware bid came back hard.
+- INTC +8.64% — earnings-week positioning and chip rebound helped the laggard rerate.
+- DXYZ +4.48% / TSLA +2.53% — speculative beta caught the risk-on bounce.
+- BABA ADR -1.97% — US-listed China exposure lagged despite broader index strength.
+- MSFT -1.13% — quality megacap lagged the AI bounce; not a thesis break, but notable relative weakness.
+- NET -0.04% / XLU -0.04% — flat to soft; defensives and expensive software did not lead.
 
 HK LIVE MOVERS
-- HK is pre-open; Yahoo timestamps are still prior session, so these are last completed HK-session moves, not live intraday prints.
-- CGN / 1816.HK +5.49% — defensive China utility exposure showed real relative strength.
-- BABA / 9988.HK +3.73% and GDS / 9698.HK +3.07% — HK value / rerating sleeve outperformed despite weak broad beta.
-- Tracker Fund / 2800.HK -1.89%; Hang Seng -1.78% — broad HK tape lagged the single-name China tech rebound.
+- HK is pre-open; Yahoo regular-market timestamps still point to the last completed HK session, so treat these as prior-session moves, not live intraday prints.
+- Tracker Fund / 2800.HK +2.40% and Hang Seng +2.36% — broad HK beta bounced.
+- GDS / 9698.HK +2.28% — higher-beta China tech acted well.
+- BABA / 9988.HK +0.17% and CGN / 1816.HK -0.35% — BABA lagged the HK rebound; CGN was quiet ballast, not leadership.
 
 MARKET NEWS
-- US equities closed slightly lower as oil rose on renewed Middle East risk, keeping inflation/yield sensitivity in the frame.
-- Apple weakness was the cleanest single-stock drag on the Dow; Microsoft strength kept the quality-AI sleeve from looking broken.
+- Reuters framed the overnight setup as a rebound into a major earnings test, with Alphabet and Intel in focus for whether AI profit expectations can keep clearing a high bar.
+- Middle East mediation hopes cooled oil from recent highs, but Houthi blockade threats around Saudi Arabia keep energy/inflation risk alive rather than solved.
 
 ACTION BOARD
-- Opportunity: HK single-name rerating exposure is acting better than the index, so BABA/GDS deserve respect before adding generic 2800 beta.
-- Risk: speculative US growth is still the weak link; DXYZ and TSLA are sending a louder risk signal than the indices.
-- Research: check whether NET weakness is still just insider-selling / valuation noise or whether business-quality concerns are starting to appear.
+- Opportunity: If MU/INTC strength is confirmed by earnings rather than short-covering, the cleanest upside remains in quality AI exposure before adding weaker story stocks.
+- Risk: The book is still exposed to the same crowded AI trade while oil/yields are pushing against duration-sensitive growth, so a bad earnings print can spread fast.
+- Research: Re-check whether HK cash should stay idle if 2800/GDS keep leading while BABA lags the China rebound.
