@@ -1,29 +1,29 @@
-Morning brief — Wed Jul 22, 2026, 08:00 HKT
+MORNING BRIEF — Thu Jul 23, 2026, 08:01 HKT
 
 OVERNIGHT MAP
-- Risk tried to stabilize: US cash equities bounced after the recent AI/semis wobble, but futures are flat in Asia and the tape is still earnings-sensitive.
-- Macro is not clean risk-on: oil is still firm on Gulf disruption risk, gold is bid, and 10Y yield pressure has not gone away.
-Anchor numbers: S&P 500 +0.89%, Nasdaq +1.29%, Dow +0.74%; NQ fut -0.05%, crude +0.56%, gold +0.18%, 10Y 4.63%.
+- US tape cooled after the rebound: Nasdaq led lower, small caps were weaker, but the book had a clean defensive bid and one strong AI winner.
+- HK is pre-open; Yahoo’s current HK timestamps still point to yesterday’s close, so HK movers below are last completed session, not live intraday.
+Anchor numbers: S&P 500 -0.14%, Nasdaq -0.57%, Dow -0.01%, Russell 2000 -0.92%; Hang Seng last completed -0.04%.
 
 US CLOSE MOVERS
-- MU +12.17% — strongest portfolio name; memory/AI hardware bid came back hard.
-- INTC +8.64% — earnings-week positioning and chip rebound helped the laggard rerate.
-- DXYZ +4.48% / TSLA +2.53% — speculative beta caught the risk-on bounce.
-- BABA ADR -1.97% — US-listed China exposure lagged despite broader index strength.
-- MSFT -1.13% — quality megacap lagged the AI bounce; not a thesis break, but notable relative weakness.
-- NET -0.04% / XLU -0.04% — flat to soft; defensives and expensive software did not lead.
+- NVDA +2.30% — best portfolio risk-on signal; AI leadership did not fully break despite index weakness.
+- XLU +2.25% — utilities caught a defensive bid; useful ballast doing its job.
+- GLD +1.15% / ETN +0.98% — gold firm, Eaton resilient.
+- INTC -2.68% — weakest name; still being punished in the chip/earnings-risk lane.
+- MSFT -1.86% — megacap drag; quality growth was not immune.
+- DXYZ -1.48%, TSLA -1.30%, NET -1.22%, MU -1.17% — speculative/growth sleeve soft, but not disorderly.
 
 HK LIVE MOVERS
-- HK is pre-open; Yahoo regular-market timestamps still point to the last completed HK session, so treat these as prior-session moves, not live intraday prints.
-- Tracker Fund / 2800.HK +2.40% and Hang Seng +2.36% — broad HK beta bounced.
-- GDS / 9698.HK +2.28% — higher-beta China tech acted well.
-- BABA / 9988.HK +0.17% and CGN / 1816.HK -0.35% — BABA lagged the HK rebound; CGN was quiet ballast, not leadership.
+- HK market pre-open; last completed session only.
+- BABA / 9988.HK -2.91% — main HK account drag; China tech remains the weak spot.
+- CGN / 1816.HK +1.39% — best HK relative strength; defensive/policy ballast still working.
+- GDS / 9698.HK -0.99%; Tracker Fund / 2800.HK +0.08% — single-name beta weaker than broad HK exposure.
 
 MARKET NEWS
-- Reuters framed the overnight setup as a rebound into a major earnings test, with Alphabet and Intel in focus for whether AI profit expectations can keep clearing a high bar.
-- Middle East mediation hopes cooled oil from recent highs, but Houthi blockade threats around Saudi Arabia keep energy/inflation risk alive rather than solved.
+- Reuters’ latest US market wrap framed the pressure as chip-led again: solid earnings and data were not enough to stop semis from driving index direction.
+- Middle East ceasefire headlines had helped risk appetite earlier in the week and oil cooled from highs, but the equity tape is now back to earnings/AI-expectations discipline.
 
 ACTION BOARD
-- Opportunity: If MU/INTC strength is confirmed by earnings rather than short-covering, the cleanest upside remains in quality AI exposure before adding weaker story stocks.
-- Risk: The book is still exposed to the same crowded AI trade while oil/yields are pushing against duration-sensitive growth, so a bad earnings print can spread fast.
-- Research: Re-check whether HK cash should stay idle if 2800/GDS keep leading while BABA lags the China rebound.
+- Opportunity: NVDA up while the Nasdaq fell says the AI trade is narrower, not dead; respect relative strength before adding weaker proxies.
+- Risk: INTC/MSFT/NET/MU weakness says earnings risk is spreading from semis into broader growth, while HK BABA remains the main China-beta warning.
+- Research: Check whether BABA’s HK weakness is company-specific or just China-tech beta before using the HK cash pile.
