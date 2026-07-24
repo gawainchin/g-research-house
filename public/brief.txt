@@ -1,29 +1,29 @@
-MORNING BRIEF — Thu Jul 23, 2026, 08:01 HKT
+Morning brief — Fri Jul 24, 2026, 08:00 HKT
 
 OVERNIGHT MAP
-- US tape cooled after the rebound: Nasdaq led lower, small caps were weaker, but the book had a clean defensive bid and one strong AI winner.
-- HK is pre-open; Yahoo’s current HK timestamps still point to yesterday’s close, so HK movers below are last completed session, not live intraday.
-Anchor numbers: S&P 500 -0.14%, Nasdaq -0.57%, Dow -0.01%, Russell 2000 -0.92%; Hang Seng last completed -0.04%.
+- Risk-off hit the US close and is still bleeding into Asia: Nasdaq led lower, semis/software were weak, oil spiked, and futures stayed red.
+- Defensive ballast did not fully protect because gold also sold off; utilities held up best inside the US book.
+Anchor numbers: Nasdaq -2.15%, S&P 500 -1.21%, Dow -0.97%; NQ futures -1.73%, crude +6.15%, 10Y yield 4.70%.
 
 US CLOSE MOVERS
-- NVDA +2.30% — best portfolio risk-on signal; AI leadership did not fully break despite index weakness.
-- XLU +2.25% — utilities caught a defensive bid; useful ballast doing its job.
-- GLD +1.15% / ETN +0.98% — gold firm, Eaton resilient.
-- INTC -2.68% — weakest name; still being punished in the chip/earnings-risk lane.
-- MSFT -1.86% — megacap drag; quality growth was not immune.
-- DXYZ -1.48%, TSLA -1.30%, NET -1.22%, MU -1.17% — speculative/growth sleeve soft, but not disorderly.
+- MU +3.20% — rare green in the AI book; memory/semis held relative strength despite broader chip pressure.
+- ETN +2.02% — industrial quality bid held better than megacap tech.
+- XLU +0.57% — ballast did its job on a red equity day.
+- TSLA -14.52% — the main damage; legacy-bag risk is again the loudest single-name warning.
+- DXYZ -4.67% — speculative/private-market proxy sold off with risk appetite.
+- NET -2.48%, MSFT -2.24%, INTC -2.33% — valuation/growth weakness spread beyond the highest-beta names.
 
 HK LIVE MOVERS
-- HK market pre-open; last completed session only.
-- BABA / 9988.HK -2.91% — main HK account drag; China tech remains the weak spot.
-- CGN / 1816.HK +1.39% — best HK relative strength; defensive/policy ballast still working.
-- GDS / 9698.HK -0.99%; Tracker Fund / 2800.HK +0.08% — single-name beta weaker than broad HK exposure.
+- HK is pre-open; Yahoo timestamps still point to the last completed HK session, so these are prior-session moves, not live intraday prints.
+- GDS HK / 9698.HK +1.87% — best HK holding; higher-beta China data-center exposure still had a bid.
+- BABA HK / 9988.HK +1.14% and CGN / 1816.HK +1.03% — China tech plus defensive utility both firm.
+- Tracker Fund / 2800.HK -1.02% — broad HK beta lagged the single-name China rebound.
 
 MARKET NEWS
-- Reuters’ latest US market wrap framed the pressure as chip-led again: solid earnings and data were not enough to stop semis from driving index direction.
-- Middle East ceasefire headlines had helped risk appetite earlier in the week and oil cooled from highs, but the equity tape is now back to earnings/AI-expectations discipline.
+- Reuters’ Asia tape flags a deepening chip-led rout, with Japan and Taiwan benchmarks sharply lower; that explains why US AI strength is not translating cleanly into a green setup.
+- Oil is the overnight macro swing factor: crude’s 6% jump keeps inflation/rate sensitivity in the tape and pressures long-duration growth.
 
 ACTION BOARD
-- Opportunity: NVDA up while the Nasdaq fell says the AI trade is narrower, not dead; respect relative strength before adding weaker proxies.
-- Risk: INTC/MSFT/NET/MU weakness says earnings risk is spreading from semis into broader growth, while HK BABA remains the main China-beta warning.
-- Research: Check whether BABA’s HK weakness is company-specific or just China-tech beta before using the HK cash pile.
+- Opportunity: If MU/ETN keep outperforming on red index days, the cleaner add list is quality AI/industrial strength, not the broken speculative names.
+- Risk: TSLA’s -14.5% move is the portfolio warning shot — do not let averaging-down psychology consume dry powder meant for better assets.
+- Research: Check whether the chip selloff is supply-chain/geopolitics-driven or demand/capex-driven before treating NVDA/MU weakness as a normal buyable dip.
