@@ -1,29 +1,29 @@
-MORNING BRIEF — Mon Jul 27, 2026, 08:00 HKT
+MORNING BRIEF — Tue Jul 28, 2026, 08:00 HKT
 
 OVERNIGHT MAP
-- Monday starts with a weekend catch-up tone: US futures are green after Friday’s mixed close, but leadership remains split between Dow resilience and Nasdaq / chip weakness.
-- HK is not open yet; Yahoo timestamps still point to Friday’s completed session, so HK movers below are pre-open / last-session marks, not live intraday prints.
-Anchor numbers: S&P +0.05%, Nasdaq -0.64%, Dow +0.46%; ES +0.84%, NQ +1.49%; BTC +1.6%, ETH +4.2%.
+- US tape was mixed: Dow held up, S&P was flat, Nasdaq slipped as investors waited on big-tech earnings and watched oil/rates after the Middle East shock cooled.
+- Asia setup is less stressed than last week: oil is down hard, gold is firm, futures are mixed, and HK is still pre-open as of this run.
+- Anchors: S&P 500 +0.02%, Nasdaq -0.18%, Dow +0.51%; Nasdaq futures -0.52%, Brent -9.07%, gold +0.13%.
 
 US CLOSE MOVERS
-- AAPL +3.53% — clear relative strength inside the US growth sleeve.
-- XLU +0.22%, GLD +0.10%, SPY +0.10% — ballast and beta held while semis weakened.
-- MSFT +0.03%, NET -0.06% — basically flat ahead of the hyperscaler earnings week.
-- INTC -7.89%, MU -6.99% — chip weakness was the real portfolio pain point.
-- DXYZ -3.36%, ETN -2.66%, TSLA -2.08% — speculative / cyclical risk lagged.
-- NVDA -0.92% — down, but not the worst of the semi sleeve.
+- MSFT +1.94% — best core-quality readout; software/mega-cap held up better than semis.
+- NET +1.32% / AAPL +1.17% — growth outside the chip complex found buyers.
+- GLD +0.73% — ballast worked while oil-risk volatility stayed in the tape.
+- NVDA -4.99% — biggest portfolio drag; AI-chip risk was where sellers pressed.
+- MU -2.25% — memory beta lagged with semis; do not treat this as broad-market weakness.
+- ETN -1.34% / XLU -1.32% — industrial/utility pockets were soft despite flat index tape.
 
 HK LIVE MOVERS
-- HK pre-open: current Yahoo regular-market timestamps predate today’s HK session, so these are Friday close-to-close moves.
-- 9988.HK -4.26% — BABA HK was the weak link in the China sleeve.
-- 9698.HK -3.62% — GDS HK also sold off, keeping the higher-beta China exposure under pressure.
-- 1816.HK -2.04%, 2800.HK -1.01% — CGN and broad HK beta were softer but less damaged than single-name tech.
+- HK is pre-open; using the last completed HK session rather than stale intraday bars.
+- 9988.HK +0.91% — BABA HK was the relative bright spot in the HK book.
+- 9698.HK -0.83% / 1816.HK -0.69% — GDS and CGN lagged; 02800.HK marked about +1.1% versus the prior completed close using Yahoo regular price.
+- HSI last completed session was about +1.0%, so HK weakness is stock-specific rather than pure index beta.
 
 MARKET NEWS
-- Reuters framed the coming week as a major test for US equities: Fed decision plus a heavy AI / hyperscaler earnings slate, with MSFT, Amazon and Meta due after Alphabet’s AI-spend concerns hit sentiment.
-- Friday’s US tape was mixed after Thursday’s tech-led selloff; oil pulled back from the prior spike, but Middle East / tariff headlines remain part of the risk backdrop.
+- Reuters: Wall Street ended mixed as investors focused on this week’s major tech earnings while still watching whether oil-driven inflation pressure could complicate Fed policy.
+- Reuters/LSEG: Brent fell roughly 9% as the US-Iran pause cooled the oil spike; gold stayed bid and the US 10Y yield eased to about 4.65%.
 
 ACTION BOARD
-- Opportunity: Futures are trying to bounce, so the cleanest upside setup is quality-led recovery — AAPL/MSFT first, NVDA only if semis stop widening.
-- Risk: The warning is not broad beta yet; it is concentrated in chips, speculative growth and HK China tech, which can still infect the rest of the book if earnings disappoint.
-- Research: Before adding to weakness, separate one-day AI capex fear from actual estimate cuts in MU/NVDA/INTC and China policy risk in BABA/GDS.
+- Opportunity: If tech earnings guidance is clean, MSFT/AAPL-style quality growth is giving a better signal than high-beta semis this morning.
+- Risk: NVDA/MU weakness says AI exposure is now more earnings-sensitive; averaging every red semiconductor print would be sloppy.
+- Research: Check whether the chip selloff is earnings-positioning, export-control risk, or capex fatigue before adding to NVDA/MU.
