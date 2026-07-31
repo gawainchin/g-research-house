@@ -1,29 +1,28 @@
-Morning Brief — Thu 30 Jul 2026, 08:10 HKT
+Gawain Morning Brief — Fri 31 Jul 2026, 08:00 HKT
 
 OVERNIGHT MAP
-- Risk-off finally bit: Fed held, oil jumped, yields stayed firm, and the selloff spread from chips into broader US beta.
-- Defensive ballast worked only partly: gold rose, utilities held better than semis, but the portfolio’s AI/cyclical sleeve took the hit.
-Anchor: S&P 500 -1.52%, Nasdaq -1.74%, Dow -2.19%, VIX +13.45%, WTI +6.31%, gold +2.64%.
+- US risk snapped back hard after the prior Fed/AI wobble: tech led, volatility cooled, and the tape rewarded profitable AI execution rather than broad defensives.
+- HK is still pre-open; the latest completed HK session was constructive at index level but weak under the surface for China tech holdings.
+Anchor numbers: Nasdaq +2.78%, S&P 500 +1.66%, Dow +1.19%; VIX -17.3%, gold +3.25%, 10Y yield 4.66%.
 
 US CLOSE MOVERS
-- NET +2.38%: relative strength inside growth; still thesis-review, not automatic add.
-- GLD +0.46%: ballast did its job as oil/geopolitical stress lifted haven demand.
-- AAPL -0.56%, MSFT -0.71%: quality growth outperformed but still red.
-- MU -9.94%: worst portfolio hit; memory/AI chip unwind stayed brutal.
-- DXYZ -6.42%, ETN -6.31%, INTC -5.12%, NVDA -3.55%: high-beta/speculative and AI-capex-linked exposures were sold first.
-- TSLA -2.97%, SPY -1.54%, XLU -1.34%: broad risk-off, but less severe than semis.
+- MSFT +15.5% — strongest portfolio signal; cloud/AI earnings eased the capex-payoff fear.
+- MU +18.4%, INTC +11.3% — semis bounced aggressively after the recent AI-capex derating pressure.
+- DXYZ +11.2%, GDS ADR +8.1%, ETN +6.9% — speculative/growth beta recovered with the tape.
+- AAPL -1.4% — clear laggard while the market chased cloud/semis.
+- XLU -0.6% — defensives lagged a clean risk-on close.
 
 HK LIVE MOVERS
-- HK is pre-open; Yahoo’s HK regular-market timestamps still point to yesterday’s close, so these are last completed HK-session moves, not live July 30 trading.
-- 9988.HK +1.43%: Alibaba HK showed relative strength despite ADR softness overnight.
-- 1816.HK +0.69%, 2800.HK +0.39%: CGN and tracker beta were modestly positive.
-- 9698.HK -1.80%: GDS HK lagged the local book; watch if US GDS weakness bleeds into today’s session.
+- HK market is pre-open; Yahoo regular-market timestamps still point to Thu 30 Jul close, so these are last completed HK-session moves, not live Friday prints.
+- 02800.HK +1.9% and Hang Seng +2.0% — broad HK beta improved.
+- 9988.HK -1.6%, 9698.HK -3.9% — your HK single-name China tech exposure lagged badly versus the index.
+- 1816.HK +0.3% — CGN held steady, doing its ballast job.
 
 MARKET NEWS
-- The Fed held rates steady; stocks sold off as long yields stayed elevated and oil surged on renewed Middle East tension.
-- Chip pressure deepened after reports around China memory/chip-equipment progress and continued AI-capex anxiety, hitting MU/NVDA/INTC-style exposures hardest.
+- Reuters reported investors were scrutinising whether mega-cap AI spending is converting into earnings; Microsoft’s cloud result was the cleanest answer overnight and drove the book’s biggest mover.
+- Hong Kong’s biggest listing this year, Zhongji InnoLight, slipped on debut after raising US$6.8bn, keeping pressure on Asia AI hardware sentiment even as the broader HSI rose.
 
 ACTION BOARD
-- Opportunity: If HK opens resilient despite the US rout, BABA/02800 strength would be a cleaner China-rerating signal than chasing beaten-up US semis immediately.
-- Risk: MU/INTC/NVDA weakness says the market is questioning crowded AI hardware exposure, so averaging every red chip name would be lazy risk-taking.
-- Research: Recheck whether MU’s move is supply-cycle noise or a real HBM/China-competition thesis break before adding capital.
+- Opportunity: MSFT’s move says the market will still pay for AI spend when revenue proof is visible; respect that signal before over-rotating away from quality AI.
+- Risk: HK China tech is the weak pocket — 9988 and 9698 lagging a green index is a warning, not noise.
+- Research: Check whether MU/INTC strength is earnings-quality driven or just short-covering beta, because that decides whether semis deserve fresh capital or only patience.
