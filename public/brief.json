@@ -1,25 +1,25 @@
 {
-  "date": "July 31, 2026",
+  "date": "August 03, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US risk snapped back hard after the prior Fed/AI wobble: tech led, volatility cooled, and the tape rewarded profitable AI execution rather than broad defensives.\n- HK is still pre-open; the latest completed HK session was constructive at index level but weak under the surface for China tech holdings.\nAnchor numbers: Nasdaq +2.78%, S&P 500 +1.66%, Dow +1.19%; VIX -17.3%, gold +3.25%, 10Y yield 4.66%."
+      "content": "- US tape ended risk-on into the weekend: mega-cap/AI strength carried the index complex despite mixed earnings dispersion.\n- Monday setup is constructive but not clean: US futures are green pre-HK open, crypto is firmer, and HK data is still last completed session until cash opens.\n- Anchors: S&P 500 +0.70%, Nasdaq +1.00%, Dow +0.53%; ES +0.47%, NQ +0.80%; BTC +1.1%, ETH +2.1%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- MSFT +15.5% \u2014 strongest portfolio signal; cloud/AI earnings eased the capex-payoff fear.\n- MU +18.4%, INTC +11.3% \u2014 semis bounced aggressively after the recent AI-capex derating pressure.\n- DXYZ +11.2%, GDS ADR +8.1%, ETN +6.9% \u2014 speculative/growth beta recovered with the tape.\n- AAPL -1.4% \u2014 clear laggard while the market chased cloud/semis.\n- XLU -0.6% \u2014 defensives lagged a clean risk-on close."
+      "content": "- ETN +7.32% \u2014 strongest portfolio mover; industrial/electrification beta caught a hard bid.\n- MSFT +3.02%, NVDA +2.93% \u2014 AI quality led again, useful given the book\u2019s growth tilt.\n- BABA ADR +5.10%, GDS ADR +2.41% \u2014 China ADR tone was strong, but HK account exposure should be judged on 9988 / 9698.\n- AAPL -7.35% \u2014 clear weak link after earnings/supply concerns; this offsets some mega-cap strength.\n- MU -5.90% \u2014 semis were not uniformly loved; memory remains the volatile part of the AI sleeve.\n- DXYZ -2.60%, NET -1.56% \u2014 speculative/software beta lagged the index move."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK market is pre-open; Yahoo regular-market timestamps still point to Thu 30 Jul close, so these are last completed HK-session moves, not live Friday prints.\n- 02800.HK +1.9% and Hang Seng +2.0% \u2014 broad HK beta improved.\n- 9988.HK -1.6%, 9698.HK -3.9% \u2014 your HK single-name China tech exposure lagged badly versus the index.\n- 1816.HK +0.3% \u2014 CGN held steady, doing its ballast job."
+      "content": "- HK is pre-open: Yahoo regular timestamps still point to Friday\u2019s close, so these are last completed HK-session moves, not live Monday prints.\n- 9698.HK +9.51% and 9988.HK +4.65% \u2014 HK China tech/rerating sleeve was the standout.\n- 2800.HK +0.15%, ^HSI +0.10% \u2014 broad HK beta was barely positive; single-name China tech did the work.\n- 1816.HK -0.69% \u2014 defensive CGN lagged, which is acceptable in a risk-on tape."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Reuters reported investors were scrutinising whether mega-cap AI spending is converting into earnings; Microsoft\u2019s cloud result was the cleanest answer overnight and drove the book\u2019s biggest mover.\n- Hong Kong\u2019s biggest listing this year, Zhongji InnoLight, slipped on debut after raising US$6.8bn, keeping pressure on Asia AI hardware sentiment even as the broader HSI rose."
+      "content": "- US stocks rose Friday as technology and hyperscaler-linked names outweighed Apple weakness; Trading Economics cited Amazon/cloud optimism and broader AI appetite.\n- The live macro calendar still matters this week: tariff timing and Fed-rate-cut expectations remain the swing factors after Powell kept September optionality open."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: MSFT\u2019s move says the market will still pay for AI spend when revenue proof is visible; respect that signal before over-rotating away from quality AI.\n- Risk: HK China tech is the weak pocket \u2014 9988 and 9698 lagging a green index is a warning, not noise.\n- Research: Check whether MU/INTC strength is earnings-quality driven or just short-covering beta, because that decides whether semis deserve fresh capital or only patience."
+      "content": "- Opportunity: If HK opens by following ADRs, BABA/GDS strength is worth respecting, but 02800 is the cleaner way to add broad China beta without single-name overconcentration.\n- Risk: AAPL and MU show the book\u2019s AI sleeve is not moving as one trade; watch for dispersion turning into capex/semis derating rather than one-day noise.\n- Research: Decide whether MU weakness is memory-cycle specific or an early warning on AI hardware breadth before adding to the laggard."
     }
   ]
 }
