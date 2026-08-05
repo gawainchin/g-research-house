@@ -1,25 +1,25 @@
 {
-  "date": "Aug 4, 2026",
+  "date": "August 05, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US tape flipped decisively risk-on: mega-cap tech, semis and industrial electrification led, while defensives lagged.\n- The move was broad enough to matter, but still growth-led: useful for your AI book, less useful for ballast.\n- Anchors: Nasdaq +2.13%, S&P 500 +1.48%, Dow +1.32%, VIX -0.81%, gold +1.45%, oil -5.18%."
+      "content": "- US risk-on came back hard: Nasdaq led, S&P and Dow both pushed to fresh record closes, and the book\u2019s AI/semis side beat defensives.\n- Oil fell sharply and yields eased, giving growth a cleaner tape; HK is still pre-open, so HK moves below are last completed session, not live intraday.\nAnchor numbers: Nasdaq +2.59%, S&P 500 +1.79%, Dow +1.71%, WTI -6.41%, 10Y yield -1.26%, Hang Seng prior session +0.48%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- ETN +5.55% \u2014 strongest confirmed portfolio mover; industrial/AI power trade caught the risk-on bid.\n- MSFT +4.93% \u2014 mega-cap tech leadership returned; one of the cleanest quality-AI exposures in the book.\n- DXYZ +3.98%, TSLA +3.49%, NVDA +2.93% \u2014 speculative/growth appetite improved, but these are not all equal-quality moves.\n- AAPL -1.78% \u2014 the main US laggard; weak relative to the Nasdaq surge.\n- GDS ADR -0.12%, GLD +0.05%, XLU +0.02% \u2014 ballast/China ADR lagged the growth rebound."
+      "content": "- INTC +10.84% \u2014 strongest portfolio name; chip/risk appetite is rewarding the higher-beta recovery trade.\n- MU +7.62% \u2014 semis led the book; this is the cleanest AI-cycle momentum signal today.\n- NET +6.57% \u2014 expensive software bounced with growth, but it stays in review rather than automatic add.\n- NVDA +2.56% \u2014 solid, but less explosive than MU/INTC; quality AI exposure still working.\n- XLU -0.56% \u2014 only clear red in the US book; defensives lagged as risk appetite broadened.\n- GLD +0.66% and MSFT +1.06% \u2014 positive but lagging; ballast and mega-cap quality were not where the torque was."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open: Yahoo HK regular-market timestamps still point to the prior completed session, so treat these as last-session moves, not live prints.\n- BABA HK / 9988 +7.01% \u2014 standout HK holding; China-tech rerating pressure remains the key watch.\n- GDS HK / 9698 +3.22%, CGN / 1816 +2.77% \u2014 supportive breadth across higher-beta China data-center and defensive policy exposure.\n- Tracker Fund / 2800 +0.15%, Hang Seng +0.10% \u2014 broad HK beta lagged single-name China tech."
+      "content": "- HK is pre-open: Yahoo timestamps still point to yesterday\u2019s 16:08 HKT close, before today\u2019s 09:30 regular session.\n- 9988.HK +0.48% and 9698.HK +0.50% \u2014 China growth exposure was modestly firm into the close.\n- 2800.HK +0.23% \u2014 broad HK beta lagged the US rally; 1816.HK -1.18% was the weak HK ballast line."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Barron\u2019s/WSJ framed Monday\u2019s US rally as a Mag 7 and semiconductor rebound, with Microsoft and chip names driving the Nasdaq higher.\n- Oil fell sharply while gold rose, so the tape was not pure \u201ceverything risk-on\u201d; equity leadership was more about tech/earnings confidence than a clean macro all-clear."
+      "content": "- Yahoo\u2019s US tape showed Nasdaq +2.6% and S&P/Dow record closes, with big tech and AI-linked names driving the move into a week with labor data still ahead.\n- Crude\u2019s -6.4% drop helped the growth setup by easing the inflation/oil-pressure narrative; that is directly helpful for semis, software, and broad beta."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: Respect the MSFT/NVDA/ETN leadership signal, but use pullbacks rather than chasing a one-day relief squeeze.\n- Risk: AAPL\u2019s weakness against a +2% Nasdaq is the warning flag \u2014 broad index strength can hide single-name deterioration.\n- Research: Recheck whether HK China-tech strength is now policy/earnings-backed or still mostly rerating momentum before adding BABA/GDS exposure."
+      "content": "- Opportunity: Respect the MU/INTC torque, but if adding AI risk, quality-first still means NVDA/MSFT before chasing the most violent rebound.\n- Risk: The book is increasingly exposed to a pro-growth tape; if yields or oil reverse, today\u2019s winners can give back faster than SPY/02800.\n- Research: Re-check whether NET\u2019s bounce is thesis repair or just high-beta relief before treating it as fresh capital eligible."
     }
   ]
 }
