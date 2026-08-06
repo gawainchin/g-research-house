@@ -1,25 +1,25 @@
 {
-  "date": "August 05, 2026",
+  "date": "August 06, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US risk-on came back hard: Nasdaq led, S&P and Dow both pushed to fresh record closes, and the book\u2019s AI/semis side beat defensives.\n- Oil fell sharply and yields eased, giving growth a cleaner tape; HK is still pre-open, so HK moves below are last completed session, not live intraday.\nAnchor numbers: Nasdaq +2.59%, S&P 500 +1.79%, Dow +1.71%, WTI -6.41%, 10Y yield -1.26%, Hang Seng prior session +0.48%."
+      "content": "- US tape split: Dow held up, Nasdaq faded as AI-capex nerves hit parts of tech while Nvidia stayed bid.\n- Portfolio read-through: ballast worked, mega-cap/software was mixed, and HK is still pre-open so use last completed HK session.\nAnchor numbers: S&P 500 -0.17%, Nasdaq -0.83%, Dow +0.49%; Hang Seng last close -0.60%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- INTC +10.84% \u2014 strongest portfolio name; chip/risk appetite is rewarding the higher-beta recovery trade.\n- MU +7.62% \u2014 semis led the book; this is the cleanest AI-cycle momentum signal today.\n- NET +6.57% \u2014 expensive software bounced with growth, but it stays in review rather than automatic add.\n- NVDA +2.56% \u2014 solid, but less explosive than MU/INTC; quality AI exposure still working.\n- XLU -0.56% \u2014 only clear red in the US book; defensives lagged as risk appetite broadened.\n- GLD +0.66% and MSFT +1.06% \u2014 positive but lagging; ballast and mega-cap quality were not where the torque was."
+      "content": "- GLD +4.14% \u2014 strongest book hedge; gold/defensive bid mattered more than broad beta.\n- NVDA +3.43% \u2014 relative AI winner after SpaceX/AI-spend headlines pointed demand toward Nvidia chips.\n- ETN +0.56%, AAPL +0.52% \u2014 modest green, not leadership.\n- NET -2.78% \u2014 weakest confirmed growth name; expensive software still getting punished quickly.\n- TSLA -1.77%, DXYZ -1.36% \u2014 speculative sleeve lagged; keep them separate from core AI exposure.\n- MSFT -1.09%, XLU -1.02% \u2014 quality/defensive did not move as one block."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open: Yahoo timestamps still point to yesterday\u2019s 16:08 HKT close, before today\u2019s 09:30 regular session.\n- 9988.HK +0.48% and 9698.HK +0.50% \u2014 China growth exposure was modestly firm into the close.\n- 2800.HK +0.23% \u2014 broad HK beta lagged the US rally; 1816.HK -1.18% was the weak HK ballast line."
+      "content": "- HK is pre-open: Yahoo regular-market timestamps still point to the prior completed session, so these are last-session moves, not fresh intraday prints.\n- 9988.HK +1.83% \u2014 Alibaba was the clear HK relative-strength name.\n- 9698.HK +0.43% \u2014 GDS held up, but not enough to call a China-growth turn by itself.\n- 1816.HK -1.87%, 2800.HK -0.53% \u2014 CGN and broad HK beta lagged."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Yahoo\u2019s US tape showed Nasdaq +2.6% and S&P/Dow record closes, with big tech and AI-linked names driving the move into a week with labor data still ahead.\n- Crude\u2019s -6.4% drop helped the growth setup by easing the inflation/oil-pressure narrative; that is directly helpful for semis, software, and broad beta."
+      "content": "- WSJ reported the Nasdaq faded after SpaceX disclosed heavy AI spending; Nvidia gained while AMD and SpaceX-related sentiment weakened.\n- The day\u2019s macro calendar centered on ADP jobs and services PMI/ISM, keeping the market sensitive to any mix of strong growth plus sticky prices."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: Respect the MU/INTC torque, but if adding AI risk, quality-first still means NVDA/MSFT before chasing the most violent rebound.\n- Risk: The book is increasingly exposed to a pro-growth tape; if yields or oil reverse, today\u2019s winners can give back faster than SPY/02800.\n- Research: Re-check whether NET\u2019s bounce is thesis repair or just high-beta relief before treating it as fresh capital eligible."
+      "content": "- Opportunity: NVDA strength against a weaker Nasdaq says the market is still rewarding the cleanest AI-infrastructure beneficiary, not the whole AI basket.\n- Risk: NET/TSLA/DXYZ weakness shows expensive or narrative-heavy names are still fragile when the tape stops being broad risk-on.\n- Research: Recheck whether HK Alibaba strength is company-specific AI/model sentiment or the start of a broader China internet rerating before adding around it."
     }
   ]
 }
