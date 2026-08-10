@@ -1,25 +1,25 @@
 {
-  "date": "August 07, 2026",
+  "date": "August 10, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US tape cooled after the rally: Dow lagged hard, S&P was slightly red, Nasdaq was basically flat. Tech leadership narrowed rather than broke.\n- Defensive impulse was cleaner in gold than utilities; oil jumped, so inflation/geopolitical sensitivity is back on the dashboard.\nAnchor numbers: S&P 500 -0.18%, Nasdaq -0.06%, Dow -0.85%, VIX -4.17%, 10Y 4.67%, WTI +3.79%, gold +1.45%."
+      "content": "- Friday closed risk-on again: S&P hit a record, Nasdaq led, and volatility eased; the book\u2019s AI/growth side beat defensives except MU.\n- Monday setup is still constructive but event-risk heavy: futures point higher for Nasdaq/S&P while this week\u2019s inflation data is the next Fed test.\nAnchor: Nasdaq +1.30%, S&P +0.62%, Dow +0.28%, VIX -1.65%, 10Y 4.66%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- DXYZ +5.61% \u2014 speculative/private-market appetite bounced, but this is still optionality, not core exposure.\n- MSFT +2.54% \u2014 best quality-growth print in the book; useful relative strength while indices faded.\n- AAPL +0.45% / ETN +0.20% \u2014 modest positive tape, not a big signal.\n- NET -2.91% \u2014 weakest US holding; expensive software remains fragile when breadth narrows.\n- GDS ADR -2.54%, MU -1.31%, INTC -1.24% \u2014 China/data-center and chip beta were on the wrong side of rotation.\n- NVDA -0.10%, SPY -0.16%, GLD +0.01%, XLU -0.64%, TSLA -0.63% \u2014 mostly noise versus the bigger NET/DXYZ/MSFT moves."
+      "content": "- NET +5.57% \u2014 strongest portfolio move; high-beta software caught the risk-on bid.\n- TSLA +2.83%, DXYZ +2.70% \u2014 speculative appetite improved, useful for legacy/optionality exposure but not proof of thesis repair.\n- NVDA +2.27%, INTC +1.84% \u2014 semis stayed firm; NVDA remains the cleanest portfolio read-through.\n- MU -0.44% \u2014 only clear red name, lagging despite the broader chip tape.\n- MSFT +0.03%, ETN +0.11%, AAPL +0.29% \u2014 quality names participated less; not a problem, just not where Friday\u2019s beta lived.\n- GLD +2.26% \u2014 ballast also worked, so this was not pure \u201csell safety, buy tech.\u201d"
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open: Yahoo regular-market timestamps still point to Thu 6 Aug close, so these are last completed HK-session moves, not live Friday prints.\n- 9698.HK -4.20% and 9988.HK -2.89% \u2014 confirmed HK account China-growth exposure took the real hit.\n- 1816.HK -1.39% and 2800.HK +0.30% \u2014 CGN softened, while broad HK beta held up better than single-name internet/data-center risk.\n- Hang Seng last completed session: -1.49% using regular price vs prior close."
+      "content": "- HK is pre-open: Yahoo\u2019s latest HK timestamps are still Friday\u2019s completed session, not live Monday trading.\n- GDS / 9698.HK +4.12% \u2014 strongest HK holding last session; higher-beta China tech led the account.\n- Tracker Fund / 2800.HK +0.62% versus Hang Seng +0.54% \u2014 broad HK beta modestly positive.\n- BABA / 9988.HK -0.48%, CGN / 1816.HK -0.35% \u2014 mild laggards, nothing thesis-changing before today\u2019s open."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Oil rose almost 4% as Strait of Hormuz uncertainty stayed in focus; that matters because a renewed energy shock can pressure rates and long-duration growth.\n- US index damage was concentrated in Dow/old-economy breadth rather than a full Nasdaq break, but the portfolio split was clear: MSFT/DXYZ strength versus NET/MU/GDS weakness."
+      "content": "- Reuters framed Friday\u2019s US close as a record S&P session helped by a softer jobs report, easing near-term rate-hike pressure.\n- This week\u2019s inflation data is the real macro checkpoint: a hot print would challenge the record-high equity tape and the Fed-cut/rate-stability assumption."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: MSFT\u2019s relative strength is the cleanest \u201cquality AI still works\u201d signal; if Friday weakens broadly, quality should rank ahead of speculative adds.\n- Risk: HK China-growth exposure is still the fragile sleeve \u2014 BABA/GDS weakness matters more than the flat 2800.HK line suggests.\n- Research: Re-check whether NET\u2019s weakness is still valuation/sentiment only or whether cloud/security fundamentals have started to disappoint."
+      "content": "- Opportunity: If Nasdaq futures strength holds, the cleanest upside read-through is still NVDA/NET-style growth, but add discipline matters more than chasing Friday\u2019s winners.\n- Risk: MU lagging while semis rose is the warning flag; if weakness spreads from one chip name into the group, the AI beta trade gets shakier.\n- Research: Check whether BABA\u2019s August 20 earnings setup is improving enough to justify using HK cash, or whether 2800.HK remains the cleaner China/HK expression."
     }
   ]
 }
