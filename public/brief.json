@@ -1,25 +1,25 @@
 {
-  "date": "August 10, 2026",
+  "date": "Aug 11, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- Friday closed risk-on again: S&P hit a record, Nasdaq led, and volatility eased; the book\u2019s AI/growth side beat defensives except MU.\n- Monday setup is still constructive but event-risk heavy: futures point higher for Nasdaq/S&P while this week\u2019s inflation data is the next Fed test.\nAnchor: Nasdaq +1.30%, S&P +0.62%, Dow +0.28%, VIX -1.65%, 10Y 4.66%."
+      "content": "- US tape cooled after the prior risk-on run: indices finished close to flat, but beneath the surface AI/semis gave back some leadership while software, gold and selective China ADRs held up.\n- Macro tone is not clean risk-on: weaker labor data is still helping rate expectations, but oil and gold both jumping says inflation/geopolitical hedging is back in the room.\nAnchor numbers: S&P 500 -0.06%, Nasdaq -0.32%, Dow -0.11%; gold futures +2.71%, oil +5.05%, Bitcoin -1.50%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- NET +5.57% \u2014 strongest portfolio move; high-beta software caught the risk-on bid.\n- TSLA +2.83%, DXYZ +2.70% \u2014 speculative appetite improved, useful for legacy/optionality exposure but not proof of thesis repair.\n- NVDA +2.27%, INTC +1.84% \u2014 semis stayed firm; NVDA remains the cleanest portfolio read-through.\n- MU -0.44% \u2014 only clear red name, lagging despite the broader chip tape.\n- MSFT +0.03%, ETN +0.11%, AAPL +0.29% \u2014 quality names participated less; not a problem, just not where Friday\u2019s beta lived.\n- GLD +2.26% \u2014 ballast also worked, so this was not pure \u201csell safety, buy tech.\u201d"
+      "content": "- NET +3.44% \u2014 strongest clean growth read; software bid held while semis slipped.\n- DXYZ +2.47% \u2014 speculative appetite still alive, but this remains punt exposure, not core.\n- MSFT +1.21% / GLD +1.02% \u2014 useful barbell: quality growth plus hedge both green.\n- INTC -4.06% \u2014 weakest holding; value/rerating line not getting the same bid as quality tech.\n- NVDA -2.86%, MU -1.89%, AAPL -1.62% \u2014 AI hardware and mega-cap growth cooled together."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open: Yahoo\u2019s latest HK timestamps are still Friday\u2019s completed session, not live Monday trading.\n- GDS / 9698.HK +4.12% \u2014 strongest HK holding last session; higher-beta China tech led the account.\n- Tracker Fund / 2800.HK +0.62% versus Hang Seng +0.54% \u2014 broad HK beta modestly positive.\n- BABA / 9988.HK -0.48%, CGN / 1816.HK -0.35% \u2014 mild laggards, nothing thesis-changing before today\u2019s open."
+      "content": "- HK is pre-open; Yahoo timestamps still point to the last completed HK session, so these are not live intraday prints.\n- 9988.HK +2.34% \u2014 Alibaba HK bounced with China internet better than US semis.\n- 1816.HK +1.41% and 2800.HK +0.62% \u2014 ballast/beta held firm.\n- 9698.HK -5.69% \u2014 GDS remains the high-beta weak spot in the HK book."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- Reuters framed Friday\u2019s US close as a record S&P session helped by a softer jobs report, easing near-term rate-hike pressure.\n- This week\u2019s inflation data is the real macro checkpoint: a hot print would challenge the record-high equity tape and the Fed-cut/rate-stability assumption."
+      "content": "- The softer US jobs backdrop is still the main macro support for equities because it lowers pressure for another Fed hike, but the move is already priced into stretched index levels.\n- Oil\u2019s sharp jump and gold strength complicate the easy-rates story: the market is rewarding hedges at the same time it is still paying for quality growth."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: If Nasdaq futures strength holds, the cleanest upside read-through is still NVDA/NET-style growth, but add discipline matters more than chasing Friday\u2019s winners.\n- Risk: MU lagging while semis rose is the warning flag; if weakness spreads from one chip name into the group, the AI beta trade gets shakier.\n- Research: Check whether BABA\u2019s August 20 earnings setup is improving enough to justify using HK cash, or whether 2800.HK remains the cleaner China/HK expression."
+      "content": "- Opportunity: If HK opens firm, Alibaba plus 2800 give the cleaner China-beta expression than trying to average down GDS first.\n- Risk: INTC, NVDA and MU weakening together says the book\u2019s semiconductor beta can drag even when the headline index barely moves.\n- Research: Check whether the oil/gold jump is a one-day geopolitical spike or the start of a renewed inflation hedge rotation before adding more cyclicals."
     }
   ]
 }
