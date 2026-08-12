@@ -1,25 +1,25 @@
 {
-  "date": "Aug 11, 2026",
+  "date": "August 12, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US tape cooled after the prior risk-on run: indices finished close to flat, but beneath the surface AI/semis gave back some leadership while software, gold and selective China ADRs held up.\n- Macro tone is not clean risk-on: weaker labor data is still helping rate expectations, but oil and gold both jumping says inflation/geopolitical hedging is back in the room.\nAnchor numbers: S&P 500 -0.06%, Nasdaq -0.32%, Dow -0.11%; gold futures +2.71%, oil +5.05%, Bitcoin -1.50%."
+      "content": "- US tape cooled into CPI: Nasdaq led the downside, megacap/growth softened, but volatility did not spike.\n- The book\u2019s message was mixed rather than risk-off: DXYZ, ETN, MU and TSLA held up; China ADRs and expensive software lagged.\nAnchor numbers: Nasdaq -0.60%, Dow -0.34%, S&P 500 -0.32%, VIX -1.16%, 10Y yield 4.68%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- NET +3.44% \u2014 strongest clean growth read; software bid held while semis slipped.\n- DXYZ +2.47% \u2014 speculative appetite still alive, but this remains punt exposure, not core.\n- MSFT +1.21% / GLD +1.02% \u2014 useful barbell: quality growth plus hedge both green.\n- INTC -4.06% \u2014 weakest holding; value/rerating line not getting the same bid as quality tech.\n- NVDA -2.86%, MU -1.89%, AAPL -1.62% \u2014 AI hardware and mega-cap growth cooled together."
+      "content": "- DXYZ +11.65% \u2014 speculative appetite stayed alive despite softer indices.\n- ETN +3.22% \u2014 clean relative strength in industrial/electrification exposure.\n- MU +0.87%, TSLA +0.58% \u2014 semis/legacy growth were not broadly broken.\n- BABA ADR -3.38% \u2014 China internet lagged into the US close; HK exposure should still be judged off 9988.HK.\n- NET -1.17%, AAPL -1.09%, MSFT -0.44% \u2014 quality/software took the tape\u2019s pressure.\n- NVDA -0.02% \u2014 basically flat, better than Nasdaq but not leading."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open; Yahoo timestamps still point to the last completed HK session, so these are not live intraday prints.\n- 9988.HK +2.34% \u2014 Alibaba HK bounced with China internet better than US semis.\n- 1816.HK +1.41% and 2800.HK +0.62% \u2014 ballast/beta held firm.\n- 9698.HK -5.69% \u2014 GDS remains the high-beta weak spot in the HK book."
+      "content": "- HK is pre-open; Yahoo\u2019s latest intraday timestamps predate today\u2019s regular session, so these are last completed HK-session moves, not fresh live trading.\n- Hang Seng +1.05%, 02800.HK +0.99% \u2014 broad HK beta was constructive into the close.\n- 9988.HK -0.24%, 9698.HK -0.07%, 1816.HK -0.35% \u2014 confirmed HK holdings were soft-to-flat, with no major single-name break."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- The softer US jobs backdrop is still the main macro support for equities because it lowers pressure for another Fed hike, but the move is already priced into stretched index levels.\n- Oil\u2019s sharp jump and gold strength complicate the easy-rates story: the market is rewarding hedges at the same time it is still paying for quality growth."
+      "content": "- The next US CPI print is the main volatility gate; market chatter is centred on roughly 3.4% headline inflation and 2.5% core, with rate expectations split enough to matter.\n- Barron\u2019s flagged wobbling Treasury yields and oil easing while markets watched Hormuz-related headlines, which explains the cautious but not panicked tape."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: If HK opens firm, Alibaba plus 2800 give the cleaner China-beta expression than trying to average down GDS first.\n- Risk: INTC, NVDA and MU weakening together says the book\u2019s semiconductor beta can drag even when the headline index barely moves.\n- Research: Check whether the oil/gold jump is a one-day geopolitical spike or the start of a renewed inflation hedge rotation before adding more cyclicals."
+      "content": "- Opportunity: ETN and MU showing green on a red Nasdaq says the AI/capex sleeve still has selective leadership if CPI does not shock yields higher.\n- Risk: China exposure is split \u2014 HK index strength is fine, but BABA ADR weakness says do not treat the China rerating as automatic.\n- Research: Check whether DXYZ\u2019s spike has a real catalyst or is just squeeze/speculation before letting it affect sizing discipline."
     }
   ]
 }
