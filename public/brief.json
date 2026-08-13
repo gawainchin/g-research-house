@@ -1,25 +1,25 @@
 {
-  "date": "August 12, 2026",
+  "date": "Aug 13, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US tape cooled into CPI: Nasdaq led the downside, megacap/growth softened, but volatility did not spike.\n- The book\u2019s message was mixed rather than risk-off: DXYZ, ETN, MU and TSLA held up; China ADRs and expensive software lagged.\nAnchor numbers: Nasdaq -0.60%, Dow -0.34%, S&P 500 -0.32%, VIX -1.16%, 10Y yield 4.68%."
+      "content": "- US tape leaned risk-on after CPI landed around expectations: Nasdaq led, S&P edged higher, Dow was flat, volatility eased.\n- AI/semi momentum carried the book, while China ADRs and parts of megacap software lagged.\nAnchor numbers: Nasdaq +0.54%, S&P 500 +0.26%, Dow -0.04%, Russell 2000 +0.61%, VIX -4.78%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- DXYZ +11.65% \u2014 speculative appetite stayed alive despite softer indices.\n- ETN +3.22% \u2014 clean relative strength in industrial/electrification exposure.\n- MU +0.87%, TSLA +0.58% \u2014 semis/legacy growth were not broadly broken.\n- BABA ADR -3.38% \u2014 China internet lagged into the US close; HK exposure should still be judged off 9988.HK.\n- NET -1.17%, AAPL -1.09%, MSFT -0.44% \u2014 quality/software took the tape\u2019s pressure.\n- NVDA -0.02% \u2014 basically flat, better than Nasdaq but not leading."
+      "content": "- MU +4.92% \u2014 strongest AI-cycle beta in the book; semis kept leadership.\n- DXYZ +3.51% \u2014 speculative appetite improved with lower-vol risk tone.\n- INTC +3.32% / NVDA +3.03% \u2014 chip breadth stayed constructive.\n- MSFT -2.26% \u2014 weakest large-cap quality name; software/AI platform leadership was not uniform.\n- BABA ADR -2.06% \u2014 China exposure lagged US risk-on.\n- TSLA -1.59% \u2014 still trading like legacy volatility, not clean beta."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open; Yahoo\u2019s latest intraday timestamps predate today\u2019s regular session, so these are last completed HK-session moves, not fresh live trading.\n- Hang Seng +1.05%, 02800.HK +0.99% \u2014 broad HK beta was constructive into the close.\n- 9988.HK -0.24%, 9698.HK -0.07%, 1816.HK -0.35% \u2014 confirmed HK holdings were soft-to-flat, with no major single-name break."
+      "content": "- HK is pre-open; using last completed HK session, not live intraday.\n- 9698.HK +5.19% \u2014 GDS was the clear relative winner in the HK book.\n- 9988.HK -3.01% and 1816.HK -1.40% \u2014 Alibaba and CGN dragged; 2800.HK also softened with the index.\nAnchor: Hang Seng last completed session -1.10%; 2800.HK -1.06%."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- The next US CPI print is the main volatility gate; market chatter is centred on roughly 3.4% headline inflation and 2.5% core, with rate expectations split enough to matter.\n- Barron\u2019s flagged wobbling Treasury yields and oil easing while markets watched Hormuz-related headlines, which explains the cautious but not panicked tape."
+      "content": "- US equities advanced after CPI broadly matched forecasts, keeping the rate-cut / soft-landing path alive enough for growth to outperform.\n- Hong Kong tone remains split: index pressure and Alibaba weakness offset a sharp GDS rebound, so HK beta is not confirming the US AI tape yet."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: ETN and MU showing green on a red Nasdaq says the AI/capex sleeve still has selective leadership if CPI does not shock yields higher.\n- Risk: China exposure is split \u2014 HK index strength is fine, but BABA ADR weakness says do not treat the China rerating as automatic.\n- Research: Check whether DXYZ\u2019s spike has a real catalyst or is just squeeze/speculation before letting it affect sizing discipline."
+      "content": "- Opportunity: The cleanest upside signal is still AI/semi breadth \u2014 MU, NVDA and INTC strength matter more than one soft MSFT day.\n- Risk: China/HK remains the book\u2019s weak confirmation layer; BABA and 2800.HK softness can cap portfolio lift even when US growth works.\n- Research: Check whether GDS strength is company-specific rerating or just a short-covering bounce before adding HK data-center exposure."
     }
   ]
 }
