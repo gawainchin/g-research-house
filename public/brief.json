@@ -1,25 +1,25 @@
 {
-  "date": "Aug 13, 2026",
+  "date": "August 14, 2026",
   "sections": [
     {
       "title": "OVERNIGHT MAP",
-      "content": "- US tape leaned risk-on after CPI landed around expectations: Nasdaq led, S&P edged higher, Dow was flat, volatility eased.\n- AI/semi momentum carried the book, while China ADRs and parts of megacap software lagged.\nAnchor numbers: Nasdaq +0.54%, S&P 500 +0.26%, Dow -0.04%, Russell 2000 +0.61%, VIX -4.78%."
+      "content": "- US tape leaned risk-on again, but not clean: growth/software and select cyclicals carried the book while Apple, Tesla and gold lagged.\n- HK is pre-open; yesterday\u2019s completed HK session was softer, with China tech still not confirming the US bounce.\nAnchor numbers: SPY +0.70%, Nasdaq +0.54%, Dow flat; BTC +0.15%; HK yesterday: HSI +0.17%, 2800.HK -1.00%."
     },
     {
       "title": "US CLOSE MOVERS",
-      "content": "- MU +4.92% \u2014 strongest AI-cycle beta in the book; semis kept leadership.\n- DXYZ +3.51% \u2014 speculative appetite improved with lower-vol risk tone.\n- INTC +3.32% / NVDA +3.03% \u2014 chip breadth stayed constructive.\n- MSFT -2.26% \u2014 weakest large-cap quality name; software/AI platform leadership was not uniform.\n- BABA ADR -2.06% \u2014 China exposure lagged US risk-on.\n- TSLA -1.59% \u2014 still trading like legacy volatility, not clean beta."
+      "content": "- NET +6.2% \u2014 strongest portfolio move; software/growth bid expanded beyond mega-cap AI.\n- GDS ADR +6.2%, MU +4.9%, INTC +3.6% \u2014 data-centre / memory / chip-rebuild risk appetite stayed alive.\n- DXYZ +4.1% \u2014 speculative private-tech proxy kept squeezing higher.\n- BABA ADR -2.4% \u2014 weak versus broader risk tone; China beta still trading heavy.\n- TSLA -2.5%, ETN -1.4%, AAPL -0.9% \u2014 weakness sat in legacy/speculative EV, electrification cyclicals and Apple.\n- GLD -1.5% \u2014 ballast was offered as risk assets firmed."
     },
     {
       "title": "HK LIVE MOVERS",
-      "content": "- HK is pre-open; using last completed HK session, not live intraday.\n- 9698.HK +5.19% \u2014 GDS was the clear relative winner in the HK book.\n- 9988.HK -3.01% and 1816.HK -1.40% \u2014 Alibaba and CGN dragged; 2800.HK also softened with the index.\nAnchor: Hang Seng last completed session -1.10%; 2800.HK -1.06%."
+      "content": "- HK is pre-open; Yahoo timestamps point to the last completed HK session, not today\u2019s live trade.\n- 9698.HK -3.1% and 9988.HK -0.6% \u2014 HK-listed GDS/BABA underperformed their US ADR tone.\n- 2800.HK -1.0%; 1816.HK roughly flat \u2014 broad HK beta was soft, CGN held defensive shape."
     },
     {
       "title": "MARKET NEWS",
-      "content": "- US equities advanced after CPI broadly matched forecasts, keeping the rate-cut / soft-landing path alive enough for growth to outperform.\n- Hong Kong tone remains split: index pressure and Alibaba weakness offset a sharp GDS rebound, so HK beta is not confirming the US AI tape yet."
+      "content": "- Reuters reported July US CPI was milder than expected, keeping the market focused on whether the Fed can stay patient rather than force a September tightening.\n- Hong Kong sentiment remains uneven: local reports showed recent tech-led rallies, but the portfolio\u2019s HK China-tech holdings still closed weak yesterday."
     },
     {
       "title": "ACTION BOARD",
-      "content": "- Opportunity: The cleanest upside signal is still AI/semi breadth \u2014 MU, NVDA and INTC strength matter more than one soft MSFT day.\n- Risk: China/HK remains the book\u2019s weak confirmation layer; BABA and 2800.HK softness can cap portfolio lift even when US growth works.\n- Research: Check whether GDS strength is company-specific rerating or just a short-covering bounce before adding HK data-center exposure."
+      "content": "- Opportunity: US software, memory and data-centre exposure is showing better breadth than the index, so NET/MU/GDS/INTC deserve respect if the move holds another session.\n- Risk: the China split is the warning \u2014 ADR strength is not yet translating cleanly into HK-listed BABA/GDS exposure.\n- Research: check whether the GDS move is earnings/orderbook-specific or just high-beta short-covering before treating it as a durable rerating."
     }
   ]
 }
